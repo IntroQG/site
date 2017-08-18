@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to IntroQG's documentation!
-===================================
+Introduction to Quantitative Geology
+====================================
+
+Hi.
 
 .. toctree::
    :maxdepth: 2
