@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # IntroQG documentation build configuration file, created by
-# sphinx-quickstart on Fri Aug 18 15:36:14 2017.
+# sphinx-quickstart on Fri Aug 18 17:18:45 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -32,7 +32,6 @@
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.mathjax',
-    'sphinx.ext.viewcode',
     'sphinx.ext.githubpages']
 
 # Add any paths that contain templates here, relative to this directory.
@@ -85,6 +84,8 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+#html_theme = 'alabaster'
+
 import sphinx_rtd_theme
 
 html_theme = "sphinx_rtd_theme"
@@ -153,7 +154,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'IntroQG.tex', 'IntroQG Documentation',
-     'Dave Whipp', 'manual'),
+     'David Whipp, University of Helsinki', 'manual'),
 ]
 
 
@@ -177,25 +178,3 @@ texinfo_documents = [
      author, 'IntroQG', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-
-# -- Options for Epub output ----------------------------------------------
-
-# Bibliographic Dublin Core info.
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
-
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
-#
-# epub_identifier = ''
-
-# A unique identification for the text.
-#
-# epub_uid = ''
-
-# A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']

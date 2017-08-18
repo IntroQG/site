@@ -6,7 +6,7 @@ SPHINXOPTS    =
 SPHINXBUILD   = python -msphinx
 SPHINXPROJ    = IntroQG
 SOURCEDIR     = source
-BUILDDIR      = _build
+BUILDDIR      = source/_build
 
 GH_PAGES_SOURCES = source Makefile
 
