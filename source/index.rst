@@ -6,17 +6,11 @@
 Introduction to Quantitative Geology
 ====================================
 
-Hi.
+General info goes here.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   :caption: Course information
+   
+   course-details
+   schedule

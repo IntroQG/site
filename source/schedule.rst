@@ -15,7 +15,7 @@ Instructor
 David Whipp
 
 - Office: D430, Exactum
-- Email: *firstname.lastname*@helsinki.fi
+- Email: firstname.lastname@helsinki.fi
 - Phone: +358 (0)2 941 51617
 
 Assistant
@@ -23,7 +23,7 @@ Assistant
 N.N.
 
 - Office: D430, Exactum
-- Email: *firstname.lastname*@helsinki.fi
+- Email: firstname.lastname@helsinki.fi
 - Phone: +358 (0)2 941 51617
 
 Course websites
