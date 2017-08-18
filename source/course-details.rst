@@ -3,7 +3,7 @@ Course details
 
 Course meetings
 ---------------
-**Period I: 6.9-21.10 (together with Automating GIS processes)
+**Period I**: 6.9-21.10 (together with Automating GIS processes)
 
 - Wednesdays 9-12, CK112, Exactum
 - Work sessions
