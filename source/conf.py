@@ -49,8 +49,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'IntroQG'
-copyright = '2017, Dave Whipp'
-author = 'Dave Whipp'
+copyright = '2017, David Whipp, University of Helsinki'
+author = 'David Whipp'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -85,7 +85,15 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+import sphinx_rtd_theme
+
+html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+def setup(app):
+    app.add_stylesheet('theme_overrides.css')
+
+html_logo = '../img/QG-logo-2017.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -191,5 +199,3 @@ epub_copyright = copyright
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-
