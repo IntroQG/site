@@ -1,5 +1,5 @@
-Course content licenses
-=======================
+Content licenses
+================
 Unless otherwise specified:
 
 - All documentation on this website is licensed under a `Creative Commons Attribution-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-sa/4.0/>`_.
