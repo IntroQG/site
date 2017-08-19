@@ -13,4 +13,4 @@ General info goes here.
    :caption: Course information
    
    course-details
-   schedule
+   grading
