@@ -1,6 +1,8 @@
 Grading
 =======
 
+General grading breakdown
+-------------------------
 Course grades will be given using the standard six-level grading scale from 0 to 5.
 Your grade will be based on (1) weekly laboratory exercise summary write-ups, and (2) a course project (briefly described below).
 The weight of each item is given below.
