@@ -62,7 +62,7 @@ Schedule
 |        |            | Linking ages to processes II      |
 +--------+------------+-----------------------------------+
 
-For the schedule in Period I, please check the `geo-Python website <https://geo-python.github.io>`_.
+For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python website <https://geo-python.github.io>`_.
 
 |
 
