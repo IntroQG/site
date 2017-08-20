@@ -74,12 +74,24 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
 .. admonition:: Teachers: Use our stuff!
 
     If you would like to use these materials as part of your own teaching or develop them further, we strongly support that.
-    Please have a look at :doc:`our licensing terms</licensing>` about how to do so.
+    Please have a look at :doc:`our licensing terms<general-info/licensing>` about how to do so.
 
 .. toctree::
    :maxdepth: 2
    :caption: Course information
    
-   course-details
-   grading
-   licensing
+   general-info/course-details
+   general-info/grading
+   general-info/licensing
+
+..
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 8
+        
+        lessons/lesson-8/overview.rst
+        lessons/lesson-8/basic-terms.rst
+        lessons/lesson-8/uncertainty.rst
+        lessons/lesson-8/reporting-measurements.rst
+        lessons/lesson-8/normal-distribution.rst
+
