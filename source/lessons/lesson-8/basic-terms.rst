@@ -21,7 +21,7 @@ In other words, the sampled material represents the main features (i.e., ages, f
 Our goal as geoscientists is then to try to collect such a sample by collecting sampling units at *random*.
 The trouble is, a random sample does not guarantee the sample is a representative sample (Figure 1).
 
-.. figure:: Images/random-samples.png
+.. figure:: img/random-samples.png
     :width: 400 px
     :align: center
     :alt: Random samples of a population
@@ -34,7 +34,7 @@ The trouble is, a random sample does not guarantee the sample is a representativ
 In Figure 1, the problem is that random samples collected from the same population may be very different from one another.
 In this case, the two random samples have very different sizes of the sampled fossils.
 
-.. figure:: Images/random-samples-diff-pops.png
+.. figure:: img/random-samples-diff-pops.png
     :width: 400 px
     :align: center
     :alt: Random samples from different populations
