@@ -7,9 +7,9 @@ Before we can consider any of these factors, however, we'll need to understand s
 
 Populations and samples
 -----------------------
-For any kind of anaylsis one might perform on geological materials, we collect a *sample*.
+For any kind of analysis one might perform on geological materials, we collect a *sample*.
 The *sample* or *sampling unit* is material collected that is a subset of a **much larger** *population*.
-The *population* is the total number of occurences of a particular thing in a defined area, and something that is not possible for us to access geologically.
+The *population* is the total number of occurrences of a particular thing in a defined area, and something that is not possible for us to access geologically.
 Consider an example of trying to date even a small igneous intrusion.
 Of the total volume of the intrusion, only a tiny fraction is likely to be exposed at the Earth's surface.
 Moreover, of the accessible part of the intrusion, we are likely to only date 10-100 minerals out of the total number present in the intrusion, which could easily be millions or more.
