@@ -24,11 +24,11 @@ David Whipp, main instructor
 - Email: firstname.lastname@helsinki.fi
 - Phone: +358 (0)2 941 51617
 
-N.N., teaching assistant
+Jorina Schütt, teaching assistant
 
-- Office: D430, Exactum
+- Office: D422, Exactum
 - Email: firstname.lastname@helsinki.fi
-- Phone: +358 (0)2 941 51617
+- Phone: +358 (0)45 45 1865288
 
 Course websites
 ---------------
