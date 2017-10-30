@@ -22,7 +22,7 @@ Our goal as geoscientists is then to try to collect such a sample by collecting 
 The trouble is, a random sample does not guarantee the sample is a representative sample (Figure 1).
 
 .. figure:: img/random-samples.png
-    :width: 400 px
+    :width: 500 px
     :align: center
     :alt: Random samples of a population
 
@@ -35,7 +35,7 @@ In Figure 1, the problem is that random samples collected from the same populati
 In this case, the two random samples have very different sizes of the sampled fossils.
 
 .. figure:: img/random-samples-diff-pops.png
-    :width: 400 px
+    :width: 500 px
     :align: center
     :alt: Random samples from different populations
 
