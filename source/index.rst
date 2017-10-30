@@ -84,14 +84,17 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
    general-info/grading
    general-info/licensing
 
-..
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 8
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 8
         
-        lessons/lesson-8/overview.rst
-        lessons/lesson-8/basic-terms.rst
-        lessons/lesson-8/uncertainty.rst
-        lessons/lesson-8/reporting-measurements.rst
-        lessons/lesson-8/normal-distribution.rst
+    lessons/L8/overview
+    lessons/L8/intro-numpy
+    lessons/L8/basic-terms
+    lessons/L8/uncertainty
+    lessons/L8/reporting-measurements
+    lessons/L8/normal-distribution
+    lessons/L8/ex-8
+    lessons/L8/exercise-8-hints
 
