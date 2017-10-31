@@ -90,6 +90,7 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
     :caption: Lesson 8
         
     lessons/L8/overview
+    lessons/L8/lesson-video
     lessons/L8/intro-numpy
     lessons/L8/basic-terms
     lessons/L8/uncertainty
