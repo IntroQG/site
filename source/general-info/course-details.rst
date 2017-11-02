@@ -14,7 +14,7 @@ Course meetings
 
 - Mondays 9-12, DK116, Excatum
 - Work session
-  - Thursdays 8-10, DK117, Excatum
+  - Wednesdays 9-12, C129, Excatum
 
 Instructors
 -----------
