@@ -77,13 +77,12 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
     Please have a look at :doc:`our licensing terms<general-info/licensing>` about how to do so.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Course information
+    :maxdepth: 2
+    :caption: Course information
    
-   general-info/course-details
-   general-info/grading
-   general-info/licensing
-
+    general-info/course-details
+    general-info/grading
+    general-info/licensing
 
 .. toctree::
     :maxdepth: 2
@@ -99,3 +98,13 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
     lessons/L8/ex-8
     lessons/L8/exercise-8-hints
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 9
+        
+    lessons/L9/overview
+    lessons/L9/lesson-video
+    lessons/L9/goodness-of-fit
+    lessons/L9/least-squares
+    lessons/L9/ex-9
+    lessons/L9/exercise-9-hints
