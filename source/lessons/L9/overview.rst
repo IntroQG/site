@@ -9,7 +9,6 @@ As was the case last week, we will continue to focus more on quantitative and ge
 4. :doc:`Exercise 9 hints <exercise-9-hints>`
 
 ..
-
     Learning objectives
     -------------------
     After completing this week's lesson you should be able to:
