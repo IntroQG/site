@@ -78,3 +78,77 @@ Because of this, there is a shorthand notation in Python for just this kind of o
 
 As you can see, ``number += 5`` is exactly the same as ``number = number + 5``, just written a bit more compactly.
 As you might imagine, there are similar shortcuts for subtracting (``-=``), multiplying (``*=``), and dividing (``/=``).
+
+Problem 2
+---------
+
+Reading in data with a datetime index
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+One of your first tasks in this problem is to read in a datafile that was generated from a Pandas DataFrame with a datetime index.
+There are several ways in which the data file can be read, but one of the easier options is to read it in with the necessary parameters to make sure the date information is properly treated as a datetime index.
+This will give you a DataFrame that is just like that you were using in `Exercise 7 of the Geo-Python part of the course <https://github.com/Geo-Python-2017/Exercise-7>`__.
+To read in data where one column contains dates that should be used as the index, you can do the following:
+
+.. code:: python
+
+    data = pd.read_csv('some_file.csv', sep=',', index_col='dates', parse_dates=True)
+
+Assuming that the name of the date column is ``dates``, ``index_col`` specifies which column in the data file should be used as the index in the DataFrame, and ``parse_dates`` tells Pandas to treat the index column data as datetime values.
+As mentioned, there are alternative options, but this is a clean way to read in data to Pandas with a datetime index.
+
+Drop the nan values to avoid problems with the regression calculations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Once you have read in the climate data and filled in your DataFrame that contains the seasonal average temperatures and standard deviations in temperature, you'll want to get rid of any ``nan`` (not a number) values for the seasonal temperatures.
+The reason for this is that you will have problems calculating the ``A`` and ``B`` values if there are any ``nan`` values.
+Consider the following example:
+
+.. ipython:: python
+
+    testArray = np.linspace(0.0, 10.0, 11)
+    print(testArray)
+    print(sum(testArray))
+    testArray[4] = np.nan
+    print(testArray)
+    print(sum(testArray))
+    print(testArray[4] + testArray[5])
+
+As you can see, if you sum or add values containing a ``nan`` your sum will be ``nan``.
+Unlike plotting data containing ``nan`` values, that is not good for sums.
+
+Use .values to get array values for calculating A and B
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+When doing your regression line calculations you will want to be sure to be working with simple array data, rather than Pandas DataFrame data.
+What?!?
+Yeah, so it turns out that you can't easily do math with Pandas DataFrame values, so you need to convert those values into a simpler structure.
+NumPy is the basis for the Pandas DataFrame, so it is quite easy to do this.
+Again, I'll show an example.
+
+.. ipython:: python
+
+    import pandas as pd
+    testDF = pd.DataFrame(np.random.randn(4,2),columns=['Col1', 'Col2'])
+    print(testDF)
+    testDF['Col1']
+    testDF['Col1'].values
+
+As you can perhaps see, ``testDF`` is a basic Pandas DataFrame with two columns ``Col1`` and ``Col2`` with random values.
+Taking a single column from this DataFrame ``testDF['Col1']`` returns a Pandas Series.
+Alternatively, ``testDF['Col1'].values`` produces a NumPy array of that same data.
+You will likely find that you're not able to do your calculations of ``A`` and ``B`` for the regression lines unless you use the ``.values`` attribute.
+
+Use the year for calculating the regression lines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+You do not need the day and month when trying to calculate the regression lines.
+Instead, you only want the observation year.
+Assuming you have a datetime index for your data, you can get the years as follows:
+
+.. ipython:: python
+
+    print(testDF)
+    index = pd.date_range('2013', '2016', freq='AS')
+    testDF = testDF.set_index(index)
+    print(testDF.index)
+    print(testDF.index.year)
+
+As you can see, if we add a datetime index to ``testDF``, we can output the index range by typing ``print(testDF.index)``.
+To get the equivalent data in years only, we print ``print(testDF.index.year)``.
