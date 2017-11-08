@@ -2,18 +2,17 @@ Lecture
 -------
 Lecture video will be added following class.
 
-..
-    .. admonition:: Lesson 8 - Introduction to NumPy, Basic geostatistics
+.. admonition:: Lesson 9 - Comparing predictions to observed values
 
-        .. raw:: html
+    .. raw:: html
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/k3RRlAzxMP0" frameborder="0" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J9qRhAchO44" frameborder="0" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
-        **Contents:**
 
-            - `00:44 - Changes for the Quantitative Geology part of the course <https://www.youtube.com/watch?v=k3RRlAzxMP0&t=0m44s>`__
-            - `11:17 - Overview of Lesson 8 <https://www.youtube.com/watch?v=k3RRlAzxMP0&t=11m17s>`__
-            - `13:32 - Introduction to NumPy <https://www.youtube.com/watch?v=k3RRlAzxMP0&t=13m32s>`__
-            - `51:31 - Basic geostatistics <https://www.youtube.com/watch?v=k3RRlAzxMP0&t=51m31s>`__
-            - `1:08:11 - Exercise 8 preview <https://www.youtube.com/watch?v=k3RRlAzxMP0&t=68m11s>`__
+    **Contents:**
+
+        - `02:34 - Lesson 9 introduction <https://www.youtube.com/watch?v=J9qRhAchO44&t=2m34s>`__
+        - `03:18 - Goodness-of-fit calculations <https://www.youtube.com/watch?v=J9qRhAchO44&t=3m18s>`__
+        - `17:04 - Least squares regressions <https://www.youtube.com/watch?v=J9qRhAchO44&t=17m04s>`__
+        - `24:41 - Exercise 9 preview <https://www.youtube.com/watch?v=J9qRhAchO44&t=24m41s>`__
