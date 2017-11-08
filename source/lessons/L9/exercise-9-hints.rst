@@ -38,6 +38,8 @@ First, you see that you can give more than one variable to format by changing th
 In the second case, you see that you're able to format the same variable different ways within a single character string.
 You may not often need to do this, but it is possible.
 
+You can find much more about string formatting on the `Python documentation site <https://docs.python.org/3.6/library/string.html#formatstrings>`__.
+
 Problem 1
 ---------
 
