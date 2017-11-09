@@ -43,6 +43,17 @@ You can find much more about string formatting on the `Python documentation site
 Problem 1
 ---------
 
+Example plot
+~~~~~~~~~~~~
+Your code for this problem should produce a plot similar to the one below.
+
+.. figure:: img/Ex9.1-gof.png
+    :width: 600 px
+    :align: center
+    :alt: Plot for Problem 9.1
+
+    Example plot for Problem 1.
+
 Calculating summations
 ~~~~~~~~~~~~~~~~~~~~~~
 There are several ways in which you can calculate a summation in Python, including using the ``sum()`` function.
@@ -81,6 +92,24 @@ As you might imagine, there are similar shortcuts for subtracting (``-=``), mult
 
 Problem 2
 ---------
+
+Example plot
+~~~~~~~~~~~~
+Your code for this problem should produce plots similar to the two below.
+
+.. figure:: img/Ex9.2-all-years.png
+    :width: 600 px
+    :align: center
+    :alt: Plot for Problem 9.1
+
+    Example plot for Problem 2 with all years of climate data.
+
+.. figure:: img/Ex9.2-20-years.png
+    :width: 600 px
+    :align: center
+    :alt: Plot for Problem 9.1
+
+    Example plot for Problem 2 with the last 20 years of climate data.
 
 Reading in data with a datetime index
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
