@@ -1,7 +1,5 @@
 Lecture
 -------
-Lecture video will be added following class.
-
 .. admonition:: Lesson 9 - Comparing predictions to observed values
 
     .. raw:: html
