@@ -15,10 +15,10 @@ import glob
 import os
 
 # Input directory for md-files
-indir = "/Users/whipp/Work/Teaching-and-seminars/HY/Quantitative_Geology/Lessons-Fall-2017-git/source/lessons/L9"
+indir = "/Users/whipp/Work/Teaching-and-seminars/HY/Quantitative_Geology/Lessons-Fall-2017-git/source/lessons/L10"
 
 # Output directory for rst-files
-outdir = "/Users/whipp/Work/Teaching-and-seminars/HY/Quantitative_Geology/Lessons-Fall-2017-git/source/lessons/L9"
+outdir = "/Users/whipp/Work/Teaching-and-seminars/HY/Quantitative_Geology/Lessons-Fall-2017-git/source/lessons/L10"
 
 # Read all md files
 files = glob.glob(os.path.join(indir, "*.md"))
