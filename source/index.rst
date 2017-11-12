@@ -108,3 +108,13 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
     lessons/L9/least-squares
     lessons/L9/ex-9
     lessons/L9/exercise-9-hints
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 10
+        
+    lessons/L10/overview
+    lessons/L10/lesson-video
+    lessons/L10/solving-diffusion
+    lessons/L10/ex-10
+    lessons/L10/exercise-10-hints
