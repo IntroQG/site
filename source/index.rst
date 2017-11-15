@@ -118,3 +118,9 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
     lessons/L10/solving-diffusion
     lessons/L10/ex-10
     lessons/L10/exercise-10-hints
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Final report
+
+    general-info/final-report
