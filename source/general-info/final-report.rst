@@ -80,3 +80,8 @@ Appendices
 
 - Include a copy (copy/paste) of the Python code Exercise 14 here.
   This can be in 8 point Courier font.
+
+Grading rubric
+~~~~~~~~~~~~~~
+
+`Final paper grading table (PDF) <../_static/docs/IntroQG_final_project_grade_table_1117.pdf>`__
