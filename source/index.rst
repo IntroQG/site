@@ -121,6 +121,16 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
 
 .. toctree::
     :maxdepth: 2
+    :caption: Lesson 11
+        
+    lessons/L11/overview
+    lessons/L11/lesson-video
+    lessons/L11/solving-advection
+    lessons/L11/ex-11
+    lessons/L11/exercise-11-hints
+
+.. toctree::
+    :maxdepth: 2
     :caption: Final report
 
     general-info/final-report
