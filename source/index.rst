@@ -131,6 +131,17 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
 
 .. toctree::
     :maxdepth: 2
+    :caption: Lesson 12
+        
+    lessons/L12/overview
+    lessons/L12/lesson-video
+    lessons/L12/viscous-flows
+    lessons/L12/exercise-12-theory
+    lessons/L12/ex-12
+    lessons/L12/exercise-12-hints
+
+.. toctree::
+    :maxdepth: 2
     :caption: Final report
 
     general-info/final-report
