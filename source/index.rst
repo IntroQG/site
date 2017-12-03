@@ -142,6 +142,25 @@ For the schedule in Period I (i.e., classes 1-7), please check the `geo-Python w
 
 .. toctree::
     :maxdepth: 2
+    :caption: Lesson 13
+        
+    lessons/L13/overview
+    lessons/L13/lesson-video
+    lessons/L13/ex-13
+    lessons/L13/exercise-13-hints
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 14
+        
+    lessons/L14/overview
+    lessons/L14/lesson-video
+    lessons/L14/ex-14
+    lessons/L14/exercise-14-hints
+
+.. toctree::
+    :maxdepth: 2
     :caption: Final report
 
-    general-info/final-report
+    final-paper/final-report
+    final-paper/articles
