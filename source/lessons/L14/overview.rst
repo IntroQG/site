@@ -18,6 +18,11 @@ Scientific journal articles
 - `Google scholar <https://scholar.google.fi/>`__
 - `Web of Science <https://webofknowledge.com>`__ (Only works on campus or via VPN)
 
+Additional materials
+--------------------
+
+- `Low-temperature thermochronology short course website <https://thermochron.github.io/2017/>`__
+
 ..
     Learning objectives
     -------------------
