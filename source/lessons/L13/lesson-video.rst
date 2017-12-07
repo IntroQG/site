@@ -2,13 +2,11 @@ Lecture
 -------
 .. admonition:: Lesson 13 - Thermochronology I
 
-    The class video will be added after lecture.
 
-    ..
-        .. raw:: html
+    .. raw:: html
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vL8nnN5ETN4" frameborder="0" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/geEUY185tlo" frameborder="0" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
 .. admonition:: Lesson slides
 
