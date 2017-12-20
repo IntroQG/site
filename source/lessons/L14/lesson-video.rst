@@ -2,7 +2,7 @@ Lecture
 -------
 .. admonition:: Lesson 14 - Thermochronology II
 
-    The class video will be added after lecture.
+    There is no lecture video for Lesson 14. All material for this lesson was covered in the :doc:`video for Lesson 13 <../L13/lesson-video>`.
 
     ..
         .. raw:: html
