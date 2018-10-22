@@ -6,6 +6,8 @@
 Welcome to Introduction to Quantitative Geology's documentation!
 ================================================================
 
+Testing.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
