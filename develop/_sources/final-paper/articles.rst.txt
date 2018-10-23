@@ -21,4 +21,4 @@ Bhutan Himalaya papers
 
 Python_.
 
-__ https://doi.org/10.1130/0016-7606(2000)112\<324:TOTHAS>2.0.CO;2>
+__ https://doi.org/10.1130/0016-7606(2000)112%3C324:TOTHAS%3E2.0.CO;2
