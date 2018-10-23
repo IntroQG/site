@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Introduction to Quantitative Geology'
-copyright = '2018, David Whipp, University of Helsinki'
-author = 'David Whipp, University of Helsinki'
+project = 'IntroQG'
+copyright = '2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki'
+author = 'D. Whipp'
 
 # The short X.Y version
-version = ''
+version = '2018'
 # The full version, including alpha/beta/rc tags
-release = ''
+release = '2018'
 
 
 # -- General configuration ---------------------------------------------------
@@ -41,7 +41,15 @@ release = ''
 extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.githubpages',
+    'sphinxcontrib.googleanalytics',
+    'nbsphinx',
+    'IPython.sphinxext.ipython_console_highlighting',
+    'IPython.sphinxext.ipython_directive'
 ]
+
+# Google Analytics ID to enable tracking of site traffic
+googleanalytics_id = "UA-92357604-2"
+googleanalytics_enabled = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -76,13 +84,23 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+import sphinx_rtd_theme
+
 html_theme = 'sphinx_rtd_theme'
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+def setup(app):
+    app.add_stylesheet('theme_overrides.css')
+
+html_logo = 'img/HY-logo-2017.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#
-# html_theme_options = {}
+
+html_theme_options = {
+    "collapse_navigation" : False
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -158,3 +176,38 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
+# This is processed by Jinja2 and inserted before each notebook
+nbsphinx_prolog = r"""
+{% set docname = env.doc2path(env.docname, base='source') %}
+{% set docname2 = env.doc2path(env.docname, base='') %}
+
+.. only:: html
+
+    .. role:: raw-html(raw)
+        :format: html
+
+    .. nbinfo::
+
+        This page was generated from `{{ docname }}`__.
+        :raw-html:`<br/><a href="https://mybinder.org/v2/gh/introqg/{{ env.config.release }}/master?urlpath=lab/tree/{{ docname }}"><img alt="Binder badge" src="https://img.shields.io/badge/launch-completed%20binder-red.svg" style="vertical-align:text-bottom"></a>`
+        :raw-html:`<a href="https://mybinder.org/v2/gh/introqg/notebooks/master?urlpath=lab/tree/{{ docname2 }}"><img alt="Binder badge" src="https://img.shields.io/badge/launch-lesson%20binder-red.svg" style="vertical-align:text-bottom"></a>`
+        :raw-html:`<a href="https://notebooks.csc.fi/#/blueprint/d71cd2d26d924f48820dc22b67a87d8e"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a>`
+
+    __ https://github.com/Geo-Python/{{ env.config.release }}/blob/master/{{ docname }}
+
+.. raw:: latex
+
+    \vfil\penalty-1\vfilneg
+    \vspace{\baselineskip}
+    \textcolor{gray}{The following section was generated from
+    \texttt{\strut{}{{ docname }}}\\[-0.5\baselineskip]
+    \noindent\rule{\textwidth}{0.4pt}}
+    \vspace{-2\baselineskip}
+"""
+
+# Allow errors when parsing pages using nbsphinx
+nbsphinx_allow_errors = True
+
+# Sphinx versioning settings
+scv_show_banner = True
+scv_whitelist_branches = ('master', 'develop', '2017')
