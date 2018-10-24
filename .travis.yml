@@ -1,0 +1,17 @@
+language: python
+python:
+  - 3.6
+before_install:
+  - hg clone https://bitbucket.org/birkenfeld/sphinx-contrib/
+install:
+  - sudo apt-get install pandoc
+  - pip install sphinx==1.7.9 sphinx_rtd_theme nbsphinx IPython=6.5.0 jupyter_client ipykernel
+  - pip install matplotlib numpy pandas imageio
+  - pip install git+https://github.com/wfpinedar/sphinxcontrib-versioning.git
+  - cd sphinx-contrib/googleanalytics; python setup.py install; cd ../..
+script: sphinx-versioning build source build/html
+after_success:
+  - ./push.sh
+env:
+  global:
+    - secure: "tXy87Y1eipyeeTetYMH0Aklho5KggxVOGx3mnhtKIT+P8neGdFoEMtfxbarfDrjJF1thAEUTw+8GqJc+ri0W41R1Vk/rJB6JtqpDoDcDuZpTZxbaRaeNYGOvoia4ot1sv4yce4teQtt5B7h2gToiC3msWm9H8fjR1ydE0tx+JlcZwP3sBlBgTNzHUmnY9CbrMurtA3nCn659q4a+nta8PxJlomE3ygViQ7gzoHO6COb72U9f/JY+qgA75QPcGGUSL6hucCymhadDZoAoDNMXUxkIblmPrrO+YQj0m3uPyCJwJO3rxIcI2W5r0lDT7Ge6acQy3CNOu2mwWn1M1M37tSrzWmUw+E5BhDuZbzl8DlomO/Z2RogLGLZzJ6QAj1OMW0wobRl/OmpNDo+KV/t29+D93XmWfo2LMrkExVd7QG0bDfDhmq8m7ZoJy0OFm4YWfOUebuayp+QxCzpz3XWIAWwORCsu13JPUr1bl5WJHzgYqhX2M7qZ1X1di0OQw9eCEKhC2sgt29xoURPBGYmdqBSdJym0CeZHc7cmf+IZWjai1nGBzKIfvu4a0woCLSnOrEapw5NUlbJ3mmO2Ygmh0ihPMC3wHB5tbYLCrUkqsROriw3PqS67CcbhSqVGnBuiD1DvYfc6rci3SqoZxUnVIxwzPoUs9MgcRmBP+aQV/Qs="
