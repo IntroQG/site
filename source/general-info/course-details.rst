@@ -8,6 +8,7 @@ Course meetings
 
 - Mondays 9-12, D112, Physicum
 - Work session
+
   - Thursday (1.11) 8-10, D112, Physicum
   - Wednesdays (7.11-12.12) 9-12, C129, Excatum
 
@@ -26,6 +27,7 @@ Course website
 ---------------
 
 - Main course site: https://introqg.github.io
+- Geo-Python course site: https://geo-python.github.io
 
 Textbooks
 ---------
