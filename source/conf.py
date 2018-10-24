@@ -42,6 +42,9 @@ extensions = ['sphinx.ext.mathjax',
 googleanalytics_id = "UA-92357604-2"
 googleanalytics_enabled = True
 
+# Set matplotlib backend
+ipython_mplbackend = 'WXAgg'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
