@@ -89,6 +89,6 @@ Consider the example below.
         e = np.random.random(10)
         plt.plot(x, y, 'o', color = colors[i], label = sampleNames[i])   # Make plots
         plt.errorbar(x2, y2, xerr=e, fmt='s', color=colors[i])
-    plt.show()
+    #plt.show()
 
 As you can see, with a bit of planning you can use a ``for`` loop for your plotting in Problem 2, which is suggested if you're able to get it working.

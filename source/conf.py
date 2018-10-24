@@ -43,7 +43,7 @@ googleanalytics_id = "UA-92357604-2"
 googleanalytics_enabled = True
 
 # Set matplotlib backend
-ipython_mplbackend = 'inline'
+#ipython_mplbackend = 'inline'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
