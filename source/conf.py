@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'IntroQG'
-copyright = '2018, D. Whipp, Dept. of Geosciences and Geography, University of Helsinki'
+copyright = '2018, D. Whipp, Dept. of Geosciences and Geography, University of Helsinki.'
 author = 'D. Whipp'
 
 # The short X.Y version
