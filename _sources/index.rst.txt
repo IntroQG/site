@@ -3,20 +3,89 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Introduction to Quantitative Geology's documentation!
-================================================================
+Introduction to Quantitative Geology
+====================================
 
-Testing.
+Welcome to the website for the **Introduction to Quantitative Geology course** at the University of Helsinki.
+This course introduces students to how to study a handful of geoscientific problems using a bit of geology, math, and Python programming.
+The course is aimed at advanced undergraduate students in geology or geophysics.
+This course is designed to follow the `Geo-Python course <https://geo-python.github.io>`_, which focuses exclusively on programming in Python.
+More info on this course can be found below.
+Enjoy!
+
+Course goals
+------------
+
+This course aims to:
+
+1. Introduce students to applications of the Python programming language to modelling Earth science data/processes
+2. Develop basic programming skills through analysis of fundamental equations used in the Earth sciences
+3. Present some established techniques for comparing geologic data to numerical model predictions
+
+Course format
+-------------
+
+The majority of this course will be spent in front of a computer working on exercises related to geological processes and data.
+Physical class meetings will be mainly in traditional lecture classrooms, but you are expected to work on your own laptop or find a suitable substitute.
+The lecture rooms will have power available.
+
+Typical exercises will involve a brief introduction followed by topical computer-based tasks.
+At the end of the exercises, you may be asked to submit answers to relevant questions, some related plots, and/or Python codes you have written or used.
+You are encouraged to discuss and work together with other students on the laboratory exercises, however the laboratory summary write-ups that you submit must be completed individually and must clearly reflect your own work.
+
+Schedule
+--------
+
++--------+------------+-----------------------------------+
+| Class  | Date       | Theme                             |
++========+============+===================================+
+| **1**  | 29.10.2017 | Basic geostatistics               |
+|        |            |                                   |
++--------+------------+-----------------------------------+
+| **2**  | 5.11.2017  | Comparing predictions to          |
+|        |            | observed values                   |
++--------+------------+-----------------------------------+
+| **3**  | 12.11.2017 | The diffusion equation;           |
+|        |            | Hillslope sediment transport      |
++--------+------------+-----------------------------------+
+| **4**  | 19.11.2017 | Fluvial incision and rock uplift: |
+|        |            | The advection/wave equation       |
++--------+------------+-----------------------------------+
+| **5**  | 26.11.2017 | Viscous flow of rock and ice:     |
+|        |            | (Non-)Newtonian flow equations    |
++--------+------------+-----------------------------------+
+| **6**  | 3.12.2017  | Quantitative thermochronology:    |
+|        |            | Linking ages to processes I       |
++--------+------------+-----------------------------------+
+| **7**  | 10.12.2017 | Quantitative thermochronology:    |
+|        |            | Linking ages to processes II      |
++--------+------------+-----------------------------------+
+
+For the schedule in Period I, please check the `Geo-Python website <https://geo-python.github.io>`_.
+
+|
+
+.. admonition:: Open access!
+
+    Materials for this course are **open to everyone**.
+    In combination with the `Geo-Python course <https://geo-python.github.io>`_, we aim to share our knowledge and help people start doing reproducible science more efficiently using Python.
+
+.. admonition:: Teachers: Use our stuff!
+
+    If you would like to use these materials as part of your own teaching or develop them further, we strongly support that.
+    Please have a look at :doc:`our licensing terms<general-info/licensing>` about how to do so.
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 2
+    :caption: Course information
+   
+    general-info/course-details
+    general-info/grading
+    general-info/licensing
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Final report
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    final-paper/final-report
+    final-paper/articles
