@@ -92,7 +92,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 def setup(app):
     app.add_stylesheet('theme_overrides.css')
 
-html_logo = 'img/HY-logo-2017.png'
+html_logo = 'img/HY-logo.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
