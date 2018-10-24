@@ -19,6 +19,4 @@ Bhutan Himalaya papers
 - `Stüwe, K. and Foster, D., 2001. 40Ar/39Ar, pressure, temperature and fission track constraints on the age and nature of metamorphism around the main central thrust in the eastern Bhutan Himalaya. Journal of Asian Earth Sciences, 19(1), pp.85-95. <https://doi.org/10.1016/S1367-9120(00)00018-3>`__
 - `Coutand, I., Whipp, D.M., Grujic, D., Bernet, M., Fellin, M.G., Bookhagen, B., Landry, K.R., Ghalley, S.K. and Duncan, C., 2014. Geometry and kinematics of the Main Himalayan Thrust and Neogene crustal exhumation in the Bhutanese Himalaya derived from inversion of multithermochronologic data. Journal of Geophysical Research: Solid Earth, 119(2), pp.1446-1481. <https://doi.org/10.1002/2013JB010891>`__
 
-Python_.
-
 __ https://doi.org/10.1130/0016-7606(2000)112%3C324:TOTHAS%3E2.0.CO;2
