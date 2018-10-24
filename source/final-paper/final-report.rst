@@ -3,7 +3,7 @@ Final paper information
 
 *The project paper description below is subject to change, but should give you a general idea of what is needed*.
 
-The final task for the course is to write a formal scientific paper about the results of Exercises 13 and 14.
+The final task for the course is to write a formal scientific paper about the results of Exercises 6 and 7.
 Please use 12 pt Times New Roman (or similar font) for your report with single spacing between lines.
 The report should not be longer than 6-8 pages including text and figures (references and the appendix can be on additional pages, if needed).
 
