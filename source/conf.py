@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'IntroQG'
-copyright = '2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki'
+copyright = '2018, D. Whipp, Dept. of Geosciences and Geography, University of Helsinki.'
 author = 'D. Whipp'
 
 # The short X.Y version
@@ -93,6 +93,9 @@ def setup(app):
     app.add_stylesheet('theme_overrides.css')
 
 html_logo = 'img/HY-logo.png'
+
+# Add last modified to all pages
+html_last_updated_fmt = ""
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
