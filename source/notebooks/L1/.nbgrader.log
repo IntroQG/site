@@ -1,0 +1,43 @@
+[LabApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[LabApp | INFO] Loading the validate_assignment nbgrader serverextension
+[LabApp | INFO] Serving notebooks from local directory: /Users/whipp/Work/Teaching-and-seminars/HY/Quantitative_Geology/qg-git/source/notebooks/L1
+[LabApp | INFO] 0 active kernels
+[LabApp | INFO] The Jupyter Notebook is running at:
+[LabApp | INFO] http://localhost:8888/?token=f18b00c31eef5c1aa89bad21b6851661c081d896d50811d5
+[LabApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[LabApp | CRITICAL] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=f18b00c31eef5c1aa89bad21b6851661c081d896d50811d5
+[LabApp | INFO] Accepting one-time-token-authenticated connection from ::1
+[LabApp | WARNING] Could not determine jupyterlab build status without nodejs
+[LabApp | INFO] Creating new notebook in /
+[LabApp | INFO] Kernel started: 4a477e49-bddd-4ac7-bbdd-601b607ad577
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 4a477e49-bddd-4ac7-bbdd-601b607ad577
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 4a477e49-bddd-4ac7-bbdd-601b607ad577
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /Untitled.ipynb
+[LabApp | INFO] Saving file at /numpy.ipynb
+[LabApp | INFO] Starting buffering for 4a477e49-bddd-4ac7-bbdd-601b607ad577:12bd0fc0cd6015726add39a933972532
+[LabApp | INFO] Kernel restarted: 4a477e49-bddd-4ac7-bbdd-601b607ad577
+[LabApp | INFO] Adapting to protocol v5.1 for kernel 4a477e49-bddd-4ac7-bbdd-601b607ad577
+[LabApp | INFO] Restoring connection for 4a477e49-bddd-4ac7-bbdd-601b607ad577:12bd0fc0cd6015726add39a933972532
+[LabApp | INFO] Replaying 5 buffered messages
+[LabApp | INFO] Saving file at /numpy.ipynb
+[LabApp | INFO] Starting buffering for 4a477e49-bddd-4ac7-bbdd-601b607ad577:12bd0fc0cd6015726add39a933972532
+[LabApp | INFO] interrupted
+[LabApp | CRITICAL] Shutdown confirmed
+[LabApp | INFO] Shutting down 1 kernel
+[LabApp | INFO] Kernel shutdown: 4a477e49-bddd-4ac7-bbdd-601b607ad577

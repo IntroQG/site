@@ -7,11 +7,11 @@ Exercise 1
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 1 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/xlPEDOv7>`__.
+    You can start working on your copy of Exercise 1 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/sCW1JuDZ>`__.
 
     **Exercise 1 is due by the start of lecture in week 2**.
 
-You can also take a look at the open course copy of `Exercise 1 in the course GitHub repository <https://github.com/IntroQG-2017/Exercise-1>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 1 in the course GitHub repository <https://github.com/IntroQG-2018/Exercise-1>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 General hints for Exercise 1
@@ -32,7 +32,25 @@ As you can see, the complete form explicitly states the starting and ending valu
 
 Problem 1
 ---------
-There have not been any major issues with Problem 1, so the only suggested hint is to refer to the general hint on sigma notation above if you are having any problems with converting the equations for the mean, standard deviation, and standard error to Python.
+
+Function docstrings
+~~~~~~~~~~~~~~~~~~~
+
+Say what?
+Yeah, a docstring.
+*Docstrings* are short texts that describe a function, script, or other code component in Python.
+They are generally given on the line below the ``def`` statement for a function or at the top of a script file, and start and end with triple quotes ``"""``.
+The docstring is helpful because you can use the ``help()`` function to find out how a function works, for example.
+Let's look at an example.
+
+.. ipython:: python
+
+    def square(number):
+        """Returns the supplied number squared"""
+        return number * number
+    help(square)
+    number = 4
+    print(number, "squared is", square(number))
 
 Problem 2
 ---------
