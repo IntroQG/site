@@ -48,6 +48,7 @@ Let's look at an example.
     def square(number):
         """Returns the supplied number squared"""
         return number * number
+    
     help(square)
     number = 4
     print(number, "squared is", square(number))
