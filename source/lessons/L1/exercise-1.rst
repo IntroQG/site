@@ -50,12 +50,14 @@ Let's check out an example.
     def square(number):
         """Returns the supplied number squared"""
         return number * number
+    
+    number = 4
+    print(number, "squared is", square(number))
+
 
 .. ipython:: python
 
-    help(square)
-    number = 4
-    print(number, "squared is", square(number))
+    square?
 
 Problem 2
 ---------
