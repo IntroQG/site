@@ -43,7 +43,7 @@ They are generally given on the line below the ``def`` statement for a function 
 The docstring is helpful because you can use the ``help()`` function to find out how a function works, for example.
 Since we're using Jupyter notebooks, we can take advantage of a special ``?`` feature that can provide even a bit more information than the ``help()`` function.
 To use the ``?``, you simply add it after the name of some function, variable, or other object.
-Let's check out an example.
+Let's check out some examples.
 
 .. ipython:: python
 
@@ -54,6 +54,9 @@ Let's check out an example.
     number = 4
     print(number, "squared is", square(number))
 
+.. ipython:: python
+
+    help(square)
 
 .. ipython:: python
 
