@@ -310,22 +310,15 @@ Yeah, a docstring.
 <em>Docstrings</em> are short texts that describe a function, script, or other code component in Python.
 They are generally given on the line below the <code class="docutils literal notranslate"><span class="pre">def</span></code> statement for a function or at the top of a script file, and start and end with triple quotes <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span></code>.
 The docstring is helpful because you can use the <code class="docutils literal notranslate"><span class="pre">help()</span></code> function to find out how a function works, for example.
-Let’s look at an example.</p>
+Since we’re using Jupyter notebooks, we can take advantage of a special <code class="docutils literal notranslate"><span class="pre">?</span></code> feature that can provide even a bit more information than the <code class="docutils literal notranslate"><span class="pre">help()</span></code> function.
+To use the <code class="docutils literal notranslate"><span class="pre">?</span></code>, you simply add it after the name of some function, variable, or other object.
+Let’s check out an example.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
 <span class="gp">   ...: </span>    <span class="sd">&quot;&quot;&quot;Returns the supplied number squared&quot;&quot;&quot;</span>
 <span class="gp">   ...: </span>    <span class="k">return</span> <span class="n">number</span> <span class="o">*</span> <span class="n">number</span>
+<span class="gp">   ...: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">   ...: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="s2">&quot;squared is&quot;</span><span class="p">,</span> <span class="n">square</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
 <span class="gp">   ...: </span>
-
-<span class="gp">In [2]: </span><span class="n">help</span><span class="p">(</span><span class="n">square</span><span class="p">)</span>
-<span class="go">Help on function square in module __main__:</span>
-
-<span class="go">square(number)</span>
-<span class="go">    Returns the supplied number squared</span>
-
-
-<span class="gp">In [3]: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">4</span>
-
-<span class="gp">In [4]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="s2">&quot;squared is&quot;</span><span class="p">,</span> <span class="n">square</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
 <span class="go">4 squared is 16</span>
 </pre></div>
 </div>
@@ -345,11 +338,11 @@ Let’s look at an example.</p>
 <h3>Creating arrays of numbers between two values<a class="headerlink" href="#creating-arrays-of-numbers-between-two-values" title="Permalink to this headline">¶</a></h3>
 <p>As you may recall from <a class="reference external" href="intro-numpy.html#useful-functions">this week’s lesson on using NumPy</a>, we can use NumPy to create NumPy arrays of values between a starting and ending value.
 Consider the simple example below using the <cite>np.linspace()</cite> method:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [5]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [2]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
-<span class="gp">In [6]: </span><span class="n">numberArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="gp">In [3]: </span><span class="n">numberArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
 
-<span class="gp">In [7]: </span><span class="k">print</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)</span>
+<span class="gp">In [4]: </span><span class="k">print</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)</span>
 <span class="go">[ 0.   0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1. ]</span>
 </pre></div>
 </div>
@@ -361,13 +354,13 @@ This is probably the easiest way to create most arrays of this kind.</p>
 <p>This is mostly a reminder of something we had seen <a class="reference external" href="https://geo-python.github.io/2017/lessons/L2/python-basic-elements.html#lists-and-indices">back in Lesson 2 of the Geo-Python part of the course</a>.
 When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-10 Ma by 0.1 Ma.
 You can see an example below, which assumes you have created the NumPy array <cite>numberArray</cite> as shown the previous hint:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [8]: </span><span class="n">dummyList</span> <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [5]: </span><span class="n">dummyList</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="gp">In [9]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)):</span>
+<span class="gp">In [6]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)):</span>
 <span class="gp">   ...: </span>    <span class="n">dummyList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numberArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span><span class="p">)</span>
 <span class="gp">   ...: </span>
 
-<span class="gp">In [10]: </span><span class="k">print</span><span class="p">(</span><span class="n">dummyList</span><span class="p">)</span>
+<span class="gp">In [7]: </span><span class="k">print</span><span class="p">(</span><span class="n">dummyList</span><span class="p">)</span>
 <span class="go">[0.0, 0.010000000000000002, 0.040000000000000008, 0.090000000000000024, 0.16000000000000003, 0.25, 0.3600000000000001, 0.4900000000000001, 0.64000000000000012, 0.81000000000000005, 1.0]</span>
 </pre></div>
 </div>
@@ -381,11 +374,11 @@ The main reason for using a <code class="docutils literal notranslate"><span cla
 For example, it is a good idea to create a list for the sample names and for the plot item colors before the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop so that you can use those values within the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
 Consider the example below.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="go"># Make some useful lists</span>
-<span class="gp">In [11]: </span><span class="n">sampleNames</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sample1&#39;</span><span class="p">,</span> <span class="s1">&#39;sample2&#39;</span><span class="p">,</span> <span class="s1">&#39;sample3&#39;</span><span class="p">]</span>
+<span class="gp">In [8]: </span><span class="n">sampleNames</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sample1&#39;</span><span class="p">,</span> <span class="s1">&#39;sample2&#39;</span><span class="p">,</span> <span class="s1">&#39;sample3&#39;</span><span class="p">]</span>
 
-<span class="gp">In [12]: </span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">]</span>
+<span class="gp">In [9]: </span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">]</span>
 
-<span class="gp">In [13]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sampleNames</span><span class="p">)):</span>
+<span class="gp">In [10]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sampleNames</span><span class="p">)):</span>
 <span class="gp">   ....: </span>    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>   <span class="c1"># Random data to plot</span>
 <span class="gp">   ....: </span>    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="gp">   ....: </span>    <span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># More random data to plot</span>
@@ -422,7 +415,7 @@ Consider the example below.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
-      Last updated on Oct 27, 2018.
+      Last updated on Oct 28, 2018.
 
     </p>
   </div>
