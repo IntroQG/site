@@ -41,15 +41,16 @@ Yeah, a docstring.
 *Docstrings* are short texts that describe a function, script, or other code component in Python.
 They are generally given on the line below the ``def`` statement for a function or at the top of a script file, and start and end with triple quotes ``"""``.
 The docstring is helpful because you can use the ``help()`` function to find out how a function works, for example.
-Let's look at an example.
+Since we're using Jupyter notebooks, we can take advantage of a special ``?`` feature that can provide even a bit more information than the ``help()`` function.
+To use the ``?``, you simply add it after the name of some function, variable, or other object.
+Let's check out an example.
 
 .. ipython:: python
 
     def square(number):
         """Returns the supplied number squared"""
         return number * number
-    
-    help(square)
+    square?
     number = 4
     print(number, "squared is", square(number))
 
