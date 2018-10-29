@@ -1,5 +1,5 @@
-# introqg.github
+# qg
 
-[![Build Status](https://travis-ci.org/IntroQG/introqg.github.svg?branch=master)](https://travis-ci.org/IntroQG/introqg.github)
+[![Build Status](https://travis-ci.org/IntroQG/qg.svg?branch=master)](https://travis-ci.org/IntroQG/qg)
 
 Repository for the Introduction to Quantitative Geology website
