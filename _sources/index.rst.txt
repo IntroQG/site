@@ -85,6 +85,18 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
 
 .. toctree::
     :maxdepth: 2
+    :caption: Lesson 1
+
+    lessons/L1/overview
+    notebooks/L1/numpy.ipynb
+    lessons/L1/basic-terms
+    lessons/L1/uncertainty
+    lessons/L1/reporting-measurements
+    lessons/L1/normal-distribution
+    lessons/L1/exercise-1
+
+.. toctree::
+    :maxdepth: 2
     :caption: Final report
 
     final-paper/final-report
