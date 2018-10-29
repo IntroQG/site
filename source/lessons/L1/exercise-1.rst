@@ -80,7 +80,7 @@ Below is an example of the type of plot you should produce for Problem 2.
 Creating arrays of numbers between two values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As you may recall from `this week's lesson on using NumPy <intro-numpy.html#useful-functions>`__, we can use NumPy to create NumPy arrays of values between a starting and ending value.
+As you may recall from `this week's lesson on using NumPy <../../notebooks/L1/numpy.ipynb>`__, we can use NumPy to create NumPy arrays of values between a starting and ending value.
 Consider the simple example below using the `np.linspace()` method:
 
 .. ipython:: python
@@ -95,7 +95,7 @@ This is probably the easiest way to create most arrays of this kind.
 Creating and appending to lists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is mostly a reminder of something we had seen `back in Lesson 2 of the Geo-Python part of the course <https://geo-python.github.io/2017/lessons/L2/python-basic-elements.html#lists-and-indices>`__.
+This is mostly a reminder of something we had seen `back in Lesson 2 of the Geo-Python course <https://geo-python.github.io/2018/notebooks/L2/Python-basic-elements.html#Lists-and-indices>`__.
 When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-10 Ma by 0.1 Ma.
 You can see an example below, which assumes you have created the NumPy array `numberArray` as shown the previous hint:
 
