@@ -192,11 +192,11 @@ nbsphinx_prolog = r"""
     .. nbinfo::
 
         This page was generated from `{{ docname }}`__.
-        :raw-html:`<br/><a href="https://mybinder.org/v2/gh/introqg/{{ env.config.release }}/master?urlpath=lab/tree/{{ docname }}"><img alt="Binder badge" src="https://img.shields.io/badge/launch-completed%20binder-red.svg" style="vertical-align:text-bottom"></a>`
+        :raw-html:`<br/><a href="https://mybinder.org/v2/gh/introqg/qg/master?urlpath=lab/tree/{{ docname }}"><img alt="Binder badge" src="https://img.shields.io/badge/launch-completed%20binder-red.svg" style="vertical-align:text-bottom"></a>`
         :raw-html:`<a href="https://mybinder.org/v2/gh/introqg/notebooks/master?urlpath=lab/tree/{{ docname2 }}"><img alt="Binder badge" src="https://img.shields.io/badge/launch-lesson%20binder-red.svg" style="vertical-align:text-bottom"></a>`
-        :raw-html:`<a href="https://notebooks.csc.fi/#/blueprint/d71cd2d26d924f48820dc22b67a87d8e"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a>`
+        :raw-html:`<a href="https://notebooks.csc.fi/#/blueprint/80cecffe7ad84d6d94665f39887b3a32"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a>`
 
-    __ https://github.com/Geo-Python/{{ env.config.release }}/blob/master/{{ docname }}
+    __ https://github.com/introqg/qg/blob/master/{{ docname }}
 
 .. raw:: latex
 
