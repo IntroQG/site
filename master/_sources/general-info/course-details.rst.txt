@@ -9,7 +9,7 @@ Course meetings
 - Mondays 9-12, D112, Physicum
 - Work session
 
-  - Thursday (1.11) 8-10, D112, Physicum
+  - Thursday (1.11) 8-10, A128, Chemicum
   - Wednesdays (7.11-12.12) 9-12, C129, Excatum
 
 Instructors
