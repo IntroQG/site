@@ -1,5 +1,5 @@
-Lesson 2 overview
-=================
+Lesson overview
+===============
 
 In this week's lesson we will learn two ways in which observations (data) can be compared to predictions.
 As was the case last week, we will continue to focus more on quantitative and geological concepts, rather than learning new Python skills.
