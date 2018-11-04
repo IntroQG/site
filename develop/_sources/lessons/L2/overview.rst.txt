@@ -1,4 +1,4 @@
-Lesson 9 overview
+Lesson 2 overview
 =================
 
 In this week's lesson we will learn two ways in which observations (data) can be compared to predictions.
@@ -6,7 +6,7 @@ As was the case last week, we will continue to focus more on quantitative and ge
 
 1. :doc:`Goodness-of-fit calculations <goodness-of-fit>`
 2. :doc:`Least squares regressions <least-squares>`
-3. :doc:`Exercise 9 <exercise-9>`
+3. :doc:`Exercise 2 <exercise-2>`
 
 Learning objectives
 -------------------
