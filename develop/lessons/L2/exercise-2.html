@@ -182,7 +182,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-2">Hints for Problem 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-2">Hints for Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#returning-more-than-one-value">Returning more than one value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-your-regression-lines">Plotting your regression lines</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -406,7 +410,34 @@ As you might imagine, there are similar shortcuts for subtracting (<code class="
 </div>
 <div class="section" id="hints-for-problem-2">
 <h2>Hints for Problem 2<a class="headerlink" href="#hints-for-problem-2" title="Permalink to this headline">¶</a></h2>
-<p>Hints will be added as needed.</p>
+<div class="section" id="returning-more-than-one-value">
+<h3>Returning more than one value<a class="headerlink" href="#returning-more-than-one-value" title="Permalink to this headline">¶</a></h3>
+<p>In your <code class="docutils literal notranslate"><span class="pre">linregress()</span></code> function you are asked to calculate the <em>y</em>-intercept <code class="docutils literal notranslate"><span class="pre">A</span></code> and slope <code class="docutils literal notranslate"><span class="pre">B</span></code> for the best-fit line to your temperature data.
+Ideally, this means you would have your function return more than just one value.
+This is no problem, but perhaps an example of the syntax would be helpful.
+Let’s have a look.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [18]: </span><span class="k">def</span> <span class="nf">name_split</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="gp">   ....: </span>    <span class="sd">&quot;&quot;&quot;Splits a full name into first and last names.&quot;&quot;&quot;</span>
+<span class="gp">   ....: </span>    <span class="n">first</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">   ....: </span>    <span class="n">last</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">   ....: </span>    <span class="k">return</span> <span class="n">first</span><span class="p">,</span><span class="n">last</span>
+<span class="gp">   ....: </span>
+
+<span class="gp">In [19]: </span><span class="n">boatname</span> <span class="o">=</span> <span class="s2">&quot;Boaty McBoatface&quot;</span>
+
+<span class="gp">In [20]: </span><span class="n">firstname</span><span class="p">,</span> <span class="n">lastname</span> <span class="o">=</span> <span class="n">name_split</span><span class="p">(</span><span class="n">boatname</span><span class="p">)</span>
+
+<span class="gp">In [21]: </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;The first name is &quot;</span><span class="o">+</span><span class="n">firstname</span><span class="o">+</span><span class="s2">&quot; and the last name is &quot;</span><span class="o">+</span><span class="n">lastname</span><span class="o">+</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+<span class="go">The first name is Boaty and the last name is McBoatface.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plotting-your-regression-lines">
+<h3>Plotting your regression lines<a class="headerlink" href="#plotting-your-regression-lines" title="Permalink to this headline">¶</a></h3>
+<p>The <cite>plt.plot()</cite> function requires at least one pair of (x, y) values to be able to plot a line.
+With your regression lines you have calculated the <em>y</em>-intercept <code class="docutils literal notranslate"><span class="pre">A</span></code> and slope <code class="docutils literal notranslate"><span class="pre">B</span></code>, which can be used to plot a line as long as you have some range of values for <code class="docutils literal notranslate"><span class="pre">x</span></code>.
+If you use the range of years for the <code class="docutils literal notranslate"><span class="pre">x</span></code> values, you can then use your <cite>A</cite> and <cite>B</cite> values along with those <code class="docutils literal notranslate"><span class="pre">x</span></code> values in the equation of a line to be able to plot the line location for the age range in the plot.</p>
+</div>
 </div>
 </div>
 
