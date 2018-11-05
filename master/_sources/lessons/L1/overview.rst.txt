@@ -33,7 +33,7 @@ Lesson video
     **Contents:**
 
         - `01:07 - Course overview <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=1m07s>`__
-        - `10:12 - Overview of Lesson 8 <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=10m12s>`__
+        - `10:12 - Overview of Lesson 1 <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=10m12s>`__
         - `12:52 - A few more useful NumPy functions <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=12m52s>`__
         - `28:16 - Basic geostatistics <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=28m16s>`__
-        - `56:45 - Exercise 8 preview <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=56m45s>`__
+        - `56:45 - Exercise 1 preview <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=56m45s>`__

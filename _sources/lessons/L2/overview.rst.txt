@@ -20,17 +20,17 @@ After completing this week's lesson you should be able to:
 Lesson video
 ------------
 
-.. admonition:: Lesson 9 - Comparing predictions to observed values
+.. admonition:: Lesson 2 - Comparing predictions to observed values
 
     .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/J9qRhAchO44" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lsb81SpPRjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
 
     **Contents:**
 
-        - `02:34 - Lesson 9 introduction <https://www.youtube.com/watch?v=J9qRhAchO44&t=2m34s>`__
-        - `03:18 - Goodness-of-fit calculations <https://www.youtube.com/watch?v=J9qRhAchO44&t=3m18s>`__
-        - `17:04 - Least squares regressions <https://www.youtube.com/watch?v=J9qRhAchO44&t=17m04s>`__
-        - `24:41 - Exercise 9 preview <https://www.youtube.com/watch?v=J9qRhAchO44&t=24m41s>`__
+        - `02:26 - Overview of Lesson 2 <https://www.youtube.com/watch?v=lsb81SpPRjs&t=2m26s>`__
+        - `03:52 - Goodness-of-fit calculations <https://www.youtube.com/watch?v=lsb81SpPRjs&t=3m52s>`__
+        - `13:58 - Least squares regressions <https://www.youtube.com/watch?v=lsb81SpPRjs&t=13m58s>`__
+        - `23:58 - Exercise 9 preview <https://www.youtube.com/watch?v=lsb81SpPRjs&t=23m58s>`__
