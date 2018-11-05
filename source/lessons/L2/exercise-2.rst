@@ -96,4 +96,29 @@ As you might imagine, there are similar shortcuts for subtracting (``-=``), mult
 Hints for Problem 2
 -------------------
 
-Hints will be added as needed.
+Returning more than one value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In your ``linregress()`` function you are asked to calculate the *y*-intercept ``A`` and slope ``B`` for the best-fit line to your temperature data.
+Ideally, this means you would have your function return more than just one value.
+This is no problem, but perhaps an example of the syntax would be helpful.
+Let's have a look.
+
+.. ipython:: python
+
+    def name_split(name):
+        """Splits a full name into first and last names."""
+        first = name.split()[0]
+        last = name.split()[1]
+        return first,last
+
+    boatname = "Boaty McBoatface"
+    firstname, lastname = name_split(boatname)
+    print("The first name is "+firstname+" and the last name is "+lastname+".")
+
+Plotting your regression lines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The `plt.plot()` function requires at least one pair of (x, y) values to be able to plot a line.
+With your regression lines you have calculated the *y*-intercept ``A`` and slope ``B``, which can be used to plot a line as long as you have some range of values for ``x``.
+If you use the range of years for the ``x`` values, you can then use your `A` and `B` values along with those ``x`` values in the equation of a line to be able to plot the line location for the age range in the plot.
