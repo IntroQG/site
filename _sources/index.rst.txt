@@ -97,6 +97,15 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
 
 .. toctree::
     :maxdepth: 2
+    :caption: Lesson 2
+
+    lessons/L2/overview
+    lessons/L2/goodness-of-fit
+    lessons/L2/least-squares
+    lessons/L2/exercise-2
+
+.. toctree::
+    :maxdepth: 2
     :caption: Final report
 
     final-paper/final-report

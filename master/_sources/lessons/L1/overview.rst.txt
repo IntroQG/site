@@ -20,8 +20,8 @@ After completing this week's lesson you should be able to:
 - Understand some basic statistical terms and how they are defined
 - Write your own functions for basic (geo)statistical analysis
 
-Lecture
--------
+Lesson video
+------------
 
 .. admonition:: Lesson 1 - Basic geostatistics
 

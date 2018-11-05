@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-92357604-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Exercise 2 &mdash; IntroQG 2018 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Final paper information" href="../../final-paper/final-report.html" />
+    <link rel="prev" title="Least squares regressions" href="least-squares.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="../../_static/HY-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/course-details.html">Course details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-meetings">Course meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-website">Course website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#textbooks">Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/grading.html">Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/grading.html#general-grading-breakdown">General grading breakdown</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L1/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/L1/numpy.html">A few more useful NumPy functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/L1/numpy.html#Getting-started">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-number-of-increments">Defining arrays with a fixed number of increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-increment-between-values">Defining arrays with a fixed increment between values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/basic-terms.html">Basic statistical terms and concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/basic-terms.html#populations-and-samples">Populations and samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/uncertainty.html">Uncertainty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/uncertainty.html#some-general-uncertainty-concepts">Some general uncertainty concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/reporting-measurements.html">Reporting measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#reporting-a-measured-value">Reporting a measured value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#standard-deviation-versus-standard-error">Standard deviation versus standard error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/exercise-1.html">Exercise 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#general-hints-for-exercise-1">General hints for Exercise 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#sigma-notation">Sigma notation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-1">Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#function-docstrings">Function docstrings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#example-plot-for-problem-2">Example plot for Problem 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#plotting-similar-items-using-a-for-loop">Plotting similar items using a for loop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 2</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-hints-for-exercise-2">General hints for Exercise 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#formatting-numbers-in-python">Formatting numbers in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-1">Hints for Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-summations">Calculating summations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-2">Hints for Problem 2</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#introduction-2-4-paragraphs">Introduction (2-4 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#geological-background-1-3-paragraphs">Geological background (1-3 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#methods-at-least-1-paragraph">Methods (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#results-at-least-1-paragraph">Results (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#discussion-several-paragraphs">Discussion (several paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#conclusions-summary-1-2-paragraphs">Conclusions/Summary (1-2 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#appendices">Appendices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#grading-rubric">Grading rubric</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/articles.html">Scientific articles for the final paper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#general-thermochronology-papers">General thermochronology papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#himalaya-review-papers">Himalaya review papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#bhutan-himalaya-papers">Bhutan Himalaya papers</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Exercise 2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/lessons/L2/exercise-2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+
+
+
+
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="exercise-2">
+<h1>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Please note that <strong>we provide assignment feedback only for students enrolled in the course at the University of Helsinki</strong>.</p>
+</div>
+<div class="admonition-start-your-assignment admonition">
+<p class="first admonition-title">Start your assignment</p>
+<p>You can start working on your copy of Exercise 2 by <a class="reference external" href="https://classroom.github.com/a/CvgkRnlR">accepting the GitHub Classroom assignment</a>.</p>
+<p class="last"><strong>Exercise 2 is due by the start of lecture in week 3</strong>.</p>
+</div>
+<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2018/Exercise-2">Exercise 2 in the course GitHub repository</a> (does not require logging in).
+Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
+<div class="section" id="general-hints-for-exercise-2">
+<h2>General hints for Exercise 2<a class="headerlink" href="#general-hints-for-exercise-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="formatting-numbers-in-python">
+<h3>Formatting numbers in Python<a class="headerlink" href="#formatting-numbers-in-python" title="Permalink to this headline">¶</a></h3>
+<p>As you may have noticed, the numbers you add to your plot using the <code class="docutils literal notranslate"><span class="pre">plt.text()</span></code> command look kind of ugly with so many digits after the decimal place.
+You can make them look a bit nicer by rounding them when you call the <code class="docutils literal notranslate"><span class="pre">plt.text()</span></code> command.
+This is called <em>formatted output</em> in Python, and it is nice not only because it can make your text easier to read, but also because the formatting does not change the data values themselves, only their display.
+To help you in formatting your output for your plots, here are some examples of how the output formatting works.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="gp">In [2]: </span><span class="n">pi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+
+<span class="gp">In [3]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The value of pi is&#39;</span><span class="p">,</span> <span class="n">pi</span><span class="p">)</span>
+<span class="go">The value of pi is 3.141592653589793</span>
+
+<span class="gp">In [4]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The rounded value of pi is {0:.2f}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pi</span><span class="p">))</span>
+<span class="go">                                     The rounded value of pi is 3.14</span>
+</pre></div>
+</div>
+<p>Huh?
+Perhaps a bit more information is needed beyond the simple example above.
+Formatting text can be done in Python for any data that is a character string.
+You indicate something you would like to format by enclosing it in curly brackets <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code> <strong>within the quotation marks for the character string</strong>.
+In the example above, the <code class="docutils literal notranslate"><span class="pre">0</span></code> indicates that this is the first value you would like to format (remember, Python indexing starts at 0).
+After the <code class="docutils literal notranslate"><span class="pre">0:</span></code>, you give how you would like to format the variable.
+In this case, <code class="docutils literal notranslate"><span class="pre">.2f</span></code> indicates you want it to be displayed as a decimal (floating point) value with 2 digits after the decimal place.
+At the end of the string, after the second quotation mark, you list <code class="docutils literal notranslate"><span class="pre">.format()</span></code> with the list of variables you want formated inside the parentheses.
+With this in mind, let’s consider another example.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [5]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The sine of pi is {0:.4f}, and the cosine of pi is {1:.1f}.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="p">)))</span>
+<span class="go">The sine of pi is 0.0000, and the cosine of pi is -1.0.</span>
+
+<span class="gp">In [6]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;In scientific notation, the sine of pi is {0:.6e}. As an integer value it is {0:.0f}.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">)))</span>
+<span class="go">                                                        In scientific notation, the sine of pi is 1.224647e-16. As an integer value it is 0.</span>
+</pre></div>
+</div>
+<p>Above, you see a few additional things about string formatting.
+First, you see that you can give more than one variable to format by changing the number to the left of the <code class="docutils literal notranslate"><span class="pre">:</span></code> within the curly brackets.
+In the second case, you see that you’re able to format the same variable different ways within a single character string.
+You may not often need to do this, but it is possible.</p>
+<p>You can find much more about string formatting on the <a class="reference external" href="https://docs.python.org/3.6/library/string.html#formatstrings">Python documentation site</a>.</p>
+</div>
+</div>
+<div class="section" id="hints-for-problem-1">
+<h2>Hints for Problem 1<a class="headerlink" href="#hints-for-problem-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="calculating-summations">
+<h3>Calculating summations<a class="headerlink" href="#calculating-summations" title="Permalink to this headline">¶</a></h3>
+<p>There are several ways in which you can calculate a summation in Python, including using the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function.
+However, it is often better to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop for summing values, particularly if you are calculating values and don’t want to store their results separately from the summation.
+Perhaps an example will make this clear:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [7]: </span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+
+<span class="gp">In [8]: </span><span class="n">squaredSum</span> <span class="o">=</span> <span class="mi">0</span>       <span class="c1"># Set sum equal to zero before starting for loop</span>
+
+<span class="gp">In [9]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
+<span class="gp">   ...: </span>    <span class="n">squaredSum</span> <span class="o">=</span> <span class="n">squaredSum</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span>
+<span class="gp">   ...: </span>
+
+<span class="gp">In [10]: </span><span class="n">squaredSum</span>
+<span class="gh">Out[10]: </span><span class="go">285.0</span>
+
+<span class="gp">In [11]: </span><span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>         <span class="c1"># Sum of the list values</span>
+<span class="go">               Out[11]: 45</span>
+
+<span class="gp">In [12]: </span><span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span><span class="o">**</span><span class="mf">2.0</span>    <span class="c1"># Square of the sum of the list values, not equal to squaredSum</span>
+<span class="go">                           Out[12]: 2025.0</span>
+</pre></div>
+</div>
+<p>The point here is that in order to calculate the sum of each value squared in a Python list, you need to calculate the square of each value in the list separately, then add those together.
+You could save the squared values in a separate list and use the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function, but in this case it may be more clear and logical to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
+You may want to do something similar for calculating your chi squared values.</p>
+</div>
+<div class="section" id="shorthand-python-notation-for-adding-to-a-variable">
+<h3>Shorthand Python notation for adding to a variable<a class="headerlink" href="#shorthand-python-notation-for-adding-to-a-variable" title="Permalink to this headline">¶</a></h3>
+<p>It is extremely common to need to add to an existing variable in computer programs.
+Because of this, there is a shorthand notation in Python for just this kind of operation.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [13]: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">34</span>
+
+<span class="gp">In [14]: </span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">5</span>
+
+<span class="gp">In [15]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">39</span>
+
+<span class="gp">In [16]: </span><span class="n">number</span> <span class="o">+=</span> <span class="mi">5</span>
+
+<span class="gp">In [17]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">44</span>
+</pre></div>
+</div>
+<p>As you can see, <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">+=</span> <span class="pre">5</span></code> is exactly the same as <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">=</span> <span class="pre">number</span> <span class="pre">+</span> <span class="pre">5</span></code>, just written a bit more compactly.
+As you might imagine, there are similar shortcuts for subtracting (<code class="docutils literal notranslate"><span class="pre">-=</span></code>), multiplying (<code class="docutils literal notranslate"><span class="pre">*=</span></code>), and dividing (<code class="docutils literal notranslate"><span class="pre">/=</span></code>).</p>
+</div>
+</div>
+<div class="section" id="hints-for-problem-2">
+<h2>Hints for Problem 2<a class="headerlink" href="#hints-for-problem-2" title="Permalink to this headline">¶</a></h2>
+<p>Hints will be added as needed.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../final-paper/final-report.html" class="btn btn-neutral float-right" title="Final paper information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="least-squares.html" class="btn btn-neutral" title="Least squares regressions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
+      Last updated on Nov 05, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: master
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../../2017/index.html">2017</a></dd>
+            <dd><a href="../../../develop/lessons/L2/exercise-2.html">develop</a></dd>
+            <dd><a href="exercise-2.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2018',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
