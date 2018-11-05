@@ -119,6 +119,6 @@ Let's have a look.
 Plotting your regression lines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The `plt.plot()` function requires at least one pair of (x, y) values to be able to plot a line.
+The ``plt.plot()`` function requires at least one pair of (*x*, *y*) values to be able to plot a line.
 With your regression lines you have calculated the *y*-intercept ``A`` and slope ``B``, which can be used to plot a line as long as you have some range of values for ``x``.
 If you use the range of years for the ``x`` values, you can then use your `A` and `B` values along with those ``x`` values in the equation of a line to be able to plot the line location for the age range in the plot.
