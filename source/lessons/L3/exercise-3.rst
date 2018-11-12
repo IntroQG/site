@@ -7,7 +7,7 @@ Exercise 3
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 3 by `accepting the GitHub Classroom assignment <>`__.
+    You can start working on your copy of Exercise 3 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/eu2PLdlK>`__.
 
     **Exercise 3 is due by the start of lecture in week 4**.
 
