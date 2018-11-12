@@ -15,7 +15,7 @@ You can also take a look at the open course copy of `Exercise 3 in the course Gi
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 Hints for Exercise 3
-====================
+--------------------
 
 No hints have been added yet for Exercise 3.
 Hints will be added as needed.
