@@ -39,25 +39,25 @@ Schedule
 +--------+------------+-----------------------------------+
 | Class  | Date       | Theme                             |
 +========+============+===================================+
-| **1**  | 29.10.2017 | Basic geostatistics               |
+| **1**  | 29.10.2018 | Basic geostatistics               |
 |        |            |                                   |
 +--------+------------+-----------------------------------+
-| **2**  | 5.11.2017  | Comparing predictions to          |
+| **2**  | 5.11.2018  | Comparing predictions to          |
 |        |            | observed values                   |
 +--------+------------+-----------------------------------+
-| **3**  | 12.11.2017 | The diffusion equation;           |
+| **3**  | 12.11.2018 | The diffusion equation;           |
 |        |            | Hillslope sediment transport      |
 +--------+------------+-----------------------------------+
-| **4**  | 19.11.2017 | Fluvial incision and rock uplift: |
+| **4**  | 19.11.2018 | Fluvial incision and rock uplift: |
 |        |            | The advection/wave equation       |
 +--------+------------+-----------------------------------+
-| **5**  | 26.11.2017 | Viscous flow of rock and ice:     |
+| **5**  | 26.11.2018 | Viscous flow of rock and ice:     |
 |        |            | (Non-)Newtonian flow equations    |
 +--------+------------+-----------------------------------+
-| **6**  | 3.12.2017  | Quantitative thermochronology:    |
+| **6**  | 3.12.2018  | Quantitative thermochronology:    |
 |        |            | Linking ages to processes I       |
 +--------+------------+-----------------------------------+
-| **7**  | 10.12.2017 | Quantitative thermochronology:    |
+| **7**  | 10.12.2018 | Quantitative thermochronology:    |
 |        |            | Linking ages to processes II      |
 +--------+------------+-----------------------------------+
 
@@ -103,6 +103,14 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
     lessons/L2/goodness-of-fit
     lessons/L2/least-squares
     lessons/L2/exercise-2
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 3
+
+    lessons/L3/overview
+    lessons/L3/solving-diffusion
+    lessons/L3/exercise-3
 
 .. toctree::
     :maxdepth: 2
