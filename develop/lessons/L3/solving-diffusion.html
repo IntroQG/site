@@ -1,0 +1,550 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-92357604-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Solving the diffusion equation &mdash; IntroQG 2018 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Exercise 3" href="exercise-3.html" />
+    <link rel="prev" title="Lesson 3 overview" href="overview.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="../../_static/HY-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/course-details.html">Course details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-meetings">Course meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-website">Course website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#textbooks">Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/grading.html">Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/grading.html#general-grading-breakdown">General grading breakdown</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L1/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/L1/numpy.html">A few more useful NumPy functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/L1/numpy.html#Getting-started">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-number-of-increments">Defining arrays with a fixed number of increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-increment-between-values">Defining arrays with a fixed increment between values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/basic-terms.html">Basic statistical terms and concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/basic-terms.html#populations-and-samples">Populations and samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/uncertainty.html">Uncertainty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/uncertainty.html#some-general-uncertainty-concepts">Some general uncertainty concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/reporting-measurements.html">Reporting measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#reporting-a-measured-value">Reporting a measured value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#standard-deviation-versus-standard-error">Standard deviation versus standard error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/exercise-1.html">Exercise 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#general-hints-for-exercise-1">General hints for Exercise 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#sigma-notation">Sigma notation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-1">Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#function-docstrings">Function docstrings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#example-plot-for-problem-2">Example plot for Problem 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#plotting-similar-items-using-a-for-loop">Plotting similar items using a for loop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L2/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L2/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L2/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L2/goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L2/least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L2/exercise-2.html">Exercise 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L2/exercise-2.html#general-hints-for-exercise-2">General hints for Exercise 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#formatting-numbers-in-python">Formatting numbers in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L2/exercise-2.html#hints-for-problem-1">Hints for Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#calculating-summations">Calculating summations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L2/exercise-2.html#hints-for-problem-2">Hints for Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#returning-more-than-one-value">Returning more than one value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#plotting-your-regression-lines">Plotting your regression lines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 3</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Lesson 3 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Solving the diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-requirements-diffusion">General requirements - diffusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hillslope-transport">Hillslope transport</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#transfer-proportional-to-gradient">Transfer proportional to gradient</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mass-conservation">Mass conservation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#diffusion-equation-for-hillslope-transport">Diffusion equation for hillslope transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#solving-the-diffusion-equation-in-steady-state">Solving the diffusion equation in steady state</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-scenario">General scenario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#applying-the-boundary-conditions">Applying the boundary conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finding-integration-constant-1">Finding integration constant 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#finding-integration-constant-2">Finding integration constant 2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#features-of-our-predictive-model">Features of our predictive model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercise-3.html">Exercise 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise-3.html#hints-for-exercise-3">Hints for Exercise 3</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#introduction-2-4-paragraphs">Introduction (2-4 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#geological-background-1-3-paragraphs">Geological background (1-3 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#methods-at-least-1-paragraph">Methods (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#results-at-least-1-paragraph">Results (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#discussion-several-paragraphs">Discussion (several paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#conclusions-summary-1-2-paragraphs">Conclusions/Summary (1-2 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#appendices">Appendices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#grading-rubric">Grading rubric</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/articles.html">Scientific articles for the final paper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#general-thermochronology-papers">General thermochronology papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#himalaya-review-papers">Himalaya review papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#bhutan-himalaya-papers">Bhutan Himalaya papers</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Solving the diffusion equation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/lessons/L3/solving-diffusion.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for the development version of IntroQG.</p>
+
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="solving-the-diffusion-equation">
+<h1>Solving the diffusion equation<a class="headerlink" href="#solving-the-diffusion-equation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Introduce the diffusion equation</li>
+<li>Find a solution for steady-state hillslope diffusion</li>
+</ul>
+</div>
+<div class="section" id="general-requirements-diffusion">
+<h2>General requirements - diffusion<a class="headerlink" href="#general-requirements-diffusion" title="Permalink to this headline">¶</a></h2>
+<p>The diffusion equation has two general requirements: Transport/transfer proportional to gradient and conservation of mass/energy.
+We expect some form of flux <span class="math notranslate nohighlight">\(\propto\)</span> gradient.</p>
+</div>
+<div class="section" id="hillslope-transport">
+<h2>Hillslope transport<a class="headerlink" href="#hillslope-transport" title="Permalink to this headline">¶</a></h2>
+<p>Consider a cross-section through a hillslope where the drainage divide (ridge crest) is at <span class="math notranslate nohighlight">\(x=0\)</span> and the river that defines the minimum elevation is at <span class="math notranslate nohighlight">\(x=L\)</span>.
+Assume the elevation of the river is equal to zero with respect to the <span class="math notranslate nohighlight">\(y\)</span> axis.</p>
+<div class="section" id="transfer-proportional-to-gradient">
+<h3>Transfer proportional to gradient<a class="headerlink" href="#transfer-proportional-to-gradient" title="Permalink to this headline">¶</a></h3>
+<p>In lecture we saw that</p>
+<div class="math notranslate nohighlight">
+\[q = -D \frac{\partial C_{\mathrm{A}}}{\partial x}\]</div>
+<p>In our case, we can say</p>
+<div class="math notranslate nohighlight">
+\[q = -\rho \kappa \frac{\partial h}{\partial x}\]</div>
+<ul class="simple">
+<li><span class="math notranslate nohighlight">\(q\)</span>: Sediment flux per unit length; mass flux [<span class="math notranslate nohighlight">\(M/L/T\)</span>]</li>
+<li><span class="math notranslate nohighlight">\(\rho\)</span>: bulk sediment density</li>
+<li><span class="math notranslate nohighlight">\(\kappa\)</span>: Sediment diffusivity [<span class="math notranslate nohighlight">\(L^{2}/T\)</span>]</li>
+<li><span class="math notranslate nohighlight">\(h\)</span>: Elevation</li>
+<li><span class="math notranslate nohighlight">\(x\)</span>: Distance from divide</li>
+</ul>
+</div>
+<div class="section" id="mass-conservation">
+<h3>Mass conservation<a class="headerlink" href="#mass-conservation" title="Permalink to this headline">¶</a></h3>
+<p>In our example in lecture we saw that</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial C_{\mathrm{A}}}{\partial t} = -\frac{\partial q}{\partial x}\]</div>
+<p>Here, we assume any change in flux results in a change in elevation.
+Consider a simple example of more material entering than leaving.
+Mathematically, change in elevation is equal to the change in flux per unit length divided by the bulk density.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial h}{\partial t} = -\frac{1}{\rho} \frac{\partial q}{\partial x}\]</div>
+<p>An alternative is to move <span class="math notranslate nohighlight">\(\rho\)</span> to the other side.</p>
+</div>
+</div>
+<div class="section" id="diffusion-equation-for-hillslope-transport">
+<h2>Diffusion equation for hillslope transport<a class="headerlink" href="#diffusion-equation-for-hillslope-transport" title="Permalink to this headline">¶</a></h2>
+<p>We can now substitute the equations above into the other.
+If we assume <span class="math notranslate nohighlight">\(\rho\)</span> is constant, they cancel and we are left with the “classical” diffusion equation.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial h}{\partial t} = \kappa \frac{\partial^{2} h}{\partial x^{2}}\]</div>
+</div>
+<div class="section" id="solving-the-diffusion-equation-in-steady-state">
+<h2>Solving the diffusion equation in steady state<a class="headerlink" href="#solving-the-diffusion-equation-in-steady-state" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-scenario">
+<h3>General scenario<a class="headerlink" href="#general-scenario" title="Permalink to this headline">¶</a></h3>
+<p>Assume a landscape is being uplifted at a rate <span class="math notranslate nohighlight">\(U\)</span> and a river is incising at the same rate, but opposite direction at <span class="math notranslate nohighlight">\(x=L\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial h}{\partial t} = \kappa \frac{\partial^{2} h}{\partial x^{2}} + U\]</div>
+<p>We assume we are at a steady state, so <span class="math notranslate nohighlight">\(\partial h/\partial t = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[0 = \kappa \frac{\partial^{2} h}{\partial x^{2}} + U\]</div>
+<p>At this point, since we only have derivatives with respect to <span class="math notranslate nohighlight">\(x\)</span> we can say</p>
+<div class="math notranslate nohighlight">
+\[0 = \kappa \frac{d^{2} h}{d x^{2}} + U\]</div>
+<p>Now, we can put the constants on one side:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d^{2} h}{d x^{2}} = -\frac{U}{\kappa }\]</div>
+<p>At this point, we are ready to solve the equation for <span class="math notranslate nohighlight">\(h(x)\)</span> by integrating twice.
+First integration:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\int \frac{d^{2} h}{d x^{2}}dx &amp;= -\frac{U}{\kappa} \int dx\\
+\frac{d h}{d x} &amp;= -\frac{U}{\kappa}x + c_{1}\end{split}\]</div>
+<p>Now we simply integrate a second time:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\int \frac{d h}{d x}dx &amp;= -\frac{U}{\kappa} \int x dx + c_{1} \int dx\\
+h(x) &amp;= -\frac{U}{2 \kappa}x^{2} + c_{1}x + c_{2}\end{split}\]</div>
+</div>
+<div class="section" id="applying-the-boundary-conditions">
+<h3>Applying the boundary conditions<a class="headerlink" href="#applying-the-boundary-conditions" title="Permalink to this headline">¶</a></h3>
+<p>At this point, we have a solution, but in order to use it we will need to apply boundary conditions.
+The boundary conditions will allow us to solve for <span class="math notranslate nohighlight">\(c_{1}\)</span> and <span class="math notranslate nohighlight">\(c_{2}\)</span>, the two constants of integration.
+Typically, this means that we have certain places in the solution domain where we know either the value of <span class="math notranslate nohighlight">\(h(x)\)</span> or the value of its first derivative <span class="math notranslate nohighlight">\(h'(x) = \frac{dh}{dx}\)</span>, the slope.</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">For the hillslope cross-section, are there any places where we might claim to know <span class="math notranslate nohighlight">\(h(x)\)</span> or <span class="math notranslate nohighlight">\(h'(x)\)</span>?</p>
+</div>
+</div>
+<div class="section" id="finding-integration-constant-1">
+<h3>Finding integration constant 1<a class="headerlink" href="#finding-integration-constant-1" title="Permalink to this headline">¶</a></h3>
+<p>To get this, need value of <span class="math notranslate nohighlight">\(d h/d x\)</span> at one end of the slope.
+The divide is a good choice, slope there must be 0.</p>
+<div class="math notranslate nohighlight">
+\[\left|\frac{d h}{d x}\right|_{x=0} = 0\]</div>
+<p>Plug that value in to the earlier equation for <span class="math notranslate nohighlight">\(d h / d x\)</span> and we find <span class="math notranslate nohighlight">\(c_{1} = 0\)</span>.</p>
+</div>
+<div class="section" id="finding-integration-constant-2">
+<h3>Finding integration constant 2<a class="headerlink" href="#finding-integration-constant-2" title="Permalink to this headline">¶</a></h3>
+<p>We know that <span class="math notranslate nohighlight">\(h(L) = 0\)</span>, so we plug that in.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}h(x) &amp;= -\frac{U}{2 \kappa}x^{2} + c_{2}\\
+0 &amp;= -\frac{U}{2 \kappa}L^{2} + c_{2}\\
+c_{2} &amp;= \frac{U}{2 \kappa}L^{2}\end{split}\]</div>
+<p>Plug the value for <span class="math notranslate nohighlight">\(c_{2}\)</span> in and we find.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}h(x) &amp;= -\frac{U}{2 \kappa}x^{2} + \frac{U}{2 \kappa}L^{2}\\
+h(x) &amp;= \frac{U}{2 \kappa}\left(L^{2} - x^{2} \right)\end{split}\]</div>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<ul class="last simple">
+<li>Looking at our equation for <span class="math notranslate nohighlight">\(h(x)\)</span>, what should our hillslope look like?</li>
+<li>How with the geometry of the hillslope change with the different variables?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="features-of-our-predictive-model">
+<h2>Features of our predictive model<a class="headerlink" href="#features-of-our-predictive-model" title="Permalink to this headline">¶</a></h2>
+<p>Relief: <span class="math notranslate nohighlight">\(R = \frac{U L^{2}}{2 \kappa}\)</span>.
+Relief is the difference in the elevation at the drainage divide (<span class="math notranslate nohighlight">\(h(0)\)</span>) and the river (<span class="math notranslate nohighlight">\(h(L)\)</span>).</p>
+<p>Max slope: <span class="math notranslate nohighlight">\(|\frac{\partial h}{\partial x}|_{\mathrm{max}} = \frac{U L}{\kappa}\)</span> (slope at <span class="math notranslate nohighlight">\(x = L\)</span>)</p>
+<p>Time constant: <span class="math notranslate nohighlight">\(\tau = L^{2}/\kappa\)</span> (time required for response to change)</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="exercise-3.html" class="btn btn-neutral float-right" title="Exercise 3" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overview.html" class="btn btn-neutral" title="Lesson 3 overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
+      Last updated on Nov 09, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: develop
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../../2017/index.html">2017</a></dd>
+            <dd><a href="solving-diffusion.html">develop</a></dd>
+            <dd><a href="../../../master/index.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2018',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
