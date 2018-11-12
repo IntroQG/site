@@ -7,7 +7,7 @@ There are also some web materials about how to solve the diffusion equation.
 The diffusion equation web lesson may be of interest for the exercise this week.
 As usual we will finish with the exercise for this week.
 
-1. `Natural diffusion lecture slides <../../_static/slides/L3/Natural-diffusion-lecture-slides.pdf>`__
+1. `Natural diffusion lecture slides <../../_static/slides/L3/Natural-diffusion.pdf>`__
 2. :doc:`Notes on solving the diffusion equation <solving-diffusion>` (*optional*)
 3. :doc:`Exercise 3 <exercise-3>`
 
