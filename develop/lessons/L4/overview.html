@@ -1,0 +1,478 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-92357604-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lesson 4 overview &mdash; IntroQG 2018 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Solving the advection-diffusion equation" href="solving-advection.html" />
+    <link rel="prev" title="Exercise 3" href="../L3/exercise-3.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="../../_static/HY-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/course-details.html">Course details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-meetings">Course meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-website">Course website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#textbooks">Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/grading.html">Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/grading.html#general-grading-breakdown">General grading breakdown</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L1/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/L1/numpy.html">A few more useful NumPy functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/L1/numpy.html#Getting-started">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-number-of-increments">Defining arrays with a fixed number of increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-increment-between-values">Defining arrays with a fixed increment between values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/basic-terms.html">Basic statistical terms and concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/basic-terms.html#populations-and-samples">Populations and samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/uncertainty.html">Uncertainty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/uncertainty.html#some-general-uncertainty-concepts">Some general uncertainty concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/reporting-measurements.html">Reporting measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#reporting-a-measured-value">Reporting a measured value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#standard-deviation-versus-standard-error">Standard deviation versus standard error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/exercise-1.html">Exercise 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#general-hints-for-exercise-1">General hints for Exercise 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#sigma-notation">Sigma notation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-1">Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#function-docstrings">Function docstrings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#example-plot-for-problem-2">Example plot for Problem 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#plotting-similar-items-using-a-for-loop">Plotting similar items using a for loop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L2/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L2/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L2/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L2/goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L2/least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L2/exercise-2.html">Exercise 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L2/exercise-2.html#general-hints-for-exercise-2">General hints for Exercise 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#formatting-numbers-in-python">Formatting numbers in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L2/exercise-2.html#hints-for-problem-1">Hints for Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#calculating-summations">Calculating summations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L2/exercise-2.html#hints-for-problem-2">Hints for Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#returning-more-than-one-value">Returning more than one value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L2/exercise-2.html#plotting-your-regression-lines">Plotting your regression lines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 3</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L3/overview.html">Lesson 3 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L3/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L3/solving-diffusion.html">Solving the diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#general-requirements-diffusion">General requirements - diffusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#hillslope-transport">Hillslope transport</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#transfer-proportional-to-gradient">Transfer proportional to gradient</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#mass-conservation">Mass conservation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#diffusion-equation-for-hillslope-transport">Diffusion equation for hillslope transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#solving-the-diffusion-equation-in-steady-state">Solving the diffusion equation in steady state</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#general-scenario">General scenario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#applying-the-boundary-conditions">Applying the boundary conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#finding-integration-constant-1">Finding integration constant 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#finding-integration-constant-2">Finding integration constant 2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#features-of-our-predictive-model">Features of our predictive model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L3/exercise-3.html">Exercise 3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L3/exercise-3.html#hints-for-exercise-3">Hints for Exercise 3</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 4</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lesson 4 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="solving-advection.html">Solving the advection-diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#goals-of-these-notes">Goals of these notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#advection-diffusion-equation-in-1d">Advection-diffusion equation in 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#solutions-to-the-steady-state-advection-diffusion-equation">Solutions to the steady-state advection-diffusion equation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="solving-advection.html#constant-gradient-at-surface">Constant gradient <span class="math notranslate nohighlight">\(g\)</span> at surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="solving-advection.html#constant-temperature-at">Constant temperature <span class="math notranslate nohighlight">\(T_{L}\)</span> at <span class="math notranslate nohighlight">\(z=L\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#the-peclet-number">The Peclet number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#advection-diffusion-equation-take-home-messages">Advection-diffusion equation take-home messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#caveats">Caveats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exercise-4.html">Exercise 4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exercise-4.html#hints-for-exercise-4">Hints for Exercise 4</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#introduction-2-4-paragraphs">Introduction (2-4 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#geological-background-1-3-paragraphs">Geological background (1-3 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#methods-at-least-1-paragraph">Methods (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#results-at-least-1-paragraph">Results (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#discussion-several-paragraphs">Discussion (several paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#conclusions-summary-1-2-paragraphs">Conclusions/Summary (1-2 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#appendices">Appendices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#grading-rubric">Grading rubric</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/articles.html">Scientific articles for the final paper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#general-thermochronology-papers">General thermochronology papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#himalaya-review-papers">Himalaya review papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#bhutan-himalaya-papers">Bhutan Himalaya papers</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Lesson 4 overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/lessons/L4/overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for the development version of IntroQG.</p>
+
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="lesson-4-overview">
+<h1>Lesson 4 overview<a class="headerlink" href="#lesson-4-overview" title="Permalink to this headline">¶</a></h1>
+<p>This week we encounter our second common geoscience equation, the advection equation.
+Similar to last week, we will start with a short lecture about the advection equation and its application to modelling river erosion.
+There are also some notes posted for how to solve the advection-diffusion equation, which again may be of interest for the exercise this week.
+As usual we will finish with the exercise for this week.</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="../../_static/slides/L4/Advection-lecture-slides.pdf">Advection of Earth’s surface lecture slides</a></li>
+<li><a class="reference internal" href="solving-advection.html"><span class="doc">Notes on solving the advection-diffusion equation</span></a> (<em>optional</em>)</li>
+<li><a class="reference internal" href="exercise-4.html"><span class="doc">Exercise 4</span></a></li>
+</ol>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>After completing this week’s lesson you should be able to:</p>
+<ul class="simple">
+<li>Explain the general concept of advection and how is it defined mathematically</li>
+<li>Give examples of geological processes that can be modelled using the advection equation</li>
+</ul>
+</div>
+<div class="section" id="lesson-video">
+<h2>Lesson video<a class="headerlink" href="#lesson-video" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-lesson-4-advection-of-earth-s-surface admonition">
+<p class="first admonition-title">Lesson 4 - Advection of Earth’s surface</p>
+<div class="last"><iframe width="560" height="315" src="https://www.youtube.com/embed/vL8nnN5ETN4" frameborder="0" allowfullscreen></iframe>
+<p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p></div></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="solving-advection.html" class="btn btn-neutral float-right" title="Solving the advection-diffusion equation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../L3/exercise-3.html" class="btn btn-neutral" title="Exercise 3" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
+      Last updated on Nov 19, 2018.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: develop
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../../2017/index.html">2017</a></dd>
+            <dd><a href="overview.html">develop</a></dd>
+            <dd><a href="../../../master/index.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2018',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
