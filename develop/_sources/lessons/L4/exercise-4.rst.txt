@@ -17,8 +17,18 @@ Note that you should not try to make changes to this copy of the exercise, but r
 Hints for Exercise 4
 --------------------
 
-General hints
-~~~~~~~~~~~~~
+Calculating dh/dt (see also hint below)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For the ``calculate_dhdt`` function, you should ensure the value you return is negative.
+The stream-power itself can be positive, but returning a negative value ensures the stream-power equation acts to lower the topography.
+
+.. math::
+
+    \begin{equation}
+      \Large
+       \frac{dh}{dt} = -K A^{m} S^{n}
+    \end{equation}
 
 Calculating the topography slope
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
