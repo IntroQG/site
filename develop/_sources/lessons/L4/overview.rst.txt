@@ -6,7 +6,7 @@ Similar to last week, we will start with a short lecture about the advection equ
 There are also some notes posted for how to solve the advection-diffusion equation, which again may be of interest for the exercise this week.
 As usual we will finish with the exercise for this week.
 
-1. `Advection of Earth's surface lecture slides <../../_static/slides/L4/Advection-lecture-slides.pdf>`__
+1. `Advection of Earth's surface lecture slides <../../_static/slides/L4/Advection.pdf>`__
 2. :doc:`Notes on solving the advection-diffusion equation <solving-advection>` (*optional*)
 3. :doc:`Exercise 4 <exercise-4>`
 
