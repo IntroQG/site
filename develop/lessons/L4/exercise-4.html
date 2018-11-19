@@ -390,12 +390,11 @@ Calculating the slope is not necessarily a difficult thing with NumPy, but you d
 In other words, slope is the change in elevation divided by the change in horizontal distance.
 You could calculate this by hand, but NumPy has some useful functions for this, including <code class="docutils literal notranslate"><span class="pre">np.diff</span></code>.
 Below, you can see how to use <code class="docutils literal notranslate"><span class="pre">np.diff</span></code> to calculate the channel slope.</p>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>python</p>
-<blockquote>
-<div>slope = np.diff(topography)/dx           # Calculate profile slopes; diff() calculates elevation difference between points
-slope = abs(slope)                       # Take the absolute value of the slope to avoid direction issues
-slope = np.append(slope, slope[-1])      # Append one extra slope value to be same size as the area array</div></blockquote>
-<p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">slope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">topography</span><span class="p">)</span><span class="o">/</span><span class="n">dx</span>           <span class="c1"># Calculate profile slopes; diff() calculates elevation difference between points</span>
+<span class="n">slope</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">slope</span><span class="p">)</span>                       <span class="c1"># Take the absolute value of the slope to avoid direction issues</span>
+<span class="n">slope</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">slope</span><span class="p">,</span> <span class="n">slope</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>      <span class="c1"># Append one extra slope value to be same size as the area array</span>
+</pre></div>
+</div>
 <p>Above, we use <code class="docutils literal notranslate"><span class="pre">np.diff</span></code> to calculate the slope, but since it calculates the difference between the elevation of points, it returns one less value than in <code class="docutils literal notranslate"><span class="pre">topography</span></code>.
 To account for this, we add one extra value back to the <code class="docutils literal notranslate"><span class="pre">slope</span></code> variable.</p>
 </div>

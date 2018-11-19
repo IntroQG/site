@@ -32,12 +32,11 @@ In other words, slope is the change in elevation divided by the change in horizo
 You could calculate this by hand, but NumPy has some useful functions for this, including ``np.diff``.
 Below, you can see how to use ``np.diff`` to calculate the channel slope.
 
-```python
+.. code-block:: python
 
     slope = np.diff(topography)/dx           # Calculate profile slopes; diff() calculates elevation difference between points
     slope = abs(slope)                       # Take the absolute value of the slope to avoid direction issues
     slope = np.append(slope, slope[-1])      # Append one extra slope value to be same size as the area array
-```
 
 Above, we use ``np.diff`` to calculate the slope, but since it calculates the difference between the elevation of points, it returns one less value than in ``topography``.
 To account for this, we add one extra value back to the ``slope`` variable.
