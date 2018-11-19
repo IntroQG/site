@@ -242,7 +242,11 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 4</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#hints-for-exercise-4">Hints for Exercise 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-exercise-4">Hints for Exercise 4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-hints">General hints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-the-topography-slope">Calculating the topography slope</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -374,8 +378,27 @@
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
 <div class="section" id="hints-for-exercise-4">
 <h2>Hints for Exercise 4<a class="headerlink" href="#hints-for-exercise-4" title="Permalink to this headline">¶</a></h2>
-<p>No hints have been added yet for Exercise 4.
-Hints will be added as needed.</p>
+<div class="section" id="general-hints">
+<h3>General hints<a class="headerlink" href="#general-hints" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="calculating-the-topography-slope">
+<h3>Calculating the topography slope<a class="headerlink" href="#calculating-the-topography-slope" title="Permalink to this headline">¶</a></h3>
+<p>In order to be able to calculate stream-power erosion from a river channel profile we first need to estimate both the upstream drainage area and calculate the topographic slope.
+You have hopefully already calculated the drainage area using your <code class="docutils literal notranslate"><span class="pre">drainage_area</span></code> function, and now we can turn our focus to the slope.
+Calculating the slope is not necessarily a difficult thing with NumPy, but you do need to be careful how you do it.</p>
+<p>The first thing to recognize is that the slope at any given point will simply be the difference in elevation between that point and a neighboring point divided by the horizontal distance between them.
+In other words, slope is the change in elevation divided by the change in horizontal distance.
+You could calculate this by hand, but NumPy has some useful functions for this, including <code class="docutils literal notranslate"><span class="pre">np.diff</span></code>.
+Below, you can see how to use <code class="docutils literal notranslate"><span class="pre">np.diff</span></code> to calculate the channel slope.</p>
+<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>python</p>
+<blockquote>
+<div>slope = np.diff(topography)/dx           # Calculate profile slopes; diff() calculates elevation difference between points
+slope = abs(slope)                       # Take the absolute value of the slope to avoid direction issues
+slope = np.append(slope, slope[-1])      # Append one extra slope value to be same size as the area array</div></blockquote>
+<p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a></p>
+<p>Above, we use <code class="docutils literal notranslate"><span class="pre">np.diff</span></code> to calculate the slope, but since it calculates the difference between the elevation of points, it returns one less value than in <code class="docutils literal notranslate"><span class="pre">topography</span></code>.
+To account for this, we add one extra value back to the <code class="docutils literal notranslate"><span class="pre">slope</span></code> variable.</p>
+</div>
 </div>
 </div>
 
