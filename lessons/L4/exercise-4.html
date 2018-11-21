@@ -243,8 +243,10 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 4</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#hints-for-exercise-4">Hints for Exercise 4</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#calculating-dh-dt-see-also-hint-below">Calculating dh/dt (see also hint below)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#calculating-the-topography-slope">Calculating the topography slope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p1-calculating-dh-dt-see-also-hint-below">P1: Calculating dh/dt (see also hint below)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p1-calculating-the-topography-slope">P1: Calculating the topography slope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p2-passing-returning-figure-objects">P2: Passing/returning figure objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#p2-units">P2: Units</a></li>
 </ul>
 </li>
 </ul>
@@ -375,8 +377,8 @@
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
 <div class="section" id="hints-for-exercise-4">
 <h2>Hints for Exercise 4<a class="headerlink" href="#hints-for-exercise-4" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="calculating-dh-dt-see-also-hint-below">
-<h3>Calculating dh/dt (see also hint below)<a class="headerlink" href="#calculating-dh-dt-see-also-hint-below" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="p1-calculating-dh-dt-see-also-hint-below">
+<h3>P1: Calculating dh/dt (see also hint below)<a class="headerlink" href="#p1-calculating-dh-dt-see-also-hint-below" title="Permalink to this headline">¶</a></h3>
 <p>For the <code class="docutils literal notranslate"><span class="pre">calculate_dhdt</span></code> function, you should ensure the value you return is negative.
 The stream-power itself can be positive, but returning a negative value ensures the stream-power equation acts to lower the topography.</p>
 <div class="math notranslate nohighlight">
@@ -385,8 +387,8 @@ The stream-power itself can be positive, but returning a negative value ensures 
    \frac{dh}{dt} = -K A^{m} S^{n}
 \end{equation}\]</div>
 </div>
-<div class="section" id="calculating-the-topography-slope">
-<h3>Calculating the topography slope<a class="headerlink" href="#calculating-the-topography-slope" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="p1-calculating-the-topography-slope">
+<h3>P1: Calculating the topography slope<a class="headerlink" href="#p1-calculating-the-topography-slope" title="Permalink to this headline">¶</a></h3>
 <p>In order to be able to calculate stream-power erosion from a river channel profile we first need to estimate both the upstream drainage area and calculate the topographic slope.
 You have hopefully already calculated the drainage area using your <code class="docutils literal notranslate"><span class="pre">drainage_area</span></code> function, and now we can turn our focus to the slope.
 Calculating the slope is not necessarily a difficult thing with NumPy, but you do need to be careful how you do it.</p>
@@ -401,6 +403,24 @@ Below, you can see how to use <code class="docutils literal notranslate"><span c
 </div>
 <p>Above, we use <code class="docutils literal notranslate"><span class="pre">np.diff</span></code> to calculate the slope, but since it calculates the difference between the elevation of points, it returns one less value than in <code class="docutils literal notranslate"><span class="pre">topography</span></code>.
 To account for this, we add one extra value back to the <code class="docutils literal notranslate"><span class="pre">slope</span></code> variable.</p>
+</div>
+<div class="section" id="p2-passing-returning-figure-objects">
+<h3>P2: Passing/returning figure objects<a class="headerlink" href="#p2-passing-returning-figure-objects" title="Permalink to this headline">¶</a></h3>
+<p>When using functions with figures, it is necessary to pass the information about the figure as parameters when using any functions that update the figure.
+In other words, the functions will need things related to the figure in order to update them.
+For example, in the <code class="docutils literal notranslate"><span class="pre">update_figure</span></code> function you can see that <code class="docutils literal notranslate"><span class="pre">ax1</span></code> and <code class="docutils literal notranslate"><span class="pre">plot1</span></code> are given as values in the list of parameters used by the function.
+This is because the <code class="docutils literal notranslate"><span class="pre">ax1</span></code> and <code class="docutils literal notranslate"><span class="pre">plot1</span></code> data are updated within the function (as are <code class="docutils literal notranslate"><span class="pre">time_text</span></code> and <code class="docutils literal notranslate"><span class="pre">elev_text</span></code>).
+Likewise, the updated <code class="docutils literal notranslate"><span class="pre">plot1</span></code> object is returned.</p>
+<p>When you add the second subplot, you will need to be sure that any function that need the plot information has that information passed in and/or returned.
+This means you need to modify not only the <code class="docutils literal notranslate"><span class="pre">update_figure</span></code> function, but also make sure you update the list of variables passed to that function where the matplotlib <code class="docutils literal notranslate"><span class="pre">animation.FuncAnimation</span></code> function is called near the end of the <code class="docutils literal notranslate"><span class="pre">stream_power</span></code> function.
+Specifically, anything you pass into <code class="docutils literal notranslate"><span class="pre">update_figure</span></code> will need to be in the list of variables <code class="docutils literal notranslate"><span class="pre">fargs</span></code> in the call of <code class="docutils literal notranslate"><span class="pre">animation.FuncAnimation</span></code>.
+<code class="docutils literal notranslate"><span class="pre">fargs</span></code> is the list of varaibles used by the function <code class="docutils literal notranslate"><span class="pre">update_figure</span></code>.</p>
+</div>
+<div class="section" id="p2-units">
+<h3>P2: Units<a class="headerlink" href="#p2-units" title="Permalink to this headline">¶</a></h3>
+<p>Just as a reminder, the values for <code class="docutils literal notranslate"><span class="pre">dhdt</span></code> are m/a and the plot should have units of mm/a.
+We also want the erosion rate to plot as a positive value, rather than the negative values that <code class="docutils literal notranslate"><span class="pre">dhdt</span></code> has in the code.
+You can compensate for these differences when setting the <em>y</em> data to plot.</p>
 </div>
 </div>
 </div>
@@ -426,7 +446,7 @@ To account for this, we add one extra value back to the <code class="docutils li
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
-      Last updated on Nov 19, 2018.
+      Last updated on Nov 21, 2018.
 
     </p>
   </div>
