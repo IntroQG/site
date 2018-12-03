@@ -10,7 +10,7 @@ This will be the topic of the final two weeks of the course, as well as the :doc
 3. `Quantifying erosion with thermochronology lecture slides <../../_static/slides/L6/Quantifying-erosion-with-thermochronology-lecture-slides.pdf>`__ (not presented in class)
 4. `Overview of Exercises 6 and 7 lecture slides <../../_static/slides/L6/Intro-to-thermochronology-overview.pdf>`__
 5. :doc:`Exercise 6 <exercise-6>`
-7. :doc:`Final paper description <../../final-paper/final-report>`
+6. :doc:`Final paper description <../../final-paper/final-report>`
 
 Scientific journal articles
 ---------------------------
