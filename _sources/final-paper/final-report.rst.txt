@@ -42,7 +42,7 @@ Results (at least 1 paragraph)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - This part describes the results from your experiments (such as the exhumation rate that provide a minimum goodness-of-fit to the data).
-  Include selected figures from Exercises 13 and 14.
+  Include selected figures from Exercises 6 and 7.
   You should provide figure captions and at least 1 paragraph of text that describes each figure.
 
   .. note::
@@ -79,7 +79,7 @@ References
 Appendices
 ~~~~~~~~~~
 
-- Include a copy (copy/paste) of the Python code Exercise 14 here.
+- Include a copy (copy/paste) of the Python code Exercise 7 here.
   This can be in 8 point Courier font.
 
 Grading rubric
