@@ -5,9 +5,9 @@ This week we will be introduced to the geochronological dating method called the
 Thermochronology can be used to determine the time since rocks at the surface were at a given temperature in the Earth, and combines several of the equations we have already seen earlier in the course.
 This will be the topic of the final two weeks of the course, as well as the :doc:`final paper you will write <../../final-paper/final-report>`.
 
-1. `Basic concepts of thermochronology lecture slides <../../_static/slides/L6/Basic-concepts-of-thermochronology-lecture-slides.pdf>`__
-2. `Low-temperature thermochronology lecture slides <../../_static/slides/L6/Low-temperature-thermochronology-lecture-slides.pdf>`__ (not presented in class)
-3. `Quantifying erosion with thermochronology lecture slides <../../_static/slides/L6/Quantifying-erosion-with-thermochronology-lecture-slides.pdf>`__ (not presented in class)
+1. `Basic concepts of thermochronology lecture slides <../../_static/slides/L6/Basic-concepts-of-thermochronology.pdf>`__
+2. `Low-temperature thermochronology lecture slides <../../_static/slides/L6/Low-temperature-thermochronology.pdf>`__ (not presented in class)
+3. `Quantifying erosion with thermochronology lecture slides <../../_static/slides/L6/Quantifying-erosion-with-thermochronology.pdf>`__ (not presented in class)
 4. `Overview of Exercises 6 and 7 lecture slides <../../_static/slides/L6/Intro-to-thermochronology-overview.pdf>`__
 5. :doc:`Exercise 6 <exercise-6>`
 6. :doc:`Final paper description <../../final-paper/final-report>`
