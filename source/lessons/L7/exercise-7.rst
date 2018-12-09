@@ -7,7 +7,7 @@ Exercise 7
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 7 by `accepting the GitHub Classroom assignment <>`__.
+    You can start working on your copy of Exercise 7 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/Ftu9pJXD>`__.
 
     **Exercise 7 is due by 12:00 on Monday 17.12**.
 
