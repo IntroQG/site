@@ -35,6 +35,18 @@ Below is an example of how to remove missing data values indicated with ``-9999`
     print(ages_clean)
     print(errors_clean)
 
+Problem 1, Part 4 example plot
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Below is an example of a plot that is similar to what you should produce in Part 4 of Problem 1.
+
+.. figure:: img/Ex7-example-plot.png
+    :width: 500 px
+    :align: center
+    :alt: Example plot from Problem 1, Part 4
+
+    Figure 1. An example plot similar to that you should produce in Problem 1, Part 4.
+
 Plotting predicted ages as horizontal lines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
