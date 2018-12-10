@@ -41,14 +41,5 @@ Lesson video
 
     .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/geEUY185tlo" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zM0r6eceP00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
-
-    **Contents:**
-
-        - `02:04 - Lesson 13 overview <https://www.youtube.com/watch?v=geEUY185tlo&t=2m04s>`__
-        - `06:22 - Basic concepts of thermochronology <https://www.youtube.com/watch?v=geEUY185tlo&t=6m22s>`__
-        - `55:13 - Overview of Exercises 13 and 14 <https://www.youtube.com/watch?v=geEUY185tlo&t=55m13s>`__
-        - `1:13:10 - Preview of Exercise 13 <https://www.youtube.com/watch?v=geEUY185tlo&t=73m10s>`__
-        - `1:20:10 - Preview of Exercise 14 <https://www.youtube.com/watch?v=geEUY185tlo&t=80m10s>`__
-        - `1:21:44 - Final paper reminder <https://www.youtube.com/watch?v=geEUY185tlo&t=81m44s>`__
