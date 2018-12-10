@@ -24,7 +24,7 @@ As noted in Exercise 7, there are some missing data values for different thermoc
 These values are indicated with ``-9999`` in the data file, and in order to calculate the reduced chi-squared misfit those ``-9999`` values need to be removed.
 Below is an example of how to remove missing data values indicated with ``-9999``.
 
-.. code-block:: ipython
+.. ipython:: python
 
     import numpy as np
     ages = np.array([1.0, 3.2, -9999, 4.2, -9999, -9999])
