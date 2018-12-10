@@ -149,3 +149,4 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
 
     final-paper/final-report
     final-paper/articles
+    final-paper/template
