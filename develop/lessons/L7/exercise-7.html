@@ -310,6 +310,7 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 7</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#hints-for-exercise-7">Hints for Exercise 7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#removing-9999-age-values">Removing <code class="docutils literal notranslate"><span class="pre">-9999</span></code> age values</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#plotting-predicted-ages-as-horizontal-lines">Plotting predicted ages as horizontal lines</a></li>
 </ul>
 </li>
@@ -445,6 +446,22 @@
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
 <div class="section" id="hints-for-exercise-7">
 <h2>Hints for Exercise 7<a class="headerlink" href="#hints-for-exercise-7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="removing-9999-age-values">
+<h3>Removing <code class="docutils literal notranslate"><span class="pre">-9999</span></code> age values<a class="headerlink" href="#removing-9999-age-values" title="Permalink to this headline">¶</a></h3>
+<p>As noted in Exercise 7, there are some missing data values for different thermochronometers where an age was not calculated for a given sample.
+These values are indicated with <code class="docutils literal notranslate"><span class="pre">-9999</span></code> in the data file, and in order to calculate the reduced chi-squared misfit those <code class="docutils literal notranslate"><span class="pre">-9999</span></code> values need to be removed.
+Below is an example of how to remove missing data values indicated with <code class="docutils literal notranslate"><span class="pre">-9999</span></code>.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">ages</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="o">-</span><span class="mi">9999</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">,</span> <span class="o">-</span><span class="mi">9999</span><span class="p">,</span> <span class="o">-</span><span class="mi">9999</span><span class="p">])</span>
+<span class="n">errors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+
+<span class="n">ages_clean</span> <span class="o">=</span> <span class="n">ages</span><span class="p">[</span><span class="n">ages</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">]</span>
+<span class="n">errors_clean</span> <span class="o">=</span> <span class="n">errors</span><span class="p">[</span><span class="n">ages</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">ages_clean</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">errors_clean</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="plotting-predicted-ages-as-horizontal-lines">
 <h3>Plotting predicted ages as horizontal lines<a class="headerlink" href="#plotting-predicted-ages-as-horizontal-lines" title="Permalink to this headline">¶</a></h3>
 <p>I suggest that you add horizontal lines to your plots of the thermochronometer data to show the predicted ages you calculate.
@@ -481,7 +498,7 @@ Lists are values separated by commas within square brackets (<code class="docuti
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
-      Last updated on Dec 09, 2018.
+      Last updated on Dec 10, 2018.
 
     </p>
   </div>
