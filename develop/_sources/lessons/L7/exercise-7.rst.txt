@@ -35,6 +35,13 @@ Below is an example of how to remove missing data values indicated with ``-9999`
     print(ages_clean)
     print(errors_clean)
 
+Comparing a single predicted age to multiple measured ages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As mentioned in Part 3 of Problem 1, you need to modify the calculation of the chi-squared value to compare the list of measured ages to a single predicted age.
+The easiest way to do this is to simply pass in a single age and refer only to that value in the calculation of chi-squared.
+In other words, make sure you do not have an index used with the predicted age in the chi-squared equation in your function.
+
 Problem 1, Part 4 example plot
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
