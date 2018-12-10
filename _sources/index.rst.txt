@@ -138,7 +138,15 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
 
 .. toctree::
     :maxdepth: 2
+    :caption: Lesson 7
+
+    lessons/L7/overview
+    lessons/L7/exercise-7
+
+.. toctree::
+    :maxdepth: 2
     :caption: Final report
 
     final-paper/final-report
     final-paper/articles
+    final-paper/template
