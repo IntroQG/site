@@ -432,6 +432,11 @@
 .admonition > p:before {
     margin-right: 4px;  /* make room for the exclamation icon */
 }
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
 </style>
 <div class="section" id="content-licenses">
 <h1>Content licenses<a class="headerlink" href="#content-licenses" title="Permalink to this headline">¶</a></h1>
@@ -463,7 +468,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
-      Last updated on Oct 23, 2018.
+      Last updated on Oct 25, 2018.
 
     </p>
   </div>

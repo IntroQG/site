@@ -392,7 +392,9 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/notebooks/L1/numpy.ipynb.txt" rel="nofollow"> View page source</a>
+            
+              <a href="https://github.com/IntroQG/qg/blob/master/source/notebooks/L1/numpy.ipynb" class="fa fa-github"> Edit on GitHub</a>
+            
           
         
       </li>
@@ -466,18 +468,18 @@ div.nblast {
 
 /* input prompt */
 div.nbinput div.prompt pre {
-    color: #303F9F;
+    color: #307FC1;
 }
 
 /* output prompt */
 div.nboutput div.prompt pre {
-    color: #D84315;
+    color: #BF5B3D;
 }
 
 /* all prompts */
 div.nbinput div.prompt,
 div.nboutput div.prompt {
-    min-width: 8ex;
+    min-width: 5ex;
     padding-top: 0.4em;
     padding-right: 0.4em;
     text-align: right;
@@ -517,9 +519,9 @@ div.nboutput div.output_area {
 
 /* input area */
 div.nbinput div.input_area {
-    border: 1px solid #cfcfcf;
+    border: 1px solid #e0e0e0;
     border-radius: 2px;
-    background: #f7f7f7;
+    background: #f5f5f5;
 }
 
 /* override MathJax center alignment in output cells */
@@ -527,7 +529,7 @@ div.nboutput div[class*=MathJax] {
     text-align: left !important;
 }
 
-/* override sphinx.ext.pngmath center alignment in output cells */
+/* override sphinx.ext.imgmath center alignment in output cells */
 div.nboutput div.math p {
     text-align: left;
 }
@@ -577,6 +579,40 @@ div.nboutput div.output_area.stderr {
 .ansi-bold { font-weight: bold; }
 .ansi-underline { text-decoration: underline; }
 
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+
 /* CSS overrides for sphinx_rtd_theme */
 
 /* 24px margin */
@@ -593,6 +629,11 @@ div.nboutput div.output_area.stderr {
 .admonition > p:before {
     margin-right: 4px;  /* make room for the exclamation icon */
 }
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
 </style>
 <div class="admonition note">
 This page was generated from <a class="reference external" href="https://github.com/introqg/qg/blob/master/source/notebooks/L1/numpy.ipynb">source/notebooks/L1/numpy.ipynb</a>.
@@ -601,17 +642,12 @@ This page was generated from <a class="reference external" href="https://github.
 <span class="raw-html"><a href="https://notebooks.csc.fi/#/blueprint/80cecffe7ad84d6d94665f39887b3a32"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a></span></div>
 <div class="section" id="A-few-more-useful-NumPy-functions">
 <h1>A few more useful NumPy functions<a class="headerlink" href="#A-few-more-useful-NumPy-functions" title="Permalink to this headline">¶</a></h1>
-<p>In this course we focus more on using simple numerical models and
-solving equations, rather than on loading and manipulating data files.
-Thus, one of the things we will often need to do is create an array for
-a variable that has a range from one value to another. There are two
-handy NumPy functions we can use for this, which we introduce below.</p>
+<p>In this course we focus more on using simple numerical models and solving equations, rather than on loading and manipulating data files. Thus, one of the things we will often need to do is create an array for a variable that has a range from one value to another. There are two handy NumPy functions we can use for this, which we introduce below.</p>
 <div class="section" id="Getting-started">
 <h2>Getting started<a class="headerlink" href="#Getting-started" title="Permalink to this headline">¶</a></h2>
 <p>As always, we should start by importing NumPy.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
-<span></span>In [1]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -621,11 +657,9 @@ handy NumPy functions we can use for this, which we introduce below.</p>
 </div>
 <div class="section" id="Defining-arrays-with-a-fixed-number-of-increments">
 <h3>Defining arrays with a fixed number of increments<a class="headerlink" href="#Defining-arrays-with-a-fixed-number-of-increments" title="Permalink to this headline">¶</a></h3>
-<p>Let’s say that we want to calculate the <code class="docutils literal notranslate"><span class="pre">sin()</span></code> of a variable <code class="docutils literal notranslate"><span class="pre">x</span></code> at
-10 points from 0 to <span class="math notranslate nohighlight">\(2 \pi\)</span>. We can do this as follows.</p>
+<p>Let’s say that we want to calculate the <code class="docutils literal notranslate"><span class="pre">sin()</span></code> of a variable <code class="docutils literal notranslate"><span class="pre">x</span></code> at 10 points from 0 to <span class="math notranslate nohighlight">\(2 \pi\)</span>. We can do this as follows.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
-<span></span>In [2]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -634,8 +668,7 @@ handy NumPy functions we can use for this, which we introduce below.</p>
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
-<span></span>In [3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -652,19 +685,14 @@ handy NumPy functions we can use for this, which we introduce below.</p>
   4.1887902   4.88692191  5.58505361  6.28318531]
 </pre></div></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> is a NumPy function that will create an array that
-starts at one value, ends at another, and uses a fixed number of steps
-between the values. The general syntax is of the form</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> is a NumPy function that will create an array that starts at one value, ends at another, and uses a fixed number of steps between the values. The general syntax is of the form</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>where <code class="docutils literal notranslate"><span class="pre">start</span></code> will be the first value in the array, <code class="docutils literal notranslate"><span class="pre">stop</span></code> will be
-the last, and <code class="docutils literal notranslate"><span class="pre">num</span></code> is total number of values in the array, with steps
-that are divided equally between <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">stop</span></code>.</p>
+<p>where <code class="docutils literal notranslate"><span class="pre">start</span></code> will be the first value in the array, <code class="docutils literal notranslate"><span class="pre">stop</span></code> will be the last, and <code class="docutils literal notranslate"><span class="pre">num</span></code> is total number of values in the array, with steps that are divided equally between <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">stop</span></code>.</p>
 <p>With <code class="docutils literal notranslate"><span class="pre">x</span></code> defined, we can now move on to calculating <code class="docutils literal notranslate"><span class="pre">sin(x)</span></code>.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
-<span></span>In [4]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -673,8 +701,7 @@ that are divided equally between <code class="docutils literal notranslate"><spa
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
-<span></span>In [5]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -692,17 +719,13 @@ that are divided equally between <code class="docutils literal notranslate"><spa
   -6.42787610e-01  -2.44929360e-16]
 </pre></div></div>
 </div>
-<p>In this case, x starts at zero and goes to <span class="math notranslate nohighlight">\(2 \pi\)</span> in 10
-increments, and <code class="docutils literal notranslate"><span class="pre">y</span></code> is simply the sine function at those values of
-<code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+<p>In this case, x starts at zero and goes to <span class="math notranslate nohighlight">\(2 \pi\)</span> in 10 increments, and <code class="docutils literal notranslate"><span class="pre">y</span></code> is simply the sine function at those values of <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
 </div>
 <div class="section" id="Defining-arrays-with-a-fixed-increment-between-values">
 <h3>Defining arrays with a fixed increment between values<a class="headerlink" href="#Defining-arrays-with-a-fixed-increment-between-values" title="Permalink to this headline">¶</a></h3>
-<p>Alternatively, if we wanted to specify the size of the increments for a
-new variable <code class="docutils literal notranslate"><span class="pre">x2</span></code>, we could use the <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> function.</p>
+<p>Alternatively, if we wanted to specify the size of the increments for a new variable <code class="docutils literal notranslate"><span class="pre">x2</span></code>, we could use the <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> function.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
-<span></span>In [6]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -711,8 +734,7 @@ new variable <code class="docutils literal notranslate"><span class="pre">x2</sp
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre>
-<span></span>In [7]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -728,21 +750,12 @@ new variable <code class="docutils literal notranslate"><span class="pre">x2</sp
 [ 0.   0.5  1.   1.5  2.   2.5  3.   3.5  4.   4.5  5.   5.5  6. ]
 </pre></div></div>
 </div>
-<p>In this case, <code class="docutils literal notranslate"><span class="pre">x2</span></code> starts at zero and goes to the largest value that
-is smaller than <span class="math notranslate nohighlight">\(2 \pi\)</span> in increments of 0.5. <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> is
-similar to the <code class="docutils literal notranslate"><span class="pre">linspace()</span></code> function in the sense that it can be used
-to create arrays of values. The difference is that here we specify the
-size of the increment (or step) between values, rather than the number
-of values in the array. Thus, the syntax is</p>
+<p>In this case, <code class="docutils literal notranslate"><span class="pre">x2</span></code> starts at zero and goes to the largest value that is smaller than <span class="math notranslate nohighlight">\(2 \pi\)</span> in increments of 0.5. <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> is similar to the <code class="docutils literal notranslate"><span class="pre">linspace()</span></code> function in the sense that it can be used to create arrays of values. The difference is that here we specify the size of the increment (or step) between values, rather than the number of values in the array. Thus, the syntax is</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">step</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>where <code class="docutils literal notranslate"><span class="pre">start</span></code> will be the first value in the array, <code class="docutils literal notranslate"><span class="pre">stop</span></code> will be
-excluded from the array, and <code class="docutils literal notranslate"><span class="pre">step</span></code> is the size of the increment
-between array values. With this function, the last value in the array
-will be the largest multiple of <code class="docutils literal notranslate"><span class="pre">step</span></code> that is smaller than <code class="docutils literal notranslate"><span class="pre">stop</span></code>.</p>
-<p>Both <code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> and <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> array creation options can be
-useful in different situations.</p>
+<p>where <code class="docutils literal notranslate"><span class="pre">start</span></code> will be the first value in the array, <code class="docutils literal notranslate"><span class="pre">stop</span></code> will be excluded from the array, and <code class="docutils literal notranslate"><span class="pre">step</span></code> is the size of the increment between array values. With this function, the last value in the array will be the largest multiple of <code class="docutils literal notranslate"><span class="pre">step</span></code> that is smaller than <code class="docutils literal notranslate"><span class="pre">stop</span></code>.</p>
+<p>Both <code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> and <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> array creation options can be useful in different situations.</p>
 </div>
 </div>
 </div>
@@ -768,7 +781,7 @@ useful in different situations.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
-      Last updated on Dec 10, 2018.
+      Last updated on Dec 23, 2018.
 
     </p>
   </div>
