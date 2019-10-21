@@ -28,13 +28,30 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2017.0',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
@@ -45,21 +62,16 @@
     <link rel="prev" title="Exercise 9" href="ex-9.html" />
     <link href="../../_static/style.css" rel="stylesheet" type="text/css">
 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -273,17 +285,17 @@
 You can make them look a bit nicer by rounding them when you call the <code class="docutils literal notranslate"><span class="pre">plt.text()</span></code> command.
 This is called <em>formatted output</em> in Python, and it is nice not only because it can make your text easier to read, but also because the formatting does not change the data values themselves, only their display.
 To help you in formatting your output for your plots, here are some examples of how the output formatting works.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<pre class="literal-block">
+In [1]: import numpy as np
 
-<span class="gp">In [2]: </span><span class="n">pi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+In [2]: pi = np.pi
 
-<span class="gp">In [3]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The value of pi is&#39;</span><span class="p">,</span> <span class="n">pi</span><span class="p">)</span>
-<span class="go">The value of pi is 3.141592653589793</span>
+In [3]: print('The value of pi is', pi)
+The value of pi is 3.141592653589793
 
-<span class="gp">In [4]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The rounded value of pi is {0:.2f}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pi</span><span class="p">))</span>
-<span class="go">                                     The rounded value of pi is 3.14</span>
-</pre></div>
-</div>
+In [4]: print('The rounded value of pi is {0:.2f}'.format(pi))
+The rounded value of pi is 3.14
+</pre>
 <p>Huh?
 Perhaps a bit more information is needed beyond the simple example above.
 Formatting text can be done in Python for any data that is a character string.
@@ -293,13 +305,13 @@ After the <code class="docutils literal notranslate"><span class="pre">0:</span>
 In this case, <code class="docutils literal notranslate"><span class="pre">.2f</span></code> indicates you want it to be displayed as a decimal (floating point) value with 2 digits after the decimal place.
 At the end of the string, after the second quotation mark, you list <code class="docutils literal notranslate"><span class="pre">.format()</span></code> with the list of variables you want formated inside the parentheses.
 With this in mind, let’s consider another example.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [5]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;The sine of pi is {0:.4f}, and the cosine of pi is {1:.1f}.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="p">)))</span>
-<span class="go">The sine of pi is 0.0000, and the cosine of pi is -1.0.</span>
+<pre class="literal-block">
+In [5]: print('The sine of pi is {0:.4f}, and the cosine of pi is {1:.1f}.'.format(np.sin(pi), np.cos(pi)))
+The sine of pi is 0.0000, and the cosine of pi is -1.0.
 
-<span class="gp">In [6]: </span><span class="k">print</span><span class="p">(</span><span class="s1">&#39;In scientific notation, the sine of pi is {0:.6e}. As an integer value it is {0:.0f}.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">)))</span>
-<span class="go">                                                        In scientific notation, the sine of pi is 1.224647e-16. As an integer value it is 0.</span>
-</pre></div>
-</div>
+In [6]: print('In scientific notation, the sine of pi is {0:.6e}. As an integer value it is {0:.0f}.'.format(np.sin(pi)))
+In scientific notation, the sine of pi is 1.224647e-16. As an integer value it is 0.
+</pre>
 <p>Above, you see a few additional things about string formatting.
 First, you see that you can give more than one variable to format by changing the number to the left of the <code class="docutils literal notranslate"><span class="pre">:</span></code> within the curly brackets.
 In the second case, you see that you’re able to format the same variable different ways within a single character string.
@@ -322,24 +334,24 @@ You may not often need to do this, but it is possible.</p>
 <p>There are several ways in which you can calculate a summation in Python, including using the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function.
 However, it is often better to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop for summing values, particularly if you are calculating values and don’t want to store their results separately from the summation.
 Perhaps an example will make this clear:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [7]: </span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<pre class="literal-block">
+In [7]: numbers = [1,2,3,4,5,6,7,8,9]
 
-<span class="gp">In [8]: </span><span class="n">squaredSum</span> <span class="o">=</span> <span class="mi">0</span>       <span class="c1"># Set sum equal to zero before starting for loop</span>
+In [8]: squaredSum = 0       # Set sum equal to zero before starting for loop
 
-<span class="gp">In [9]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)):</span>
-<span class="gp">   ...: </span>    <span class="n">squaredSum</span> <span class="o">=</span> <span class="n">squaredSum</span> <span class="o">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span>
-<span class="gp">   ...: </span>
+In [9]: for i in range(len(numbers)):
+   ...:     squaredSum = squaredSum + numbers[i]**2.0
+   ...: 
 
-<span class="gp">In [10]: </span><span class="n">squaredSum</span>
-<span class="gh">Out[10]: </span><span class="go">285.0</span>
+In [10]: squaredSum
+Out[10]: 285.0
 
-<span class="gp">In [11]: </span><span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>         <span class="c1"># Sum of the list values</span>
-<span class="go">               Out[11]: 45</span>
+In [11]: sum(numbers)         # Sum of the list values
+Out[11]: 45
 
-<span class="gp">In [12]: </span><span class="nb">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span><span class="o">**</span><span class="mf">2.0</span>    <span class="c1"># Square of the sum of the list values, not equal to squaredSum</span>
-<span class="go">                           Out[12]: 2025.0</span>
-</pre></div>
-</div>
+In [12]: sum(numbers)**2.0    # Square of the sum of the list values, not equal to squaredSum
+Out[12]: 2025.0
+</pre>
 <p>The point here is that in order to calculate the sum of each value squared in a Python list, you need to calculate the square of each value in the list separately, then add those together.
 You could save the squared values in a separate list and use the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function, but in this case it may be more clear and logical to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
 You may want to do something similar for calculating your chi squared values.</p>
@@ -396,26 +408,26 @@ As mentioned, there are alternative options, but this is a clean way to read in 
 <p>Once you have read in the climate data and filled in your DataFrame that contains the seasonal average temperatures and standard deviations in temperature, you’ll want to get rid of any <code class="docutils literal notranslate"><span class="pre">nan</span></code> (not a number) values for the seasonal temperatures.
 The reason for this is that you will have problems calculating the <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code> values if there are any <code class="docutils literal notranslate"><span class="pre">nan</span></code> values.
 Consider the following example:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [18]: </span><span class="n">testArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<pre class="literal-block">
+In [18]: testArray = np.linspace(0.0, 10.0, 11)
 
-<span class="gp">In [19]: </span><span class="k">print</span><span class="p">(</span><span class="n">testArray</span><span class="p">)</span>
-<span class="go">[  0.   1.   2.   3.   4.   5.   6.   7.   8.   9.  10.]</span>
+In [19]: print(testArray)
+[ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10.]
 
-<span class="gp">In [20]: </span><span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">testArray</span><span class="p">))</span>
-<span class="go">                                                         55.0</span>
+In [20]: print(sum(testArray))
+55.0
 
-<span class="gp">In [21]: </span><span class="n">testArray</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+In [21]: testArray[4] = np.nan
 
-<span class="gp">In [22]: </span><span class="k">print</span><span class="p">(</span><span class="n">testArray</span><span class="p">)</span>
-<span class="go">[  0.   1.   2.   3.  nan   5.   6.   7.   8.   9.  10.]</span>
+In [22]: print(testArray)
+[ 0.  1.  2.  3. nan  5.  6.  7.  8.  9. 10.]
 
-<span class="gp">In [23]: </span><span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">testArray</span><span class="p">))</span>
-<span class="go">                                                         nan</span>
+In [23]: print(sum(testArray))
+nan
 
-<span class="gp">In [24]: </span><span class="k">print</span><span class="p">(</span><span class="n">testArray</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="n">testArray</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
-<span class="go">                                                             nan</span>
-</pre></div>
-</div>
+In [24]: print(testArray[4] + testArray[5])
+nan
+</pre>
 <p>As you can see, if you sum or add values containing a <code class="docutils literal notranslate"><span class="pre">nan</span></code> your sum will be <code class="docutils literal notranslate"><span class="pre">nan</span></code>.
 Unlike plotting data containing <code class="docutils literal notranslate"><span class="pre">nan</span></code> values, that is not good for sums.</p>
 </div>
@@ -426,29 +438,29 @@ What?!?
 Yeah, so it turns out that you can’t easily do math with Pandas DataFrame values, so you need to convert those values into a simpler structure.
 NumPy is the basis for the Pandas DataFrame, so it is quite easy to do this.
 Again, I’ll show an example.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [25]: </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<pre class="literal-block">
+In [25]: import pandas as pd
 
-<span class="gp">In [26]: </span><span class="n">testDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Col1&#39;</span><span class="p">,</span> <span class="s1">&#39;Col2&#39;</span><span class="p">])</span>
+In [26]: testDF = pd.DataFrame(np.random.randn(4,2),columns=['Col1', 'Col2'])
 
-<span class="gp">In [27]: </span><span class="k">print</span><span class="p">(</span><span class="n">testDF</span><span class="p">)</span>
-<span class="go">       Col1      Col2</span>
-<span class="go">0 -1.134939 -0.822510</span>
-<span class="go">1  1.149697 -0.077850</span>
-<span class="go">2 -0.200646  0.587308</span>
-<span class="go">3 -0.668424 -1.705401</span>
+In [27]: print(testDF)
+       Col1      Col2
+0  0.321886  1.290609
+1 -2.627116 -0.084084
+2  1.486261 -0.279016
+3  0.552601 -0.293273
 
-<span class="gp">In [28]: </span><span class="n">testDF</span><span class="p">[</span><span class="s1">&#39;Col1&#39;</span><span class="p">]</span>
-<span class="go">                                                                                                              Out[28]: </span>
-<span class="go">0   -1.134939</span>
-<span class="go">1    1.149697</span>
-<span class="go">2   -0.200646</span>
-<span class="go">3   -0.668424</span>
-<span class="go">Name: Col1, dtype: float64</span>
+In [28]: testDF['Col1']
+Out[28]: 
+0    0.321886
+1   -2.627116
+2    1.486261
+3    0.552601
+Name: Col1, dtype: float64
 
-<span class="gp">In [29]: </span><span class="n">testDF</span><span class="p">[</span><span class="s1">&#39;Col1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="go">                                                                                                                                                                                                           Out[29]: array([-1.13493946,  1.14969744, -0.20064573, -0.66842409])</span>
-</pre></div>
-</div>
+In [29]: testDF['Col1'].values
+Out[29]: array([ 0.32188578, -2.62711569,  1.48626057,  0.55260103])
+</pre>
 <p>As you can perhaps see, <code class="docutils literal notranslate"><span class="pre">testDF</span></code> is a basic Pandas DataFrame with two columns <code class="docutils literal notranslate"><span class="pre">Col1</span></code> and <code class="docutils literal notranslate"><span class="pre">Col2</span></code> with random values.
 Taking a single column from this DataFrame <code class="docutils literal notranslate"><span class="pre">testDF['Col1']</span></code> returns a Pandas Series.
 Alternatively, <code class="docutils literal notranslate"><span class="pre">testDF['Col1'].values</span></code> produces a NumPy array of that same data.
@@ -459,24 +471,24 @@ You will likely find that you’re not able to do your calculations of <code cla
 <p>You do not need the day and month when trying to calculate the regression lines.
 Instead, you only want the observation year.
 Assuming you have a datetime index for your data, you can get the years as follows:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [30]: </span><span class="k">print</span><span class="p">(</span><span class="n">testDF</span><span class="p">)</span>
-<span class="go">       Col1      Col2</span>
-<span class="go">0 -1.134939 -0.822510</span>
-<span class="go">1  1.149697 -0.077850</span>
-<span class="go">2 -0.200646  0.587308</span>
-<span class="go">3 -0.668424 -1.705401</span>
+<pre class="literal-block">
+In [30]: print(testDF)
+       Col1      Col2
+0  0.321886  1.290609
+1 -2.627116 -0.084084
+2  1.486261 -0.279016
+3  0.552601 -0.293273
 
-<span class="gp">In [31]: </span><span class="n">index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s1">&#39;2013&#39;</span><span class="p">,</span> <span class="s1">&#39;2016&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;AS&#39;</span><span class="p">)</span>
+In [31]: index = pd.date_range('2013', '2016', freq='AS')
 
-<span class="gp">In [32]: </span><span class="n">testDF</span> <span class="o">=</span> <span class="n">testDF</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+In [32]: testDF = testDF.set_index(index)
 
-<span class="gp">In [33]: </span><span class="k">print</span><span class="p">(</span><span class="n">testDF</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="go">DatetimeIndex([&#39;2013-01-01&#39;, &#39;2014-01-01&#39;, &#39;2015-01-01&#39;, &#39;2016-01-01&#39;], dtype=&#39;datetime64[ns]&#39;, freq=&#39;AS-JAN&#39;)</span>
+In [33]: print(testDF.index)
+DatetimeIndex(['2013-01-01', '2014-01-01', '2015-01-01', '2016-01-01'], dtype='datetime64[ns]', freq='AS-JAN')
 
-<span class="gp">In [34]: </span><span class="k">print</span><span class="p">(</span><span class="n">testDF</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
-<span class="go">                                                                                                               Int64Index([2013, 2014, 2015, 2016], dtype=&#39;int64&#39;)</span>
-</pre></div>
-</div>
+In [34]: print(testDF.index.year)
+Int64Index([2013, 2014, 2015, 2016], dtype='int64')
+</pre>
 <p>As you can see, if we add a datetime index to <code class="docutils literal notranslate"><span class="pre">testDF</span></code>, we can output the index range by typing <code class="docutils literal notranslate"><span class="pre">print(testDF.index)</span></code>.
 To get the equivalent data in years only, we print <code class="docutils literal notranslate"><span class="pre">print(testDF.index.year)</span></code>.</p>
 </div>
@@ -494,7 +506,7 @@ To get the equivalent data in years only, we print <code class="docutils literal
         <a href="../L10/overview.html" class="btn btn-neutral float-right" title="Lesson 10 overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ex-9.html" class="btn btn-neutral" title="Exercise 9" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ex-9.html" class="btn btn-neutral float-left" title="Exercise 9" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -504,7 +516,9 @@ To get the equivalent data in years only, we print <code class="docutils literal
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, David Whipp, University of Helsinki
-      Last updated on Nov 09, 2017.
+      <span class="lastupdated">
+        Last updated on Nov 09, 2017.
+      </span>
 
     </p>
   </div>
@@ -530,6 +544,10 @@ To get the equivalent data in years only, we print <code class="docutils literal
     </span>
     <div class="rst-other-versions">
         <dl>
+            <dt>Tags</dt>
+            <dd><a href="../../../2018/index.html">2018</a></dd>
+        </dl>
+        <dl>
             <dt>Branches</dt>
             <dd><a href="exercise-9-hints.html">2017</a></dd>
             <dd><a href="../../../develop/index.html">develop</a></dd>
@@ -539,36 +557,16 @@ To get the equivalent data in years only, we print <code class="docutils literal
 </div>
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2017.0',
-              LANGUAGE:'None',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

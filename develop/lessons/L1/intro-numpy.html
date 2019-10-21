@@ -28,13 +28,31 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2018',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
@@ -43,21 +61,16 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link href="../../_static/style.css" rel="stylesheet" type="text/css">
 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -486,13 +499,13 @@ Here, we willl get a sense of a few things NumPy can do.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [2]: </span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="s1">&#39;GVP-Volcano-Lat-Lon-Elev.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 
 <span class="gp">In [3]: </span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="go">[[  2.10010000e+05   5.01700000e+01   6.85000000e+00   6.00000000e+02]</span>
-<span class="go"> [  2.10020000e+05   4.57750000e+01   2.97000000e+00   1.46400000e+03]</span>
-<span class="go"> [  2.10030000e+05   4.21700000e+01   2.53000000e+00   8.93000000e+02]</span>
-<span class="go"> ..., </span>
-<span class="go"> [  3.90829000e+05  -6.41500000e+01  -5.77500000e+01   1.63000000e+03]</span>
-<span class="go"> [  3.90847000e+05  -6.20200000e+01  -5.76700000e+01   5.49000000e+02]</span>
-<span class="go"> [  6.00000000e+05   0.00000000e+00   0.00000000e+00   0.00000000e+00]]</span>
+<span class="go">[[ 2.10010e+05  5.01700e+01  6.85000e+00  6.00000e+02]</span>
+<span class="go"> [ 2.10020e+05  4.57750e+01  2.97000e+00  1.46400e+03]</span>
+<span class="go"> [ 2.10030e+05  4.21700e+01  2.53000e+00  8.93000e+02]</span>
+<span class="go"> ...</span>
+<span class="go"> [ 3.90829e+05 -6.41500e+01 -5.77500e+01  1.63000e+03]</span>
+<span class="go"> [ 3.90847e+05 -6.20200e+01 -5.76700e+01  5.49000e+02]</span>
+<span class="go"> [ 6.00000e+05  0.00000e+00  0.00000e+00  0.00000e+00]]</span>
 </pre></div>
 </div>
 <p>Again, the data above is probably not very clear at this point, but is an example of data from the Smithsonian Institution’s Global Volcanism Program. Here, we have the ID number, latitude, longitude, and elevation of Holocene volcanoes in the database.
@@ -536,7 +549,7 @@ Let’s take a copy of our data and convert our dataset into integer numbers.</p
 <span class="go">[[210010     50      6    600]</span>
 <span class="go"> [210020     45      2   1464]</span>
 <span class="go"> [210030     42      2    893]</span>
-<span class="go"> ..., </span>
+<span class="go"> ...</span>
 <span class="go"> [390829    -64    -57   1630]</span>
 <span class="go"> [390847    -62    -57    549]</span>
 <span class="go"> [600000      0      0      0]]</span>
@@ -562,11 +575,11 @@ We can explore our data more easily by using <em>index slicing</em> to extract p
 Let’s start with just the latitude and longitude for the first five rows.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [11]: </span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
 <span class="gh">Out[11]: </span><span class="go"></span>
-<span class="go">array([[ 50.17 ,   6.85 ],</span>
-<span class="go">       [ 45.775,   2.97 ],</span>
-<span class="go">       [ 42.17 ,   2.53 ],</span>
-<span class="go">       [ 38.87 ,  -4.02 ],</span>
-<span class="go">       [ 43.25 ,  10.87 ]])</span>
+<span class="go">array([[50.17 ,  6.85 ],</span>
+<span class="go">       [45.775,  2.97 ],</span>
+<span class="go">       [42.17 ,  2.53 ],</span>
+<span class="go">       [38.87 , -4.02 ],</span>
+<span class="go">       [43.25 , 10.87 ]])</span>
 </pre></div>
 </div>
 <p>Nice!
@@ -576,10 +589,8 @@ Be careful with this.
 We can also extract data for all columns without listing any index range at all.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [12]: </span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="p">:]</span>
 <span class="gh">Out[12]: </span><span class="go"></span>
-<span class="go">array([[  2.10010000e+05,   5.01700000e+01,   6.85000000e+00,</span>
-<span class="go">          6.00000000e+02],</span>
-<span class="go">       [  2.10020000e+05,   4.57750000e+01,   2.97000000e+00,</span>
-<span class="go">          1.46400000e+03]])</span>
+<span class="go">array([[2.1001e+05, 5.0170e+01, 6.8500e+00, 6.0000e+02],</span>
+<span class="go">       [2.1002e+05, 4.5775e+01, 2.9700e+00, 1.4640e+03]])</span>
 </pre></div>
 </div>
 <p>Obviously, this can be useful.</p>
@@ -588,7 +599,7 @@ We can also extract data for all columns without listing any index range at all.
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [13]: </span><span class="n">Latitude</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="gp">In [14]: </span><span class="k">print</span><span class="p">(</span><span class="n">Latitude</span><span class="p">)</span>
-<span class="go">[ 50.17   45.775  42.17  ..., -64.15  -62.02    0.   ]</span>
+<span class="go">[ 50.17   45.775  42.17  ... -64.15  -62.02    0.   ]</span>
 </pre></div>
 </div>
 <p>For many data files, this is a nice way to interact with only the data of your own interest.</p>
@@ -608,15 +619,15 @@ If we wanted to calculate the <code class="docutils literal notranslate"><span c
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [15]: </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 
 <span class="gp">In [16]: </span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="go">[ 0.          0.6981317   1.3962634   2.0943951   2.7925268   3.4906585</span>
-<span class="go">  4.1887902   4.88692191  5.58505361  6.28318531]</span>
+<span class="go">[0.         0.6981317  1.3962634  2.0943951  2.7925268  3.4906585</span>
+<span class="go"> 4.1887902  4.88692191 5.58505361 6.28318531]</span>
 
 <span class="gp">In [17]: </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
 <span class="gp">In [18]: </span><span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="go">[  0.00000000e+00   6.42787610e-01   9.84807753e-01   8.66025404e-01</span>
-<span class="go">   3.42020143e-01  -3.42020143e-01  -8.66025404e-01  -9.84807753e-01</span>
-<span class="go">  -6.42787610e-01  -2.44929360e-16]</span>
+<span class="go">[ 0.00000000e+00  6.42787610e-01  9.84807753e-01  8.66025404e-01</span>
+<span class="go">  3.42020143e-01 -3.42020143e-01 -8.66025404e-01 -9.84807753e-01</span>
+<span class="go"> -6.42787610e-01 -2.44929360e-16]</span>
 </pre></div>
 </div>
 <p>In this case, <code class="docutils literal notranslate"><span class="pre">x</span></code> starts at zero and goes to <span class="math notranslate nohighlight">\(2\pi\)</span> in 10 increments.
@@ -624,7 +635,7 @@ Alternatively, if we wanted to specify the size of the increments for a new vari
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [19]: </span><span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
 
 <span class="gp">In [20]: </span><span class="k">print</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
-<span class="go">[ 0.   0.5  1.   1.5  2.   2.5  3.   3.5  4.   4.5  5.   5.5  6. ]</span>
+<span class="go">[0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5 6. ]</span>
 </pre></div>
 </div>
 <p>In this case, <code class="docutils literal notranslate"><span class="pre">x2</span></code> starts at zero and goes to the largest value that is smaller than <span class="math notranslate nohighlight">\(2\pi\)</span> by increments of 0.5.
@@ -636,19 +647,19 @@ Both of these types of array options are useful in different situations.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [21]: </span><span class="n">doublex</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mf">2.0</span>
 
 <span class="gp">In [22]: </span><span class="k">print</span><span class="p">(</span><span class="n">doublex</span><span class="p">)</span>
-<span class="go">[  0.           1.3962634    2.7925268    4.1887902    5.58505361</span>
-<span class="go">   6.98131701   8.37758041   9.77384381  11.17010721  12.56637061]</span>
+<span class="go">[ 0.          1.3962634   2.7925268   4.1887902   5.58505361  6.98131701</span>
+<span class="go">  8.37758041  9.77384381 11.17010721 12.56637061]</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">In addition to the <em>attributes</em> we saw prevously for NumPy <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> variables, there are also many <em>methods</em> that are part of the <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> data type.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [23]: </span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="go">3.14159265359</span>
+<pre class="literal-block">
+In [23]: print(x.mean())
+3.141592653589793
 
-<span class="gp">In [24]: </span><span class="k">print</span><span class="p">(</span><span class="n">doublex</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="go">              6.28318530718</span>
-</pre></div>
-</div>
+In [24]: print(doublex.mean())
+6.283185307179586
+</pre>
 <p>No surprises here.
 If we think of <em>variables</em> as nouns, <em>methods</em> are verbs, actions for the variable values.</p>
 <div class="admonition note">
@@ -659,7 +670,7 @@ There are many other useful <code class="docutils literal notranslate"><span cla
 </li>
 <li><p class="first"><em>Methods</em> can also act on part of an array.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [25]: </span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-<span class="go">1.3962634016</span>
+<span class="go">1.3962634015954634</span>
 </pre></div>
 </div>
 </li>
@@ -679,7 +690,9 @@ There are many other useful <code class="docutils literal notranslate"><span cla
   <div role="contentinfo">
     <p>
         &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
-      Last updated on Oct 27, 2018.
+      <span class="lastupdated">
+        Last updated on Oct 25, 2018.
+      </span>
 
     </p>
   </div>
@@ -705,6 +718,10 @@ There are many other useful <code class="docutils literal notranslate"><span cla
     </span>
     <div class="rst-other-versions">
         <dl>
+            <dt>Tags</dt>
+            <dd><a href="../../../2018/lessons/L1/intro-numpy.html">2018</a></dd>
+        </dl>
+        <dl>
             <dt>Branches</dt>
             <dd><a href="../../../2017/index.html">2017</a></dd>
             <dd><a href="intro-numpy.html">develop</a></dd>
@@ -714,36 +731,16 @@ There are many other useful <code class="docutils literal notranslate"><span cla
 </div>
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'2018',
-              LANGUAGE:'None',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
