@@ -17,13 +17,13 @@ Course meetings
 Instructors
 -----------
 
-David Whipp, lead instructor
+**David Whipp**, lead instructor
 
 - Office: C417, Exactum
 - Email: firstname.lastname@helsinki.fi
 - Phone: +358 (0)2 941 51617
 
-Lotta Ylä-Mella, course assistant
+**Lotta Ylä-Mella**, course assistant
 
 - Office: C409, Exactum
 - Email: firstname.lastname@helsinki.fi (with a, not ä)
