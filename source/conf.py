@@ -47,9 +47,14 @@ extensions = [
     'IPython.sphinxext.ipython_directive'
 ]
 
-# Google Analytics ID to enable tracking of site traffic
-googleanalytics_id = "UA-92357604-2"
-googleanalytics_enabled = True
+# Google Analytics ID to enable tracking of site traffic, format overrides
+def setup(app):
+    """Insert Google Analytics tracker
+    Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
+    """
+    app.add_javascript("https://www.googletagmanager.com/gtag/js?id=UA-92357604-2")
+    app.add_javascript("google_analytics_tracker.js")
+    app.add_stylesheet('theme_overrides.css')
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -78,7 +83,6 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -88,9 +92,6 @@ import sphinx_rtd_theme
 
 html_theme = 'sphinx_rtd_theme'
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
-def setup(app):
-    app.add_stylesheet('theme_overrides.css')
 
 html_logo = 'img/HY-logo.png'
 
