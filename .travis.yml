@@ -6,7 +6,6 @@ install:
   - pip install sphinx==1.8.5 sphinx_rtd_theme nbsphinx IPython jupyter_client ipykernel
   - pip install matplotlib numpy pandas
   - pip install sphinx-versions
-  - pip install sphinxcontrib-googleanalytics
 script: sphinx-versioning build source build/html
 after_success:
   - ./push.sh
