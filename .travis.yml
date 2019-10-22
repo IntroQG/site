@@ -1,11 +1,11 @@
 language: python
 python:
-  - 3.6
+  - 3.7
 install:
   - sudo apt-get install pandoc
-  - pip install sphinx==1.7.9 sphinx_rtd_theme nbsphinx IPython jupyter_client ipykernel
-  - pip install matplotlib numpy pandas imageio
-  - pip install git+https://github.com/HTenkanen/sphinxcontrib-versioning.git
+  - pip install sphinx==1.8.5 sphinx_rtd_theme nbsphinx IPython jupyter_client ipykernel
+  - pip install matplotlib numpy pandas
+  - pip install git+https://github.com/davewhipp/sphinxcontrib-versioning.git
   - pip install sphinxcontrib-googleanalytics
 script: sphinx-versioning build source build/html
 after_success:
