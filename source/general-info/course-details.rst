@@ -6,8 +6,11 @@ Course meetings
 
 **Period II**: 28.10-9.12
 
-- Mondays 9-12, B222, Physicum
-- Work session
+- Class sessions
+
+  - Mondays 9-12, B222, Physicum
+
+- Work sessions
 
   - Tuesdays (29.10-10.12) 14-18, B119, Excatum
 
