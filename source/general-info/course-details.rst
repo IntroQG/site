@@ -4,24 +4,23 @@ Course details
 Course meetings
 ---------------
 
-**Period II**: 29.10-10.12
+**Period II**: 28.10-9.12
 
-- Mondays 9-12, D112, Physicum
+- Mondays 9-12, B222, Physicum
 - Work session
 
-  - Thursday (1.11) 8-10, A128, Chemicum
-  - Wednesdays (7.11-12.12) 9-12, C129, Excatum
+  - Tuesdays (29.10-10.12) 14-18, B119, Excatum
 
 Instructors
 -----------
 
-David Whipp, main instructor
+David Whipp, lead instructor
 
-- Office: D430, Exactum
+- Office: C417, Exactum
 - Email: firstname.lastname@helsinki.fi
 - Phone: +358 (0)2 941 51617
 
-Lotta Ylä-Mella, teaching assistant
+Lotta Ylä-Mella, course assistant
 
 Course website
 ---------------
