@@ -4,11 +4,11 @@ Course details
 Course meetings
 ---------------
 
-**Period II**: 28.10-9.12
+**Period II**
 
 - Class sessions
 
-  - Mondays 9-12, B222, Physicum
+  - Mondays (28.10-9.12) 9-12, B222, Physicum
 
 - Work sessions
 
