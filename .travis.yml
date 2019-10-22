@@ -5,7 +5,7 @@ install:
   - sudo apt-get install pandoc
   - pip install sphinx==1.8.5 sphinx_rtd_theme nbsphinx IPython jupyter_client ipykernel
   - pip install matplotlib numpy pandas
-  - pip install git+https://github.com/Smile-SA/sphinx-versions/tree/a9a3355fa9e60ef29baf53658a64d619ffc366c5
+  - pip install git+https://github.com/Smile-SA/sphinx-versions.git@refs/pull/2/merge
 script: sphinx-versioning build source build/html
 after_success:
   - ./push.sh
