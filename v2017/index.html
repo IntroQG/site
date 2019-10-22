@@ -1,0 +1,625 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction to Quantitative Geology &mdash; IntroQG 2017 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'2017',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-92357604-2"></script>
+        <script type="text/javascript" src="_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Course details" href="general-info/course-details.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="_static/QG-logo-2017.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2017
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="general-info/course-details.html">Course details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general-info/grading.html">Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 8</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/overview.html">Lesson 8 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/intro-numpy.html">Introduction to NumPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/basic-terms.html">Basic statistical terms and concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/uncertainty.html">Uncertainty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/reporting-measurements.html">Reporting measurements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/ex-8.html">Exercise 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/exercise-8-hints.html">Hints for Exercise 8</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 9</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/overview.html">Lesson 9 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/ex-9.html">Exercise 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/exercise-9-hints.html">Hints for Exercise 9</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/overview.html">Lesson 10 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/solving-diffusion.html">Solving the diffusion equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/ex-10.html">Exercise 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/exercise-10-hints.html">Hints for Exercise 10</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 11</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/overview.html">Lesson 11 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/solving-advection.html">Solving the advection-diffusion equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/ex-11.html">Exercise 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/exercise-11-hints.html">Hints for Exercise 11</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 12</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/overview.html">Lesson 12 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/viscous-flows.html">Viscous flow down an incline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/exercise-12-theory.html">Theory for Exercise 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/ex-12.html">Exercise 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/exercise-12-hints.html">Hints for Exercise 12</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 13</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/overview.html">Lesson 13 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/ex-13.html">Exercise 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/exercise-13-hints.html">Hints for Exercise 13</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 14</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/overview.html">Lesson 14 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/ex-14.html">Exercise 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/exercise-14-hints.html">Hints for Exercise 14</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="final-paper/final-report.html">Final paper information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="final-paper/articles.html">Scientific articles for the final paper</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Introduction to Quantitative Geology</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><a href="../master/index.html"><b>Warning:</b> This document is for an old version of IntroQG. The main version is master.</a></p>
+<div class="section" id="introduction-to-quantitative-geology">
+<h1>Introduction to Quantitative Geology<a class="headerlink" href="#introduction-to-quantitative-geology" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the website for the <strong>Introduction to Quantitative Geology course</strong> at the University of Helsinki.
+This course introduces students to programming in Python and how to study a handful of geoscientific problems using a bit of geology, math, and computing.
+The course is aimed at advanced undergraduate students in geology or geophysics, and this site hosts the materials for the second half of the course.
+The first half of the course is exclusively on programming in Python, and you can find those materials on the <a class="reference external" href="https://geo-python.github.io">geo-Python course website</a>.
+More info on this course can be found below.
+Enjoy!</p>
+<div class="section" id="course-goals">
+<h2>Course goals<a class="headerlink" href="#course-goals" title="Permalink to this headline">¶</a></h2>
+<p>This course aims to:</p>
+<ol class="arabic simple">
+<li>Introduce students to the Python programming language and its application to modelling Earth science data/processes</li>
+<li>Develop basic programming skills through analysis of fundamental equations used in the Earth sciences</li>
+<li>Present some established techniques for comparing geologic data to numerical model predictions</li>
+</ol>
+</div>
+<div class="section" id="course-format">
+<h2>Course format<a class="headerlink" href="#course-format" title="Permalink to this headline">¶</a></h2>
+<p>The majority of this course will be spent in front of a computer learning to program in the Python language and working on exercises related to geological processes and data.
+This year we will meet mainly in traditional lecture classrooms, but you are expected to work on your own laptop, or find a suitable substitute.
+The lecture rooms will have power available.</p>
+<p>During Teaching Period I, we will be meeting together with the Automating GIS processes course and focus on learning to program in Python.
+In Period II we will shift our focus to geological applications of the Python skills learned in Period I.</p>
+<p>The computer exercises will focus on developing basic programming skills using the Python language and applying those skills to topics from the video lecture material.
+Typical exercises will involve a brief introduction followed by topical computer-based tasks.
+At the end of the exercises, you may be asked to submit answers to relevant questions, some related plots, and/or Python codes you have written or used.
+You are encouraged to discuss and work together with other students on the laboratory exercises, however the laboratory summary write-ups that you submit must be completed individually and must clearly reflect your own work.</p>
+</div>
+<div class="section" id="schedule">
+<h2>Schedule<a class="headerlink" href="#schedule" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="22%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Class</th>
+<th class="head">Date</th>
+<th class="head">Theme</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>8</strong></td>
+<td>30.10.2017</td>
+<td>Basic geostatistics</td>
+</tr>
+<tr class="row-odd"><td><strong>9</strong></td>
+<td>6.11.2017</td>
+<td>Comparing predictions to
+observed values</td>
+</tr>
+<tr class="row-even"><td><strong>10</strong></td>
+<td>13.11.2017</td>
+<td>The diffusion equation;
+Hillslope sediment transport</td>
+</tr>
+<tr class="row-odd"><td><strong>11</strong></td>
+<td>20.11.2017</td>
+<td>Fluvial incision and rock uplift:
+The advection/wave equation</td>
+</tr>
+<tr class="row-even"><td><strong>12</strong></td>
+<td>27.11.2017</td>
+<td>Viscous flow of rock and ice:
+(Non-)Newtonian flow equations</td>
+</tr>
+<tr class="row-odd"><td><strong>13</strong></td>
+<td>4.12.2017</td>
+<td>Quantitative thermochronology:
+Linking ages to processes I</td>
+</tr>
+<tr class="row-even"><td><strong>14</strong></td>
+<td>11.12.2017</td>
+<td>Quantitative thermochronology:
+Linking ages to processes II</td>
+</tr>
+</tbody>
+</table>
+<p>For the schedule in Period I (i.e., classes 1-7), please check the <a class="reference external" href="https://geo-python.github.io">geo-Python website</a>.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition-open-access admonition">
+<p class="first admonition-title">Open access!</p>
+<p class="last">Materials for this course are <strong>open to everyone</strong>.
+In combination with the <a class="reference external" href="https://geo-python.github.io">geo-Python course</a>, we aim to share our knowledge and help people start doing reproducible science more efficiently using Python.</p>
+</div>
+<div class="admonition-teachers-use-our-stuff admonition">
+<p class="first admonition-title">Teachers: Use our stuff!</p>
+<p class="last">If you would like to use these materials as part of your own teaching or develop them further, we strongly support that.
+Please have a look at <a class="reference internal" href="general-info/licensing.html"><span class="doc">our licensing terms</span></a> about how to do so.</p>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="general-info/course-details.html">Course details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="general-info/course-details.html#course-meetings">Course meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general-info/course-details.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general-info/course-details.html#course-websites">Course websites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general-info/course-details.html#textbooks">Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="general-info/grading.html">Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="general-info/grading.html#general-grading-breakdown">General grading breakdown</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general-info/grading.html#final-project">Final project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="general-info/licensing.html">Content licenses</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Lesson 8</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/overview.html">Lesson 8 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/intro-numpy.html">Introduction to NumPy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/intro-numpy.html#downloading-and-extracting-the-data">Downloading and extracting the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/intro-numpy.html#introducing-numpy">Introducing NumPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/intro-numpy.html#useful-functions">Useful functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/basic-terms.html">Basic statistical terms and concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/basic-terms.html#populations-and-samples">Populations and samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/uncertainty.html">Uncertainty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/uncertainty.html#some-general-uncertainty-concepts">Some general uncertainty concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/reporting-measurements.html">Reporting measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/reporting-measurements.html#reporting-a-measured-value">Reporting a measured value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/reporting-measurements.html#standard-deviation-versus-standard-error">Standard deviation versus standard error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/ex-8.html">Exercise 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L8/exercise-8-hints.html">Hints for Exercise 8</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/exercise-8-hints.html#general-hints">General hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/exercise-8-hints.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L8/exercise-8-hints.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Lesson 9</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/overview.html">Lesson 9 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/ex-9.html">Exercise 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L9/exercise-9-hints.html">Hints for Exercise 9</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L9/exercise-9-hints.html#general-hints">General hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L9/exercise-9-hints.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L9/exercise-9-hints.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Lesson 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/overview.html">Lesson 10 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/overview.html#learning-objectives">Learning objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/solving-diffusion.html">Solving the diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/solving-diffusion.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/solving-diffusion.html#general-requirements-diffusion">General requirements - diffusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/solving-diffusion.html#hillslope-transport">Hillslope transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/solving-diffusion.html#diffusion-equation-for-hillslope-transport">Diffusion equation for hillslope transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/solving-diffusion.html#solving-the-diffusion-equation-in-steady-state">Solving the diffusion equation in steady state</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/solving-diffusion.html#features-of-our-predictive-model">Features of our predictive model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/ex-10.html">Exercise 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L10/exercise-10-hints.html">Hints for Exercise 10</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/exercise-10-hints.html#general-hints">General hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/exercise-10-hints.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L10/exercise-10-hints.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Lesson 11</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/overview.html">Lesson 11 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/overview.html#learning-objectives">Learning objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/solving-advection.html">Solving the advection-diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/solving-advection.html#goals-of-these-notes">Goals of these notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/solving-advection.html#advection-diffusion-equation-in-1d">Advection-diffusion equation in 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/solving-advection.html#solutions-to-the-steady-state-advection-diffusion-equation">Solutions to the steady-state advection-diffusion equation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/solving-advection.html#the-peclet-number">The Peclet number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/solving-advection.html#advection-diffusion-equation-take-home-messages">Advection-diffusion equation take-home messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/solving-advection.html#caveats">Caveats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/ex-11.html">Exercise 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L11/exercise-11-hints.html">Hints for Exercise 11</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/exercise-11-hints.html#general-hints">General hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/exercise-11-hints.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L11/exercise-11-hints.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Lesson 12</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/overview.html">Lesson 12 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/overview.html#learning-objectives">Learning objectives</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/viscous-flows.html">Viscous flow down an incline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/viscous-flows.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/viscous-flows.html#linear-viscous-flow">Linear viscous flow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/viscous-flows.html#viscous-flow-take-home-messages">Viscous flow take-home messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/viscous-flows.html#caveats">Caveats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/exercise-12-theory.html">Theory for Exercise 12</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/exercise-12-theory.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/exercise-12-theory.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/ex-12.html">Exercise 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L12/exercise-12-hints.html">Hints for Exercise 12</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/exercise-12-hints.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L12/exercise-12-hints.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Lesson 13</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/overview.html">Lesson 13 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L13/overview.html#scientific-journal-articles">Scientific journal articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L13/overview.html#additional-materials">Additional materials</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/ex-13.html">Exercise 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L13/exercise-13-hints.html">Hints for Exercise 13</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L13/exercise-13-hints.html#general-hints">General hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L13/exercise-13-hints.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L13/exercise-13-hints.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Lesson 14</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/overview.html">Lesson 14 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L14/overview.html#scientific-journal-articles">Scientific journal articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L14/overview.html#additional-materials">Additional materials</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/ex-14.html">Exercise 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/L14/exercise-14-hints.html">Hints for Exercise 14</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L14/exercise-14-hints.html#general-hints">General hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L14/exercise-14-hints.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/L14/exercise-14-hints.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="final-paper/final-report.html">Final paper information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#introduction-2-4-paragraphs">Introduction (2-4 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#geological-background-1-3-paragraphs">Geological background (1-3 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#methods-at-least-1-paragraph">Methods (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#results-at-least-1-paragraph">Results (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#discussion-several-paragraphs">Discussion (several paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#conclusions-summary-1-2-paragraphs">Conclusions/Summary (1-2 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#appendices">Appendices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/final-report.html#grading-rubric">Grading rubric</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="final-paper/articles.html">Scientific articles for the final paper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/articles.html#general-thermochronology-papers">General thermochronology papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/articles.html#himalaya-review-papers">Himalaya review papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="final-paper/articles.html#bhutan-himalaya-papers">Bhutan Himalaya papers</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="general-info/course-details.html" class="btn btn-neutral float-right" title="Course details" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, David Whipp, University of Helsinki
+      <span class="lastupdated">
+        Last updated on Dec 03, 2017.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: v2017
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Tags</dt>
+            <dd><a href="index.html">v2017</a></dd>
+            <dd><a href="../v2018/index.html">v2018</a></dd>
+        </dl>
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../develop/index.html">develop</a></dd>
+            <dd><a href="../master/index.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

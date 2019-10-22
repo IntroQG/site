@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hints for Exercise 8 &mdash; IntroQG 2017 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2017',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-92357604-2"></script>
+        <script type="text/javascript" src="../../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lesson 9 overview" href="../L9/overview.html" />
+    <link rel="prev" title="Exercise 8" href="ex-8.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="../../_static/QG-logo-2017.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2017
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/course-details.html">Course details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/grading.html">Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 8</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Lesson 8 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro-numpy.html">Introduction to NumPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="basic-terms.html">Basic statistical terms and concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uncertainty.html">Uncertainty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reporting-measurements.html">Reporting measurements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ex-8.html">Exercise 8</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hints for Exercise 8</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-hints">General hints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sigma-notation">Sigma notation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-plot-for-problem-2">Example plot for Problem 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-similar-items-using-a-for-loop">Plotting similar items using a for loop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 9</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L9/overview.html">Lesson 9 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L9/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L9/goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L9/least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L9/ex-9.html">Exercise 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L9/exercise-9-hints.html">Hints for Exercise 9</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L10/overview.html">Lesson 10 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/solving-diffusion.html">Solving the diffusion equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/ex-10.html">Exercise 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/exercise-10-hints.html">Hints for Exercise 10</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 11</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L11/overview.html">Lesson 11 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/solving-advection.html">Solving the advection-diffusion equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/ex-11.html">Exercise 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/exercise-11-hints.html">Hints for Exercise 11</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 12</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L12/overview.html">Lesson 12 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/viscous-flows.html">Viscous flow down an incline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/exercise-12-theory.html">Theory for Exercise 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/ex-12.html">Exercise 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/exercise-12-hints.html">Hints for Exercise 12</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 13</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L13/overview.html">Lesson 13 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L13/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L13/ex-13.html">Exercise 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L13/exercise-13-hints.html">Hints for Exercise 13</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 14</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L14/overview.html">Lesson 14 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L14/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L14/ex-14.html">Exercise 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L14/exercise-14-hints.html">Hints for Exercise 14</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/articles.html">Scientific articles for the final paper</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Hints for Exercise 8</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/lessons/L8/exercise-8-hints.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for an old version of IntroQG.</p>
+<div class="section" id="hints-for-exercise-8">
+<h1>Hints for Exercise 8<a class="headerlink" href="#hints-for-exercise-8" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-hints">
+<h2>General hints<a class="headerlink" href="#general-hints" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sigma-notation">
+<h3>Sigma notation<a class="headerlink" href="#sigma-notation" title="Permalink to this headline">¶</a></h3>
+<p><em>Sigma notation</em> is used to indicate values that should be added together or summed.
+It is a shorthand notation to indicate the sum of <span class="math notranslate nohighlight">\(N\)</span> values, where each value in the set can be represented by the subscript <span class="math notranslate nohighlight">\(i\)</span>.
+The example below shows how sigma notation works,</p>
+<div class="math notranslate nohighlight">
+\[\sum_{i=1}^{N} x_{i} = \sum_{i} x_{i} = \sum x_{i} = x_{1} + x_{2} + ... + x_{N}\]</div>
+<p>which is the sum of <span class="math notranslate nohighlight">\(N\)</span> values, each indicated by <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>As you can see, the complete form explicitly states the starting and ending values for the sum (<span class="math notranslate nohighlight">\(i = 1\)</span> and <span class="math notranslate nohighlight">\(N\)</span>), but often these values are not written as it can be assumed that all <span class="math notranslate nohighlight">\(N\)</span> values will be summed.</p>
+</div>
+</div>
+<div class="section" id="problem-1">
+<h2>Problem 1<a class="headerlink" href="#problem-1" title="Permalink to this headline">¶</a></h2>
+<p>There have not been any major issues with Problem 1, so the only suggested hint is to refer to the general hint on sigma notation above if you are having any problems with converting the equations for the mean, standard deviation, and standard error to Python.</p>
+</div>
+<div class="section" id="problem-2">
+<h2>Problem 2<a class="headerlink" href="#problem-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-plot-for-problem-2">
+<h3>Example plot for Problem 2<a class="headerlink" href="#example-plot-for-problem-2" title="Permalink to this headline">¶</a></h3>
+<p>Below is an example of the type of plot you should produce for Problem 2.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/Gaussian-plot.png"><img alt="Gaussian plot for Problem 2" src="../../_images/Gaussian-plot.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Example Gaussian plot for Problem 2.</span></p>
+</div>
+</div>
+<div class="section" id="creating-arrays-of-numbers-between-two-values">
+<h3>Creating arrays of numbers between two values<a class="headerlink" href="#creating-arrays-of-numbers-between-two-values" title="Permalink to this headline">¶</a></h3>
+<p>As you may recall from <a class="reference external" href="intro-numpy.html#useful-functions">this week’s lesson on using NumPy</a>, we can use NumPy to create NumPy arrays of values between a starting and ending value.
+Consider the simple example below using the <cite>np.linspace()</cite> method:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="gp">In [2]: </span><span class="n">numberArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+
+<span class="gp">In [3]: </span><span class="k">print</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)</span>
+<span class="go">[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]</span>
+</pre></div>
+</div>
+<p>Here you can see we start with <code class="docutils literal notranslate"><span class="pre">0.0</span></code>, end with <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, and produce an array of <code class="docutils literal notranslate"><span class="pre">11</span></code> equally spaced values that includes the starting and ending numbers.
+This is probably the easiest way to create most arrays of this kind.</p>
+</div>
+<div class="section" id="creating-and-appending-to-lists">
+<h3>Creating and appending to lists<a class="headerlink" href="#creating-and-appending-to-lists" title="Permalink to this headline">¶</a></h3>
+<p>This is mostly a reminder of something we had seen <a class="reference external" href="https://geo-python.github.io/2017/lessons/L2/python-basic-elements.html#lists-and-indices">back in Lesson 2 of the Geo-Python part of the course</a>.
+When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-10 Ma by 0.1 Ma.
+You can see an example below, which assumes you have created the NumPy array <cite>numberArray</cite> as shown the previous hint:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [4]: </span><span class="n">dummyList</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="gp">In [5]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)):</span>
+<span class="gp">   ...: </span>    <span class="n">dummyList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numberArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="gp">   ...: </span>
+
+<span class="gp">In [6]: </span><span class="k">print</span><span class="p">(</span><span class="n">dummyList</span><span class="p">)</span>
+<span class="go">[0.0, 0.010000000000000002, 0.04000000000000001, 0.09000000000000002, 0.16000000000000003, 0.25, 0.3600000000000001, 0.4900000000000001, 0.6400000000000001, 0.81, 1.0]</span>
+</pre></div>
+</div>
+<p>As you can see, <code class="docutils literal notranslate"><span class="pre">dummyList</span></code> ends up with the same number of values as <code class="docutils literal notranslate"><span class="pre">numberArray</span></code> (see previous hint), with one calculated value in <code class="docutils literal notranslate"><span class="pre">dummyList</span></code> for each corresponding value in <code class="docutils literal notranslate"><span class="pre">numberArray</span></code>.</p>
+</div>
+<div class="section" id="plotting-similar-items-using-a-for-loop">
+<h3>Plotting similar items using a for loop<a class="headerlink" href="#plotting-similar-items-using-a-for-loop" title="Permalink to this headline">¶</a></h3>
+<p>One part of Problem 2 is to create a plot in which a line, some points, and an error bar should all be plotted for each sample and using the same color.
+This is an excellent opportunity to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to create the plots, rather than listing similar pieces of code to create each set of plotted items.
+The main reason for using a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is that it becomes easy to modify the format of all of the plots at the same time by making changes within the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, but it does take some preparation.
+For example, it is a good idea to create a list for the sample names and for the plot item colors before the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop so that you can use those values within the <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
+Consider the example below.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="go"># Make some useful lists</span>
+<span class="gp">In [7]: </span><span class="n">sampleNames</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sample1&#39;</span><span class="p">,</span> <span class="s1">&#39;sample2&#39;</span><span class="p">,</span> <span class="s1">&#39;sample3&#39;</span><span class="p">]</span>
+
+<span class="gp">In [8]: </span><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">]</span>
+
+<span class="gp">In [9]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sampleNames</span><span class="p">)):</span>
+<span class="gp">   ...: </span>    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>   <span class="c1"># Random data to plot</span>
+<span class="gp">   ...: </span>    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">   ...: </span>    <span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># More random data to plot</span>
+<span class="gp">   ...: </span>    <span class="n">y2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+<span class="gp">   ...: </span>    <span class="n">e</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">   ...: </span>    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">label</span> <span class="o">=</span> <span class="n">sampleNames</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>   <span class="c1"># Make plots</span>
+<span class="gp">   ...: </span>    <span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">xerr</span><span class="o">=</span><span class="n">e</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="gp">   ...: </span>
+
+<span class="go">#plt.show()</span>
+</pre></div>
+</div>
+<p>As you can see, with a bit of planning you can use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop for your plotting in Problem 2, which is suggested if you’re able to get it working.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../L9/overview.html" class="btn btn-neutral float-right" title="Lesson 9 overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ex-8.html" class="btn btn-neutral float-left" title="Exercise 8" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, David Whipp, University of Helsinki
+      <span class="lastupdated">
+        Last updated on Oct 24, 2018.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: v2017
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Tags</dt>
+            <dd><a href="exercise-8-hints.html">v2017</a></dd>
+            <dd><a href="../../../v2018/index.html">v2018</a></dd>
+        </dl>
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../../develop/index.html">develop</a></dd>
+            <dd><a href="../../../master/index.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

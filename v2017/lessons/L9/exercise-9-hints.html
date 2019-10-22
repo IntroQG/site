@@ -1,0 +1,563 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hints for Exercise 9 &mdash; IntroQG 2017 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2017',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-92357604-2"></script>
+        <script type="text/javascript" src="../../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lesson 10 overview" href="../L10/overview.html" />
+    <link rel="prev" title="Exercise 9" href="ex-9.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="../../_static/QG-logo-2017.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2017
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/course-details.html">Course details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/grading.html">Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 8</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L8/overview.html">Lesson 8 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/intro-numpy.html">Introduction to NumPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/basic-terms.html">Basic statistical terms and concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/uncertainty.html">Uncertainty</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/reporting-measurements.html">Reporting measurements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/ex-8.html">Exercise 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/exercise-8-hints.html">Hints for Exercise 8</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 9</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Lesson 9 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ex-9.html">Exercise 9</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hints for Exercise 9</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-hints">General hints</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#formatting-numbers-in-python">Formatting numbers in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-1">Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-plot">Example plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-summations">Calculating summations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Example plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reading-in-data-with-a-datetime-index">Reading in data with a datetime index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drop-the-nan-values-to-avoid-problems-with-the-regression-calculations">Drop the nan values to avoid problems with the regression calculations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-values-to-get-array-values-for-calculating-a-and-b">Use .values to get array values for calculating A and B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-the-year-for-calculating-the-regression-lines">Use the year for calculating the regression lines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L10/overview.html">Lesson 10 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/solving-diffusion.html">Solving the diffusion equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/ex-10.html">Exercise 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L10/exercise-10-hints.html">Hints for Exercise 10</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 11</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L11/overview.html">Lesson 11 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/solving-advection.html">Solving the advection-diffusion equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/ex-11.html">Exercise 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L11/exercise-11-hints.html">Hints for Exercise 11</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 12</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L12/overview.html">Lesson 12 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/viscous-flows.html">Viscous flow down an incline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/exercise-12-theory.html">Theory for Exercise 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/ex-12.html">Exercise 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L12/exercise-12-hints.html">Hints for Exercise 12</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 13</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L13/overview.html">Lesson 13 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L13/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L13/ex-13.html">Exercise 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L13/exercise-13-hints.html">Hints for Exercise 13</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 14</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L14/overview.html">Lesson 14 overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L14/lesson-video.html">Lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L14/ex-14.html">Exercise 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L14/exercise-14-hints.html">Hints for Exercise 14</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/articles.html">Scientific articles for the final paper</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Hints for Exercise 9</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/lessons/L9/exercise-9-hints.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for an old version of IntroQG.</p>
+<div class="section" id="hints-for-exercise-9">
+<h1>Hints for Exercise 9<a class="headerlink" href="#hints-for-exercise-9" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general-hints">
+<h2>General hints<a class="headerlink" href="#general-hints" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="formatting-numbers-in-python">
+<h3>Formatting numbers in Python<a class="headerlink" href="#formatting-numbers-in-python" title="Permalink to this headline">¶</a></h3>
+<p>As you may have noticed, the numbers you add to your plot using the <code class="docutils literal notranslate"><span class="pre">plt.text()</span></code> command look kind of ugly with so many digits after the decimal place.
+You can make them look a bit nicer by rounding them when you call the <code class="docutils literal notranslate"><span class="pre">plt.text()</span></code> command.
+This is called <em>formatted output</em> in Python, and it is nice not only because it can make your text easier to read, but also because the formatting does not change the data values themselves, only their display.
+To help you in formatting your output for your plots, here are some examples of how the output formatting works.</p>
+<pre class="literal-block">
+In [1]: import numpy as np
+
+In [2]: pi = np.pi
+
+In [3]: print('The value of pi is', pi)
+The value of pi is 3.141592653589793
+
+In [4]: print('The rounded value of pi is {0:.2f}'.format(pi))
+The rounded value of pi is 3.14
+</pre>
+<p>Huh?
+Perhaps a bit more information is needed beyond the simple example above.
+Formatting text can be done in Python for any data that is a character string.
+You indicate something you would like to format by enclosing it in curly brackets <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code> <strong>within the quotation marks for the character string</strong>.
+In the example above, the <code class="docutils literal notranslate"><span class="pre">0</span></code> indicates that this is the first value you would like to format (remember, Python indexing starts at 0).
+After the <code class="docutils literal notranslate"><span class="pre">0:</span></code>, you give how you would like to format the variable.
+In this case, <code class="docutils literal notranslate"><span class="pre">.2f</span></code> indicates you want it to be displayed as a decimal (floating point) value with 2 digits after the decimal place.
+At the end of the string, after the second quotation mark, you list <code class="docutils literal notranslate"><span class="pre">.format()</span></code> with the list of variables you want formated inside the parentheses.
+With this in mind, let’s consider another example.</p>
+<pre class="literal-block">
+In [5]: print('The sine of pi is {0:.4f}, and the cosine of pi is {1:.1f}.'.format(np.sin(pi), np.cos(pi)))
+The sine of pi is 0.0000, and the cosine of pi is -1.0.
+
+In [6]: print('In scientific notation, the sine of pi is {0:.6e}. As an integer value it is {0:.0f}.'.format(np.sin(pi)))
+In scientific notation, the sine of pi is 1.224647e-16. As an integer value it is 0.
+</pre>
+<p>Above, you see a few additional things about string formatting.
+First, you see that you can give more than one variable to format by changing the number to the left of the <code class="docutils literal notranslate"><span class="pre">:</span></code> within the curly brackets.
+In the second case, you see that you’re able to format the same variable different ways within a single character string.
+You may not often need to do this, but it is possible.</p>
+<p>You can find much more about string formatting on the <a class="reference external" href="https://docs.python.org/3.6/library/string.html#formatstrings">Python documentation site</a>.</p>
+</div>
+</div>
+<div class="section" id="problem-1">
+<h2>Problem 1<a class="headerlink" href="#problem-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-plot">
+<h3>Example plot<a class="headerlink" href="#example-plot" title="Permalink to this headline">¶</a></h3>
+<p>Your code for this problem should produce a plot similar to the one below.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/Ex9.1-gof.png"><img alt="Plot for Problem 9.1" src="../../_images/Ex9.1-gof.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Example plot for Problem 1.</span></p>
+</div>
+</div>
+<div class="section" id="calculating-summations">
+<h3>Calculating summations<a class="headerlink" href="#calculating-summations" title="Permalink to this headline">¶</a></h3>
+<p>There are several ways in which you can calculate a summation in Python, including using the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function.
+However, it is often better to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop for summing values, particularly if you are calculating values and don’t want to store their results separately from the summation.
+Perhaps an example will make this clear:</p>
+<pre class="literal-block">
+In [7]: numbers = [1,2,3,4,5,6,7,8,9]
+
+In [8]: squaredSum = 0       # Set sum equal to zero before starting for loop
+
+In [9]: for i in range(len(numbers)):
+   ...:     squaredSum = squaredSum + numbers[i]**2.0
+   ...: 
+
+In [10]: squaredSum
+Out[10]: 285.0
+
+In [11]: sum(numbers)         # Sum of the list values
+Out[11]: 45
+
+In [12]: sum(numbers)**2.0    # Square of the sum of the list values, not equal to squaredSum
+Out[12]: 2025.0
+</pre>
+<p>The point here is that in order to calculate the sum of each value squared in a Python list, you need to calculate the square of each value in the list separately, then add those together.
+You could save the squared values in a separate list and use the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function, but in this case it may be more clear and logical to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
+You may want to do something similar for calculating your chi squared values.</p>
+</div>
+<div class="section" id="shorthand-python-notation-for-adding-to-a-variable">
+<h3>Shorthand Python notation for adding to a variable<a class="headerlink" href="#shorthand-python-notation-for-adding-to-a-variable" title="Permalink to this headline">¶</a></h3>
+<p>It is extremely common to need to add to an existing variable in computer programs.
+Because of this, there is a shorthand notation in Python for just this kind of operation.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [13]: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">34</span>
+
+<span class="gp">In [14]: </span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">5</span>
+
+<span class="gp">In [15]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">39</span>
+
+<span class="gp">In [16]: </span><span class="n">number</span> <span class="o">+=</span> <span class="mi">5</span>
+
+<span class="gp">In [17]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">44</span>
+</pre></div>
+</div>
+<p>As you can see, <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">+=</span> <span class="pre">5</span></code> is exactly the same as <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">=</span> <span class="pre">number</span> <span class="pre">+</span> <span class="pre">5</span></code>, just written a bit more compactly.
+As you might imagine, there are similar shortcuts for subtracting (<code class="docutils literal notranslate"><span class="pre">-=</span></code>), multiplying (<code class="docutils literal notranslate"><span class="pre">*=</span></code>), and dividing (<code class="docutils literal notranslate"><span class="pre">/=</span></code>).</p>
+</div>
+</div>
+<div class="section" id="problem-2">
+<h2>Problem 2<a class="headerlink" href="#problem-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Example plot<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Your code for this problem should produce plots similar to the two below.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/Ex9.2-all-years.png"><img alt="Plot for Problem 9.1" src="../../_images/Ex9.2-all-years.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Example plot for Problem 2 with all years of climate data.</span></p>
+</div>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/Ex9.2-20-years.png"><img alt="Plot for Problem 9.1" src="../../_images/Ex9.2-20-years.png" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-text">Example plot for Problem 2 with the last 20 years of climate data.</span></p>
+</div>
+</div>
+<div class="section" id="reading-in-data-with-a-datetime-index">
+<h3>Reading in data with a datetime index<a class="headerlink" href="#reading-in-data-with-a-datetime-index" title="Permalink to this headline">¶</a></h3>
+<p>One of your first tasks in this problem is to read in a datafile that was generated from a Pandas DataFrame with a datetime index.
+There are several ways in which the data file can be read, but one of the easier options is to read it in with the necessary parameters to make sure the date information is properly treated as a datetime index.
+This will give you a DataFrame that is just like that you were using in <a class="reference external" href="https://github.com/Geo-Python-2017/Exercise-7">Exercise 7 of the Geo-Python part of the course</a>.
+To read in data where one column contains dates that should be used as the index, you can do the following:</p>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;some_file.csv&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;dates&#39;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Assuming that the name of the date column is <code class="docutils literal notranslate"><span class="pre">dates</span></code>, <code class="docutils literal notranslate"><span class="pre">index_col</span></code> specifies which column in the data file should be used as the index in the DataFrame, and <code class="docutils literal notranslate"><span class="pre">parse_dates</span></code> tells Pandas to treat the index column data as datetime values.
+As mentioned, there are alternative options, but this is a clean way to read in data to Pandas with a datetime index.</p>
+</div>
+<div class="section" id="drop-the-nan-values-to-avoid-problems-with-the-regression-calculations">
+<h3>Drop the nan values to avoid problems with the regression calculations<a class="headerlink" href="#drop-the-nan-values-to-avoid-problems-with-the-regression-calculations" title="Permalink to this headline">¶</a></h3>
+<p>Once you have read in the climate data and filled in your DataFrame that contains the seasonal average temperatures and standard deviations in temperature, you’ll want to get rid of any <code class="docutils literal notranslate"><span class="pre">nan</span></code> (not a number) values for the seasonal temperatures.
+The reason for this is that you will have problems calculating the <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code> values if there are any <code class="docutils literal notranslate"><span class="pre">nan</span></code> values.
+Consider the following example:</p>
+<pre class="literal-block">
+In [18]: testArray = np.linspace(0.0, 10.0, 11)
+
+In [19]: print(testArray)
+[ 0.  1.  2.  3.  4.  5.  6.  7.  8.  9. 10.]
+
+In [20]: print(sum(testArray))
+55.0
+
+In [21]: testArray[4] = np.nan
+
+In [22]: print(testArray)
+[ 0.  1.  2.  3. nan  5.  6.  7.  8.  9. 10.]
+
+In [23]: print(sum(testArray))
+nan
+
+In [24]: print(testArray[4] + testArray[5])
+nan
+</pre>
+<p>As you can see, if you sum or add values containing a <code class="docutils literal notranslate"><span class="pre">nan</span></code> your sum will be <code class="docutils literal notranslate"><span class="pre">nan</span></code>.
+Unlike plotting data containing <code class="docutils literal notranslate"><span class="pre">nan</span></code> values, that is not good for sums.</p>
+</div>
+<div class="section" id="use-values-to-get-array-values-for-calculating-a-and-b">
+<h3>Use .values to get array values for calculating A and B<a class="headerlink" href="#use-values-to-get-array-values-for-calculating-a-and-b" title="Permalink to this headline">¶</a></h3>
+<p>When doing your regression line calculations you will want to be sure to be working with simple array data, rather than Pandas DataFrame data.
+What?!?
+Yeah, so it turns out that you can’t easily do math with Pandas DataFrame values, so you need to convert those values into a simpler structure.
+NumPy is the basis for the Pandas DataFrame, so it is quite easy to do this.
+Again, I’ll show an example.</p>
+<pre class="literal-block">
+In [25]: import pandas as pd
+
+In [26]: testDF = pd.DataFrame(np.random.randn(4,2),columns=['Col1', 'Col2'])
+
+In [27]: print(testDF)
+       Col1      Col2
+0 -1.486773 -2.074474
+1  1.361453 -0.633597
+2 -0.820177 -1.133731
+3  0.445720 -0.942370
+
+In [28]: testDF['Col1']
+Out[28]: 
+0   -1.486773
+1    1.361453
+2   -0.820177
+3    0.445720
+Name: Col1, dtype: float64
+
+In [29]: testDF['Col1'].values
+Out[29]: array([-1.48677302,  1.36145261, -0.82017747,  0.44572015])
+</pre>
+<p>As you can perhaps see, <code class="docutils literal notranslate"><span class="pre">testDF</span></code> is a basic Pandas DataFrame with two columns <code class="docutils literal notranslate"><span class="pre">Col1</span></code> and <code class="docutils literal notranslate"><span class="pre">Col2</span></code> with random values.
+Taking a single column from this DataFrame <code class="docutils literal notranslate"><span class="pre">testDF['Col1']</span></code> returns a Pandas Series.
+Alternatively, <code class="docutils literal notranslate"><span class="pre">testDF['Col1'].values</span></code> produces a NumPy array of that same data.
+You will likely find that you’re not able to do your calculations of <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code> for the regression lines unless you use the <code class="docutils literal notranslate"><span class="pre">.values</span></code> attribute.</p>
+</div>
+<div class="section" id="use-the-year-for-calculating-the-regression-lines">
+<h3>Use the year for calculating the regression lines<a class="headerlink" href="#use-the-year-for-calculating-the-regression-lines" title="Permalink to this headline">¶</a></h3>
+<p>You do not need the day and month when trying to calculate the regression lines.
+Instead, you only want the observation year.
+Assuming you have a datetime index for your data, you can get the years as follows:</p>
+<pre class="literal-block">
+In [30]: print(testDF)
+       Col1      Col2
+0 -1.486773 -2.074474
+1  1.361453 -0.633597
+2 -0.820177 -1.133731
+3  0.445720 -0.942370
+
+In [31]: index = pd.date_range('2013', '2016', freq='AS')
+
+In [32]: testDF = testDF.set_index(index)
+
+In [33]: print(testDF.index)
+DatetimeIndex(['2013-01-01', '2014-01-01', '2015-01-01', '2016-01-01'], dtype='datetime64[ns]', freq='AS-JAN')
+
+In [34]: print(testDF.index.year)
+Int64Index([2013, 2014, 2015, 2016], dtype='int64')
+</pre>
+<p>As you can see, if we add a datetime index to <code class="docutils literal notranslate"><span class="pre">testDF</span></code>, we can output the index range by typing <code class="docutils literal notranslate"><span class="pre">print(testDF.index)</span></code>.
+To get the equivalent data in years only, we print <code class="docutils literal notranslate"><span class="pre">print(testDF.index.year)</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../L10/overview.html" class="btn btn-neutral float-right" title="Lesson 10 overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="ex-9.html" class="btn btn-neutral float-left" title="Exercise 9" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, David Whipp, University of Helsinki
+      <span class="lastupdated">
+        Last updated on Nov 09, 2017.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: v2017
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Tags</dt>
+            <dd><a href="exercise-9-hints.html">v2017</a></dd>
+            <dd><a href="../../../v2018/index.html">v2018</a></dd>
+        </dl>
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../../develop/index.html">develop</a></dd>
+            <dd><a href="../../../master/index.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

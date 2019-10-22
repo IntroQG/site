@@ -1,0 +1,659 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Exercise 2 &mdash; IntroQG 2018 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2018',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-92357604-2"></script>
+        <script type="text/javascript" src="../../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Lesson 3 overview" href="../L3/overview.html" />
+    <link rel="prev" title="Least squares regressions" href="least-squares.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="../../_static/HY-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2018
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/course-details.html">Course details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-meetings">Course meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-website">Course website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#textbooks">Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/grading.html">Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/grading.html#general-grading-breakdown">General grading breakdown</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L1/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/L1/numpy.html">A few more useful NumPy functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../notebooks/L1/numpy.html#Getting-started">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-number-of-increments">Defining arrays with a fixed number of increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../notebooks/L1/numpy.html#Defining-arrays-with-a-fixed-increment-between-values">Defining arrays with a fixed increment between values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/basic-terms.html">Basic statistical terms and concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/basic-terms.html#populations-and-samples">Populations and samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/uncertainty.html">Uncertainty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/uncertainty.html#some-general-uncertainty-concepts">Some general uncertainty concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/reporting-measurements.html">Reporting measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#reporting-a-measured-value">Reporting a measured value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/reporting-measurements.html#standard-deviation-versus-standard-error">Standard deviation versus standard error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/exercise-1.html">Exercise 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#general-hints-for-exercise-1">General hints for Exercise 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#sigma-notation">Sigma notation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-1">Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#function-docstrings">Function docstrings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L1/exercise-1.html#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#example-plot-for-problem-2">Example plot for Problem 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#plotting-similar-items-using-a-for-loop">Plotting similar items using a for loop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 2</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-hints-for-exercise-2">General hints for Exercise 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#formatting-numbers-in-python">Formatting numbers in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-1">Hints for Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-summations">Calculating summations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-2">Hints for Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#returning-more-than-one-value">Returning more than one value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-your-regression-lines">Plotting your regression lines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 3</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L3/overview.html">Lesson 3 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L3/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L3/solving-diffusion.html">Solving the diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#general-requirements-diffusion">General requirements - diffusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#hillslope-transport">Hillslope transport</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#transfer-proportional-to-gradient">Transfer proportional to gradient</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#mass-conservation">Mass conservation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#diffusion-equation-for-hillslope-transport">Diffusion equation for hillslope transport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#solving-the-diffusion-equation-in-steady-state">Solving the diffusion equation in steady state</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#general-scenario">General scenario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#applying-the-boundary-conditions">Applying the boundary conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#finding-integration-constant-1">Finding integration constant 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L3/solving-diffusion.html#finding-integration-constant-2">Finding integration constant 2</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L3/solving-diffusion.html#features-of-our-predictive-model">Features of our predictive model</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L3/exercise-3.html">Exercise 3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L3/exercise-3.html#hints-for-exercise-3">Hints for Exercise 3</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 4</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L4/overview.html">Lesson 4 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L4/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L4/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L4/solving-advection.html">Solving the advection-diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L4/solving-advection.html#goals-of-these-notes">Goals of these notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L4/solving-advection.html#advection-diffusion-equation-in-1d">Advection-diffusion equation in 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L4/solving-advection.html#solutions-to-the-steady-state-advection-diffusion-equation">Solutions to the steady-state advection-diffusion equation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L4/solving-advection.html#constant-gradient-at-surface">Constant gradient <span class="math notranslate nohighlight">\(g\)</span> at surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L4/solving-advection.html#constant-temperature-at">Constant temperature <span class="math notranslate nohighlight">\(T_{L}\)</span> at <span class="math notranslate nohighlight">\(z=L\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L4/solving-advection.html#the-peclet-number">The Peclet number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L4/solving-advection.html#advection-diffusion-equation-take-home-messages">Advection-diffusion equation take-home messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L4/solving-advection.html#caveats">Caveats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L4/exercise-4.html">Exercise 4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L4/exercise-4.html#hints-for-exercise-4">Hints for Exercise 4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L4/exercise-4.html#p1-calculating-dh-dt-see-also-hint-below">P1: Calculating dh/dt (see also hint below)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L4/exercise-4.html#p1-calculating-the-topography-slope">P1: Calculating the topography slope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L4/exercise-4.html#p2-passing-returning-figure-objects">P2: Passing/returning figure objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L4/exercise-4.html#p2-units">P2: Units</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 5</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L5/overview.html">Lesson 5 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L5/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L5/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L5/viscous-flows.html">Viscous flow down an incline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L5/viscous-flows.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L5/viscous-flows.html#linear-viscous-flow">Linear viscous flow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L5/viscous-flows.html#shear-stress-in-the-fluid">Shear stress in the fluid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L5/viscous-flows.html#linking-to-viscous-flow">Linking to viscous flow</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L5/viscous-flows.html#viscous-flow-take-home-messages">Viscous flow take-home messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L5/viscous-flows.html#caveats">Caveats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L5/exercise-5-theory.html">Theory for Exercise 5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L5/exercise-5-theory.html#problem-1">Problem 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L5/exercise-5-theory.html#problem-2">Problem 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L5/exercise-5.html">Exercise 5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L5/exercise-5.html#hints-for-exercise-5">Hints for Exercise 5</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L5/exercise-5.html#p1-solving-for-the-unknown-pressures-in-equation-10">P1: Solving for the unknown pressures in Equation 10</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../L5/exercise-5.html#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L5/exercise-5.html#solving-for-the-unknown-term-in-equation-19">Solving for the unknown term in Equation 19</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 6</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L6/overview.html">Lesson 6 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L6/overview.html#scientific-journal-articles">Scientific journal articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/overview.html#additional-materials">Additional materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L6/exercise-6.html">Exercise 6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L6/exercise-6.html#hints-for-exercise-6">Hints for Exercise 6</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 7</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L7/overview.html">Lesson 7 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L7/overview.html#scientific-journal-articles">Scientific journal articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L7/overview.html#additional-materials">Additional materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L7/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L7/exercise-7.html">Exercise 7</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L7/exercise-7.html#hints-for-exercise-7">Hints for Exercise 7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L7/exercise-7.html#removing-9999-age-values">Removing <code class="docutils literal notranslate"><span class="pre">-9999</span></code> age values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/exercise-7.html#comparing-a-single-predicted-age-to-multiple-measured-ages">Comparing a single predicted age to multiple measured ages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/exercise-7.html#problem-1-part-4-example-plot">Problem 1, Part 4 example plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L7/exercise-7.html#plotting-predicted-ages-as-horizontal-lines">Plotting predicted ages as horizontal lines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#introduction-2-4-paragraphs">Introduction (2-4 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#geological-background-1-3-paragraphs">Geological background (1-3 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#methods-at-least-1-paragraph">Methods (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#results-at-least-1-paragraph">Results (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#discussion-several-paragraphs">Discussion (several paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#conclusions-summary-1-2-paragraphs">Conclusions/Summary (1-2 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#appendices">Appendices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#grading-rubric">Grading rubric</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/articles.html">Scientific articles for the final paper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#general-thermochronology-papers">General thermochronology papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#himalaya-review-papers">Himalaya review papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#bhutan-himalaya-papers">Bhutan Himalaya papers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/template.html">Final paper template</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Exercise 2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/IntroQG/qg/blob/v2018/source/lessons/L2/exercise-2.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><a href="../../../master/lessons/L2/exercise-2.html"><b>Warning:</b> This document is for an old version of IntroQG. The main version is master.</a></p>
+
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="exercise-2">
+<h1>Exercise 2<a class="headerlink" href="#exercise-2" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Please note that <strong>we provide assignment feedback only for students enrolled in the course at the University of Helsinki</strong>.</p>
+</div>
+<div class="admonition-start-your-assignment admonition">
+<p class="first admonition-title">Start your assignment</p>
+<p>You can start working on your copy of Exercise 2 by <a class="reference external" href="https://classroom.github.com/a/CvgkRnlR">accepting the GitHub Classroom assignment</a>.</p>
+<p class="last"><strong>Exercise 2 is due by the start of lecture in week 3</strong>.</p>
+</div>
+<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2018/Exercise-2">Exercise 2 in the course GitHub repository</a> (does not require logging in).
+Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
+<div class="section" id="general-hints-for-exercise-2">
+<h2>General hints for Exercise 2<a class="headerlink" href="#general-hints-for-exercise-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="formatting-numbers-in-python">
+<h3>Formatting numbers in Python<a class="headerlink" href="#formatting-numbers-in-python" title="Permalink to this headline">¶</a></h3>
+<p>As you may have noticed, the numbers you add to your plot using the <code class="docutils literal notranslate"><span class="pre">plt.text()</span></code> command look kind of ugly with so many digits after the decimal place.
+You can make them look a bit nicer by rounding them when you call the <code class="docutils literal notranslate"><span class="pre">plt.text()</span></code> command.
+This is called <em>formatted output</em> in Python, and it is nice not only because it can make your text easier to read, but also because the formatting does not change the data values themselves, only their display.
+To help you in formatting your output for your plots, here are some examples of how the output formatting works.</p>
+<pre class="literal-block">
+In [1]: import numpy as np
+
+In [2]: pi = np.pi
+
+In [3]: print('The value of pi is', pi)
+The value of pi is 3.141592653589793
+
+In [4]: print('The rounded value of pi is {0:.2f}'.format(pi))
+The rounded value of pi is 3.14
+</pre>
+<p>Huh?
+Perhaps a bit more information is needed beyond the simple example above.
+Formatting text can be done in Python for any data that is a character string.
+You indicate something you would like to format by enclosing it in curly brackets <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">}</span></code> <strong>within the quotation marks for the character string</strong>.
+In the example above, the <code class="docutils literal notranslate"><span class="pre">0</span></code> indicates that this is the first value you would like to format (remember, Python indexing starts at 0).
+After the <code class="docutils literal notranslate"><span class="pre">0:</span></code>, you give how you would like to format the variable.
+In this case, <code class="docutils literal notranslate"><span class="pre">.2f</span></code> indicates you want it to be displayed as a decimal (floating point) value with 2 digits after the decimal place.
+At the end of the string, after the second quotation mark, you list <code class="docutils literal notranslate"><span class="pre">.format()</span></code> with the list of variables you want formated inside the parentheses.
+With this in mind, let’s consider another example.</p>
+<pre class="literal-block">
+In [5]: print('The sine of pi is {0:.4f}, and the cosine of pi is {1:.1f}.'.format(np.sin(pi), np.cos(pi)))
+The sine of pi is 0.0000, and the cosine of pi is -1.0.
+
+In [6]: print('In scientific notation, the sine of pi is {0:.6e}. As an integer value it is {0:.0f}.'.format(np.sin(pi)))
+In scientific notation, the sine of pi is 1.224647e-16. As an integer value it is 0.
+</pre>
+<p>Above, you see a few additional things about string formatting.
+First, you see that you can give more than one variable to format by changing the number to the left of the <code class="docutils literal notranslate"><span class="pre">:</span></code> within the curly brackets.
+In the second case, you see that you’re able to format the same variable different ways within a single character string.
+You may not often need to do this, but it is possible.</p>
+<p>You can find much more about string formatting on the <a class="reference external" href="https://docs.python.org/3.6/library/string.html#formatstrings">Python documentation site</a>.</p>
+</div>
+</div>
+<div class="section" id="hints-for-problem-1">
+<h2>Hints for Problem 1<a class="headerlink" href="#hints-for-problem-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="calculating-summations">
+<h3>Calculating summations<a class="headerlink" href="#calculating-summations" title="Permalink to this headline">¶</a></h3>
+<p>There are several ways in which you can calculate a summation in Python, including using the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function.
+However, it is often better to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop for summing values, particularly if you are calculating values and don’t want to store their results separately from the summation.
+Perhaps an example will make this clear:</p>
+<pre class="literal-block">
+In [7]: numbers = [1,2,3,4,5,6,7,8,9]
+
+In [8]: squaredSum = 0       # Set sum equal to zero before starting for loop
+
+In [9]: for i in range(len(numbers)):
+   ...:     squaredSum = squaredSum + numbers[i]**2.0
+   ...: 
+
+In [10]: squaredSum
+Out[10]: 285.0
+
+In [11]: sum(numbers)         # Sum of the list values
+Out[11]: 45
+
+In [12]: sum(numbers)**2.0    # Square of the sum of the list values, not equal to squaredSum
+Out[12]: 2025.0
+</pre>
+<p>The point here is that in order to calculate the sum of each value squared in a Python list, you need to calculate the square of each value in the list separately, then add those together.
+You could save the squared values in a separate list and use the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function, but in this case it may be more clear and logical to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
+You may want to do something similar for calculating your chi squared values.</p>
+</div>
+<div class="section" id="shorthand-python-notation-for-adding-to-a-variable">
+<h3>Shorthand Python notation for adding to a variable<a class="headerlink" href="#shorthand-python-notation-for-adding-to-a-variable" title="Permalink to this headline">¶</a></h3>
+<p>It is extremely common to need to add to an existing variable in computer programs.
+Because of this, there is a shorthand notation in Python for just this kind of operation.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [13]: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">34</span>
+
+<span class="gp">In [14]: </span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">5</span>
+
+<span class="gp">In [15]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">39</span>
+
+<span class="gp">In [16]: </span><span class="n">number</span> <span class="o">+=</span> <span class="mi">5</span>
+
+<span class="gp">In [17]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">44</span>
+</pre></div>
+</div>
+<p>As you can see, <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">+=</span> <span class="pre">5</span></code> is exactly the same as <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">=</span> <span class="pre">number</span> <span class="pre">+</span> <span class="pre">5</span></code>, just written a bit more compactly.
+As you might imagine, there are similar shortcuts for subtracting (<code class="docutils literal notranslate"><span class="pre">-=</span></code>), multiplying (<code class="docutils literal notranslate"><span class="pre">*=</span></code>), and dividing (<code class="docutils literal notranslate"><span class="pre">/=</span></code>).</p>
+</div>
+</div>
+<div class="section" id="hints-for-problem-2">
+<h2>Hints for Problem 2<a class="headerlink" href="#hints-for-problem-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="returning-more-than-one-value">
+<h3>Returning more than one value<a class="headerlink" href="#returning-more-than-one-value" title="Permalink to this headline">¶</a></h3>
+<p>In your <code class="docutils literal notranslate"><span class="pre">linregress()</span></code> function you are asked to calculate the <em>y</em>-intercept <code class="docutils literal notranslate"><span class="pre">A</span></code> and slope <code class="docutils literal notranslate"><span class="pre">B</span></code> for the best-fit line to your temperature data.
+Ideally, this means you would have your function return more than just one value.
+This is no problem, but perhaps an example of the syntax would be helpful.
+Let’s have a look.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [18]: </span><span class="k">def</span> <span class="nf">name_split</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="gp">   ....: </span>    <span class="sd">&quot;&quot;&quot;Splits a full name into first and last names.&quot;&quot;&quot;</span>
+<span class="gp">   ....: </span>    <span class="n">first</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">   ....: </span>    <span class="n">last</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">   ....: </span>    <span class="k">return</span> <span class="n">first</span><span class="p">,</span><span class="n">last</span>
+<span class="gp">   ....: </span>
+
+<span class="gp">In [19]: </span><span class="n">boatname</span> <span class="o">=</span> <span class="s2">&quot;Boaty McBoatface&quot;</span>
+
+<span class="gp">In [20]: </span><span class="n">firstname</span><span class="p">,</span> <span class="n">lastname</span> <span class="o">=</span> <span class="n">name_split</span><span class="p">(</span><span class="n">boatname</span><span class="p">)</span>
+
+<span class="gp">In [21]: </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;The first name is &quot;</span><span class="o">+</span><span class="n">firstname</span><span class="o">+</span><span class="s2">&quot; and the last name is &quot;</span><span class="o">+</span><span class="n">lastname</span><span class="o">+</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+<span class="go">The first name is Boaty and the last name is McBoatface.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plotting-your-regression-lines">
+<h3>Plotting your regression lines<a class="headerlink" href="#plotting-your-regression-lines" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">plt.plot()</span></code> function requires at least one pair of (<em>x</em>, <em>y</em>) values to be able to plot a line.
+With your regression lines you have calculated the <em>y</em>-intercept <code class="docutils literal notranslate"><span class="pre">A</span></code> and slope <code class="docutils literal notranslate"><span class="pre">B</span></code>, which can be used to plot a line as long as you have some range of values for <code class="docutils literal notranslate"><span class="pre">x</span></code>.
+If you use the range of years for the <code class="docutils literal notranslate"><span class="pre">x</span></code> values, you can then use your <cite>A</cite> and <cite>B</cite> values along with those <code class="docutils literal notranslate"><span class="pre">x</span></code> values in the equation of a line to be able to plot the line location for the age range in the plot.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../L3/overview.html" class="btn btn-neutral float-right" title="Lesson 3 overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="least-squares.html" class="btn btn-neutral float-left" title="Least squares regressions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
+      <span class="lastupdated">
+        Last updated on Nov 05, 2018.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: v2018
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Tags</dt>
+            <dd><a href="../../../v2017/index.html">v2017</a></dd>
+            <dd><a href="exercise-2.html">v2018</a></dd>
+        </dl>
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="../../../develop/lessons/L2/exercise-2.html">develop</a></dd>
+            <dd><a href="../../../master/lessons/L2/exercise-2.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
