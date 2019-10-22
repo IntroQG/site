@@ -22,6 +22,9 @@ David Whipp, lead instructor
 
 Lotta Ylä-Mella, course assistant
 
+- Office: C409, Exactum
+- Email: firstname.lastname@helsinki.fi (with a, not ä)
+
 Course website
 ---------------
 
