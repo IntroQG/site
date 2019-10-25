@@ -1,8 +1,8 @@
 .. Introduction to Quantitative Geology documentation master file, created by
    sphinx-quickstart on Mon Oct 22 15:25:21 2018.
 
-Introduction to Quantitative Geology
-====================================
+Introduction to Quantitative Geology 2019
+=========================================
 
 Welcome to the website for the Introduction to Quantitative Geology course at the University of Helsinki.
 This course introduces students to how to study a handful of geoscientific problems using a bit of geology, math, and Python programming.

@@ -8,11 +8,11 @@ Course meetings
 
 - Class sessions
 
-  - Mondays (28.10-9.12) 9-12, B222, Physicum
+  - Mondays (28.10-9.12) 9-12, B222, Exactum
 
 - Work sessions
 
-  - Tuesdays (29.10-10.12) 14-18, B119, Excatum
+  - Tuesdays (29.10-10.12) 14-18, B119, Exactum
 
 Instructors
 -----------
