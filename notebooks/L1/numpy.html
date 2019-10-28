@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>A few more useful NumPy functions &mdash; IntroQG 2019 documentation</title>
+  <title>A few useful NumPy functions &mdash; IntroQG 2019 documentation</title>
   
 
   
@@ -50,6 +50,8 @@
   <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Basic statistical terms and concepts" href="../../lessons/L1/basic-terms.html" />
+    <link rel="prev" title="Lesson overview" href="../../lessons/L1/overview.html" />
     <link href="../../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -117,6 +119,53 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Lesson 1</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">A few useful NumPy functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Getting-started">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Defining-arrays-with-a-fixed-number-of-increments">Defining arrays with a fixed number of increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Defining-arrays-with-a-fixed-increment-between-values">Defining arrays with a fixed increment between values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Generating-random-numbers-with-NumPy">Generating random numbers with NumPy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/basic-terms.html">Basic statistical terms and concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/basic-terms.html#populations-and-samples">Populations and samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/uncertainty.html">Uncertainty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/uncertainty.html#some-general-uncertainty-concepts">Some general uncertainty concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/reporting-measurements.html">Reporting measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/reporting-measurements.html#reporting-a-measured-value">Reporting a measured value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/reporting-measurements.html#standard-deviation-versus-standard-error">Standard deviation versus standard error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/exercise-1.html">Exercise 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/exercise-1.html#general-hints-for-exercise-1">General hints for Exercise 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#sigma-notation">Sigma notation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/exercise-1.html#problem-1">Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#function-docstrings">Function docstrings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/exercise-1.html#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
             
           
@@ -161,7 +210,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>A few more useful NumPy functions</li>
+      <li>A few useful NumPy functions</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -414,10 +463,10 @@ div.rendered_html tbody tr:hover {
 This page was generated from <a class="reference external" href="https://github.com/introqg/site/blob/master/source/notebooks/L1/numpy.ipynb">source/notebooks/L1/numpy.ipynb</a>.
 <span class="raw-html"><br/><a href="https://mybinder.org/v2/gh/introqg/site/master?urlpath=lab/tree/source/notebooks/L1/numpy.ipynb"><img alt="Binder badge" src="https://img.shields.io/badge/launch-completed%20binder-red.svg" style="vertical-align:text-bottom"></a></span>
 <span class="raw-html"><a href="https://mybinder.org/v2/gh/introqg/notebooks/master?urlpath=lab/tree/notebooks/L1/numpy.ipynb"><img alt="Binder badge" src="https://img.shields.io/badge/launch-lesson%20binder-red.svg" style="vertical-align:text-bottom"></a></span>
-<span class="raw-html"><a href="https://notebooks.csc.fi/#/blueprint/80cecffe7ad84d6d94665f39887b3a32"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a></span></div>
-<div class="section" id="A-few-more-useful-NumPy-functions">
-<h1>A few more useful NumPy functions<a class="headerlink" href="#A-few-more-useful-NumPy-functions" title="Permalink to this headline">¶</a></h1>
-<p>In this course we focus more on using simple numerical models and solving equations, rather than on loading and manipulating data files. Thus, one of the things we will often need to do is create an array for a variable that has a range from one value to another. There are two handy NumPy functions we can use for this, which we introduce below.</p>
+<span class="raw-html"><a href="https://notebooks.csc.fi/#/blueprint/d8bb9216112e4dc298f51de49b9fae56"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a></span></div>
+<div class="section" id="A-few-useful-NumPy-functions">
+<h1>A few useful NumPy functions<a class="headerlink" href="#A-few-useful-NumPy-functions" title="Permalink to this headline">¶</a></h1>
+<p>In this course we divide our time between using simple numerical models and solving equations, and loading and manipulating data files. Thus, one of the things we will often need to do is create an array for a variable that has a range from one value to another. To help with this, there are a few handy NumPy functions we can use for this, which we introduce below.</p>
 <div class="section" id="Getting-started">
 <h2>Getting started<a class="headerlink" href="#Getting-started" title="Permalink to this headline">¶</a></h2>
 <p>As always, we should start by importing NumPy.</p>
@@ -532,6 +581,39 @@ This page was generated from <a class="reference external" href="https://github.
 <p>where <code class="docutils literal notranslate"><span class="pre">start</span></code> will be the first value in the array, <code class="docutils literal notranslate"><span class="pre">stop</span></code> will be excluded from the array, and <code class="docutils literal notranslate"><span class="pre">step</span></code> is the size of the increment between array values. With this function, the last value in the array will be the largest multiple of <code class="docutils literal notranslate"><span class="pre">step</span></code> that is smaller than <code class="docutils literal notranslate"><span class="pre">stop</span></code>.</p>
 <p>Both <code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> and <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> array creation options can be useful in different situations.</p>
 </div>
+<div class="section" id="Generating-random-numbers-with-NumPy">
+<h3>Generating random numbers with NumPy<a class="headerlink" href="#Generating-random-numbers-with-NumPy" title="Permalink to this headline">¶</a></h3>
+<p>We’ll also want to occasionally generate some random numbers with NumPy. We can easily generate sequences of random numbers using the <code class="docutils literal notranslate"><span class="pre">np.random.rand()</span></code> function. Let’s generate 10 random numbers below.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">rand</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">print</span><span class="p">(</span><span class="n">rand</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[0.91049453 0.30251525 0.12565464 0.51315951 0.20218486 0.77237727
+ 0.50973171 0.49963212 0.79197832 0.67200849]
+</pre></div></div>
+</div>
+<p>As you can see, <code class="docutils literal notranslate"><span class="pre">np.random.rand()</span></code> takes a single parameter, the number of random numbers you would like to produce. With that parameter, we get back a NumPy array of floating-point values from 0.0 up to (but not including) 1.0. This range is often useful because you can easily scale the array values to have random numbers over any range.</p>
+<p>There are many other options for producing random numbers with NumPy, such as random integers or random values from different types of distributions. You can find more about random numbers on the <a class="reference external" href="https://docs.scipy.org/doc/numpy-1.15.0/reference/routines.random.html">NumPy website</a>.</p>
+</div>
 </div>
 </div>
 
@@ -541,6 +623,15 @@ This page was generated from <a class="reference external" href="https://github.
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../lessons/L1/basic-terms.html" class="btn btn-neutral float-right" title="Basic statistical terms and concepts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../lessons/L1/overview.html" class="btn btn-neutral float-left" title="Lesson overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -548,7 +639,7 @@ This page was generated from <a class="reference external" href="https://github.
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Oct 25, 2019.
+        Last updated on Oct 28, 2019.
       </span>
 
     </p>

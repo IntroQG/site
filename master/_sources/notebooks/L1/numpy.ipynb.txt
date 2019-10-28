@@ -4,11 +4,9 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# A few more useful NumPy functions\n",
+    "# A few useful NumPy functions\n",
     "\n",
-    "In this course we focus more on using simple numerical models and solving equations, rather than on loading and manipulating data files.\n",
-    "Thus, one of the things we will often need to do is create an array for a variable that has a range from one value to another.\n",
-    "There are two handy NumPy functions we can use for this, which we introduce below."
+    "In this course we divide our time between using simple numerical models and solving equations, and loading and manipulating data files. Thus, one of the things we will often need to do is create an array for a variable that has a range from one value to another. To help with this, there are a few handy NumPy functions we can use for this, which we introduce below."
    ]
   },
   {
@@ -170,6 +168,51 @@
     "\n",
     "Both `np.linspace()` and `np.arange()` array creation options can be useful in different situations."
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Generating random numbers with NumPy\n",
+    "\n",
+    "We'll also want to occasionally generate some random numbers with NumPy. We can easily generate sequences of random numbers using the `np.random.rand()` function. Let's generate 10 random numbers below."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "rand = np.random.rand(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0.91049453 0.30251525 0.12565464 0.51315951 0.20218486 0.77237727\n",
+      " 0.50973171 0.49963212 0.79197832 0.67200849]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(rand)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "As you can see, `np.random.rand()` takes a single parameter, the number of random numbers you would like to produce. With that parameter, we get back a NumPy array of floating-point values from 0.0 up to (but not including) 1.0. This range is often useful because you can easily scale the array values to have random numbers over any range.\n",
+    "\n",
+    "There are many other options for producing random numbers with NumPy, such as random integers or random values from different types of distributions. You can find more about random numbers on the [NumPy website](https://docs.scipy.org/doc/numpy-1.15.0/reference/routines.random.html)."
+   ]
   }
  ],
  "metadata": {
@@ -188,9 +231,9 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.6.4"
+   "version": "3.7.4"
   }
  },
  "nbformat": 4,
- "nbformat_minor": 2
+ "nbformat_minor": 4
 }
