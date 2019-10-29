@@ -27,13 +27,13 @@ Lesson video
 
     .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pFjSgDNuzgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NW8lI4KDAe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
     **Contents:**
 
-        - `01:07 - Course overview <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=1m07s>`__
-        - `10:12 - Overview of Lesson 1 <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=10m12s>`__
-        - `12:52 - A few more useful NumPy functions <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=12m52s>`__
-        - `28:16 - Basic geostatistics <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=28m16s>`__
-        - `56:45 - Exercise 1 preview <https://www.youtube.com/watch?v=pFjSgDNuzgc&t=56m45s>`__
+        - `00:53 - Course overview <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=0m53s>`__
+        - `13:40 - Overview of Lesson 1 <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=13m40s>`__
+        - `19:54 - A few more useful NumPy functions <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=19m54s>`__
+        - `39:46 - Basic geostatistics <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=39m46s>`__
+        - `1:03:56 - Exercise 1 preview <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=63m56s>`__
