@@ -257,16 +257,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
-
-
-    
-    
-
-
-
-    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for an old version of IntroQG.</p>
-<div class="section" id="hints-for-exercise-9">
+  <div class="section" id="hints-for-exercise-9">
 <h1>Hints for Exercise 9<a class="headerlink" href="#hints-for-exercise-9" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="general-hints">
 <h2>General hints<a class="headerlink" href="#general-hints" title="Permalink to this headline">¶</a></h2>
@@ -436,21 +427,21 @@ In [26]: testDF = pd.DataFrame(np.random.randn(4,2),columns=['Col1', 'Col2'])
 
 In [27]: print(testDF)
        Col1      Col2
-0 -0.695432  0.930417
-1  0.367625  0.764560
-2 -0.325336  0.056777
-3  0.677737 -1.270412
+0  1.023745  1.032504
+1  1.501208  0.563257
+2  0.972214  0.496957
+3  0.689855  2.644864
 
 In [28]: testDF['Col1']
 Out[28]: 
-0   -0.695432
-1    0.367625
-2   -0.325336
-3    0.677737
+0    1.023745
+1    1.501208
+2    0.972214
+3    0.689855
 Name: Col1, dtype: float64
 
 In [29]: testDF['Col1'].values
-Out[29]: array([-0.69543183,  0.36762544, -0.32533552,  0.67773665])
+Out[29]: array([1.023745  , 1.50120752, 0.97221443, 0.68985515])
 </pre>
 <p>As you can perhaps see, <code class="docutils literal notranslate"><span class="pre">testDF</span></code> is a basic Pandas DataFrame with two columns <code class="docutils literal notranslate"><span class="pre">Col1</span></code> and <code class="docutils literal notranslate"><span class="pre">Col2</span></code> with random values.
 Taking a single column from this DataFrame <code class="docutils literal notranslate"><span class="pre">testDF['Col1']</span></code> returns a Pandas Series.
@@ -465,10 +456,10 @@ Assuming you have a datetime index for your data, you can get the years as follo
 <pre class="literal-block">
 In [30]: print(testDF)
        Col1      Col2
-0 -0.695432  0.930417
-1  0.367625  0.764560
-2 -0.325336  0.056777
-3  0.677737 -1.270412
+0  1.023745  1.032504
+1  1.501208  0.563257
+2  0.972214  0.496957
+3  0.689855  2.644864
 
 In [31]: index = pd.date_range('2013', '2016', freq='AS')
 
@@ -541,7 +532,6 @@ To get the equivalent data in years only, we print <code class="docutils literal
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="../../../develop/index.html">develop</a></dd>
             <dd><a href="../../../master/index.html">master</a></dd>
         </dl>
     </div>
