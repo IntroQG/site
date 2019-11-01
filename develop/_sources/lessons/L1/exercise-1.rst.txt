@@ -130,10 +130,10 @@ Consider the simple example below using the ``np.linspace()`` method:
 
     import numpy as np
 
-    number_array = np.linspace(0.0, 1.0, 11)
+    number_array = np.linspace(0.0, 8000.0, 9)
     print(number_array)
 
-Here you can see we start with ``0.0``, end with ``1.0``, and produce an array of ``11`` equally spaced values that includes the starting and ending numbers.
+Here you can see we start with ``0.0``, end with ``8000.0``, and produce an array of ``9`` equally spaced values that includes the starting and ending numbers.
 This is probably the easiest way to create most arrays of this kind.
 
 Gaussian troubles
@@ -174,7 +174,7 @@ Creating and appending to lists
 
 This is mostly a reminder of something we had seen `back in Lesson 2 of the Geo-Python course <https://geo-python.github.io/site/notebooks/L2/Python-basic-elements.html#Lists-and-indices>`__.
 When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-8000m by 8 m.
-You can see an example below, which assumes you have created the NumPy array ``number_array`` as shown the previous hint:
+In the example below we can do the same kind of thing with elevations from 0-8000m in steps of 1000m, assuming you have created the NumPy array ``number_array`` as shown the previous hint:
 
 .. ipython:: python
 
