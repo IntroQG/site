@@ -23,6 +23,11 @@ Instructors
 - Email: firstname.lastname@helsinki.fi
 - Phone: +358 (0)2 941 51617
 
+**Aleksi Rantanen**, course assistant
+
+- Office: C426, Exactum
+- Email: firstname.m.lastname@helsinki.fi (note the m)
+
 **Lotta Ylä-Mella**, course assistant
 
 - Office: C409, Exactum
