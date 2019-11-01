@@ -159,8 +159,18 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#skipping-rows-reading-data-with-pandas">Skipping rows reading data with Pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dropping-na-values">Dropping NA values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#volcanoes-above-sea-level">Volcanoes above sea level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#column-name-in-part-5">Column name in Part 5</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-3">Problem 3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-a-horizontal-line-for-the-bar-plots">Plotting a horizontal line (for the bar plots)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gaussian-troubles">Gaussian troubles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-columns-to-a-dataframe">Adding columns to a DataFrame</a></li>
 </ul>
 </li>
 </ul>
@@ -354,37 +364,127 @@ Let’s check out some examples.</p>
 </div>
 <div class="section" id="problem-2">
 <h2>Problem 2<a class="headerlink" href="#problem-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="skipping-rows-reading-data-with-pandas">
+<h3>Skipping rows reading data with Pandas<a class="headerlink" href="#skipping-rows-reading-data-with-pandas" title="Permalink to this headline">¶</a></h3>
+<p>Remember that if you give a number to <code class="docutils literal notranslate"><span class="pre">skiprows</span></code> in the <code class="docutils literal notranslate"><span class="pre">pd.read_csv()</span></code> function (e.g., <code class="docutils literal notranslate"><span class="pre">pd.read_csv(fp,</span> <span class="pre">skiprows</span> <span class="pre">=</span> <span class="pre">0)</span></code>) the number you give is <strong>the number of rows you want to skip</strong> when reading the file.
+Instead, if you give a list (e.g., <code class="docutils literal notranslate"><span class="pre">pd.read_csv(fp,</span> <span class="pre">skiprows</span> <span class="pre">=</span> <span class="pre">[0])</span></code>), Pandas will skip the rows with that index (i.e., the first row).</p>
+</div>
+<div class="section" id="dropping-na-values">
+<h3>Dropping NA values<a class="headerlink" href="#dropping-na-values" title="Permalink to this headline">¶</a></h3>
+<p>When using the Pandas <code class="docutils literal notranslate"><span class="pre">.dropna()</span></code> function there are two options to drop <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values from a DataFrame.
+Let’s assume we have a DataFrame called <code class="docutils literal notranslate"><span class="pre">df</span></code>. We could drop our <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values from all rows where the column <code class="docutils literal notranslate"><span class="pre">df['Column</span> <span class="pre">name']</span></code> has a <code class="docutils literal notranslate"><span class="pre">NaN</span></code> value by typing either</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;Column name&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;Column name&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In the first case we’re assigning the output from the <code class="docutils literal notranslate"><span class="pre">.dropna()</span></code> function to the DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> directly, whereas in the second case we include the <code class="docutils literal notranslate"><span class="pre">inplace</span></code> parameter to drop the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values and update the <code class="docutils literal notranslate"><span class="pre">df</span></code> DataFrame at the same time.
+Both do the same thing, but the second option might produce warnings about the index values.</p>
+</div>
+<div class="section" id="volcanoes-above-sea-level">
+<h3>Volcanoes above sea level<a class="headerlink" href="#volcanoes-above-sea-level" title="Permalink to this headline">¶</a></h3>
+<p>Just a note: I assumed elevations above sea level were <strong>greater than or equal to 0.0</strong> in Part 2 of Problem 2, so you should use that same condition for selecting elevations to remove.</p>
+</div>
+<div class="section" id="column-name-in-part-5">
+<h3>Column name in Part 5<a class="headerlink" href="#column-name-in-part-5" title="Permalink to this headline">¶</a></h3>
+<p>Another note: I assumed that the column name for where you would store your mean elevations is <code class="docutils literal notranslate"><span class="pre">'Mean</span> <span class="pre">elevation'</span></code>, so you should use that when creating your DataFrame.</p>
+</div>
+</div>
+<div class="section" id="problem-3">
+<h2>Problem 3<a class="headerlink" href="#problem-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="plotting-a-horizontal-line-for-the-bar-plots">
+<h3>Plotting a horizontal line (for the bar plots)<a class="headerlink" href="#plotting-a-horizontal-line-for-the-bar-plots" title="Permalink to this headline">¶</a></h3>
+<p>We haven’t seen how to add a horizontal line to a plot, so I hope the explanation below will help.
+Basically, we want to add a line that goes across the bar plot and shows the mean elevation of all volcanoes globally.
+We can do this using the <code class="docutils literal notranslate"><span class="pre">ax.plot()</span></code> function and giving two pairs of points (x:sub:1, y:sub:1) and (x:sub:2, y:sub:2) - the end points of the line.
+To do this in  <code class="docutils literal notranslate"><span class="pre">ax.plot()</span></code> we give two lists. The first is the list of x points <code class="docutils literal notranslate"><span class="pre">[x1,</span> <span class="pre">x2]</span></code>, and the second the y points <code class="docutils literal notranslate"><span class="pre">[y1,</span> <span class="pre">y2]</span></code>.
+Putting this together you should do something like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">],</span> <span class="p">[</span><span class="n">y1</span><span class="p">,</span> <span class="n">y2</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>where you replace the <code class="docutils literal notranslate"><span class="pre">x1</span></code>, <code class="docutils literal notranslate"><span class="pre">x2</span></code>, <code class="docutils literal notranslate"><span class="pre">y1</span></code>, and <code class="docutils literal notranslate"><span class="pre">y2</span></code> values with numbers for the end points of the line.
+In this case, the x value should start at -1 and end at 20 (going across all the 19 bars), and the y values should both be the global mean elevation.
+You calculated that earlier. For the formatting, you can refer to the earlier lesson on plotting with Pandas.</p>
+</div>
 <div class="section" id="creating-arrays-of-numbers-between-two-values">
 <h3>Creating arrays of numbers between two values<a class="headerlink" href="#creating-arrays-of-numbers-between-two-values" title="Permalink to this headline">¶</a></h3>
 <p>As you may recall from <a class="reference internal" href="../../notebooks/L1/numpy.html"><span class="doc">this week’s lesson on using NumPy</span></a>, we can use NumPy to create NumPy arrays of values between a starting and ending value.
-Consider the simple example below using the <cite>np.linspace()</cite> method:</p>
+Consider the simple example below using the <code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> method:</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [6]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
-<span class="gp">In [7]: </span><span class="n">numberArray</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+<span class="gp">In [7]: </span><span class="n">number_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
 
-<span class="gp">In [8]: </span><span class="k">print</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)</span>
+<span class="gp">In [8]: </span><span class="k">print</span><span class="p">(</span><span class="n">number_array</span><span class="p">)</span>
 <span class="go">[0.  0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. ]</span>
 </pre></div>
 </div>
 <p>Here you can see we start with <code class="docutils literal notranslate"><span class="pre">0.0</span></code>, end with <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, and produce an array of <code class="docutils literal notranslate"><span class="pre">11</span></code> equally spaced values that includes the starting and ending numbers.
 This is probably the easiest way to create most arrays of this kind.</p>
 </div>
+<div class="section" id="gaussian-troubles">
+<h3>Gaussian troubles<a class="headerlink" href="#gaussian-troubles" title="Permalink to this headline">¶</a></h3>
+<p>For the Gaussian function there are a few things to keep in mind:</p>
+<ol class="arabic">
+<li><p class="first">It should take a mean value, a standard deviation, and a list or array of values at which the Gaussian probability should be calculated.
+At each elevation the probability should be calculated and stored.</p>
+</li>
+<li><p class="first">To be more clear about part 1, it would be a good suggestion to create an empty NumPy array where the probability values can be stored.
+It should be the same size as <code class="docutils literal notranslate"><span class="pre">x_array</span></code> within your <code class="docutils literal notranslate"><span class="pre">gaussian()</span></code> function, and one way to create such an array would be using the <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> function. <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> will create an array with values equal to zero of whatever size you like.
+For example, if we want 10 values, we could do the following:</p>
+<blockquote>
+<div><div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [9]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="gp">In [10]: </span><span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="gp">In [11]: </span><span class="k">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="go">[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>This would yield an array of 10 values equal to zero.
+If you use the length of <code class="docutils literal notranslate"><span class="pre">x_array</span></code> you could create a similar array in your function to ensure that for each value in <code class="docutils literal notranslate"><span class="pre">x_array</span></code> you will have a corresponding probability.
+Another possibility for doing the same kind of thing can be found in the hint below about adding values to a list.</p>
+</li>
+<li><p class="first">If you create an array of zeros as suggested in 2, then you should also use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to go over the length of your values in <code class="docutils literal notranslate"><span class="pre">x_array</span></code> and calculate the probability at each value in <code class="docutils literal notranslate"><span class="pre">x_array</span></code>.
+This means using a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop of the form below:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x_array</span><span class="p">)):</span>
+    <span class="n">prob</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">x_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>where you should replace the equation above with the actual equation for calculating the normal distribution.
+The key thing is using the index value <code class="docutils literal notranslate"><span class="pre">i</span></code> to be able to calculate the probability at each value in <code class="docutils literal notranslate"><span class="pre">x_array</span></code>.</p>
+</li>
+</ol>
+</div>
 <div class="section" id="creating-and-appending-to-lists">
 <h3>Creating and appending to lists<a class="headerlink" href="#creating-and-appending-to-lists" title="Permalink to this headline">¶</a></h3>
 <p>This is mostly a reminder of something we had seen <a class="reference external" href="https://geo-python.github.io/site/notebooks/L2/Python-basic-elements.html#Lists-and-indices">back in Lesson 2 of the Geo-Python course</a>.
-When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-10 Ma by 0.1 Ma.
-You can see an example below, which assumes you have created the NumPy array <cite>numberArray</cite> as shown the previous hint:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [9]: </span><span class="n">dummyList</span> <span class="o">=</span> <span class="p">[]</span>
+When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-8000m by 8 m.
+You can see an example below, which assumes you have created the NumPy array <code class="docutils literal notranslate"><span class="pre">number_array</span></code> as shown the previous hint:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [12]: </span><span class="n">dummyList</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="gp">In [10]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numberArray</span><span class="p">)):</span>
-<span class="gp">   ....: </span>    <span class="n">dummyList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numberArray</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="gp">In [13]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">number_array</span><span class="p">)):</span>
+<span class="gp">   ....: </span>    <span class="n">dummyList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span><span class="p">)</span>
 <span class="gp">   ....: </span>
 
-<span class="gp">In [11]: </span><span class="k">print</span><span class="p">(</span><span class="n">dummyList</span><span class="p">)</span>
+<span class="gp">In [14]: </span><span class="k">print</span><span class="p">(</span><span class="n">dummyList</span><span class="p">)</span>
 <span class="go">[0.0, 0.010000000000000002, 0.04000000000000001, 0.09000000000000002, 0.16000000000000003, 0.25, 0.3600000000000001, 0.4900000000000001, 0.6400000000000001, 0.81, 1.0]</span>
 </pre></div>
 </div>
-<p>As you can see, <code class="docutils literal notranslate"><span class="pre">dummyList</span></code> ends up with the same number of values as <code class="docutils literal notranslate"><span class="pre">numberArray</span></code> (see previous hint), with one calculated value in <code class="docutils literal notranslate"><span class="pre">dummyList</span></code> for each corresponding value in <code class="docutils literal notranslate"><span class="pre">numberArray</span></code>.</p>
+<p>As you can see, <code class="docutils literal notranslate"><span class="pre">dummyList</span></code> ends up with the same number of values as <code class="docutils literal notranslate"><span class="pre">number_array</span></code> (see previous hint), with one calculated value in <code class="docutils literal notranslate"><span class="pre">dummyList</span></code> for each corresponding value in <code class="docutils literal notranslate"><span class="pre">number_array</span></code>.</p>
+</div>
+<div class="section" id="adding-columns-to-a-dataframe">
+<h3>Adding columns to a DataFrame<a class="headerlink" href="#adding-columns-to-a-dataframe" title="Permalink to this headline">¶</a></h3>
+<p>Just a reminder that you can add new values to a pandas DataFrame by assiging values to a new column name in the DataFrame.
+If we consider the example below for a DataFrame called <code class="docutils literal notranslate"><span class="pre">df</span></code> you could add a new column called ‘Column 2’ by typing</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Column 2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+</pre></div>
+</div>
+<p>This would create a new column called <code class="docutils literal notranslate"><span class="pre">'Column</span> <span class="pre">2'</span></code> that has all of the rows equal to 1.0.</p>
 </div>
 </div>
 </div>
@@ -411,7 +511,7 @@ You can see an example below, which assumes you have created the NumPy array <ci
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Oct 28, 2019.
+        Last updated on Nov 01, 2019.
       </span>
 
     </p>
