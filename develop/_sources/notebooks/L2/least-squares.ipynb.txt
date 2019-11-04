@@ -8,8 +8,9 @@
     "\n",
     "*Least squares regressions* are a common way of determining whether two values are *linearly* related to one an other. In other words, this is a method to determine whether a line is a good \"fit\" to some measured values. Not all data should be expected to be fit well by a line, but linear regressions are a powerful method for determining cases when two variables are directly related to one another. A common example might be the temperature at which magma erupts versus the SiO<sub>2</sub> content of the magma, as shown below in Figure 1.\n",
     "\n",
-    "![Magma temperatures](img/magma-temps.png)<br/>\n",
-    "*Figure 2. Eruption temperatures of magmas as a function of their SiO<sub>2</sub> content with a linear regression line*. Source: Figure 16.1 from [McKillup and Dyar, 2010](http://www.cambridge.org/fi/academic/subjects/earth-and-environmental-science/earth-science-general-interest/geostatistics-explained-introductory-guide-earth-scientists?format=HB&isbn=9780521763226).\n",
+    "![Magma temperatures](img/magma-temps.png)\n",
+    "\n",
+    "*Figure 1. Eruption temperatures of magmas as a function of their SiO<sub>2</sub> content with a linear regression line*. Source: Figure 16.1 from [McKillup and Dyar, 2010](http://www.cambridge.org/fi/academic/subjects/earth-and-environmental-science/earth-science-general-interest/geostatistics-explained-introductory-guide-earth-scientists?format=HB&isbn=9780521763226).\n",
     "\n",
     "The general idea with calculating a *linear regression* is that we want to find the equation of a line that best fits some $x$-$y$ data, such as temperature and SiO<sub>2</sub> content in the example above. To do this, we first need to recall the equation for a line:\n",
     "\n",
@@ -56,6 +57,13 @@
     "\n",
     "With the equations above, you are now able to calculate *unweighted* regression lines, the best-fit lines to some $x$-$y$ data in which the uncertainties in the measurements are not considered to influence the fit of the line. It is also possible to fit regression lines that consider the variable uncertainties in the data, referred to as *weighted regressions*, but will will not consider that type of regression for the time being."
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
