@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Least squares regressions &mdash; IntroQG 2019 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'2019',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-92357604-2"></script>
+        <script type="text/javascript" src="../../_static/google_analytics_tracker.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link href="../../_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> IntroQG
+          
+
+          
+            
+            <img src="../../_static/HY-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2019
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Course information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/course-details.html">Course details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-meetings">Course meetings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#instructors">Instructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#course-website">Course website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/course-details.html#textbooks">Textbooks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/grading.html">Grading</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../general-info/grading.html#general-grading-breakdown">General grading breakdown</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../general-info/licensing.html">Content licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/overview.html">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L1/numpy.html">A few useful NumPy functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L1/numpy.html#Getting-started">Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../L1/numpy.html#Defining-arrays-with-a-fixed-number-of-increments">Defining arrays with a fixed number of increments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/numpy.html#Defining-arrays-with-a-fixed-increment-between-values">Defining arrays with a fixed increment between values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../L1/numpy.html#Generating-random-numbers-with-NumPy">Generating random numbers with NumPy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/basic-terms.html">Basic statistical terms and concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/basic-terms.html#populations-and-samples">Populations and samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/uncertainty.html">Uncertainty</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/uncertainty.html#some-general-uncertainty-concepts">Some general uncertainty concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/reporting-measurements.html">Reporting measurements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/reporting-measurements.html#reporting-a-measured-value">Reporting a measured value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/reporting-measurements.html#standard-deviation-versus-standard-error">Standard deviation versus standard error</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/normal-distribution.html">The normal distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lessons/L1/exercise-1.html">Exercise 1</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/exercise-1.html#general-hints-for-exercise-1">General hints for Exercise 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#sigma-notation">Sigma notation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/exercise-1.html#problem-1">Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#function-docstrings">Function docstrings</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/exercise-1.html#problem-2">Problem 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#skipping-rows-reading-data-with-pandas">Skipping rows reading data with Pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#dropping-na-values">Dropping NA values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#volcanoes-above-sea-level">Volcanoes above sea level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#column-name-in-part-5">Column name in Part 5</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../lessons/L1/exercise-1.html#problem-3">Problem 3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#plotting-a-horizontal-line-for-the-bar-plots">Plotting a horizontal line (for the bar plots)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#creating-arrays-of-numbers-between-two-values">Creating arrays of numbers between two values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#gaussian-troubles">Gaussian troubles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#creating-and-appending-to-lists">Creating and appending to lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../lessons/L1/exercise-1.html#adding-columns-to-a-dataframe">Adding columns to a DataFrame</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Final report</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#introduction-2-4-paragraphs">Introduction (2-4 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#geological-background-1-3-paragraphs">Geological background (1-3 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#methods-at-least-1-paragraph">Methods (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#results-at-least-1-paragraph">Results (at least 1 paragraph)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#discussion-several-paragraphs">Discussion (several paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#conclusions-summary-1-2-paragraphs">Conclusions/Summary (1-2 paragraphs)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#appendices">Appendices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/final-report.html#grading-rubric">Grading rubric</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/articles.html">Scientific articles for the final paper</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#general-thermochronology-papers">General thermochronology papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#himalaya-review-papers">Himalaya review papers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../final-paper/articles.html#bhutan-himalaya-papers">Bhutan Himalaya papers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../final-paper/template.html">Final paper template</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">IntroQG</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Least squares regressions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/IntroQG/site/blob/develop/source/notebooks/L2/least-squares.ipynb" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for the development version of IntroQG.</p>
+
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="admonition note">
+This page was generated from <a class="reference external" href="https://github.com/introqg/site/blob/master/source/notebooks/L2/least-squares.ipynb">source/notebooks/L2/least-squares.ipynb</a>.
+<span class="raw-html"><br/><a href="https://mybinder.org/v2/gh/introqg/site/master?urlpath=lab/tree/source/notebooks/L2/least-squares.ipynb"><img alt="Binder badge" src="https://img.shields.io/badge/launch-completed%20binder-red.svg" style="vertical-align:text-bottom"></a></span>
+<span class="raw-html"><a href="https://mybinder.org/v2/gh/introqg/notebooks/master?urlpath=lab/tree/notebooks/L2/least-squares.ipynb"><img alt="Binder badge" src="https://img.shields.io/badge/launch-lesson%20binder-red.svg" style="vertical-align:text-bottom"></a></span>
+<span class="raw-html"><a href="https://notebooks.csc.fi/#/blueprint/d8bb9216112e4dc298f51de49b9fae56"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a></span></div>
+<div class="section" id="Least-squares-regressions">
+<h1>Least squares regressions<a class="headerlink" href="#Least-squares-regressions" title="Permalink to this headline">¶</a></h1>
+<p><em>Least squares regressions</em> are a common way of determining whether two values are <em>linearly</em> related to one an other. In other words, this is a method to determine whether a line is a good “fit” to some measured values. Not all data should be expected to be fit well by a line, but linear regressions are a powerful method for determining cases when two variables are directly related to one another. A common example might be the temperature at which magma erupts versus the SiO2 content of the
+magma, as shown below in Figure 1.</p>
+<p><img alt="Magma temperatures" src="../../_images/magma-temps1.png" /> <em>Figure 2. Eruption temperatures of magmas as a function of their SiO2 content with a linear regression line</em>. Source: Figure 16.1 from <a class="reference external" href="http://www.cambridge.org/fi/academic/subjects/earth-and-environmental-science/earth-science-general-interest/geostatistics-explained-introductory-guide-earth-scientists?format=HB&amp;isbn=9780521763226">McKillup and Dyar, 2010</a>.</p>
+<p>The general idea with calculating a <em>linear regression</em> is that we want to find the equation of a line that best fits some <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> data, such as temperature and SiO2 content in the example above. To do this, we first need to recall the equation for a line:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+  \large
+  y = A + B x
+\end{equation}</div><p>where <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are the coordinates of the data points, <span class="math notranslate nohighlight">\(A\)</span> is the <span class="math notranslate nohighlight">\(y\)</span>-intercept, and <span class="math notranslate nohighlight">\(B\)</span> is the slope of the line.</p>
+<p>Thus, in order to calculate a “best fit” line to some data, we will need to determine the values of the constants <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>. Consider the example below in which <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are known. If we make the rather common assumption that the uncertainties for the values on the <span class="math notranslate nohighlight">\(x\)</span> axis are negligible compared to the uncertainties along the <span class="math notranslate nohighlight">\(y\)</span> axis, we can say:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+  \large
+  (\mathrm{true~value~of~}y_{i}) = A + B x_{i}
+\end{equation}</div><p>Thus, it is possible to find the value of <span class="math notranslate nohighlight">\(y\)</span> for two linearly related values when <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are known.</p>
+<p>Finding the values of <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> then for the case of a linear regression to some <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> data is fairly straightforward, though it does involve a bit of algebra. For our purposes, I’ll refer you to Chapter 8 of <a class="reference external" href="http://www.uscibooks.com/taylornb.htm">Taylor, 1997</a> for a complete explanation of how to find <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, and simply present the relevant equations below. The value of the <span class="math notranslate nohighlight">\(y\)</span>-intercept can be found using</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+  \large
+  A = \frac{\sum{x^{2}} \sum{y} - \sum{x} \sum{xy}}{\Delta}
+\end{equation}</div><p>where <span class="math notranslate nohighlight">\(x\)</span> is the <span class="math notranslate nohighlight">\(i\)</span>th data point plotted on the <span class="math notranslate nohighlight">\(x\)</span>-axis, <span class="math notranslate nohighlight">\(y\)</span> is the <span class="math notranslate nohighlight">\(i\)</span>th data point plotted on the <span class="math notranslate nohighlight">\(y\)</span>-axis, and <span class="math notranslate nohighlight">\(\Delta\)</span> is defined below.</p>
+<p>The line slope can be found using</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+  \large
+  B = \frac{N \sum{xy} - \sum{x} \sum {y}}{\Delta}
+\end{equation}</div><p>where <span class="math notranslate nohighlight">\(N\)</span> is the number of values in the regression.</p>
+<p>And the value of <span class="math notranslate nohighlight">\(\Delta\)</span> is</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+  \large
+  \Delta = N \sum{x^{2}} - \left( \sum{x} \right)^{2}
+\end{equation}</div><p>With the equations above, you are now able to calculate <em>unweighted</em> regression lines, the best-fit lines to some <span class="math notranslate nohighlight">\(x\)</span>-<span class="math notranslate nohighlight">\(y\)</span> data in which the uncertainties in the measurements are not considered to influence the fit of the line. It is also possible to fit regression lines that consider the variable uncertainties in the data, referred to as <em>weighted regressions</em>, but will will not consider that type of regression for the time being.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
+      <span class="lastupdated">
+        Last updated on Nov 04, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+    <p><br/><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /></a></p>
+     
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: develop
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Tags</dt>
+            <dd><a href="../../../2017/index.html">2017</a></dd>
+            <dd><a href="../../../2018/index.html">2018</a></dd>
+        </dl>
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="least-squares.html">develop</a></dd>
+            <dd><a href="../../../master/index.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
