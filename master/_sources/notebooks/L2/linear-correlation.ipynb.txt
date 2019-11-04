@@ -12,7 +12,7 @@
     "\n",
     "*Figure 2. Examples of Pearson correlation coefficients for different data point distributions*. Source: [https://commons.wikimedia.org/wiki/File:Correlation_examples.png](https://commons.wikimedia.org/wiki/File:Correlation_examples.png).\n",
     "\n",
-    "Mathematically, we can definethe correlation coefficient $r$ as\n",
+    "Mathematically, we can define the correlation coefficient $r$ as\n",
     "\n",
     "\\begin{equation}\n",
     "  \\large\n",
@@ -21,13 +21,6 @@
     "\n",
     "where $x_{i}$ is the $i$th value along the $x$-axis, $\\bar{x}$ is the mean of the values on the $x$-axis, and similarly for the values of $y$. Using the equation above, we can calculate $r$, which measures how well the data $x$ and $y$ are linearly related."
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {
