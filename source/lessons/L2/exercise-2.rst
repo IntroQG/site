@@ -7,11 +7,11 @@ Exercise 2
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/CvgkRnlR>`__.
+    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <>`__.
 
     **Exercise 2 is due by the start of lecture in week 3**.
 
-You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2018/Exercise-2>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2019/Exercise-2>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 General hints for Exercise 2
@@ -57,6 +57,33 @@ You can find much more about string formatting on the `Python documentation site
 Hints for Problem 1
 -------------------
 
+Returning more than one value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In your ``linregress()`` function you are asked to calculate the *y*-intercept ``A`` and slope ``B`` for the best-fit line to your temperature data.
+Ideally, this means you would have your function return more than just one value.
+This is no problem, but perhaps an example of the syntax would be helpful.
+Let's have a look.
+
+.. ipython:: python
+
+    def name_split(name):
+        """Splits a full name into first and last names."""
+        first = name.split()[0]
+        last = name.split()[1]
+        return first,last
+
+    boatname = "Boaty McBoatface"
+    firstname, lastname = name_split(boatname)
+    print("The first name is "+firstname+" and the last name is "+lastname+".")
+
+Plotting your regression lines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The ``plt.plot()`` function requires at least one pair of (*x*, *y*) values to be able to plot a line.
+With your regression lines you have calculated the *y*-intercept ``A`` and slope ``B``, which can be used to plot a line as long as you have some range of values for ``x``.
+If you use the range of years for the ``x`` values, you can then use your `A` and `B` values along with those ``x`` values in the equation of a line to be able to plot the line location for the age range in the plot.
+
 Calculating summations
 ~~~~~~~~~~~~~~~~~~~~~~
 There are several ways in which you can calculate a summation in Python, including using the ``sum()`` function.
@@ -92,33 +119,3 @@ Because of this, there is a shorthand notation in Python for just this kind of o
 
 As you can see, ``number += 5`` is exactly the same as ``number = number + 5``, just written a bit more compactly.
 As you might imagine, there are similar shortcuts for subtracting (``-=``), multiplying (``*=``), and dividing (``/=``).
-
-Hints for Problem 2
--------------------
-
-Returning more than one value
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-In your ``linregress()`` function you are asked to calculate the *y*-intercept ``A`` and slope ``B`` for the best-fit line to your temperature data.
-Ideally, this means you would have your function return more than just one value.
-This is no problem, but perhaps an example of the syntax would be helpful.
-Let's have a look.
-
-.. ipython:: python
-
-    def name_split(name):
-        """Splits a full name into first and last names."""
-        first = name.split()[0]
-        last = name.split()[1]
-        return first,last
-
-    boatname = "Boaty McBoatface"
-    firstname, lastname = name_split(boatname)
-    print("The first name is "+firstname+" and the last name is "+lastname+".")
-
-Plotting your regression lines
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The ``plt.plot()`` function requires at least one pair of (*x*, *y*) values to be able to plot a line.
-With your regression lines you have calculated the *y*-intercept ``A`` and slope ``B``, which can be used to plot a line as long as you have some range of values for ``x``.
-If you use the range of years for the ``x`` values, you can then use your `A` and `B` values along with those ``x`` values in the equation of a line to be able to plot the line location for the age range in the plot.
