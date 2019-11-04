@@ -93,14 +93,15 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
     lessons/L1/normal-distribution
     lessons/L1/exercise-1
 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 2
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 2
 
-        lessons/L2/overview
-        lessons/L2/goodness-of-fit
-        lessons/L2/least-squares
-        lessons/L2/exercise-2
+    lessons/L2/overview
+    notebooks/L2/least-squares.ipynb
+    notebooks/L2/linear-correlation.ipynb
+    notebooks/L2/goodness-of-fit.ipynb
+    lessons/L2/exercise-2
 
     .. toctree::
         :maxdepth: 2
