@@ -50,6 +50,8 @@
   <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Least squares regressions" href="../../notebooks/L2/least-squares.html" />
+    <link rel="prev" title="Exercise 1" href="../L1/exercise-1.html" />
     <link href="../../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -169,6 +171,31 @@
 <li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#gaussian-troubles">Gaussian troubles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#creating-and-appending-to-lists">Creating and appending to lists</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../L1/exercise-1.html#adding-columns-to-a-dataframe">Adding columns to a DataFrame</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Lesson 2</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lesson overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/L2/least-squares.html">Least squares regressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/L2/linear-correlation.html">Linear correlation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../notebooks/L2/goodness-of-fit.html">Goodness-of-fit calculations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exercise-2.html">Exercise 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="exercise-2.html#general-hints-for-exercise-2">General hints for Exercise 2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exercise-2.html#formatting-numbers-in-python">Formatting numbers in Python</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exercise-2.html#hints-for-problem-1">Hints for Problem 1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="exercise-2.html#returning-more-than-one-value">Returning more than one value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercise-2.html#plotting-your-regression-lines">Plotting your regression lines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercise-2.html#calculating-summations">Calculating summations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exercise-2.html#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
 </ul>
 </li>
 </ul>
@@ -294,11 +321,12 @@
 </style>
 <div class="section" id="lesson-overview">
 <h1>Lesson overview<a class="headerlink" href="#lesson-overview" title="Permalink to this headline">¶</a></h1>
-<p>In this week’s lesson we will learn two ways in which observations (data) can be compared to predictions.
+<p>In this week’s lesson we will learn a few ways in which observations (data) can be compared to predictions.
 As was the case last week, we will continue to focus more on quantitative and geological concepts, rather than learning new Python skills.</p>
 <ol class="arabic simple">
-<li><a class="reference internal" href="goodness-of-fit.html"><span class="doc">Goodness-of-fit calculations</span></a></li>
-<li><a class="reference internal" href="least-squares.html"><span class="doc">Least squares regressions</span></a></li>
+<li><a class="reference internal" href="../../notebooks/L2/least-squares.html"><span class="doc">Least squares regressions</span></a></li>
+<li><a class="reference internal" href="../../notebooks/L2/linear-correlation.html"><span class="doc">Linear correlation</span></a></li>
+<li><a class="reference internal" href="../../notebooks/L2/goodness-of-fit.html"><span class="doc">Goodness-of-fit calculations</span></a></li>
 <li><a class="reference internal" href="exercise-2.html"><span class="doc">Exercise 2</span></a></li>
 </ol>
 <div class="section" id="learning-objectives">
@@ -334,6 +362,15 @@ As was the case last week, we will continue to focus more on quantitative and ge
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../notebooks/L2/least-squares.html" class="btn btn-neutral float-right" title="Least squares regressions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../L1/exercise-1.html" class="btn btn-neutral float-left" title="Exercise 1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -341,7 +378,7 @@ As was the case last week, we will continue to focus more on quantitative and ge
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Nov 26, 2018.
+        Last updated on Nov 04, 2019.
       </span>
 
     </p>

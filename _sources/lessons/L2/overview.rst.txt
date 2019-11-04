@@ -1,12 +1,13 @@
 Lesson overview
 ===============
 
-In this week's lesson we will learn two ways in which observations (data) can be compared to predictions.
+In this week's lesson we will learn a few ways in which observations (data) can be compared to predictions.
 As was the case last week, we will continue to focus more on quantitative and geological concepts, rather than learning new Python skills.
 
-1. :doc:`Goodness-of-fit calculations <goodness-of-fit>`
-2. :doc:`Least squares regressions <least-squares>`
-3. :doc:`Exercise 2 <exercise-2>`
+1. `Least squares regressions <../../notebooks/L2/least-squares.ipynb>`_
+2. `Linear correlation <../../notebooks/L2/linear-correlation.ipynb>`_
+3. `Goodness-of-fit calculations <../../notebooks/L2/goodness-of-fit.ipynb>`_
+4. :doc:`Exercise 2 <exercise-2>`
 
 Learning objectives
 -------------------
