@@ -25,13 +25,14 @@ Lesson video
 
     .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lsb81SpPRjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BGOckq8ltBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
 
     **Contents:**
 
-        - `02:26 - Overview of Lesson 2 <https://www.youtube.com/watch?v=lsb81SpPRjs&t=2m26s>`__
-        - `03:52 - Goodness-of-fit calculations <https://www.youtube.com/watch?v=lsb81SpPRjs&t=3m52s>`__
-        - `13:58 - Least squares regressions <https://www.youtube.com/watch?v=lsb81SpPRjs&t=13m58s>`__
-        - `23:58 - Exercise 9 preview <https://www.youtube.com/watch?v=lsb81SpPRjs&t=23m58s>`__
+        - `04:19 - Overview of Lesson 2 <https://www.youtube.com/watch?v=BGOckq8ltBw&t=4m19s>`__
+        - `06:23 - Least squares regressions <https://www.youtube.com/watch?v=BGOckq8ltBw&t=6m23s>`__
+        - `17:14 - Linear correlation <https://www.youtube.com/watch?v=BGOckq8ltBw&t=17m14s>`__
+        - `26:13 - Goodness-of-fit calculations <https://www.youtube.com/watch?v=BGOckq8ltBw&t=26m13s>`__
+        - `35:59 - Exercise 9 preview <https://www.youtube.com/watch?v=BGOckq8ltBw&t=35m59s>`__
