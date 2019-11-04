@@ -192,13 +192,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-1">Hints for Problem 1</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#calculating-summations">Calculating summations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#hints-for-problem-2">Hints for Problem 2</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#returning-more-than-one-value">Returning more than one value</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#plotting-your-regression-lines">Plotting your regression lines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-summations">Calculating summations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shorthand-python-notation-for-adding-to-a-variable">Shorthand Python notation for adding to a variable</a></li>
 </ul>
 </li>
 </ul>
@@ -333,10 +330,10 @@
 </div>
 <div class="admonition-start-your-assignment admonition">
 <p class="first admonition-title">Start your assignment</p>
-<p>You can start working on your copy of Exercise 2 by <a class="reference external" href="https://classroom.github.com/a/CvgkRnlR">accepting the GitHub Classroom assignment</a>.</p>
+<p>You can start working on your copy of Exercise 2 by <a href="#id1"><span class="problematic" id="id2">`accepting the GitHub Classroom assignment &lt;&gt;`__</span></a>.</p>
 <p class="last"><strong>Exercise 2 is due by the start of lecture in week 3</strong>.</p>
 </div>
-<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2018/Exercise-2">Exercise 2 in the course GitHub repository</a> (does not require logging in).
+<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2019/Exercise-2">Exercise 2 in the course GitHub repository</a> (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
 <div class="section" id="general-hints-for-exercise-2">
 <h2>General hints for Exercise 2<a class="headerlink" href="#general-hints-for-exercise-2" title="Permalink to this headline">¶</a></h2>
@@ -382,74 +379,24 @@ You may not often need to do this, but it is possible.</p>
 </div>
 <div class="section" id="hints-for-problem-1">
 <h2>Hints for Problem 1<a class="headerlink" href="#hints-for-problem-1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="calculating-summations">
-<h3>Calculating summations<a class="headerlink" href="#calculating-summations" title="Permalink to this headline">¶</a></h3>
-<p>There are several ways in which you can calculate a summation in Python, including using the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function.
-However, it is often better to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop for summing values, particularly if you are calculating values and don’t want to store their results separately from the summation.
-Perhaps an example will make this clear:</p>
-<pre class="literal-block">
-In [7]: numbers = [1,2,3,4,5,6,7,8,9]
-
-In [8]: squaredSum = 0       # Set sum equal to zero before starting for loop
-
-In [9]: for i in range(len(numbers)):
-   ...:     squaredSum = squaredSum + numbers[i]**2.0
-   ...: 
-
-In [10]: squaredSum
-Out[10]: 285.0
-
-In [11]: sum(numbers)         # Sum of the list values
-Out[11]: 45
-
-In [12]: sum(numbers)**2.0    # Square of the sum of the list values, not equal to squaredSum
-Out[12]: 2025.0
-</pre>
-<p>The point here is that in order to calculate the sum of each value squared in a Python list, you need to calculate the square of each value in the list separately, then add those together.
-You could save the squared values in a separate list and use the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function, but in this case it may be more clear and logical to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
-You may want to do something similar for calculating your chi squared values.</p>
-</div>
-<div class="section" id="shorthand-python-notation-for-adding-to-a-variable">
-<h3>Shorthand Python notation for adding to a variable<a class="headerlink" href="#shorthand-python-notation-for-adding-to-a-variable" title="Permalink to this headline">¶</a></h3>
-<p>It is extremely common to need to add to an existing variable in computer programs.
-Because of this, there is a shorthand notation in Python for just this kind of operation.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [13]: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">34</span>
-
-<span class="gp">In [14]: </span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">5</span>
-
-<span class="gp">In [15]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
-<span class="go">39</span>
-
-<span class="gp">In [16]: </span><span class="n">number</span> <span class="o">+=</span> <span class="mi">5</span>
-
-<span class="gp">In [17]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
-<span class="go">44</span>
-</pre></div>
-</div>
-<p>As you can see, <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">+=</span> <span class="pre">5</span></code> is exactly the same as <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">=</span> <span class="pre">number</span> <span class="pre">+</span> <span class="pre">5</span></code>, just written a bit more compactly.
-As you might imagine, there are similar shortcuts for subtracting (<code class="docutils literal notranslate"><span class="pre">-=</span></code>), multiplying (<code class="docutils literal notranslate"><span class="pre">*=</span></code>), and dividing (<code class="docutils literal notranslate"><span class="pre">/=</span></code>).</p>
-</div>
-</div>
-<div class="section" id="hints-for-problem-2">
-<h2>Hints for Problem 2<a class="headerlink" href="#hints-for-problem-2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="returning-more-than-one-value">
 <h3>Returning more than one value<a class="headerlink" href="#returning-more-than-one-value" title="Permalink to this headline">¶</a></h3>
 <p>In your <code class="docutils literal notranslate"><span class="pre">linregress()</span></code> function you are asked to calculate the <em>y</em>-intercept <code class="docutils literal notranslate"><span class="pre">A</span></code> and slope <code class="docutils literal notranslate"><span class="pre">B</span></code> for the best-fit line to your temperature data.
 Ideally, this means you would have your function return more than just one value.
 This is no problem, but perhaps an example of the syntax would be helpful.
 Let’s have a look.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [18]: </span><span class="k">def</span> <span class="nf">name_split</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<span class="gp">   ....: </span>    <span class="sd">&quot;&quot;&quot;Splits a full name into first and last names.&quot;&quot;&quot;</span>
-<span class="gp">   ....: </span>    <span class="n">first</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
-<span class="gp">   ....: </span>    <span class="n">last</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
-<span class="gp">   ....: </span>    <span class="k">return</span> <span class="n">first</span><span class="p">,</span><span class="n">last</span>
-<span class="gp">   ....: </span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [7]: </span><span class="k">def</span> <span class="nf">name_split</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="gp">   ...: </span>    <span class="sd">&quot;&quot;&quot;Splits a full name into first and last names.&quot;&quot;&quot;</span>
+<span class="gp">   ...: </span>    <span class="n">first</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">   ...: </span>    <span class="n">last</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">   ...: </span>    <span class="k">return</span> <span class="n">first</span><span class="p">,</span><span class="n">last</span>
+<span class="gp">   ...: </span>
 
-<span class="gp">In [19]: </span><span class="n">boatname</span> <span class="o">=</span> <span class="s2">&quot;Boaty McBoatface&quot;</span>
+<span class="gp">In [8]: </span><span class="n">boatname</span> <span class="o">=</span> <span class="s2">&quot;Boaty McBoatface&quot;</span>
 
-<span class="gp">In [20]: </span><span class="n">firstname</span><span class="p">,</span> <span class="n">lastname</span> <span class="o">=</span> <span class="n">name_split</span><span class="p">(</span><span class="n">boatname</span><span class="p">)</span>
+<span class="gp">In [9]: </span><span class="n">firstname</span><span class="p">,</span> <span class="n">lastname</span> <span class="o">=</span> <span class="n">name_split</span><span class="p">(</span><span class="n">boatname</span><span class="p">)</span>
 
-<span class="gp">In [21]: </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;The first name is &quot;</span><span class="o">+</span><span class="n">firstname</span><span class="o">+</span><span class="s2">&quot; and the last name is &quot;</span><span class="o">+</span><span class="n">lastname</span><span class="o">+</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+<span class="gp">In [10]: </span><span class="k">print</span><span class="p">(</span><span class="s2">&quot;The first name is &quot;</span><span class="o">+</span><span class="n">firstname</span><span class="o">+</span><span class="s2">&quot; and the last name is &quot;</span><span class="o">+</span><span class="n">lastname</span><span class="o">+</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
 <span class="go">The first name is Boaty and the last name is McBoatface.</span>
 </pre></div>
 </div>
@@ -459,6 +406,53 @@ Let’s have a look.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">plt.plot()</span></code> function requires at least one pair of (<em>x</em>, <em>y</em>) values to be able to plot a line.
 With your regression lines you have calculated the <em>y</em>-intercept <code class="docutils literal notranslate"><span class="pre">A</span></code> and slope <code class="docutils literal notranslate"><span class="pre">B</span></code>, which can be used to plot a line as long as you have some range of values for <code class="docutils literal notranslate"><span class="pre">x</span></code>.
 If you use the range of years for the <code class="docutils literal notranslate"><span class="pre">x</span></code> values, you can then use your <cite>A</cite> and <cite>B</cite> values along with those <code class="docutils literal notranslate"><span class="pre">x</span></code> values in the equation of a line to be able to plot the line location for the age range in the plot.</p>
+</div>
+<div class="section" id="calculating-summations">
+<h3>Calculating summations<a class="headerlink" href="#calculating-summations" title="Permalink to this headline">¶</a></h3>
+<p>There are several ways in which you can calculate a summation in Python, including using the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function.
+However, it is often better to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop for summing values, particularly if you are calculating values and don’t want to store their results separately from the summation.
+Perhaps an example will make this clear:</p>
+<pre class="literal-block">
+In [11]: numbers = [1,2,3,4,5,6,7,8,9]
+
+In [12]: squaredSum = 0       # Set sum equal to zero before starting for loop
+
+In [13]: for i in range(len(numbers)):
+   ....:     squaredSum = squaredSum + numbers[i]**2.0
+   ....: 
+
+In [14]: squaredSum
+Out[14]: 285.0
+
+In [15]: sum(numbers)         # Sum of the list values
+Out[15]: 45
+
+In [16]: sum(numbers)**2.0    # Square of the sum of the list values, not equal to squaredSum
+Out[16]: 2025.0
+</pre>
+<p>The point here is that in order to calculate the sum of each value squared in a Python list, you need to calculate the square of each value in the list separately, then add those together.
+You could save the squared values in a separate list and use the <code class="docutils literal notranslate"><span class="pre">sum()</span></code> function, but in this case it may be more clear and logical to use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop.
+You may want to do something similar for calculating your chi squared values.</p>
+</div>
+<div class="section" id="shorthand-python-notation-for-adding-to-a-variable">
+<h3>Shorthand Python notation for adding to a variable<a class="headerlink" href="#shorthand-python-notation-for-adding-to-a-variable" title="Permalink to this headline">¶</a></h3>
+<p>It is extremely common to need to add to an existing variable in computer programs.
+Because of this, there is a shorthand notation in Python for just this kind of operation.</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [17]: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">34</span>
+
+<span class="gp">In [18]: </span><span class="n">number</span> <span class="o">=</span> <span class="n">number</span> <span class="o">+</span> <span class="mi">5</span>
+
+<span class="gp">In [19]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">39</span>
+
+<span class="gp">In [20]: </span><span class="n">number</span> <span class="o">+=</span> <span class="mi">5</span>
+
+<span class="gp">In [21]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="go">44</span>
+</pre></div>
+</div>
+<p>As you can see, <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">+=</span> <span class="pre">5</span></code> is exactly the same as <code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">=</span> <span class="pre">number</span> <span class="pre">+</span> <span class="pre">5</span></code>, just written a bit more compactly.
+As you might imagine, there are similar shortcuts for subtracting (<code class="docutils literal notranslate"><span class="pre">-=</span></code>), multiplying (<code class="docutils literal notranslate"><span class="pre">*=</span></code>), and dividing (<code class="docutils literal notranslate"><span class="pre">/=</span></code>).</p>
 </div>
 </div>
 </div>
@@ -485,7 +479,7 @@ If you use the range of years for the <code class="docutils literal notranslate"
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Nov 22, 2018.
+        Last updated on Nov 04, 2019.
       </span>
 
     </p>
