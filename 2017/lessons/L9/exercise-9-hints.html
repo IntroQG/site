@@ -436,21 +436,21 @@ In [26]: testDF = pd.DataFrame(np.random.randn(4,2),columns=['Col1', 'Col2'])
 
 In [27]: print(testDF)
        Col1      Col2
-0 -1.126454 -1.234580
-1 -0.838942  0.626724
-2  0.390296  1.205553
-3 -1.214346  0.384558
+0  0.770700 -0.779121
+1 -0.724854  0.078516
+2 -0.857334 -0.918065
+3  0.817321 -1.218918
 
 In [28]: testDF['Col1']
 Out[28]: 
-0   -1.126454
-1   -0.838942
-2    0.390296
-3   -1.214346
+0    0.770700
+1   -0.724854
+2   -0.857334
+3    0.817321
 Name: Col1, dtype: float64
 
 In [29]: testDF['Col1'].values
-Out[29]: array([-1.1264539 , -0.83894244,  0.39029588, -1.21434611])
+Out[29]: array([ 0.77069995, -0.7248541 , -0.85733377,  0.81732075])
 </pre>
 <p>As you can perhaps see, <code class="docutils literal notranslate"><span class="pre">testDF</span></code> is a basic Pandas DataFrame with two columns <code class="docutils literal notranslate"><span class="pre">Col1</span></code> and <code class="docutils literal notranslate"><span class="pre">Col2</span></code> with random values.
 Taking a single column from this DataFrame <code class="docutils literal notranslate"><span class="pre">testDF['Col1']</span></code> returns a Pandas Series.
@@ -465,10 +465,10 @@ Assuming you have a datetime index for your data, you can get the years as follo
 <pre class="literal-block">
 In [30]: print(testDF)
        Col1      Col2
-0 -1.126454 -1.234580
-1 -0.838942  0.626724
-2  0.390296  1.205553
-3 -1.214346  0.384558
+0  0.770700 -0.779121
+1 -0.724854  0.078516
+2 -0.857334 -0.918065
+3  0.817321 -1.218918
 
 In [31]: index = pd.date_range('2013', '2016', freq='AS')
 
