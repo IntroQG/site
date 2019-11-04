@@ -7,7 +7,7 @@ As was the case last week, we will continue to focus more on quantitative and ge
 1. `Least squares regressions <../../notebooks/L2/least-squares.ipynb>`_
 2. `Linear correlation <../../notebooks/L2/linear-correlation.ipynb>`_
 3. `Goodness-of-fit calculations <../../notebooks/L2/goodness-of-fit.ipynb>`_
-3. :doc:`Exercise 2 <exercise-2>`
+4. :doc:`Exercise 2 <exercise-2>`
 
 Learning objectives
 -------------------
