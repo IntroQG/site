@@ -76,7 +76,7 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
 .. toctree::
     :maxdepth: 2
     :caption: Course information
-   
+
     general-info/course-details
     general-info/grading
     general-info/licensing
@@ -103,14 +103,15 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
     notebooks/L2/goodness-of-fit.ipynb
     lessons/L2/exercise-2
 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 3
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 3
 
-        lessons/L3/overview
-        lessons/L3/solving-diffusion
-        lessons/L3/exercise-3
+    lessons/L3/overview
+    lessons/L3/solving-diffusion
+    lessons/L3/exercise-3
 
+..
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 4
