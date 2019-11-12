@@ -35,4 +35,4 @@ Lesson video
         - `06:23 - Least squares regressions <https://www.youtube.com/watch?v=BGOckq8ltBw&t=6m23s>`__
         - `17:14 - Linear correlation <https://www.youtube.com/watch?v=BGOckq8ltBw&t=17m14s>`__
         - `26:13 - Goodness-of-fit calculations <https://www.youtube.com/watch?v=BGOckq8ltBw&t=26m13s>`__
-        - `35:59 - Exercise 9 preview <https://www.youtube.com/watch?v=BGOckq8ltBw&t=35m59s>`__
+        - `35:59 - Exercise 2 preview <https://www.youtube.com/watch?v=BGOckq8ltBw&t=35m59s>`__
