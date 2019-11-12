@@ -26,5 +26,14 @@ Lesson video
 
     .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6InfTov62EI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SvclwOwzh4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+
+    **Contents:**
+
+        - `01:10 - Questions about Exercise 2 <https://www.youtube.com/watch?v=SvclwOwzh4Q&t=1m10s>`__
+        - `12:07 - Natural diffusion lecture overview <https://www.youtube.com/watch?v=SvclwOwzh4Q&t=12m07s>`__
+        - `13:32 - Basics of diffusion <https://www.youtube.com/watch?v=SvclwOwzh4Q&t=13m32s>`__
+        - `21:36 - A mathematical description of diffusion <https://www.youtube.com/watch?v=SvclwOwzh4Q&t=21m36s>`__
+        - `38:23 - Hillslope diffusion <https://www.youtube.com/watch?v=SvclwOwzh4Q&t=38m23s>`__
+        - `55:17 - Exercise 3 preview <https://www.youtube.com/watch?v=SvclwOwzh4Q&t=55m17s>`__
