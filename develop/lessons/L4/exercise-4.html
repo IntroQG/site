@@ -50,6 +50,8 @@
   <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Final paper information" href="../../final-paper/final-report.html" />
+    <link rel="prev" title="Solving the advection-diffusion equation" href="solving-advection.html" />
     <link href="../../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -230,6 +232,36 @@
 </ul>
 </li>
 </ul>
+<p class="caption"><span class="caption-text">Lesson 4</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Lesson 4 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="solving-advection.html">Solving the advection-diffusion equation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#goals-of-these-notes">Goals of these notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#advection-diffusion-equation-in-1d">Advection-diffusion equation in 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#solutions-to-the-steady-state-advection-diffusion-equation">Solutions to the steady-state advection-diffusion equation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="solving-advection.html#constant-gradient-at-surface">Constant gradient <span class="math notranslate nohighlight">\(g\)</span> at surface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="solving-advection.html#constant-temperature-at">Constant temperature <span class="math notranslate nohighlight">\(T_{L}\)</span> at <span class="math notranslate nohighlight">\(z=L\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#the-peclet-number">The Peclet number</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#advection-diffusion-equation-take-home-messages">Advection-diffusion equation take-home messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="solving-advection.html#caveats">Caveats</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-exercise-4">Hints for Exercise 4</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#problem-1-calculating-dh-dt-see-also-hint-below">Problem 1: Calculating dh/dt (see also hint below)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-1-calculating-the-channel-slope">Problem 1: Calculating the channel slope</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-2-units">Problem 2: Units</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p class="caption"><span class="caption-text">Final report</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
@@ -359,32 +391,25 @@
 </div>
 <div class="admonition-start-your-assignment admonition">
 <p class="first admonition-title">Start your assignment</p>
-<p>You can start working on your copy of Exercise 4 by <a class="reference external" href="https://classroom.github.com/a/VC4rUjbW">accepting the GitHub Classroom assignment</a>.</p>
-<p class="last"><strong>Exercise 4 is due by the start of lecture in week 5</strong>.</p>
+<p>You can start working on your copy of Exercise 4 by <a class="reference external" href="https://classroom.github.com/a/8noH4YnS">accepting the GitHub Classroom assignment</a>.</p>
+<p class="last"><strong>Exercise 4 is due by the end of the day Tuesday in week 5 of the course</strong>.</p>
 </div>
-<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2018/Exercise-4">Exercise 4 in the course GitHub repository</a> (does not require logging in).
-Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
-<div class="admonition-start-your-assignment admonition">
-<p class="first admonition-title">Start your assignment</p>
-<p>You can start working on your copy of Exercise 4.1 by <a class="reference external" href="https://classroom.github.com/a/3dMNDiZq">accepting the GitHub Classroom assignment</a>.</p>
-<p class="last"><strong>Exercise 4.1 is due by the start of lecture in week 5</strong>.</p>
-</div>
-<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2018/Exercise-4.1">Exercise 4.1 in the course GitHub repository</a> (does not require logging in).
+<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2019/Exercise-4">Exercise 4 in the course GitHub repository</a> (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
 <div class="section" id="hints-for-exercise-4">
 <h2>Hints for Exercise 4<a class="headerlink" href="#hints-for-exercise-4" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="p1-calculating-dh-dt-see-also-hint-below">
-<h3>P1: Calculating dh/dt (see also hint below)<a class="headerlink" href="#p1-calculating-dh-dt-see-also-hint-below" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="problem-1-calculating-dh-dt-see-also-hint-below">
+<h3>Problem 1: Calculating dh/dt (see also hint below)<a class="headerlink" href="#problem-1-calculating-dh-dt-see-also-hint-below" title="Permalink to this headline">¶</a></h3>
 <p>For the <code class="docutils literal notranslate"><span class="pre">calculate_dhdt</span></code> function, you should ensure the value you return is negative.
-The stream-power itself can be positive, but returning a negative value ensures the stream-power equation acts to lower the topography.</p>
+The stream-power itself can be positive, but returning a negative value ensures the stream-power equation acts to lower the channel elevations.</p>
 <div class="math notranslate nohighlight">
 \[\begin{equation}
   \Large
    \frac{dh}{dt} = -K A^{m} S^{n}
 \end{equation}\]</div>
 </div>
-<div class="section" id="p1-calculating-the-topography-slope">
-<h3>P1: Calculating the topography slope<a class="headerlink" href="#p1-calculating-the-topography-slope" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="problem-1-calculating-the-channel-slope">
+<h3>Problem 1: Calculating the channel slope<a class="headerlink" href="#problem-1-calculating-the-channel-slope" title="Permalink to this headline">¶</a></h3>
 <p>In order to be able to calculate stream-power erosion from a river channel profile we first need to estimate both the upstream drainage area and calculate the topographic slope.
 You have hopefully already calculated the drainage area using your <code class="docutils literal notranslate"><span class="pre">drainage_area</span></code> function, and now we can turn our focus to the slope.
 Calculating the slope is not necessarily a difficult thing with NumPy, but you do need to be careful how you do it.</p>
@@ -400,20 +425,8 @@ Below, you can see how to use <code class="docutils literal notranslate"><span c
 <p>Above, we use <code class="docutils literal notranslate"><span class="pre">np.diff</span></code> to calculate the slope, but since it calculates the difference between the elevation of points, it returns one less value than in <code class="docutils literal notranslate"><span class="pre">topography</span></code>.
 To account for this, we add one extra value back to the <code class="docutils literal notranslate"><span class="pre">slope</span></code> variable.</p>
 </div>
-<div class="section" id="p2-passing-returning-figure-objects">
-<h3>P2: Passing/returning figure objects<a class="headerlink" href="#p2-passing-returning-figure-objects" title="Permalink to this headline">¶</a></h3>
-<p>When using functions with figures, it is necessary to pass the information about the figure as parameters when using any functions that update the figure.
-In other words, the functions will need things related to the figure in order to update them.
-For example, in the <code class="docutils literal notranslate"><span class="pre">update_figure</span></code> function you can see that <code class="docutils literal notranslate"><span class="pre">ax1</span></code> and <code class="docutils literal notranslate"><span class="pre">plot1</span></code> are given as values in the list of parameters used by the function.
-This is because the <code class="docutils literal notranslate"><span class="pre">ax1</span></code> and <code class="docutils literal notranslate"><span class="pre">plot1</span></code> data are updated within the function (as are <code class="docutils literal notranslate"><span class="pre">time_text</span></code> and <code class="docutils literal notranslate"><span class="pre">elev_text</span></code>).
-Likewise, the updated <code class="docutils literal notranslate"><span class="pre">plot1</span></code> object is returned.</p>
-<p>When you add the second subplot, you will need to be sure that any function that need the plot information has that information passed in and/or returned.
-This means you need to modify not only the <code class="docutils literal notranslate"><span class="pre">update_figure</span></code> function, but also make sure you update the list of variables passed to that function where the matplotlib <code class="docutils literal notranslate"><span class="pre">animation.FuncAnimation</span></code> function is called near the end of the <code class="docutils literal notranslate"><span class="pre">stream_power</span></code> function.
-Specifically, anything you pass into <code class="docutils literal notranslate"><span class="pre">update_figure</span></code> will need to be in the list of variables <code class="docutils literal notranslate"><span class="pre">fargs</span></code> in the call of <code class="docutils literal notranslate"><span class="pre">animation.FuncAnimation</span></code>.
-<code class="docutils literal notranslate"><span class="pre">fargs</span></code> is the list of varaibles used by the function <code class="docutils literal notranslate"><span class="pre">update_figure</span></code>.</p>
-</div>
-<div class="section" id="p2-units">
-<h3>P2: Units<a class="headerlink" href="#p2-units" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="problem-2-units">
+<h3>Problem 2: Units<a class="headerlink" href="#problem-2-units" title="Permalink to this headline">¶</a></h3>
 <p>Just as a reminder, the values for <code class="docutils literal notranslate"><span class="pre">dhdt</span></code> are m/a and the plot should have units of mm/a.
 We also want the erosion rate to plot as a positive value, rather than the negative values that <code class="docutils literal notranslate"><span class="pre">dhdt</span></code> has in the code.
 You can compensate for these differences when setting the <em>y</em> data to plot.</p>
@@ -427,6 +440,15 @@ You can compensate for these differences when setting the <em>y</em> data to plo
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../final-paper/final-report.html" class="btn btn-neutral float-right" title="Final paper information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="solving-advection.html" class="btn btn-neutral float-left" title="Solving the advection-diffusion equation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -434,7 +456,7 @@ You can compensate for these differences when setting the <em>y</em> data to plo
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Nov 22, 2018.
+        Last updated on Nov 18, 2019.
       </span>
 
     </p>
