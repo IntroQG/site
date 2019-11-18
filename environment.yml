@@ -7,3 +7,5 @@ dependencies:
   - ipympl
   - nodejs
   - scipy
+  - pandas
+  - pandas_bokeh
