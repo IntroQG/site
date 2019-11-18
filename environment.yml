@@ -8,4 +8,4 @@ dependencies:
   - nodejs
   - scipy
   - pandas
-  - pandas_bokeh
+  - pandas-bokeh
