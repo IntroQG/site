@@ -111,15 +111,15 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
     lessons/L3/solving-diffusion
     lessons/L3/exercise-3
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 4
+
+    lessons/L4/overview
+    lessons/L4/solving-advection
+    lessons/L4/exercise-4
+
 ..
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 4
-
-        lessons/L4/overview
-        lessons/L4/solving-advection
-        lessons/L4/exercise-4
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 5
