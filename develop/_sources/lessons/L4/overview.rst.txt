@@ -32,4 +32,4 @@ Lesson video
 
         - `00:40 - Questions about Exercise 3 <https://www.youtube.com/watch?v=_6dhOJb_ayY&t=40s>`__
         - `06:32 - Advection of Earth's surface lecture overview <https://www.youtube.com/watch?v=_6dhOJb_ayY&t=06m32s>`__
-        - `50:42 - Exercise 3 preview <https://www.youtube.com/watch?v=_6dhOJb_ayY&t=50m42s>`__
+        - `50:42 - Exercise 4 preview <https://www.youtube.com/watch?v=_6dhOJb_ayY&t=50m42s>`__
