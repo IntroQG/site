@@ -119,16 +119,16 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
     lessons/L4/solving-advection
     lessons/L4/exercise-4
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 5
+
+    lessons/L5/overview
+    lessons/L5/viscous-flows
+    lessons/L5/exercise-5-theory
+    lessons/L5/exercise-5
+
 ..
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 5
-
-        lessons/L5/overview
-        lessons/L5/viscous-flows
-        lessons/L5/exercise-5-theory
-        lessons/L5/exercise-5
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 6
