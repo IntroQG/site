@@ -25,5 +25,12 @@ Lesson video
 
     .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/arA3_xhvzg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1czUR3O9N8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+
+    **Contents:**
+
+        - `01:10 - Questions about Exercise 4 <https://www.youtube.com/watch?v=1czUR3O9N8c&t=01m10s>`__
+        - `03:10 - Rocks and ice as viscous materials lecture <https://www.youtube.com/watch?v=1czUR3O9N8c&t=03m10s>`__
+        - `33:12 - Overview of other lesson materials <https://www.youtube.com/watch?v=1czUR3O9N8c&t=33m12s>`__
+        - `36:30 - Preview of Exercise 5 (based on 2018 version) <https://www.youtube.com/watch?v=1czUR3O9N8c&t=36m30s>`__
