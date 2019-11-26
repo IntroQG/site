@@ -63,6 +63,6 @@ Goodness-of-fit warning message
 
 In Part 5, don't worry if you see a warning message like the one below when calculating your goodness-of-fit for :math:`n = 1`\ , this is expected behavior.
 
-.. code::python
+.. code-block:: python
 
     /Users/whipp/anaconda3/envs/geopython/lib/python3.7/site-packages/ipykernel_launcher.py:6: RuntimeWarning: divide by zero encountered in double_scalars
