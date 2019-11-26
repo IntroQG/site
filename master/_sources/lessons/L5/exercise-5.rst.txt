@@ -17,43 +17,52 @@ Note that you should not try to make changes to this copy of the exercise, but r
 Hints for Exercise 5
 --------------------
 
-P1: Solving for the unknown pressures in Equation 10
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem 2: Solving for the unknown pressures in Equation 10
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In Part 2 of Problem 1 you’re asked to solve for the term :math:`(p_{1} - p_{0}) / L` in Equation 10.
+In Part 2 of Problem 2 you’re asked to solve for the term :math:`\left((p_{1} - p_{0}) / L \right)^{n}` in Equation 10.
 To help you know whether or not you’ve done this properly, I’ve given a table of the values you should get below.
 
-+-----------+-----------------------------+
-| :math:`n` | :math:`(p_{1} - p_{0}) / L` |
-+===========+=============================+
-| 2         | 4215743440.23               |
-+-----------+-----------------------------+
-| 3         | 8029987.50521               |
-+-----------+-----------------------------+
-| 4         | 14339.2634022               |
-+-----------+-----------------------------+
-| 5         | 24.5815944037               |
-+-----------+-----------------------------+
++-----------+-----------------------------------------------+
+| :math:`n` | :math:`\left((p_{1} - p_{0}) / L \right)^{n}` |
++===========+===============================================+
+| 2         | 4215743440.233                                |
++-----------+-----------------------------------------------+
+| 3         | 8029987.505                                   |
++-----------+-----------------------------------------------+
+| 4         | 14339.263                                     |
++-----------+-----------------------------------------------+
+| 5         | 24.582                                        |
++-----------+-----------------------------------------------+
 
-Problem 2
+Problem 4
 ---------
 
 Solving for the unknown term in Equation 19
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Similar to Problem 2, you’re again asked to solve for an unknown term in Equation 19, in this case :math:`\gamma_{x}`\ .
-As above, you have a table of values below to help you check whether or not you’ve properly solved your equation for :math:`\gamma_{x}`\ .
+Similar to Problem 2, you’re again asked to solve for an unknown term in Equation 19, in this case :math:`\gamma_{x}^{n}`\ .
+As above, you have a table of values below to help you check whether or not you’ve properly solved your equation for :math:`\gamma_{x}^{n}`\ .
 
-+-----------+--------------------+
-| :math:`n` | :math:`\gamma_{x}` |
-+===========+====================+
-| 1         | 8.33314255626e+12  |
-+-----------+--------------------+
-| 2         | 51263351337.2      |
-+-----------+--------------------+
-| 3         | 327038924.001      |
-+-----------+--------------------+
-| 4         | 1955974.42585      |
-+-----------+--------------------+
-| 5         | 11230.4751723      |
-+-----------+--------------------+
++-----------+------------------------+
+| :math:`n` | :math:`\gamma_{x}^{n}` |
++===========+========================+
+| 1         | 8333142556260.16       |
++-----------+------------------------+
+| 2         | 51263351337.21         |
++-----------+------------------------+
+| 3         | 327038924.00           |
++-----------+------------------------+
+| 4         | 1955974.43             |
++-----------+------------------------+
+| 5         | 11230.48               |
++-----------+------------------------+
+
+Goodness-of-fit warning message
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In Part 5, don't worry if you see a warning message like the one below when calculating your goodness-of-fit for :math:`n = 1`\ , this is expected behavior.
+
+.. code-block:: python
+
+    /Users/whipp/anaconda3/envs/geopython/lib/python3.7/site-packages/ipykernel_launcher.py:6: RuntimeWarning: divide by zero encountered in double_scalars
