@@ -128,14 +128,14 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
     lessons/L5/exercise-5-theory
     lessons/L5/exercise-5
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 6
+
+    lessons/L6/overview
+    lessons/L6/exercise-6
+
 ..
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 6
-
-        lessons/L6/overview
-        lessons/L6/exercise-6
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 7
