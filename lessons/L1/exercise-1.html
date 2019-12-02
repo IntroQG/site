@@ -461,7 +461,7 @@ Let’s check out some examples.</p>
 
 <span class="gp">In [2]: </span><span class="n">number</span> <span class="o">=</span> <span class="mi">4</span>
 
-<span class="gp">In [3]: </span><span class="k">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="s2">&quot;squared is&quot;</span><span class="p">,</span> <span class="n">square</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+<span class="gp">In [3]: </span><span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="s2">&quot;squared is&quot;</span><span class="p">,</span> <span class="n">square</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
 <span class="go">4 squared is 16</span>
 </pre></div>
 </div>
@@ -496,7 +496,7 @@ Let’s assume we have a DataFrame called <code class="docutils literal notransl
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;Column name&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="s1">&#39;Column name&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>In the first case we’re assigning the output from the <code class="docutils literal notranslate"><span class="pre">.dropna()</span></code> function to the DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> directly, whereas in the second case we include the <code class="docutils literal notranslate"><span class="pre">inplace</span></code> parameter to drop the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values and update the <code class="docutils literal notranslate"><span class="pre">df</span></code> DataFrame at the same time.
@@ -531,11 +531,11 @@ You calculated that earlier. For the formatting, you can refer to the earlier le
 <h3>Creating arrays of numbers between two values<a class="headerlink" href="#creating-arrays-of-numbers-between-two-values" title="Permalink to this headline">¶</a></h3>
 <p>As you may recall from <a class="reference internal" href="../../notebooks/L1/numpy.html"><span class="doc">this week’s lesson on using NumPy</span></a>, we can use NumPy to create NumPy arrays of values between a starting and ending value.
 Consider the simple example below using the <code class="docutils literal notranslate"><span class="pre">np.linspace()</span></code> method:</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [6]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [6]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="gp">In [7]: </span><span class="n">number_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">8000.0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
 
-<span class="gp">In [8]: </span><span class="k">print</span><span class="p">(</span><span class="n">number_array</span><span class="p">)</span>
+<span class="gp">In [8]: </span><span class="nb">print</span><span class="p">(</span><span class="n">number_array</span><span class="p">)</span>
 <span class="go">[   0. 1000. 2000. 3000. 4000. 5000. 6000. 7000. 8000.]</span>
 </pre></div>
 </div>
@@ -553,11 +553,11 @@ At each elevation the probability should be calculated and stored.</p>
 It should be the same size as <code class="docutils literal notranslate"><span class="pre">x_array</span></code> within your <code class="docutils literal notranslate"><span class="pre">gaussian()</span></code> function, and one way to create such an array would be using the <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> function. <code class="docutils literal notranslate"><span class="pre">np.zeros()</span></code> will create an array with values equal to zero of whatever size you like.
 For example, if we want 10 values, we could do the following:</p>
 <blockquote>
-<div><div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [9]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div><div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [9]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="gp">In [10]: </span><span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 
-<span class="gp">In [11]: </span><span class="k">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="gp">In [11]: </span><span class="nb">print</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
 <span class="go">[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]</span>
 </pre></div>
 </div>
@@ -590,7 +590,7 @@ In the example below we can do the same kind of thing with elevations from 0-800
 <span class="gp">   ....: </span>    <span class="n">dummyList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mf">2.0</span><span class="p">)</span>
 <span class="gp">   ....: </span>
 
-<span class="gp">In [14]: </span><span class="k">print</span><span class="p">(</span><span class="n">dummyList</span><span class="p">)</span>
+<span class="gp">In [14]: </span><span class="nb">print</span><span class="p">(</span><span class="n">dummyList</span><span class="p">)</span>
 <span class="go">[0.0, 1000000.0, 4000000.0, 9000000.0, 16000000.0, 25000000.0, 36000000.0, 49000000.0, 64000000.0]</span>
 </pre></div>
 </div>

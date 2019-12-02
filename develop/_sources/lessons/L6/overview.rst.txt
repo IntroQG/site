@@ -36,10 +36,17 @@ Additional materials
 Lesson video
 ------------
 
-.. admonition:: Lesson 6 - Thermochronology I
-
+.. admonition:: Lesson 6 - Quantitative thermochronology I
 
     .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zM0r6eceP00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JOb-sRWg-4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+
+    **Contents:**
+
+        - `00:43 - Computing environment changes <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=43s>`__
+        - `02:58 - Basics of thermochronology lecture <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=02m58s>`__
+        - `44:59 - Overview of other lesson materials <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=44m59s>`__
+        - `48:43 - Overview of Exercises 6 and 7 <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=48m43s>`__
+        - `48:43 - Preview of Exercise 6 <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=59m49s>`__

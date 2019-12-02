@@ -296,6 +296,19 @@
 </ul>
 </li>
 </ul>
+<p class="caption"><span class="caption-text">Lesson 6</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../L6/overview.html">Lesson 6 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L6/overview.html#scientific-journal-articles">Scientific journal articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/overview.html#additional-materials">Additional materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../L6/overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../L6/exercise-6.html">Exercise 6</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../L6/exercise-6.html#hints-for-exercise-6">Hints for Exercise 6</a></li>
+</ul>
+</li>
+</ul>
 <p class="caption"><span class="caption-text">Final report</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
@@ -456,7 +469,7 @@ It is an essential library in Python that is used under the hood in many other m
 Here, we willl get a sense of a few things NumPy can do.</p>
 <ol class="arabic">
 <li><p class="first">To start using the NumPy library we will need to <code class="docutils literal notranslate"><span class="pre">import</span></code> it.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 </div>
 <p>Note that we’ve imported NumPy shortening <code class="docutils literal notranslate"><span class="pre">numpy</span></code> to <code class="docutils literal notranslate"><span class="pre">np</span></code>.</p>
@@ -464,7 +477,7 @@ Here, we willl get a sense of a few things NumPy can do.</p>
 <li><p class="first">Now we’ll import an example data file.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [2]: </span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">fname</span><span class="o">=</span><span class="s1">&#39;GVP-Volcano-Lat-Lon-Elev.csv&#39;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 
-<span class="gp">In [3]: </span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">In [3]: </span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <span class="go">[[ 2.10010e+05  5.01700e+01  6.85000e+00  6.00000e+02]</span>
 <span class="go"> [ 2.10020e+05  4.57750e+01  2.97000e+00  1.46400e+03]</span>
 <span class="go"> [ 2.10030e+05  4.21700e+01  2.53000e+00  8.93000e+02]</span>
@@ -488,7 +501,7 @@ NumPy has its own data types that are part of the module.
 In this case, our data is stored in an NumPy <em>n</em>-dimensional array.</p>
 </li>
 <li><p class="first">Like Pandas, we can also check to see how much data do we have in our <code class="docutils literal notranslate"><span class="pre">data</span></code> variable.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [5]: </span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [5]: </span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 <span class="go">(1520, 4)</span>
 </pre></div>
 </div>
@@ -497,7 +510,7 @@ In this case, our data is stored in an NumPy <em>n</em>-dimensional array.</p>
 of any NumPy <code class="docutils literal notranslate"><span class="pre">ndarray</span></code>. Printing <code class="docutils literal notranslate"><span class="pre">data.shape</span></code> tells us the size of the array.</p>
 </li>
 <li><p class="first">We can also check the data type of our data-columns by calling <code class="docutils literal notranslate"><span class="pre">data.dtype</span></code>, which is again similar to Pandas.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [6]: </span><span class="k">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [6]: </span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
 <span class="go">float64</span>
 </pre></div>
 </div>
@@ -511,7 +524,7 @@ Let’s take a copy of our data and convert our dataset into integer numbers.</p
 <span class="go"># Convert to integer values</span>
 <span class="gp">In [8]: </span><span class="n">copy</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 
-<span class="gp">In [9]: </span><span class="k">print</span><span class="p">(</span><span class="n">copy</span><span class="p">)</span>
+<span class="gp">In [9]: </span><span class="nb">print</span><span class="p">(</span><span class="n">copy</span><span class="p">)</span>
 <span class="go">[[210010     50      6    600]</span>
 <span class="go"> [210020     45      2   1464]</span>
 <span class="go"> [210030     42      2    893]</span>
@@ -564,7 +577,7 @@ We can also extract data for all columns without listing any index range at all.
 <li><p class="first">We can also use <em>index slicing</em> to separate our data into different variables to make it easier to work with.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [13]: </span><span class="n">Latitude</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="gp">In [14]: </span><span class="k">print</span><span class="p">(</span><span class="n">Latitude</span><span class="p">)</span>
+<span class="gp">In [14]: </span><span class="nb">print</span><span class="p">(</span><span class="n">Latitude</span><span class="p">)</span>
 <span class="go">[ 50.17   45.775  42.17  ... -64.15  -62.02    0.   ]</span>
 </pre></div>
 </div>
@@ -584,13 +597,13 @@ Use a <code class="docutils literal notranslate"><span class="pre">for</span></c
 If we wanted to calculate the <code class="docutils literal notranslate"><span class="pre">sin()</span></code> of a variable <code class="docutils literal notranslate"><span class="pre">x</span></code> at 10 points from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(2\pi\)</span>, we could do the following.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [15]: </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 
-<span class="gp">In [16]: </span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">In [16]: </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="go">[0.         0.6981317  1.3962634  2.0943951  2.7925268  3.4906585</span>
 <span class="go"> 4.1887902  4.88692191 5.58505361 6.28318531]</span>
 
 <span class="gp">In [17]: </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="gp">In [18]: </span><span class="k">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="gp">In [18]: </span><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 <span class="go">[ 0.00000000e+00  6.42787610e-01  9.84807753e-01  8.66025404e-01</span>
 <span class="go">  3.42020143e-01 -3.42020143e-01 -8.66025404e-01 -9.84807753e-01</span>
 <span class="go"> -6.42787610e-01 -2.44929360e-16]</span>
@@ -600,7 +613,7 @@ If we wanted to calculate the <code class="docutils literal notranslate"><span c
 Alternatively, if we wanted to specify the size of the increments for a new variable <code class="docutils literal notranslate"><span class="pre">x2</span></code>, we could use the <code class="docutils literal notranslate"><span class="pre">np.arange()</span></code> function.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [19]: </span><span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
 
-<span class="gp">In [20]: </span><span class="k">print</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
+<span class="gp">In [20]: </span><span class="nb">print</span><span class="p">(</span><span class="n">x2</span><span class="p">)</span>
 <span class="go">[0.  0.5 1.  1.5 2.  2.5 3.  3.5 4.  4.5 5.  5.5 6. ]</span>
 </pre></div>
 </div>
@@ -612,20 +625,20 @@ Both of these types of array options are useful in different situations.</p>
 <li><p class="first">Like normal variables, array variables can also be used for various mathematical operations.</p>
 <div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [21]: </span><span class="n">doublex</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mf">2.0</span>
 
-<span class="gp">In [22]: </span><span class="k">print</span><span class="p">(</span><span class="n">doublex</span><span class="p">)</span>
+<span class="gp">In [22]: </span><span class="nb">print</span><span class="p">(</span><span class="n">doublex</span><span class="p">)</span>
 <span class="go">[ 0.          1.3962634   2.7925268   4.1887902   5.58505361  6.98131701</span>
 <span class="go">  8.37758041  9.77384381 11.17010721 12.56637061]</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">In addition to the <em>attributes</em> we saw prevously for NumPy <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> variables, there are also many <em>methods</em> that are part of the <code class="docutils literal notranslate"><span class="pre">ndarray</span></code> data type.</p>
-<pre class="literal-block">
-In [23]: print(x.mean())
-3.141592653589793
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [23]: </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="go">3.141592653589793</span>
 
-In [24]: print(doublex.mean())
-6.283185307179586
-</pre>
+<span class="gp">In [24]: </span><span class="nb">print</span><span class="p">(</span><span class="n">doublex</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="go">6.283185307179586</span>
+</pre></div>
+</div>
 <p>No surprises here.
 If we think of <em>variables</em> as nouns, <em>methods</em> are verbs, actions for the variable values.</p>
 <div class="admonition note">
@@ -635,7 +648,7 @@ There are many other useful <code class="docutils literal notranslate"><span cla
 </div>
 </li>
 <li><p class="first"><em>Methods</em> can also act on part of an array.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [25]: </span><span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [25]: </span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
 <span class="go">1.3962634015954634</span>
 </pre></div>
 </div>
@@ -657,7 +670,7 @@ There are many other useful <code class="docutils literal notranslate"><span cla
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Nov 19, 2018.
+        Last updated on Oct 22, 2019.
       </span>
 
     </p>
