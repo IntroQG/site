@@ -7,7 +7,7 @@ The final task for the course is to write a formal scientific paper about the re
 Please use 12 pt Times New Roman (or similar font) for your report with single spacing between lines.
 The report should not be longer than 6-8 pages including text and figures (references and the appendix can be on additional pages, if needed).
 
-**The final paper is tentatively due by 17.00 on 21.12**.
+**The final paper is tentatively due by 17.00 on 10.1.2020**.
 
 The research paper should include the following:
 
