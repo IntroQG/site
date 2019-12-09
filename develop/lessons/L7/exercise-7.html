@@ -50,6 +50,8 @@
   <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Final paper information" href="../../final-paper/final-report.html" />
+    <link rel="prev" title="Lesson 7 overview" href="overview.html" />
     <link href="../../_static/style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -309,6 +311,24 @@
 </ul>
 </li>
 </ul>
+<p class="caption"><span class="caption-text">Lesson 7</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Lesson 7 overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#scientific-journal-articles">Scientific journal articles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#additional-materials">Additional materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#lesson-video">Lesson video</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 7</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hints-for-exercise-7">Hints for Exercise 7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#comparing-a-single-predicted-age-to-multiple-measured-ages">Comparing a single predicted age to multiple measured ages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-1-part-4-example-plot">Problem 1, Part 4 example plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plotting-predicted-ages-as-horizontal-lines">Plotting predicted ages as horizontal lines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p class="caption"><span class="caption-text">Final report</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../final-paper/final-report.html">Final paper information</a><ul>
@@ -438,36 +458,13 @@
 </div>
 <div class="admonition-start-your-assignment admonition">
 <p class="first admonition-title">Start your assignment</p>
-<p>You can start working on your copy of Exercise 7 by <a class="reference external" href="https://classroom.github.com/a/Ftu9pJXD">accepting the GitHub Classroom assignment</a>.</p>
-<p class="last"><strong>Exercise 7 is due by 12:00 on Monday 17.12</strong>.</p>
+<p>You can start working on your copy of Exercise 7 by <a class="reference external" href="https://classroom.github.com/a/h-6idxvo">accepting the GitHub Classroom assignment</a>.</p>
+<p class="last"><strong>Exercise 7 is due by the end of the day on Tuesday, December 17</strong>.</p>
 </div>
-<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2018/Exercise-7">Exercise 7 in the course GitHub repository</a> (does not require logging in).
+<p>You can also take a look at the open course copy of <a class="reference external" href="https://github.com/IntroQG-2019/Exercise-7">Exercise 7 in the course GitHub repository</a> (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
 <div class="section" id="hints-for-exercise-7">
 <h2>Hints for Exercise 7<a class="headerlink" href="#hints-for-exercise-7" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="removing-9999-age-values">
-<h3>Removing <code class="docutils literal notranslate"><span class="pre">-9999</span></code> age values<a class="headerlink" href="#removing-9999-age-values" title="Permalink to this headline">¶</a></h3>
-<p>As noted in Exercise 7, there are some missing data values for different thermochronometers where an age was not calculated for a given sample.
-These values are indicated with <code class="docutils literal notranslate"><span class="pre">-9999</span></code> in the data file, and in order to calculate the reduced chi-squared misfit those <code class="docutils literal notranslate"><span class="pre">-9999</span></code> values need to be removed.
-Below is an example of how to remove missing data values indicated with <code class="docutils literal notranslate"><span class="pre">-9999</span></code>.</p>
-<div class="highlight-ipython notranslate"><div class="highlight"><pre><span></span><span class="gp">In [1]: </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="gp">In [2]: </span><span class="n">ages</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">,</span> <span class="o">-</span><span class="mi">9999</span><span class="p">,</span> <span class="mf">4.2</span><span class="p">,</span> <span class="o">-</span><span class="mi">9999</span><span class="p">,</span> <span class="o">-</span><span class="mi">9999</span><span class="p">])</span>
-
-<span class="gp">In [3]: </span><span class="n">errors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
-
-<span class="gp">In [4]: </span><span class="n">ages_clean</span> <span class="o">=</span> <span class="n">ages</span><span class="p">[</span><span class="n">ages</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">]</span>
-
-<span class="gp">In [5]: </span><span class="n">errors_clean</span> <span class="o">=</span> <span class="n">errors</span><span class="p">[</span><span class="n">ages</span> <span class="o">&gt;</span> <span class="mf">0.0</span><span class="p">]</span>
-
-<span class="gp">In [6]: </span><span class="nb">print</span><span class="p">(</span><span class="n">ages_clean</span><span class="p">)</span>
-<span class="go">[1.  3.2 4.2]</span>
-
-<span class="gp">In [7]: </span><span class="nb">print</span><span class="p">(</span><span class="n">errors_clean</span><span class="p">)</span>
-<span class="go">[0.2 0.9 0.3]</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="comparing-a-single-predicted-age-to-multiple-measured-ages">
 <h3>Comparing a single predicted age to multiple measured ages<a class="headerlink" href="#comparing-a-single-predicted-age-to-multiple-measured-ages" title="Permalink to this headline">¶</a></h3>
 <p>As mentioned in Part 3 of Problem 1, you need to modify the calculation of the chi-squared value to compare the list of measured ages to a single predicted age.
@@ -478,7 +475,7 @@ In other words, make sure you do not have an index used with the predicted age i
 <h3>Problem 1, Part 4 example plot<a class="headerlink" href="#problem-1-part-4-example-plot" title="Permalink to this headline">¶</a></h3>
 <p>Below is an example of a plot that is similar to what you should produce in Part 4 of Problem 1.</p>
 <div class="figure align-center" id="id1">
-<a class="reference internal image-reference" href="../../_images/Ex7-example-plot.png"><img alt="Example plot from Problem 1, Part 4" src="../../_images/Ex7-example-plot.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/Ex7-plot1.png"><img alt="Example plot from Problem 1, Part 4" src="../../_images/Ex7-plot1.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-text">Figure 1. An example plot similar to that you should produce in Problem 1, Part 4.</span></p>
 </div>
 </div>
@@ -486,12 +483,11 @@ In other words, make sure you do not have an index used with the predicted age i
 <h3>Plotting predicted ages as horizontal lines<a class="headerlink" href="#plotting-predicted-ages-as-horizontal-lines" title="Permalink to this headline">¶</a></h3>
 <p>I suggest that you add horizontal lines to your plots of the thermochronometer data to show the predicted ages you calculate.
 If you have read in the data file with the values for latitude stored in a variable <code class="docutils literal notranslate"><span class="pre">latitude</span></code>, you can plot a predicted age <code class="docutils literal notranslate"><span class="pre">predictedAge</span></code> as a black horizontal line as follows:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">latitude</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">latitude</span><span class="p">)],</span> <span class="p">[</span><span class="n">predictedAge</span><span class="p">,</span> <span class="n">predictedAge</span><span class="p">],</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Lat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Lat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()],</span> <span class="p">[</span><span class="n">predicted_age</span><span class="p">,</span> <span class="n">predicted_age</span><span class="p">],</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This will create a horizontal line from the minimum <code class="docutils literal notranslate"><span class="pre">latitude</span></code> to the maximum <code class="docutils literal notranslate"><span class="pre">latitude</span></code> with a vertical value of <code class="docutils literal notranslate"><span class="pre">predictedAge</span></code>.
-The “trick” here is to put Python lists into the <code class="docutils literal notranslate"><span class="pre">plt.plot()</span></code> command instead of list or array variables.
+<p>This will create a horizontal line from the minimum latitude to the maximum latitude with a vertical-axis value of <code class="docutils literal notranslate"><span class="pre">predicted_age</span></code>.
+The “trick” here is to put Python lists into the <code class="docutils literal notranslate"><span class="pre">ax2.plot()</span></code> command instead of list or array variables.
 Lists are values separated by commas within square brackets (<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>), and here we just give 2 values in each list for the <em>x</em> and <em>y</em> points that define the ends of the line.</p>
 </div>
 </div>
@@ -503,6 +499,15 @@ Lists are values separated by commas within square brackets (<code class="docuti
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../final-paper/final-report.html" class="btn btn-neutral float-right" title="Final paper information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overview.html" class="btn btn-neutral float-left" title="Lesson 7 overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -510,7 +515,7 @@ Lists are values separated by commas within square brackets (<code class="docuti
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Dec 10, 2018.
+        Last updated on Dec 09, 2019.
       </span>
 
     </p>
