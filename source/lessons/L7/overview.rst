@@ -35,6 +35,9 @@ Additional materials
 Lesson video
 ------------
 
-.. admonition:: Lesson 7 - Thermochronology II
+.. admonition:: Lesson 7 - Quantitative thermochronology II
 
-    There is no lecture video for Lesson 7. All material for this lesson was covered in the :doc:`video for Lesson 6 <../L6/overview>`.
+    .. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xiDzFaUQ_x8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
