@@ -321,7 +321,9 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 7</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#hints-for-exercise-7">Hints for Exercise 7</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-cell-for-the-misfit-function">Adding a cell for the misfit function</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#comparing-a-single-predicted-age-to-multiple-measured-ages">Comparing a single predicted age to multiple measured ages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#problem-1-part-3">Problem 1, Part 3</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#problem-1-part-4-example-plot">Problem 1, Part 4 example plot</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#plotting-predicted-ages-as-horizontal-lines">Plotting predicted ages as horizontal lines</a></li>
 </ul>
@@ -465,16 +467,32 @@
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.</p>
 <div class="section" id="hints-for-exercise-7">
 <h2>Hints for Exercise 7<a class="headerlink" href="#hints-for-exercise-7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-a-cell-for-the-misfit-function">
+<h3>Adding a cell for the misfit function<a class="headerlink" href="#adding-a-cell-for-the-misfit-function" title="Permalink to this headline">¶</a></h3>
+<p>This isn’t really a tip, but rather a suggestion that you copy/paste your <code class="docutils literal notranslate"><span class="pre">chi_squared()</span></code> function from the cell where it is defined up to a new cell above the <code class="docutils literal notranslate"><span class="pre">age_predict()</span></code> function.
+This will make sure your code works when running the entire notebook from the first cell.</p>
+</div>
 <div class="section" id="comparing-a-single-predicted-age-to-multiple-measured-ages">
 <h3>Comparing a single predicted age to multiple measured ages<a class="headerlink" href="#comparing-a-single-predicted-age-to-multiple-measured-ages" title="Permalink to this headline">¶</a></h3>
 <p>As mentioned in Part 3 of Problem 1, you need to modify the calculation of the chi-squared value to compare the list of measured ages to a single predicted age.
 The easiest way to do this is to simply pass in a single age and refer only to that value in the calculation of chi-squared.
 In other words, make sure you do not have an index used with the predicted age in the chi-squared equation in your function.</p>
 </div>
+<div class="section" id="problem-1-part-3">
+<h3>Problem 1, Part 3<a class="headerlink" href="#problem-1-part-3" title="Permalink to this headline">¶</a></h3>
+<p>When calculating the misfit inside the <code class="docutils literal notranslate"><span class="pre">age_predict</span></code> function, notice that the values used as standard deviation should be filtered to have the same indices as the <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> data series, for example.
+If the <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> series looks something like this (left side is indices and right side is some data values):</p>
+<p>we would want to filter it to only have values and no <a href="#id1"><span class="problematic" id="id2">``</span></a>NaN``s:</p>
+<p>Correspondingly, the original error/standard deviation might look like this:</p>
+<p>If you now filter the error/standard deviation by dropping the <code class="docutils literal notranslate"><span class="pre">NaN``s</span> <span class="pre">(like</span> <span class="pre">you</span> <span class="pre">did</span> <span class="pre">with</span> <span class="pre">``ahe_data</span></code>), the shape of <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> and the error/standard deviation will be different.
+This is because the error/standard deviation would also have a value at index 0 while the <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> does not.
+Thus, you have to filter the error/standard deviation to have the same indices as the filtered <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code>:</p>
+<p>We have done this kind of thing back in <a class="reference external" href="https://geo-python.github.io/site/notebooks/L5/processing-data-with-pandas.html">Lesson 5 of the Geo-Python course</a>.</p>
+</div>
 <div class="section" id="problem-1-part-4-example-plot">
 <h3>Problem 1, Part 4 example plot<a class="headerlink" href="#problem-1-part-4-example-plot" title="Permalink to this headline">¶</a></h3>
 <p>Below is an example of a plot that is similar to what you should produce in Part 4 of Problem 1.</p>
-<div class="figure align-center" id="id1">
+<div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="../../_images/Ex7-plot1.png"><img alt="Example plot from Problem 1, Part 4" src="../../_images/Ex7-plot1.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-text">Figure 1. An example plot similar to that you should produce in Problem 1, Part 4.</span></p>
 </div>
@@ -515,7 +533,7 @@ Lists are values separated by commas within square brackets (<code class="docuti
     <p>
         &copy; Copyright 2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.
       <span class="lastupdated">
-        Last updated on Dec 09, 2019.
+        Last updated on Dec 10, 2019.
       </span>
 
     </p>
