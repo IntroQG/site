@@ -482,11 +482,31 @@ In other words, make sure you do not have an index used with the predicted age i
 <h3>Problem 1, Part 3<a class="headerlink" href="#problem-1-part-3" title="Permalink to this headline">¶</a></h3>
 <p>When calculating the misfit inside the <code class="docutils literal notranslate"><span class="pre">age_predict</span></code> function, notice that the values used as standard deviation should be filtered to have the same indices as the <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> data series, for example.
 If the <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> series looks something like this (left side is indices and right side is some data values):</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0 NaN
+1 20
+2 7
+3 NaN
+</pre></div>
+</div>
 <p>we would want to filter it to only have values and no <a href="#id1"><span class="problematic" id="id2">``</span></a>NaN``s:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1 20
+2 7
+</pre></div>
+</div>
 <p>Correspondingly, the original error/standard deviation might look like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0 100
+1 40
+2 9
+3 NaN
+</pre></div>
+</div>
 <p>If you now filter the error/standard deviation by dropping the <code class="docutils literal notranslate"><span class="pre">NaN``s</span> <span class="pre">(like</span> <span class="pre">you</span> <span class="pre">did</span> <span class="pre">with</span> <span class="pre">``ahe_data</span></code>), the shape of <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> and the error/standard deviation will be different.
 This is because the error/standard deviation would also have a value at index 0 while the <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> does not.
 Thus, you have to filter the error/standard deviation to have the same indices as the filtered <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1 40
+2 9
+</pre></div>
+</div>
 <p>We have done this kind of thing back in <a class="reference external" href="https://geo-python.github.io/site/notebooks/L5/processing-data-with-pandas.html">Lesson 5 of the Geo-Python course</a>.</p>
 </div>
 <div class="section" id="problem-1-part-4-example-plot">
