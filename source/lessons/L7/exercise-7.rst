@@ -36,7 +36,7 @@ Problem 1, Part 3
 When calculating the misfit inside the ``age_predict`` function, notice that the values used as standard deviation should be filtered to have the same indices as the ``ahe_data`` data series, for example.
 If the ``ahe_data`` series looks something like this (left side is indices and right side is some data values):
 
-.. code::
+.. code-block:: none
 
     0 NaN
     1 20
@@ -45,14 +45,14 @@ If the ``ahe_data`` series looks something like this (left side is indices and r
 
 we would want to filter it to only have values and no ``NaN``s:
 
-.. code::
+.. code-block:: none
 
     1 20
     2 7
 
 Correspondingly, the original error/standard deviation might look like this:
 
-.. code::
+.. code-block:: none
 
     0 100
     1 40
@@ -63,7 +63,7 @@ If you now filter the error/standard deviation by dropping the ``NaN``s (like yo
 This is because the error/standard deviation would also have a value at index 0 while the ``ahe_data`` does not.
 Thus, you have to filter the error/standard deviation to have the same indices as the filtered ``ahe_data``:
 
-.. code::
+.. code-block:: none
 
     1 40
     2 9
@@ -88,7 +88,7 @@ Plotting predicted ages as horizontal lines
 I suggest that you add horizontal lines to your plots of the thermochronometer data to show the predicted ages you calculate.
 If you have read in the data file with the values for latitude stored in a variable ``latitude``, you can plot a predicted age ``predictedAge`` as a black horizontal line as follows:
 
-.. code:: python
+.. code-block:: python
 
     ax2.plot([data['Lat'].min(), data['Lat'].max()], [predicted_age, predicted_age], 'k-')
 
