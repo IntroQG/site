@@ -43,7 +43,7 @@ If the ``ahe_data`` series looks something like this (left side is indices and r
     2 7
     3 NaN
 
-we would want to filter it to only have values and no ``NaN``s:
+we would want to filter it to only have values and no ``NaN`` values:
 
 .. code-block:: none
 
