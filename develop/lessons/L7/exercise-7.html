@@ -500,7 +500,7 @@ If the <code class="docutils literal notranslate"><span class="pre">ahe_data</sp
 3 NaN
 </pre></div>
 </div>
-<p>If you now filter the error/standard deviation by dropping the <code class="docutils literal notranslate"><span class="pre">NaN``s</span> <span class="pre">(like</span> <span class="pre">you</span> <span class="pre">did</span> <span class="pre">with</span> <span class="pre">``ahe_data</span></code>), the shape of <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> and the error/standard deviation will be different.
+<p>If you now filter the error/standard deviation by dropping the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> valuess (like you did with <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code>), the shape of <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> and the error/standard deviation will be different.
 This is because the error/standard deviation would also have a value at index 0 while the <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code> does not.
 Thus, you have to filter the error/standard deviation to have the same indices as the filtered <code class="docutils literal notranslate"><span class="pre">ahe_data</span></code>:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1 40

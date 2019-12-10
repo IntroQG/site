@@ -59,7 +59,7 @@ Correspondingly, the original error/standard deviation might look like this:
     2 9
     3 NaN
 
-If you now filter the error/standard deviation by dropping the ``NaN``s (like you did with ``ahe_data``), the shape of ``ahe_data`` and the error/standard deviation will be different.
+If you now filter the error/standard deviation by dropping the ``NaN`` valuess (like you did with ``ahe_data``), the shape of ``ahe_data`` and the error/standard deviation will be different.
 This is because the error/standard deviation would also have a value at index 0 while the ``ahe_data`` does not.
 Thus, you have to filter the error/standard deviation to have the same indices as the filtered ``ahe_data``:
 
