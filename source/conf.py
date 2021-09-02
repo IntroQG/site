@@ -15,18 +15,17 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
 project = 'IntroQG'
-copyright = '2019, D. Whipp, Department of Geosciences and Geography, University of Helsinki.'
-author = 'D. Whipp'
+copyright = '2016-2021, D. Whipp, Department of Geosciences and Geography, University of Helsinki.'
+author = ''
 
 # The short X.Y version
-version = '2019'
+version = '2021'
 # The full version, including alpha/beta/rc tags
-release = '2019'
+release = '2021'
 
 
 # -- General configuration ---------------------------------------------------
@@ -41,19 +40,14 @@ release = '2019'
 extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.githubpages',
-    'nbsphinx',
+    'sphinx.ext.todo',
+    'sphinx_thebe',
+    #'sphinxcontrib.googleanalytics',
     'IPython.sphinxext.ipython_console_highlighting',
-    'IPython.sphinxext.ipython_directive'
+    'IPython.sphinxext.ipython_directive',
+    'myst_nb',
+    'jupyter_sphinx'
 ]
-
-# Google Analytics ID to enable tracking of site traffic, format overrides
-def setup(app):
-    """Insert Google Analytics tracker
-    Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
-    """
-    app.add_javascript("https://www.googletagmanager.com/gtag/js?id=UA-92357604-2")
-    app.add_javascript("google_analytics_tracker.js")
-    app.add_stylesheet('theme_overrides.css')
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -87,8 +81,9 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme = 'sphinx_book_theme'
+#html_logo = ''
+html_title = ''
 
 html_logo = 'img/HY-logo.png'
 
@@ -100,7 +95,20 @@ html_last_updated_fmt = ""
 # documentation.
 
 html_theme_options = {
+    #"external_links": [],
+    "repository_url": "https://github.com/IntroQG/site/",
+    "repository_branch": "master",
+    "path_to_docs": "source/",
+    #"twitter_url": "https://twitter.com/pythongis",
+    #"google_analytics_id": "UA-159257488-1",
+    "use_edit_page_button": True,
+    "use_repository_button": True,
+    "launch_buttons": {
+        "binderhub_url": "https://mybinder.org",
+        "thebe": True,
+        "notebook_interface": "jupyterlab",
     "collapse_navigation" : False
+    },
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -187,39 +195,8 @@ texinfo_documents = [
 
 
 # -- Extension configuration -------------------------------------------------
-# This is processed by Jinja2 and inserted before each notebook
-nbsphinx_prolog = r"""
-{% set docname = env.doc2path(env.docname, base='source') %}
-{% set docname2 = env.doc2path(env.docname, base='') %}
-
-.. only:: html
-
-    .. role:: raw-html(raw)
-        :format: html
-
-    .. nbinfo::
-
-        This page was generated from `{{ docname }}`__.
-        :raw-html:`<br/><a href="https://mybinder.org/v2/gh/introqg/site/master?urlpath=lab/tree/{{ docname }}"><img alt="Binder badge" src="https://img.shields.io/badge/launch-completed%20binder-red.svg" style="vertical-align:text-bottom"></a>`
-        :raw-html:`<a href="https://mybinder.org/v2/gh/introqg/notebooks/master?urlpath=lab/tree/{{ docname2 }}"><img alt="Binder badge" src="https://img.shields.io/badge/launch-lesson%20binder-red.svg" style="vertical-align:text-bottom"></a>`
-        :raw-html:`<a href="https://notebooks.csc.fi/#/blueprint/d8bb9216112e4dc298f51de49b9fae56"><img alt="CSC badge" src="https://img.shields.io/badge/launch-CSC%20notebook-blue.svg" style="vertical-align:text-bottom"></a>`
-
-    __ https://github.com/introqg/site/blob/master/{{ docname }}
-
-.. raw:: latex
-
-    \vfil\penalty-1\vfilneg
-    \vspace{\baselineskip}
-    \textcolor{gray}{The following section was generated from
-    \texttt{\strut{}{{ docname }}}\\[-0.5\baselineskip]
-    \noindent\rule{\textwidth}{0.4pt}}
-    \vspace{-2\baselineskip}
-"""
-
 # Allow errors when parsing pages using nbsphinx
 nbsphinx_allow_errors = True
 
-# Sphinx versioning settings
-scv_show_banner = True
-#scv_whitelist_branches = ('master', 'develop', '2017')
-scv_whitelist_branches = ('master', 'develop')
+# Execute cells only if any of the cells is missing output
+jupyter_execute_notebooks = "auto"
