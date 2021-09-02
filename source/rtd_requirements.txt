@@ -1,0 +1,17 @@
+jupyter-book
+sphinx
+sphinx-book-theme
+ipython
+jupyter-sphinx
+pydata-sphinx-theme
+IPython
+jupyter_client
+ipykernel
+git+https://github.com/jelmer/googleanalytics.git@master
+MyST-NB
+matplotlib
+ipympl
+numpy
+pandas
+nodejs
+scipy
