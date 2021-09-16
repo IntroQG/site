@@ -1,7 +1,7 @@
 .. Introduction to Quantitative Geology documentation master file, created by
    sphinx-quickstart on Mon Oct 22 15:25:21 2018.
 
-.. figure:: img/banner/introqg-main.png
+.. figure:: img/banner/introqg-landing-page.png
 
 Introduction to Quantitative Geology 2019
 =========================================
