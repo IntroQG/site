@@ -51,7 +51,7 @@ Here, we willl get a sense of a few things NumPy can do.
 
     import os
     #fp = os.path.join(os.path.abspath('source'), '_static', 'data', 'L8', 'GVP-Volcano-Lat-Lon-Elev.csv')
-    fp = '../../_static/data/L8/GVP-Volcano-Lat-Lon-Elev.csv'
+    fp = 'source/_static/data/L8/GVP-Volcano-Lat-Lon-Elev.csv'
     data = np.loadtxt(fname=fp, delimiter=',')
 
    .. ipython:: python
