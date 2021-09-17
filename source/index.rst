@@ -3,8 +3,8 @@
 
 .. figure:: img/banner/introqg-landing-page.png
 
-Introduction to Quantitative Geology 2019
-=========================================
+Welcome to IntroQG 2021!
+========================
 
 Welcome to the website for the Introduction to Quantitative Geology course at the University of Helsinki.
 This course introduces students to how to study a handful of geoscientific problems using a bit of geology, math, and Python programming.
