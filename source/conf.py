@@ -85,8 +85,7 @@ html_theme = 'sphinx_book_theme'
 #html_logo = ''
 html_title = ''
 
-#html_logo = 'img/introqg-small.png'
-html_logo = ''
+html_logo = 'img/introqg-small.png'
 
 # Add last modified to all pages
 html_last_updated_fmt = ""
