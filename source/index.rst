@@ -11,7 +11,6 @@ This course introduces students to how to study a handful of geoscientific probl
 The course is aimed at advanced undergraduate students in geology or geophysics.
 This course is designed to follow the `Geo-Python course <https://geo-python.github.io>`_, which focuses exclusively on programming in Python.
 More info on this course can be found below.
-Enjoy!
 
 Course goals
 ------------
