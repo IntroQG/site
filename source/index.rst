@@ -38,26 +38,20 @@ Schedule
 +--------+------------+-----------------------------------+
 | Class  | Date       | Theme                             |
 +========+============+===================================+
-| **1**  | 28.10.2019 | Basic geostatistics               |
-|        |            |                                   |
+| **1**  |  1.11.2019 | Basic geostatistics               |
 +--------+------------+-----------------------------------+
-| **2**  |  4.11.2019 | Comparing predictions to          |
-|        |            | observed values                   |
+| **2**  |  8.11.2019 | Comparing predictions to          |
+|        |            | observations                      |
 +--------+------------+-----------------------------------+
-| **3**  | 11.11.2019 | The diffusion equation;           |
-|        |            | Hillslope sediment transport      |
+| **3**  | 15.11.2019 | The diffusion equation            |
 +--------+------------+-----------------------------------+
-| **4**  | 18.11.2019 | Fluvial incision and rock uplift: |
-|        |            | The advection/wave equation       |
+| **4**  | 22.11.2019 | The advection/wave equation       |
 +--------+------------+-----------------------------------+
-| **5**  | 25.11.2019 | Viscous flow of rock and ice:     |
-|        |            | (Non-)Newtonian flow equations    |
+| **5**  | 29.11.2019 | Building a numerical model        |
 +--------+------------+-----------------------------------+
-| **6**  |  2.12.2019 | Quantitative thermochronology:    |
-|        |            | Linking ages to processes I       |
+| **6**  |  7.12.2019 | Quantitative thermochronology I   |
 +--------+------------+-----------------------------------+
-| **7**  |  9.12.2019 | Quantitative thermochronology:    |
-|        |            | Linking ages to processes II      |
+| **7**  | 13.12.2019 | Quantitative thermochronology II  |
 +--------+------------+-----------------------------------+
 
 For the schedule in Period I, please check the `Geo-Python website <https://geo-python.github.io>`_.
@@ -82,71 +76,72 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
     general-info/grading
     general-info/licensing
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 1
+.. 
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 1
 
-    lessons/L1/overview
-    notebooks/L1/numpy.ipynb
-    lessons/L1/basic-terms
-    lessons/L1/uncertainty
-    lessons/L1/reporting-measurements
-    lessons/L1/normal-distribution
-    lessons/L1/exercise-1
+        lessons/L1/overview
+        notebooks/L1/numpy.ipynb
+        lessons/L1/basic-terms
+        lessons/L1/uncertainty
+        lessons/L1/reporting-measurements
+        lessons/L1/normal-distribution
+        lessons/L1/exercise-1
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 2
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 2
 
-    lessons/L2/overview
-    notebooks/L2/least-squares.ipynb
-    notebooks/L2/linear-correlation.ipynb
-    notebooks/L2/goodness-of-fit.ipynb
-    lessons/L2/exercise-2
+        lessons/L2/overview
+        notebooks/L2/least-squares.ipynb
+        notebooks/L2/linear-correlation.ipynb
+        notebooks/L2/goodness-of-fit.ipynb
+        lessons/L2/exercise-2
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 3
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 3
 
-    lessons/L3/overview
-    lessons/L3/solving-diffusion
-    lessons/L3/exercise-3
+        lessons/L3/overview
+        lessons/L3/solving-diffusion
+        lessons/L3/exercise-3
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 4
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 4
 
-    lessons/L4/overview
-    lessons/L4/solving-advection
-    lessons/L4/exercise-4
+        lessons/L4/overview
+        lessons/L4/solving-advection
+        lessons/L4/exercise-4
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 5
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 5
 
-    lessons/L5/overview
-    lessons/L5/viscous-flows
-    lessons/L5/exercise-5-theory
-    lessons/L5/exercise-5
+        lessons/L5/overview
+        lessons/L5/viscous-flows
+        lessons/L5/exercise-5-theory
+        lessons/L5/exercise-5
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 6
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 6
 
-    lessons/L6/overview
-    lessons/L6/exercise-6
+        lessons/L6/overview
+        lessons/L6/exercise-6
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 7
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 7
 
-    lessons/L7/overview
-    lessons/L7/exercise-7
+        lessons/L7/overview
+        lessons/L7/exercise-7
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Final report
+    .. toctree::
+        :maxdepth: 2
+        :caption: Final report
 
-    final-paper/final-report
-    final-paper/articles
-    final-paper/template
+        final-paper/final-report
+        final-paper/articles
+        final-paper/template
