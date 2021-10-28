@@ -4,34 +4,33 @@ Course details
 Course meetings
 ---------------
 
-**Period II**
+Class sessions
+~~~~~~~~~~~~~~
 
-- Class sessions
+*On Zoom*
 
-  - Mondays (28.10-9.12) 9-12, B222, Exactum
+- 14:15-16:00 on Mondays (1.11-29.11, 13.12)
+- 08:15-10:00 on Tuesday (7.12) 
 
-- Work sessions
+Exercise support sessions
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  - Tuesdays (29.10-10.12) 14-18, B119, Exactum
+*On Zoom*
+
+- 09:15-13:00 on Fridays (5.11-17.12)
 
 Instructors
 -----------
 
-**David Whipp**, lead instructor
+**David Whipp**, course instructor
 
 - Office: C417, Exactum
 - Email: firstname.lastname@helsinki.fi
-- Phone: +358 (0)2 941 51617
 
-**Aleksi Rantanen**, course assistant
+**Leevi Tuikka**, course assistant
 
 - Office: C426, Exactum
-- Email: firstname.m.lastname@helsinki.fi (note the m)
-
-**Lotta Ylä-Mella**, course assistant
-
-- Office: C409, Exactum
-- Email: firstname.lastname@helsinki.fi (with a, not ä)
+- Email: firstname.lastname@helsinki.fi
 
 Course website
 ---------------
