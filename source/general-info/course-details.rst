@@ -4,18 +4,12 @@ Course details
 Course meetings
 ---------------
 
-Class sessions
-~~~~~~~~~~~~~~
-
-*On Zoom*
+**Class sessions** (*On Zoom*)
 
 - 14:15-16:00 on Mondays (1.11-29.11, 13.12)
 - 08:15-10:00 on Tuesday (7.12) 
 
-Exercise support sessions
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-*On Zoom*
+**Exercise support sessions** (*On Zoom*)
 
 - 09:15-13:00 on Fridays (5.11-17.12)
 
