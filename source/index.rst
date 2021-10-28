@@ -38,20 +38,20 @@ Schedule
 +--------+------------+-----------------------------------+
 | Class  | Date       | Theme                             |
 +========+============+===================================+
-| **1**  |  1.11.2019 | Basic geostatistics               |
+| **1**  |  1.11.2021 | Basic geostatistics               |
 +--------+------------+-----------------------------------+
-| **2**  |  8.11.2019 | Comparing predictions to          |
+| **2**  |  8.11.2021 | Comparing predictions to          |
 |        |            | observations                      |
 +--------+------------+-----------------------------------+
-| **3**  | 15.11.2019 | The diffusion equation            |
+| **3**  | 15.11.2021 | The diffusion equation            |
 +--------+------------+-----------------------------------+
-| **4**  | 22.11.2019 | The advection/wave equation       |
+| **4**  | 22.11.2021 | The advection/wave equation       |
 +--------+------------+-----------------------------------+
-| **5**  | 29.11.2019 | Building a numerical model        |
+| **5**  | 29.11.2021 | Building a numerical model        |
 +--------+------------+-----------------------------------+
-| **6**  |  7.12.2019 | Quantitative thermochronology I   |
+| **6**  |  7.12.2021 | Quantitative thermochronology I   |
 +--------+------------+-----------------------------------+
-| **7**  | 13.12.2019 | Quantitative thermochronology II  |
+| **7**  | 13.12.2021 | Quantitative thermochronology II  |
 +--------+------------+-----------------------------------+
 
 For the schedule in Period I, please check the `Geo-Python website <https://geo-python.github.io>`_.
