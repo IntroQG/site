@@ -145,9 +145,9 @@ For the details about what was covered in the Geo-Python course in Period I, ple
         final-paper/final-report
         final-paper/articles
         final-paper/template
-.. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Resources
 
-        general-info/installing-miniconda
+.. toctree::
+    :maxdepth: 2
+    :caption: Resources
+
+    general-info/installing-miniconda
