@@ -8,8 +8,8 @@ Welcome to IntroQG 2021!
 
 Welcome to the website for the Introduction to Quantitative Geology course at the University of Helsinki.
 This course introduces students to how to study a handful of geoscientific problems using a bit of geology, math, and Python programming.
-The course is aimed at advanced undergraduate students in geology or geophysics.
-This course is designed to follow the `Geo-Python course <https://geo-python.github.io>`_, which focuses exclusively on programming in Python.
+The course is aimed at master's students in geology or geophysics.
+This course is designed to build upon the `Geo-Python course <https://geo-python.github.io>`_, which focuses exclusively on programming in Python.
 More info on this course can be found below.
 
 Course goals
@@ -19,14 +19,14 @@ This course aims to:
 
 1. Introduce students to applications of the Python programming language to modelling Earth science data/processes
 2. Develop basic programming skills through analysis of fundamental equations used in the Earth sciences
-3. Present some established techniques for comparing geologic data to numerical model predictions
+3. Present some common techniques for comparing geologic data to numerical model predictions
 
 Course format
 -------------
 
 The majority of this course will be spent in front of a computer working on exercises related to geological processes and data.
-Physical class meetings will be mainly in traditional lecture classrooms, but you are expected to work on your own laptop or find a suitable substitute.
-The lecture rooms will have power available.
+Class meetings in 2021 will be on Zoom and you are expected to work on your own laptop or find a suitable substitute.
+Exercise support sessions will be held in person, if possible.
 
 Typical exercises will involve a brief introduction followed by topical computer-based tasks.
 At the end of the exercises, you may be asked to submit answers to relevant questions, some related plots, and/or Python codes you have written or used.
@@ -54,7 +54,7 @@ Schedule
 | **7**  | 13.12.2021 | Quantitative thermochronology II  |
 +--------+------------+-----------------------------------+
 
-For the schedule in Period I, please check the `Geo-Python website <https://geo-python.github.io>`_.
+For the details about what was covered in the Geo-Python course in Period I, please check the `Geo-Python website <https://geo-python.github.io>`_.
 
 |
 
@@ -145,3 +145,9 @@ For the schedule in Period I, please check the `Geo-Python website <https://geo-
         final-paper/final-report
         final-paper/articles
         final-paper/template
+.. 
+    .. toctree::
+        :maxdepth: 2
+        :caption: Resources
+
+        general-info/installing-miniconda
