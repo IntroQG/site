@@ -150,4 +150,5 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     :maxdepth: 2
     :caption: Resources
 
+    general-info/glossary
     general-info/installing-miniconda
