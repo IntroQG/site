@@ -15,3 +15,4 @@ numpy
 pandas
 nodejs
 scipy
+xarray
