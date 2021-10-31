@@ -76,19 +76,20 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     general-info/grading
     general-info/licensing
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 1
+
+    lessons/L1/overview
+    notebooks/L1/numpy.ipynb
+    notebooks/L1/basic-terms.ipynb
+    lessons/L1/basic-terms
+    lessons/L1/uncertainty
+    lessons/L1/reporting-measurements
+    lessons/L1/normal-distribution
+    lessons/L1/exercise-1
+
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 1
-
-        lessons/L1/overview
-        notebooks/L1/numpy.ipynb
-        lessons/L1/basic-terms
-        lessons/L1/uncertainty
-        lessons/L1/reporting-measurements
-        lessons/L1/normal-distribution
-        lessons/L1/exercise-1
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 2
