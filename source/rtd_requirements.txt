@@ -10,9 +10,7 @@ ipykernel
 git+https://github.com/jelmer/googleanalytics.git@master
 MyST-NB
 matplotlib
-ipympl
 numpy
 pandas
-nodejs
 scipy
 xarray
