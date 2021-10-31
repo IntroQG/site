@@ -83,7 +83,7 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     lessons/L1/overview
     notebooks/L1/numpy.ipynb
     notebooks/L1/basic-terms.ipynb
-    lessons/L1/uncertainty
+    notebooks/L1/uncertainty.ipynb
     lessons/L1/reporting-measurements
     lessons/L1/normal-distribution
     lessons/L1/exercise-1
