@@ -7,11 +7,10 @@ Before we start with that, however, we need to learn a few things about a new Py
 
 1. `A brief introduction to NumPy <../../notebooks/L1/numpy.ipynb>`_
 2. `Basic statistical terms and concepts <../../notebooks/L1/basic-terms.ipynb>`_
-3. :doc:`Basic statistical terms and concepts <basic-terms>`
-4. :doc:`Uncertainty <uncertainty>`
-5. :doc:`Reporting measurements <reporting-measurements>`
-6. :doc:`The normal distribution <normal-distribution>`
-7. :doc:`Exercise 1 <exercise-1>`
+3. `Uncertainty <../../notebooks/L1/uncertainty.ipynb>`_
+4. `Reporting measurements <../../notebooks/L1/reporting-measurements.ipynb>`_
+5. `The normal distribution <../../notebooks/L1/normal-distribution.ipynb>`_
+6. :doc:`Exercise 1 <exercise-1>`
 
 Learning objectives
 -------------------

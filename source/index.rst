@@ -84,8 +84,8 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     notebooks/L1/numpy.ipynb
     notebooks/L1/basic-terms.ipynb
     notebooks/L1/uncertainty.ipynb
-    lessons/L1/reporting-measurements
-    lessons/L1/normal-distribution
+    notebooks/L1/reporting-measurements.ipynb
+    notebooks/L1/normal-distribution.ipynb
     lessons/L1/exercise-1
 
 .. 

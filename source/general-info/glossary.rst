@@ -6,6 +6,9 @@ Glossary
   accurate measurement
      A measurement with a small random error between measurements.
 
+  normal distribution
+     A continuous probability distribution for a random variable with a real value. It is also known as a Gaussian, and typically has a bell shape centered at the mean value and with the width defined by the standard deviation.
+
   population
      The total number of occurrences of a particular thing in a defined area.
 
