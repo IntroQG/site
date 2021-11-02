@@ -9,7 +9,7 @@ Course meetings
 - 14:15-16:00 on Mondays (1.11-29.11, 13.12)
 - 08:15-10:00 on Tuesday (7.12) 
 
-**Exercise support sessions** (*On Zoom*)
+**Exercise support sessions** (*BK106, Exactum, and on Zoom if needed*)
 
 - 09:15-13:00 on Fridays (5.11-17.12)
 
