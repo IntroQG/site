@@ -6,10 +6,10 @@ This will be our first venture into applying our new Python skills to quantitati
 Before we start with that, however, we need to learn a few things about a new Python library, NumPy.
 
 1. `A brief introduction to NumPy <../../notebooks/L1/numpy.html>`_
-2. `Basic statistical terms and concepts <../../notebooks/L1/basic-terms.ipynb>`_
-3. `Uncertainty <../../notebooks/L1/uncertainty.ipynb>`_
-4. `Reporting measurements <../../notebooks/L1/reporting-measurements.ipynb>`_
-5. `The normal distribution <../../notebooks/L1/normal-distribution.ipynb>`_
+2. `Basic statistical terms and concepts <../../notebooks/L1/basic-terms.html>`_
+3. `Uncertainty <../../notebooks/L1/uncertainty.html>`_
+4. `Reporting measurements <../../notebooks/L1/reporting-measurements.html>`_
+5. `The normal distribution <../../notebooks/L1/normal-distribution.html>`_
 6. :doc:`Exercise 1 <exercise-1>`
 
 Learning objectives
