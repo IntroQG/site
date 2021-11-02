@@ -20,23 +20,20 @@ After completing this week's lesson you should be able to:
 - Understand some basic statistical terms and how they are defined
 - Write your own functions for basic (geo)statistical analysis
 
-Lesson video
-------------
+Lesson videos
+-------------
 
-A video will be posted after the lesson.
+.. admonition:: Lesson 1.1 - Course overview, a brief introduction to NumPy
 
-.. 
-    .. admonition:: Lesson 1 - Basic geostatistics
+    .. raw:: html
 
-        .. raw:: html
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wg4dntFBzkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NW8lI4KDAe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
-        **Contents:**
+.. admonition:: Lesson 1.2 - Basic geostatistics
 
-            - `00:53 - Course overview <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=0m53s>`__
-            - `13:40 - Overview of Lesson 1 <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=13m40s>`__
-            - `19:54 - A few more useful NumPy functions <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=19m54s>`__
-            - `39:46 - Basic geostatistics <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=39m46s>`__
-            - `1:03:56 - Exercise 1 preview <https://www.youtube.com/watch?v=NW8lI4KDAe0&t=63m56s>`__
+    .. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7uppwORX9Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
