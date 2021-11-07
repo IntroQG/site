@@ -88,17 +88,16 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     notebooks/L1/normal-distribution.ipynb
     lessons/L1/exercise-1
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 2
+
+    lessons/L2/overview
+    notebooks/L2/least-squares.ipynb
+    notebooks/L2/linear-correlation.ipynb
+    notebooks/L2/goodness-of-fit.ipynb
+    lessons/L2/exercise-2
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 2
-
-        lessons/L2/overview
-        notebooks/L2/least-squares.ipynb
-        notebooks/L2/linear-correlation.ipynb
-        notebooks/L2/goodness-of-fit.ipynb
-        lessons/L2/exercise-2
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 3
