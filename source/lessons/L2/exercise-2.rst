@@ -23,7 +23,7 @@ Formatting numbers in Python
 As you may have noticed, the numbers you add to your plot using the ``ax.text()`` command look kind of ugly with so many digits after the decimal place.
 You can make them look a bit nicer by rounding them when you call the ``plt.text()`` command.
 This is called *formatted output* in Python, and it is nice not only because it can make your text easier to read, but also because the formatting does not change the data values themselves, only their display.
-In the Geo-Python course we [introduced using f-strings for formatting text and numbers](https://geo-python-site.readthedocs.io/en/latest/notebooks/L2/Python-basic-elements.html#working-with-text-and-numbers).
+In the Geo-Python course we `introduced using f-strings for formatting text and numbers <https://geo-python-site.readthedocs.io/en/latest/notebooks/L2/Python-basic-elements.html#working-with-text-and-numbers>`__.
 We recommend that you use this approach with your plots to ensure the text formatting looks nice and the number of digits after the decimal place is limited to 1-3, depending on the formatted value.
 
 You can find much more about string formatting on the `Python documentation site <https://docs.python.org/3.6/library/string.html#formatstrings>`__.
