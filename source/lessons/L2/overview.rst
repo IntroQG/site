@@ -21,6 +21,8 @@ After completing this week's lesson you should be able to:
 Lesson video
 ------------
 
+Lesson videos will be added after the lesson.
+
 .. 
     .. admonition:: Lesson 2 - Comparing predictions to observed values
 
