@@ -7,11 +7,11 @@ Exercise 2
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/NjGCLwMn>`__.
+    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/MKm8b9eZ>`__.
 
     **Exercise 2 is due by the start of lecture in week 3**.
 
-You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2019/Exercise-2>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2021/Exercise-2>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 General hints for Exercise 2
@@ -20,37 +20,11 @@ General hints for Exercise 2
 Formatting numbers in Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As you may have noticed, the numbers you add to your plot using the ``plt.text()`` command look kind of ugly with so many digits after the decimal place.
+As you may have noticed, the numbers you add to your plot using the ``ax.text()`` command look kind of ugly with so many digits after the decimal place.
 You can make them look a bit nicer by rounding them when you call the ``plt.text()`` command.
 This is called *formatted output* in Python, and it is nice not only because it can make your text easier to read, but also because the formatting does not change the data values themselves, only their display.
-To help you in formatting your output for your plots, here are some examples of how the output formatting works.
-
-.. ipython:: python
-
-    import numpy as np
-    pi = np.pi
-    print('The value of pi is', pi)
-    print('The rounded value of pi is {0:.2f}'.format(pi))
-
-Huh?
-Perhaps a bit more information is needed beyond the simple example above.
-Formatting text can be done in Python for any data that is a character string.
-You indicate something you would like to format by enclosing it in curly brackets ``{ }`` **within the quotation marks for the character string**.
-In the example above, the ``0`` indicates that this is the first value you would like to format (remember, Python indexing starts at 0).
-After the ``0:``, you give how you would like to format the variable.
-In this case, ``.2f`` indicates you want it to be displayed as a decimal (floating point) value with 2 digits after the decimal place.
-At the end of the string, after the second quotation mark, you list ``.format()`` with the list of variables you want formated inside the parentheses.
-With this in mind, let's consider another example.
-
-.. ipython:: python
-
-    print('The sine of pi is {0:.4f}, and the cosine of pi is {1:.1f}.'.format(np.sin(pi), np.cos(pi)))
-    print('In scientific notation, the sine of pi is {0:.6e}. As an integer value it is {0:.0f}.'.format(np.sin(pi)))
-
-Above, you see a few additional things about string formatting.
-First, you see that you can give more than one variable to format by changing the number to the left of the ``:`` within the curly brackets.
-In the second case, you see that you're able to format the same variable different ways within a single character string.
-You may not often need to do this, but it is possible.
+In the Geo-Python course we `introduced using f-strings for formatting text and numbers <https://geo-python-site.readthedocs.io/en/latest/notebooks/L2/Python-basic-elements.html#working-with-text-and-numbers>`__.
+We recommend that you use this approach with your plots to ensure the text formatting looks nice and the number of digits after the decimal place is limited to 1-3, depending on the formatted value.
 
 You can find much more about string formatting on the `Python documentation site <https://docs.python.org/3.6/library/string.html#formatstrings>`__.
 
@@ -75,7 +49,7 @@ Let's have a look.
 
     boatname = "Boaty McBoatface"
     firstname, lastname = name_split(boatname)
-    print("The first name is "+firstname+" and the last name is "+lastname+".")
+    print(f"The first name is {firstname} and the last name is {lastname}.")
 
 Plotting your regression lines
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
