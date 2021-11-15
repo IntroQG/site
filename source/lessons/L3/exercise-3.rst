@@ -5,19 +5,14 @@ Exercise 3
 
     Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
 
-.. warning::
+.. admonition:: Start your assignment
 
-    **Exercise 3 is not yet ready. Links for the exercise will be posted as soon as possible.**
+    You can start working on your copy of Exercise 3 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/IJO-Lbth>`__.
 
-.. 
-    .. admonition:: Start your assignment
+    **Exercise 3 is due by 17:00 on Wednesday 24 November 2021**.
 
-        You can start working on your copy of Exercise 3 by `accepting the GitHub Classroom assignment <>`__.
-
-        **Exercise 3 is due by the end of the day Tuesday in week 4 of the course**.
-
-    You can also take a look at the open course copy of `Exercise 3 in the course GitHub repository <>`__ (does not require logging in).
-    Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
+You can also take a look at the open course copy of `Exercise 3 in the course GitHub repository <https://github.com/introqg-2021/Exercise-3>`__ (does not require logging in).
+Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 Hints for Exercise 3
 --------------------
