@@ -103,7 +103,6 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     :caption: Lesson 3
 
     lessons/L3/overview
-    lessons/L3/solving-diffusion
     lessons/L3/exercise-3
 
 .. 
