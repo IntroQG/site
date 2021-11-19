@@ -5,8 +5,8 @@ This week we encounter our first common geoscience equation, the diffusion equat
 We will start with two lectures about the diffusion equation in general and its applications for mineral dating.
 As usual we will finish with the exercise for this week.
 
-1. `Natural diffusion lecture slides <../../_static/slides/L3/Natural-diffusion.pdf>`__
-2. `Basics of thermochronology lecture slides <../../_static/slides/L3/Basic-concepts-of-thermochronology.pdf>`__
+1. :doc:`Natural diffusion lecture slides <natural-diffusion>`__
+2. :doc:`Basic concepts of thermochronology lecture slides <thermochron-basics>`__
 3. :doc:`Exercise 3 <exercise-3>`
 
 Learning objectives
@@ -19,6 +19,13 @@ After completing this week's lesson you should be able to:
 
 Lesson materials
 ----------------
+
+Lesson notebook file(s)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. admonition:: Lesson 3 notebook file(s)
+
+    `Lesson 3 demonstration notebook <../../notebooks/L3/lesson-3-demo-notebook.ipynb>`__
 
 Lesson videos
 ~~~~~~~~~~~~~
