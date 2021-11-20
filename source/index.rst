@@ -107,15 +107,15 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     lessons/L3/thermochron-basics
     lessons/L3/exercise-3
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 4
+
+    lessons/L4/overview
+    lessons/L4/solving-advection
+    lessons/L4/exercise-4
+
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 4
-
-        lessons/L4/overview
-        lessons/L4/solving-advection
-        lessons/L4/exercise-4
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 5
