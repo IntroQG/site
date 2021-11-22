@@ -19,21 +19,19 @@ After completing this week's lesson you should be able to:
 - Explain the general concept of advection and how is it defined mathematically
 - Give examples of geological processes that can be modelled using the advection equation
 
-Lesson video
-------------
+Lesson videos
+-------------
 
-The lesson video will be added after the lesson.
-
-.. 
-    .. admonition:: Lesson 4 - Advection of Earth's surface
+    .. admonition:: Lesson 4.1 - Geological advection, advection-diffusion equation
 
         .. raw:: html
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_6dhOJb_ayY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/56194zprE2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
-        **Contents:**
+    .. admonition:: Lesson 4.2 - Erosion, sedimentation, and heat transfer
 
-            - `00:40 - Questions about Exercise 3 <https://www.youtube.com/watch?v=_6dhOJb_ayY&t=40s>`__
-            - `06:32 - Advection of Earth's surface lecture overview <https://www.youtube.com/watch?v=_6dhOJb_ayY&t=06m32s>`__
-            - `50:42 - Exercise 4 preview <https://www.youtube.com/watch?v=_6dhOJb_ayY&t=50m42s>`__
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5hp7U6RAEaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
