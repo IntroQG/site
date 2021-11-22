@@ -112,7 +112,9 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     :caption: Lesson 4
 
     lessons/L4/overview
+    lessons/L4/geological-advection
     lessons/L4/solving-advection
+    lessons/L4/advection-heat-transfer
     lessons/L4/exercise-4
 
 .. 
