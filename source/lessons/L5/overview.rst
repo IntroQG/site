@@ -13,6 +13,7 @@ Ice also behaves as a viscous fluid in glaciers, which will be further explored 
 
 Learning objectives
 -------------------
+
 After completing this week's lesson you should be able to:
 
 - State what a fluid is and how its flow is related to its viscosity
@@ -21,16 +22,20 @@ After completing this week's lesson you should be able to:
 
 Lesson video
 ------------
-.. admonition:: Lesson 5 - Viscous flows
 
-    .. raw:: html
+The lesson video will be posted after class.
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/1czUR3O9N8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+.. 
+    .. admonition:: Lesson 5 - Viscous flows
 
-    **Contents:**
+        .. raw:: html
 
-        - `01:10 - Questions about Exercise 4 <https://www.youtube.com/watch?v=1czUR3O9N8c&t=01m10s>`__
-        - `03:10 - Rocks and ice as viscous materials lecture <https://www.youtube.com/watch?v=1czUR3O9N8c&t=03m10s>`__
-        - `33:12 - Overview of other lesson materials <https://www.youtube.com/watch?v=1czUR3O9N8c&t=33m12s>`__
-        - `36:30 - Preview of Exercise 5 (based on 2018 version) <https://www.youtube.com/watch?v=1czUR3O9N8c&t=36m30s>`__
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1czUR3O9N8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+
+        **Contents:**
+
+            - `01:10 - Questions about Exercise 4 <https://www.youtube.com/watch?v=1czUR3O9N8c&t=01m10s>`__
+            - `03:10 - Rocks and ice as viscous materials lecture <https://www.youtube.com/watch?v=1czUR3O9N8c&t=03m10s>`__
+            - `33:12 - Overview of other lesson materials <https://www.youtube.com/watch?v=1czUR3O9N8c&t=33m12s>`__
+            - `36:30 - Preview of Exercise 5 (based on 2018 version) <https://www.youtube.com/watch?v=1czUR3O9N8c&t=36m30s>`__
