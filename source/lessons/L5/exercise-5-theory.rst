@@ -3,6 +3,7 @@ Theory for Exercise 5
 
 Problem 1
 ---------
+
 .. figure:: img/open_channel.png
     :width: 600px
     :align: center
@@ -109,6 +110,7 @@ We can calculate a non-dimensional velocity now by dividing the velocity at any 
 
 Problem 2
 ---------
+
 .. figure:: img/inclined_plane_relabeled.png
     :width: 600px
     :align: center
