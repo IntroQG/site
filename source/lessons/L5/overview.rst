@@ -5,7 +5,7 @@ This week we will be introduced to the equations that govern the flow of viscous
 At depths greater than those where rocks deform in a brittle manner, crustal and mantle rocks can be treated as viscous fluids with very high viscosities.
 Ice also behaves as a viscous fluid in glaciers, which will be further explored in :doc:`this week's exercise <exercise-5>`.
 
-1. `Rock and ice as viscous materials lecture slides <../../_static/slides/L5/Rock-and-ice-as-viscous-materials.pdf>`__
+1. :doc:`Rock and ice as viscous materials lecture slides <rocks-ice-viscous-fluids>`
 2. `Gemmer et al., 2004 - Modelling salt tectonics <https://dx.doi.org/10.1111/j.1365-2117.2004.00229.x>`__ *(optional)*
 3. :doc:`Notes on viscous flow down an incline <viscous-flows>` *(optional)*
 4. :doc:`Theory for Exercise 5 <exercise-5-theory>`
