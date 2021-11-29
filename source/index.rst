@@ -122,6 +122,7 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     :caption: Lesson 5
 
     lessons/L5/overview
+    lessons/l5/rocks-ice-viscous-fluids
     lessons/L5/viscous-flows
     lessons/L5/exercise-5-theory
     lessons/L5/exercise-5
