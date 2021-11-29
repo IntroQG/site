@@ -20,22 +20,19 @@ After completing this week's lesson you should be able to:
 - Explain why geological fluids deform in a nonlinear fashion
 - Model the flow of ice in valley glaciers using viscous flow equations
 
-Lesson video
-------------
+Lesson videos
+-------------
 
-The lesson video will be posted after class.
+.. admonition:: Lesson 5.1 - Rocks and ice as viscous materials
 
-.. 
-    .. admonition:: Lesson 5 - Viscous flows
+    .. raw:: html
 
-        .. raw:: html
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OHDCUkB6cD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/1czUR3O9N8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+.. admonition:: Lesson 5.2 - Overview of Exercise 5
 
-        **Contents:**
+    .. raw:: html
 
-            - `01:10 - Questions about Exercise 4 <https://www.youtube.com/watch?v=1czUR3O9N8c&t=01m10s>`__
-            - `03:10 - Rocks and ice as viscous materials lecture <https://www.youtube.com/watch?v=1czUR3O9N8c&t=03m10s>`__
-            - `33:12 - Overview of other lesson materials <https://www.youtube.com/watch?v=1czUR3O9N8c&t=33m12s>`__
-            - `36:30 - Preview of Exercise 5 (based on 2018 version) <https://www.youtube.com/watch?v=1czUR3O9N8c&t=36m30s>`__
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bFCrjD9EY0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
