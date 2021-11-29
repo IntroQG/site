@@ -47,11 +47,11 @@ Schedule
 +--------+------------+-----------------------------------+
 | **4**  | 22.11.2021 | The advection/wave equation       |
 +--------+------------+-----------------------------------+
-| **5**  | 29.11.2021 | Building a numerical model        |
+| **5**  | 29.11.2021 | Viscous flow equations            |
 +--------+------------+-----------------------------------+
-| **6**  |  7.12.2021 | Quantitative thermochronology I   |
+| **6**  |  7.12.2021 | Building a numerical model        |
 +--------+------------+-----------------------------------+
-| **7**  | 13.12.2021 | Quantitative thermochronology II  |
+| **7**  | 13.12.2021 | Quantitative thermochronology     |
 +--------+------------+-----------------------------------+
 
 For the details about what was covered in the Geo-Python course in Period I, please check the `Geo-Python website <https://geo-python.github.io>`_.
@@ -117,16 +117,16 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     lessons/L4/advection-heat-transfer
     lessons/L4/exercise-4
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 5
+
+    lessons/L5/overview
+    lessons/L5/viscous-flows
+    lessons/L5/exercise-5-theory
+    lessons/L5/exercise-5
+
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 5
-
-        lessons/L5/overview
-        lessons/L5/viscous-flows
-        lessons/L5/exercise-5-theory
-        lessons/L5/exercise-5
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 6

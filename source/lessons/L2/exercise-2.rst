@@ -1,7 +1,7 @@
 Exercise 2
 ==========
 
-.. warning::
+.. attention::
 
     Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
 

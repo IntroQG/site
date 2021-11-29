@@ -18,6 +18,7 @@ Linear viscous flow
 
 Shear stress in the fluid
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
 For a fluid flowing down an inclined slope, the change in potential energy per unit area of the contact surface along some length of the slope :math:`\delta x` is
 
 .. math::
@@ -64,6 +65,7 @@ We can also calculate the shear stress for any position :math:`z` above the base
 
 Linking to viscous flow
 ~~~~~~~~~~~~~~~~~~~~~~~
+
 For a laminar flow, we know :math:`\tau = \eta du/dz`\ , so we can rewrite the resistance equation as
 
 .. math::
