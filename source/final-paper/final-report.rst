@@ -4,11 +4,11 @@ Final paper information
 *The project paper description below is subject to change, but should give you a general idea of what is needed*.
 
 The final task for the course is to write a formal scientific paper about the results of Exercises 6 and 7.
-Please use either the :ref:`template Jupyter notebook for the final paper <template>` or a word processor of your choice (MS Word, LibreOffice Writer, etc.) to create the report.
+Please use either the :doc:`template Jupyter notebook for the final paper <template>` or a word processor of your choice (MS Word, LibreOffice Writer, etc.) to create the report.
 If you use a word processor, please use 12 pt Times New Roman (or a similar font) for your report with single spacing between lines.
 The report should not be longer than 6-8 pages including text and figures (references and the appendix can be on additional pages, if needed).
 
-**The final paper is tentatively due by 17:00 on 12.1.2022**.
+**The final paper is tentatively due by 17:00 on 14.1.2022**.
 
 The research paper should include the following:
 
