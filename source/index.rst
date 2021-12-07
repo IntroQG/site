@@ -127,14 +127,15 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     lessons/L5/exercise-5-theory
     lessons/L5/exercise-5
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 6
+
+    lessons/L6/overview
+    lessons/L6/low-t-thermochron
+    lessons/L6/intro-to-exercises
+    lessons/L6/exercise-6
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 6
-
-        lessons/L6/overview
-        lessons/L6/exercise-6
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 7
@@ -142,13 +143,13 @@ For the details about what was covered in the Geo-Python course in Period I, ple
         lessons/L7/overview
         lessons/L7/exercise-7
 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Final report
+.. toctree::
+    :maxdepth: 2
+    :caption: Final report
 
-        final-paper/final-report
-        final-paper/articles
-        final-paper/template
+    final-paper/final-report
+    final-paper/articles
+    final-paper/template
 
 .. toctree::
     :maxdepth: 2
