@@ -1,23 +1,18 @@
 Exercise 6
 ==========
 
-.. warning::
+.. attention::
 
-    Exercise 6 is not yet ready. The link to the exercise will be added once it is available.
+    Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
 
-.. 
-    .. attention::
+.. admonition:: Start your assignment
 
-        Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
+    You can start working on your copy of Exercise 6 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/fNUlGPTn>`__.
 
-    .. admonition:: Start your assignment
+    **Exercise 6 is due by 17:00 on Friday 17.21.2021**.
 
-        You can start working on your copy of Exercise 6 by `accepting the GitHub Classroom assignment <>`__.
-
-        **Exercise 6 is due by the end of the day Tuesday in week 7 of the course**.
-
-    You can also take a look at the open course copy of `Exercise 6 in the course GitHub repository <https://github.com/IntroQG-2019/Exercise-6>`__ (does not require logging in).
-    Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
+You can also take a look at the open course copy of `Exercise 6 in the course GitHub repository <https://github.com/IntroQG-2021/Exercise-6>`__ (does not require logging in).
+Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 Hints for Exercise 6
 --------------------
