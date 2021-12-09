@@ -22,7 +22,7 @@ Additional materials
 
 - `Low-temperature thermochronology short course website <https://thermochron.github.io/2017/>`__
 
-..
+.. 
     Learning objectives
     -------------------
     After completing this week's lesson you should be able to:
@@ -37,7 +37,6 @@ Lesson video
 The lesson video will be added after the lesson.
 
 .. 
-
     .. admonition:: Lesson 6 - Quantitative thermochronology I
 
         .. raw:: html
