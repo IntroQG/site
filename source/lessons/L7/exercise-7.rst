@@ -3,16 +3,21 @@ Exercise 7
 
 .. warning::
 
-    Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
+Exercise 7 is not yet ready. A link to the exercise will be posted when it is.
 
-.. admonition:: Start your assignment
+.. 
+    .. attention::
 
-    You can start working on your copy of Exercise 7 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/h-6idxvo>`__.
+        Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
 
-    **Exercise 7 is due by the end of the day on Tuesday, December 17**.
+    .. admonition:: Start your assignment
 
-You can also take a look at the open course copy of `Exercise 7 in the course GitHub repository <https://github.com/IntroQG-2019/Exercise-7>`__ (does not require logging in).
-Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
+        You can start working on your copy of Exercise 7 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/h-6idxvo>`__.
+
+        **Exercise 7 is due by the end of the day on Tuesday, December 17**.
+
+    You can also take a look at the open course copy of `Exercise 7 in the course GitHub repository <https://github.com/IntroQG-2019/Exercise-7>`__ (does not require logging in).
+    Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 Hints for Exercise 7
 --------------------
