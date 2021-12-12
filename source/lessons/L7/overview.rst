@@ -1,7 +1,7 @@
 Lesson 7 overview
 =================
 
-In part two of the :doc:`exercises for the final two weeks of the course <../L6/intro-to-exercises>`__ we will combine the thermochronometer age prediction code used last week with an age dataset from the Bhutan Himalaya to quantify the long-term rates of erosion recorded in the thermochronometer data.
+In part two of the :doc:`exercises for the final two weeks of the course <../L6/intro-to-exercises>` we will combine the thermochronometer age prediction code used last week with an age dataset from the Bhutan Himalaya to quantify the long-term rates of erosion recorded in the thermochronometer data.
 These results will be presented in detail in your :doc:`final paper <../../final-paper/final-report>`\ .
 
 The materials below may be useful for completing the exercise and final paper.
