@@ -41,6 +41,20 @@ See below for an example.
     
     print(predicted_ages)
 
+Plotting predicted ages as horizontal lines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I suggest that you add horizontal lines to your plots of the thermochronometer data to show the predicted ages you calculate.
+If you have the latitude values in your ``data`` DataFrame as ``data['Lat']`` you can plot a predicted age ``predicted_age`` as a black horizontal line as follows:
+
+.. code-block:: python
+
+    ax2.plot([data['Lat'].min(), data['Lat'].max()], [predicted_age, predicted_age], 'k-')
+
+This will create a horizontal line from the minimum latitude to the maximum latitude with a vertical-axis value of ``predicted_age``.
+The "trick" here is to put Python lists into the ``ax2.plot()`` command instead of list or array variables.
+Lists are values separated by commas within square brackets (``[ ]``), and here we just give 2 values in each list for the *x* and *y* points that define the ends of the line.
+
 .. 
     Problem 1, Part 3
     ~~~~~~~~~~~~~~~~~
