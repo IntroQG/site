@@ -1,23 +1,18 @@
 Exercise 7
 ==========
 
-.. warning::
+.. attention::
 
-Exercise 7 is not yet ready. A link to the exercise will be posted when it is.
+    Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
 
-.. 
-    .. attention::
+.. admonition:: Start your assignment
 
-        Please note that **we provide assignment feedback only for students enrolled in the course at the University of Helsinki**.
+    You can start working on your copy of Exercise 7 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/CUtVzTg5>`__.
 
-    .. admonition:: Start your assignment
+    **Exercise 7 is due by 17:00 on Wednesday, December 22nd, 2021**.
 
-        You can start working on your copy of Exercise 7 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/h-6idxvo>`__.
-
-        **Exercise 7 is due by the end of the day on Tuesday, December 17**.
-
-    You can also take a look at the open course copy of `Exercise 7 in the course GitHub repository <https://github.com/IntroQG-2019/Exercise-7>`__ (does not require logging in).
-    Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
+You can also take a look at the open course copy of `Exercise 7 in the course GitHub repository <https://github.com/IntroQG-2021/Exercise-7>`__ (does not require logging in).
+Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 Hints for Exercise 7
 --------------------
@@ -40,6 +35,20 @@ See below for an example.
     predicted_ages = np.ones(len(measured_ages)) * predicted_age
     
     print(predicted_ages)
+
+Plotting predicted ages as horizontal lines
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I suggest that you add horizontal lines to your plots of the thermochronometer data to show the predicted ages you calculate.
+If you have the latitude values in your ``data`` DataFrame as ``data['Lat']`` you can plot a predicted age ``predicted_age`` as a black horizontal line as follows:
+
+.. code-block:: python
+
+    ax2.plot([data['Lat'].min(), data['Lat'].max()], [predicted_age, predicted_age], 'k-')
+
+This will create a horizontal line from the minimum latitude to the maximum latitude with a vertical-axis value of ``predicted_age``.
+The "trick" here is to put Python lists into the ``ax2.plot()`` command instead of list or array variables.
+Lists are values separated by commas within square brackets (``[ ]``), and here we just give 2 values in each list for the *x* and *y* points that define the ends of the line.
 
 .. 
     Problem 1, Part 3
