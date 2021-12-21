@@ -31,23 +31,20 @@ Additional materials
         - Explain why geological fluids deform in a nonlinear fashion
         - Model the flow of ice in valley glaciers using viscous flow equations
 
-Lesson video
-------------
+Lesson videos
+-------------
 
-The lesson video will be added after the lesson.
+.. admonition:: Lesson 6.1 - Low-temperature thermochronology
 
-.. 
-    .. admonition:: Lesson 6 - Quantitative thermochronology I
+    .. raw:: html
 
-        .. raw:: html
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UQBIx7pumns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JOb-sRWg-4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+.. admonition:: Lesson 6.2 - Overview of Exercises 6 and 7, final paper
 
-        **Contents:**
+    .. raw:: html
 
-            - `00:43 - Computing environment changes <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=43s>`__
-            - `02:58 - Basics of thermochronology lecture <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=02m58s>`__
-            - `44:59 - Overview of other lesson materials <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=44m59s>`__
-            - `48:43 - Overview of Exercises 6 and 7 <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=48m43s>`__
-            - `59:49 - Preview of Exercise 6 <https://www.youtube.com/watch?v=JOb-sRWg-4g&t=59m49s>`__
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TN6EvKaj9U8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+
