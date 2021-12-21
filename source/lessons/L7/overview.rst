@@ -35,12 +35,9 @@ Additional materials
 Lesson video
 ------------
 
-A lesson video will be added after the lesson.
+.. admonition:: Lesson 7.1 - Overview of Exercise 7, course wrap-up
 
-.. 
-    .. admonition:: Lesson 7 - Quantitative thermochronology II
+    .. raw:: html
 
-        .. raw:: html
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xiDzFaUQ_x8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-GbmP3jGnEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
