@@ -59,12 +59,12 @@ Discussion (several paragraphs)
   Any interpretation you make from your plots/calculations should be presented here.
 - Example discussion section topics include:
 
-   - How do the exhumation rates that provide a minimum misfit to the different thermochronometer age systems vary?
-   - How well do the model predictions compare to the measured ages?
-   - What are the limitations of the modeling approach and how do they affect the results?
-   - What are the implications of your results for the problem/hypothesis you stated in the introduction?
-   - Have you sufficiently tested your hypothesis or are more experiments needed?
-   - Any other topics you feel should be discussed about the implications of the model results.
+  - How do the exhumation rates that provide a minimum misfit to the different thermochronometer age systems vary?
+  - How well do the model predictions compare to the measured ages?
+  - What are the limitations of the modeling approach and how do they affect the results?
+  - What are the implications of your results for the problem/hypothesis you stated in the introduction?
+  - Have you sufficiently tested your hypothesis or are more experiments needed?
+  - Any other topics you feel should be discussed about the implications of the model results.
 
 Conclusions/Summary (1-2 paragraphs)
 ------------------------------------
