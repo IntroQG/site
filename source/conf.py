@@ -19,13 +19,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'IntroQG'
-copyright = '2016-2021, D. Whipp, Department of Geosciences and Geography, University of Helsinki.'
+copyright = '2016-2023, D. Whipp, Department of Geosciences and Geography, University of Helsinki.'
 author = ''
 
 # The short X.Y version
-version = '2021'
+version = '2023'
 # The full version, including alpha/beta/rc tags
-release = '2021'
+release = 'site'
 
 
 # -- General configuration ---------------------------------------------------
@@ -38,14 +38,15 @@ release = '2021'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'myst_nb',
+    'sphinx_copybutton',
     'sphinx.ext.mathjax',
-    'sphinx.ext.githubpages',
+    #'sphinx.ext.githubpages',
     'sphinx.ext.todo',
     'sphinx_thebe',
-    #'sphinxcontrib.googleanalytics',
+    #'sphinx_togglebutton',
     'IPython.sphinxext.ipython_console_highlighting',
     'IPython.sphinxext.ipython_directive',
-    'myst_nb',
     'jupyter_sphinx'
 ]
 
@@ -200,3 +201,4 @@ nbsphinx_allow_errors = True
 
 # Execute cells only if any of the cells is missing output
 jupyter_execute_notebooks = "auto"
+

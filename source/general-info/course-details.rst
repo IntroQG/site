@@ -4,27 +4,26 @@ Course details
 Course meetings
 ---------------
 
-**Class sessions** (*On Zoom*)
+**Class sessions**
 
-- 14:15-16:00 on Mondays (1.11-29.11, 13.12)
-- 08:15-10:00 on Tuesday (7.12) 
+- 14:15-16:00 on Mondays in D112, Physicum
 
-**Exercise support sessions** (*BK106, Exactum, and on Zoom if needed*)
+**Exercise support sessions**
 
-- 09:15-13:00 on Fridays (5.11-17.12)
+- 10:15-14:00 on Fridays in E207, Physicum
 
 Instructors
 -----------
 
+*Email: firstname.lastname@helsinki.fi*
+
 **David Whipp**, course instructor
 
-- Office: C417, Exactum
-- Email: firstname.lastname@helsinki.fi
+- Office: D426, Exactum
 
 **Leevi Tuikka**, course assistant
 
 - Office: C426, Exactum
-- Email: firstname.lastname@helsinki.fi
 
 Course website
 ---------------
