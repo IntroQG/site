@@ -96,8 +96,8 @@ We recommend that everyone use the available `cloud computing environments`_ dur
 In case you want to work on your own computer, you will need to `install Python (via Miniconda) <../../general-info/installing-miniconda.html>`_.
 
 Discord
------
+-------
 
 During the course we will use actively an application called `Discord <http://discord.com>`__ for discussion and questions about the lessons and exercises.
 All enrolled students have received an invite link to the `introqg2023` workspace at the start of the course.
-:doc:`Read more about Discord on the `Geo-Python website <https://geo-python-site.readthedocs.io/en/latest/lessons/L1/discord-usage.html>`__.
+`Read more about Discord on the `Geo-Python website <https://geo-python-site.readthedocs.io/en/latest/lessons/L1/discord-usage.html>`__.
