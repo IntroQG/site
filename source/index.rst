@@ -75,6 +75,7 @@ For the details about what was covered in the Geo-Python course in Period I, ple
 
     general-info/course-details
     general-info/grading
+    general-info/ai-tools
     general-info/licensing
 
 .. toctree::
