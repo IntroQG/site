@@ -1,7 +1,8 @@
 .. Introduction to Quantitative Geology documentation master file, created by
    sphinx-quickstart on Mon Oct 22 15:25:21 2018.
 
-.. figure:: img/banner/introqg-landing-page.png
+.. image:: img/banner/introqg-landing-page-2023.png
+   :class: dark-light
 
 Welcome to IntroQG 2023!
 ========================
@@ -74,20 +75,23 @@ For the details about what was covered in the Geo-Python course in Period I, ple
 
     general-info/course-details
     general-info/grading
+    general-info/ai-tools
     general-info/licensing
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 1
+
+    lessons/L1/overview
+    lessons/L1/course-environment
+    notebooks/L1/numpy.ipynb
+    notebooks/L1/basic-terms.ipynb
+    notebooks/L1/uncertainty.ipynb
+    notebooks/L1/reporting-measurements.ipynb
+    notebooks/L1/normal-distribution.ipynb
+    lessons/L1/exercise-1
+
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 1
-
-        lessons/L1/overview
-        notebooks/L1/numpy.ipynb
-        notebooks/L1/basic-terms.ipynb
-        notebooks/L1/uncertainty.ipynb
-        notebooks/L1/reporting-measurements.ipynb
-        notebooks/L1/normal-distribution.ipynb
-        lessons/L1/exercise-1
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 2

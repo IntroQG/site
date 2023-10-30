@@ -39,10 +39,11 @@ This course uses a wide range of sources for course information and the main tex
 
 Recommended textbooks (in order of relevance):
 
-- Zelle, J. (2010) `Python Programming: An Introduction to Computer Science <http://mcsp.wartburg.edu/zelle/python/ppics2/index.html>`_, Second edition. Franklin, Beedle & Associates.
-- Stüwe, K. (2007) `Geodynamics of the Lithosphere <http://wegener.uni-graz.at/publication/books/geodyn2nd/>`_, Second edition. Springer.
+- Zelle, J. (2016) `Python Programming: An Introduction to Computer Science <https://mcsp.wartburg.edu/zelle/python/ppics3/>`_, Third edition. Franklin, Beedle & Associates.
 - Braun, J., van der Beek, P. and Batt, G. (2006) `Quantitative Thermochronology: Numerical Methods for the Interpretation of Thermochronological Data <http://www.cambridge.org/us/academic/subjects/earth-and-environmental-science/geochemistry-and-environmental-chemistry/quantitative-thermochronology-numerical-methods-interpretation-thermochronological-data>`_, First edition. Cambridge University Press.
 - Taylor, J. R. (1997) `An Introduction to Error Analysis: The Study of Uncertainties in Physical Measurements <http://www.uscibooks.com/taylornb.htm>`_, Second edition. University Science Books.
+- Stüwe, K. (2007) `Geodynamics of the Lithosphere <http://wegener.uni-graz.at/publication/books/geodyn2nd/>`_, Second edition. Springer.
+
 
 Optional textbooks:
 

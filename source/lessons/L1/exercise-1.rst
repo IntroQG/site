@@ -7,11 +7,11 @@ Exercise 1
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 1 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/czrvycKK>`__.
+    You can start working on your copy of Exercise 1 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/tfPC1AvA>`__.
 
-    **Exercise 1 is due by the start of lecture in week 2**.
+    **Exercise 1 is due by the start of class in week 2**.
 
-You can also take a look at the open course copy of `Exercise 1 in the course GitHub repository <https://github.com/IntroQG-2021/Exercise-1>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 1 in the course GitHub repository <https://github.com/IntroQG-2023/Exercise-1>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 General hints for Exercise 1
@@ -172,7 +172,7 @@ For the Gaussian function there are a few things to keep in mind:
 Creating and appending to lists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is mostly a reminder of something we had seen `back in Lesson 2 of the Geo-Python course <https://geo-python.github.io/site/notebooks/L2/Python-basic-elements.html#Lists-and-indices>`__.
+This is mostly a reminder of something we had seen `back in Lesson 2 of the Geo-Python course <https://geo-python-site.readthedocs.io/en/latest/notebooks/L2/Python-basic-elements.html#lists-and-indices>`__.
 When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-8000m by 8 m.
 In the example below we can do the same kind of thing with elevations from 0-8000m in steps of 1000m, assuming you have created the NumPy array ``number_array`` as shown the previous hint:
 

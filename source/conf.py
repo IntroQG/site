@@ -202,3 +202,6 @@ nbsphinx_allow_errors = True
 # Execute cells only if any of the cells is missing output
 jupyter_execute_notebooks = "auto"
 
+# Add math config options for new version of MyST
+myst_enable_extensions = ["dollarmath"]
+
