@@ -5,16 +5,16 @@ The environment for this course is quite similar to that of the `Geo-Python cour
 Thus we present here only details that are relevant for this course in the points below.
 For all other items, we suggest you check the description of the `Geo-Python course environment <https://geo-python-site.readthedocs.io/en/latest/lessons/L1/course-environment-components.html>`__.
 
-1. `Cloud computing environments`_ Binder or CSC Notebooks
+1. `Cloud computing environments`_ CSC Notebooks or Binder
 2. `Discord`_ for communicating among UH students
 
 Cloud computing environments
 ----------------------------
 
-We will use cloud-based computing environments (Binder or CSC Notebooks) to access interactive online version of the lessons
-and to work on the weekly exercises. You can use the cloud computing environments with any computer as long as it has a reasonably fast internet connection and a web browser (just don't use Internet Explorer).
+We will use cloud-based computing environments (CSC Notebooks or Binder) to access interactive online version of the lessons
+and to work on the weekly exercises. You can use the cloud computing environments with any computer as long as it has a reasonably fast internet connection and a web browser.
 
-Please note that the Binder cloud computing environment is **temporary**, and only files stored in the ``my-work`` folder in the CSC Notebooks will be stored. Thus you should always remember to push your changes to GitHub!
+Please note that the Binder cloud computing environment is completely **temporary**, and only files stored in the ``my-work`` folder in the CSC Notebooks will be preserved on that platform. Thus you should always remember to push your changes to GitHub!
 
 .. figure:: img/launch-buttons.png
    :alt: Launch buttons
@@ -22,29 +22,13 @@ Please note that the Binder cloud computing environment is **temporary**, and on
 
    Different options for making the lesson interactive
 
-Each interactive lesson and exercise will have a launch button for both Binder and CSC Notebook.
+Each interactive lesson and exercise will have a launch button for both CSC Notebooks and Binder.
 The CSC notebooks environment is preferred, but only accessible to students from Finnish universities and research institutes.
-
-Binder
-~~~~~~
-
-Binder (https://mybinder.org/) runs Jupyter Notebooks in your web browser in a customized environment. The original files (notebooks) are hosted on GitHub.
-Binder does not require the user to log in, you can just click on the link in the lesson / exercise and start working.
-
-.. figure:: img/Binder_loading.png
-   :alt: Binder loading
-   :width: 700px
-
-   Binder takes a few moments to load
-
-Once the instance is ready, you can navigate to the lesson folders and start working with existing notebooks or create a new one.
-
-**Remember to save your work! The Binder instance is temporary, and all your files will be lost after the session.**
 
 CSC Notebooks
 ~~~~~~~~~~~~~
 
-Notebooks by CSC (https://notebooks.csc.fi) is a computing environment hosted by the Finnish IT Center for Science (CSC). Similar to Binder, the CSC Notebooks platform is used for running Jupyter Notebooks in a customized environment.
+Notebooks by CSC (https://notebooks.csc.fi) is a computing environment hosted by the Finnish IT Center for Science (CSC). The CSC Notebooks platform is used for running Jupyter Notebooks in a customized environment.
 CSC Notebooks is available only for students who are affiliated with Finnish universities and research institutes (via the Haka user authentication).
 
 .. note:: **When using the CSC Notebooks for the first time, you need to join the group created for this course:**
@@ -89,11 +73,27 @@ CSC Notebooks is available only for students who are affiliated with Finnish uni
 
 **Remember to save your work!**
 
+Binder
+~~~~~~
+
+Binder (https://mybinder.org/) also runs Jupyter Notebooks in your web browser in a customized environment. The original files (notebooks) are hosted on GitHub.
+Binder does not require the user to log in, you can just click on the link in the lesson / exercise and start working.
+
+.. figure:: img/Binder_loading.png
+   :alt: Binder loading
+   :width: 700px
+
+   Binder takes a few moments to load
+
+Once the instance is ready, you can navigate to the lesson folders and start working with existing notebooks or create a new one.
+
+**Remember to save your work! The Binder instance is temporary, and all your files will be lost after the session.**
+
 Using your own computer
 -----------------------
 
-We recommend everyone to use the available `cloud computing environments`_ during this course.
-In case you want to work on your own computer, you need to `install Python (via Miniconda) <../../general-info/installing-miniconda.html>`_.
+We recommend that everyone use the available `cloud computing environments`_ during this course.
+In case you want to work on your own computer, you will need to `install Python (via Miniconda) <../../general-info/installing-miniconda.html>`_.
 
 Discord
 -----
