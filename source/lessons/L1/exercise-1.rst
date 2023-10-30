@@ -172,7 +172,7 @@ For the Gaussian function there are a few things to keep in mind:
 Creating and appending to lists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is mostly a reminder of something we had seen `back in Lesson 2 of the Geo-Python course <https://geo-python.github.io/site/notebooks/L2/Python-basic-elements.html#Lists-and-indices>`__.
+This is mostly a reminder of something we had seen `back in Lesson 2 of the Geo-Python course <https://geo-python-site.readthedocs.io/en/latest/notebooks/L2/Python-basic-elements.html#lists-and-indices>`__.
 When you are calculating the values for the normal distribution, one option is to create an empty list and append the calculated values to the list, calculating one value for each age in an age list/array from 0-8000m by 8 m.
 In the example below we can do the same kind of thing with elevations from 0-8000m in steps of 1000m, assuming you have created the NumPy array ``number_array`` as shown the previous hint:
 
