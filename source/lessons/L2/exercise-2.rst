@@ -7,11 +7,11 @@ Exercise 2
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/MKm8b9eZ>`__.
+    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/XW5JpwP_>`__.
 
     **Exercise 2 is due by the start of lecture in week 3**.
 
-You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2021/Exercise-2>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2023/Exercise-2>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 General hints for Exercise 2
@@ -26,7 +26,7 @@ This is called *formatted output* in Python, and it is nice not only because it 
 In the Geo-Python course we `introduced using f-strings for formatting text and numbers <https://geo-python-site.readthedocs.io/en/latest/notebooks/L2/Python-basic-elements.html#working-with-text-and-numbers>`__.
 We recommend that you use this approach with your plots to ensure the text formatting looks nice and the number of digits after the decimal place is limited to 1-3, depending on the formatted value.
 
-You can find much more about string formatting on the `Python documentation site <https://docs.python.org/3.6/library/string.html#formatstrings>`__.
+You can find much more about string formatting on the `Python documentation site <https://docs.python.org/3/library/string.html#format-string-syntax>`__.
 
 Hints for Problem 1
 -------------------
