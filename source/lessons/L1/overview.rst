@@ -5,26 +5,19 @@ In this week's lesson we will be introduced to the fundamental statistical ideas
 This will be our first venture into applying our new Python skills to quantitative geoscience, and we will thus focus more on quantitative and geological concepts rather than learning new Python skills.
 Before we start with that, however, we need to review a bit about the course environment and learn a few things about the Python library NumPy, which was not introduced in the Geo-Python course.
 
-1. `Course environment essentials <course-environment>`_
-2. `A brief introduction to NumPy <../../notebooks/L1/numpy.html>`_
-3. `Basic statistical terms and concepts <../../notebooks/L1/basic-terms.html>`_
-4. `Uncertainty <../../notebooks/L1/uncertainty.html>`_
-5. `Reporting measurements <../../notebooks/L1/reporting-measurements.html>`_
-6. `The normal distribution <../../notebooks/L1/normal-distribution.html>`_
-7. :doc:`Exercise 1 <exercise-1>`
-
 Learning objectives
 -------------------
+
 After completing this week's lesson you should be able to:
 
 - Create arrays of values using NumPy
 - Understand some basic statistical terms and how they are defined
 - Write your own functions for basic (geo)statistical analysis
 
-Lesson videos
--------------
+Lesson video(s)
+---------------
 
-Videos will be posted after the lesson.
+Video(s) will be posted after the lesson.
 
 .. 
     .. admonition:: Lesson 1.1 - Course overview, a brief introduction to NumPy
