@@ -1,10 +1,13 @@
 div.admonition.admonition-youtube {
-    border-color: #ff0000; /* YouTube red */
+    border-color: hsl(0, 100%, 50%); /* YouTube red */
   }
   div.admonition.admonition-youtube > .admonition-title:before {
-    background-color: #ff0000;
+    background-color: hsl(0, 99%, 18%);
   }
   div.admonition.admonition-youtube > .admonition-title:after {
-    color: #ff0000;
+    color: hsl(0, 100%, 50%);
     content: "\f26c"; /* fa-solid fa-tv */
+  }
+  div.admonition.admonition-youtube > .admonition-title {
+    color: white;
   }
