@@ -27,6 +27,8 @@ version = '2023'
 # The full version, including alpha/beta/rc tags
 release = 'site'
 
+# Set documentation language
+language="en"
 
 # -- General configuration ---------------------------------------------------
 
@@ -45,6 +47,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx_thebe',
     #'sphinx_togglebutton',
+    "sphinxcontrib.youtube",
     'IPython.sphinxext.ipython_console_highlighting',
     'IPython.sphinxext.ipython_directive',
     'jupyter_sphinx'
