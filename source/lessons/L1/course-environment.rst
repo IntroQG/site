@@ -37,7 +37,7 @@ CSC Notebooks is available only for students who are affiliated with Finnish uni
     2. Select Haka for the authentication provider
     3. Enter your Finnish university login credentials
     4. Click on the **Join workspace** button on the top left
-    5. Join the Geo-Python workspace using the join code ``int-moejb8zz``
+    5. Join the Introduction to Quantitative Geology workspace using the join code ``int-moejb8zz``
 
     After joining the group, you should be able to view the course environments called `Introduction to Quantitative Geology 2023` near the top of the Application list.
 

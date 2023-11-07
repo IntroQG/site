@@ -27,6 +27,8 @@ version = '2023'
 # The full version, including alpha/beta/rc tags
 release = 'site'
 
+# Set documentation language
+language="en"
 
 # -- General configuration ---------------------------------------------------
 
@@ -45,6 +47,7 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx_thebe',
     #'sphinx_togglebutton',
+    "sphinxcontrib.youtube",
     'IPython.sphinxext.ipython_console_highlighting',
     'IPython.sphinxext.ipython_directive',
     'jupyter_sphinx'
@@ -116,6 +119,10 @@ html_theme_options = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = [
+    'css/custom.css',
+]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
