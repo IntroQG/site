@@ -101,16 +101,16 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     notebooks/L2/goodness-of-fit.ipynb
     lessons/L2/exercise-2
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 3
+
+    lessons/L3/overview
+    lessons/L3/natural-diffusion
+    lessons/L3/thermochron-basics
+    lessons/L3/exercise-3
+
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 3
-
-        lessons/L3/overview
-        lessons/L3/natural-diffusion
-        lessons/L3/thermochron-basics
-        lessons/L3/exercise-3
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 4
