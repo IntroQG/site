@@ -7,15 +7,21 @@ Exercise 3
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 3 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/IJO-Lbth>`__.
+    You can start working on your copy of Exercise 3 by `accepting the GitHub Classroom assignment <>`__.
 
     **Exercise 3 is due by 17:00 on Wednesday 24 November 2021**.
 
-You can also take a look at the open course copy of `Exercise 3 in the course GitHub repository <https://github.com/introqg-2021/Exercise-3>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 3 in the course GitHub repository <https://github.com/introqg-2023/Exercise-3>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 Hints for Exercise 3
 --------------------
 
-No hints have been added yet for Exercise 3.
-Hints will be added as needed.
+Using a log plot axis
+~~~~~~~~~~~~~~~~~~~~~
+
+In order to use log scaling on a Matplotlib plot, you need to specify that a given plot axis should have a log scale. You can do this for the x-axis, for example, by adding the following after the `ax.plot()` function call:
+
+.. code:: python
+
+    ax.set_xscale("log")
