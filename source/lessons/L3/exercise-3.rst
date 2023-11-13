@@ -9,7 +9,7 @@ Exercise 3
 
     You can start working on your copy of Exercise 3 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/18g_tSii>`__.
 
-    **Exercise 3 is due by 17:00 on Wednesday 24 November 2021**.
+    **Exercise 3 is due by 14:15 on Monday November 20th 2023**.
 
 You can also take a look at the open course copy of `Exercise 3 in the course GitHub repository <https://github.com/introqg-2023/Exercise-3>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
