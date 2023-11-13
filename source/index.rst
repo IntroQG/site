@@ -108,6 +108,7 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     lessons/L3/overview
     lessons/L3/natural-diffusion
     lessons/L3/thermochron-basics
+    notebooks/L3/python-concepts.ipynb
     lessons/L3/exercise-3
 
 .. 
