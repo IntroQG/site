@@ -5,10 +5,6 @@ This week we encounter our first common geoscience equation, the diffusion equat
 We will start with two lectures about the diffusion equation in general and its applications for mineral dating.
 As usual we will finish with the exercise for this week.
 
-1. :doc:`Natural diffusion lecture slides <natural-diffusion>`
-2. :doc:`Basic concepts of thermochronology lecture slides <thermochron-basics>`
-3. :doc:`Exercise 3 <exercise-3>`
-
 Learning objectives
 -------------------
 
@@ -23,23 +19,29 @@ Lesson materials
 Lesson notebook file(s)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. admonition:: Lesson 3 notebook file(s)
+The demonstration notebook will be added after class.
 
-    `Lesson 3 demonstration notebook <../../notebooks/L3/lesson-3-demo-notebook.html>`__
+.. 
+    .. admonition:: Lesson 3 notebook file(s)
 
-Lesson videos
-~~~~~~~~~~~~~
+        `Lesson 3 demonstration notebook <../../notebooks/L3/lesson-3-demo-notebook.html>`__
 
-.. admonition:: Lesson 3.1 - Diffusion as a geological process
+Lesson video(s)
+~~~~~~~~~~~~~~~
 
-    .. raw:: html
+Lesson video(s) will be posted after class.
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/T1rl6mAWzQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+.. 
+    .. admonition:: Lesson 3.1 - Diffusion as a geological process
 
-.. admonition:: Lesson 3.2 - Basic concepts of thermochronology
+        .. raw:: html
 
-    .. raw:: html
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/T1rl6mAWzQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/N0QFvDAKKFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+    .. admonition:: Lesson 3.2 - Basic concepts of thermochronology
+
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N0QFvDAKKFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
