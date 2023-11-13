@@ -1,8 +1,11 @@
 Basics of thermochronology
 ==========================
 
-Slides from the lecture on the basic concepts of thermochronology can be found below.
+Slides from the lecture will be posted after class.
 
-.. admonition:: Lecture slides
+.. 
+    Slides from the lecture on the basic concepts of thermochronology can be found below.
 
-    `Basics of thermochronology lecture slides <../../_static/slides/L3/Basic-concepts-of-thermochronology.pdf>`__
+    .. admonition:: Lecture slides
+
+        `Basics of thermochronology lecture slides <../../_static/slides/L3/Basic-concepts-of-thermochronology.pdf>`__
