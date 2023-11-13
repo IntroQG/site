@@ -16,12 +16,12 @@ After completing this week's lesson you should be able to:
 Lesson materials
 ----------------
 
-Lesson notebook file(s)
-~~~~~~~~~~~~~~~~~~~~~~~
-
-The demonstration notebook will be added after class.
-
 .. 
+    Lesson notebook file(s)
+    ~~~~~~~~~~~~~~~~~~~~~~~
+
+    The demonstration notebook will be added after class.
+
     .. admonition:: Lesson 3 notebook file(s)
 
         `Lesson 3 demonstration notebook <../../notebooks/L3/lesson-3-demo-notebook.html>`__
