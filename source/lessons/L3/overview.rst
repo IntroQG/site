@@ -29,19 +29,16 @@ Lesson materials
 Lesson video(s)
 ~~~~~~~~~~~~~~~
 
-Lesson video(s) will be posted after class.
+.. admonition:: Lesson 3.1 - Natural diffusion, basics of thermochronology
+    :class: admonition-youtube
 
-.. 
-    .. admonition:: Lesson 3.1 - Diffusion as a geological process
+    ..  youtube:: soc3hIv1QVs
 
-        .. raw:: html
+    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/T1rl6mAWzQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+.. admonition:: Lesson 3.2 - Basics of thermochronology (ctd.), while loops
+    :class: admonition-youtube
 
-    .. admonition:: Lesson 3.2 - Basic concepts of thermochronology
+    ..  youtube:: FumXxcdOuoM
 
-        .. raw:: html
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/N0QFvDAKKFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
