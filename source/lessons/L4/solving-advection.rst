@@ -42,7 +42,7 @@ Another way to write the previous equation is
 
 In this case, we can make some substitutions and find something quite useful.
 Assume :math:`f = \partial T/\partial z` and :math:`c = v_{z}/\kappa`\ .
-With this, we can say :math:`f'(z) = -c f(z):math:`\ .
+With this, we can say :math:`f'(z) = -c f(z)`\ .
 This is a common form of differential equation with a solution :math:`f(z) = f(0) \mathrm{e}^{cz}`\ .
 Thus, in terms of our equation we can say
 
