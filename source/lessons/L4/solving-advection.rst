@@ -4,7 +4,7 @@ Solving the advection-diffusion equation
 Goals of these notes
 --------------------
 
-- Introduce the advection-diffusion equation
+- Introduce the advection-diffusion equation for heat transfer
 - Find solution for steady-state heat transfer with a constant surface heat flux
 - Find solution for steady-state heat transfer with a constant basal temperature
 
@@ -12,19 +12,19 @@ Advection-diffusion equation in 1D
 ----------------------------------
 
 To show how the advection equation can be solved, we're actually going to look at a combination of the advection and diffusion equations applied to heat transfer.
-We're looking at heat transfer in part because many solutions exist to the heat transfer equations in 1D, with math that is straightforward to follow.
-Heat conduction is a diffusion process caused by interactions of atoms or molecules, which can be simulated using the diffusion equation we saw in last week's notes.
-Heat advection refers to the heat transferred by physical movement of materials, such as by the motion of faults.
-Fault movement, for instance, may bring relatively warm rocks up toward the surface where they begin to cool by heat conduction.
-Advection and conduction are also commonly applied to simulate 1D heat transfer by processes such as sedimentation and erosion.
+We're looking at heat transfer in part because many solutions exist to the heat transfer equations in 1D, with math that is fairly straightforward to follow.
+Heat conduction is a diffusion process caused by interactions of atoms or molecules, which can be simulated using the diffusion equation we saw in last week's lesson.
+Heat advection refers to the heat transferred by physical movement of materials, such rock displaced by slip on faults.
+Fault movement, for instance, may bring relatively warm rocks up toward the surface where they can cool by heat conduction.
+Advection and conduction are also commonly applied to simulate 1D heat transfer by geological processes such as sedimentation and erosion.
 
-Mathematically, we'll start with our two equations: (1) The diffusion equation without heat production and (2) the advection equation, then combine them.
+Mathematically, we'll start with our two equations: (1) The diffusion (heat conduction) equation without heat production and (2) the advection equation, then combine them.
 
 .. math::
 
-    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} && \text{ Diffusion}\\
-    \frac{\partial T}{\partial t} &= v_{z}\frac{\partial T}{\partial z} && \text{ Advection}\\
-    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} + v_{z}\frac{\partial T}{\partial z} && \text{ Diffusion + Advection}
+    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} && \text{\hspace{1cm}Diffusion}\\
+    \frac{\partial T}{\partial t} &= v_{z}\frac{\partial T}{\partial z} && \text{\hspace{1cm} Advection}\\
+    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} + v_{z}\frac{\partial T}{\partial z} && \text{\hspace{1cm}Diffusion \& Advection}
 
 In steady state, we can ignore the transient term :math:`\partial T/\partial t`\ , so
 
