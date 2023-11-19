@@ -118,7 +118,7 @@ Advection-diffusion equation take-home messages
 
 - The math gets a bit complex, even for the 'simplest' cases
 
-    - You often need numerical methods for more complex geometries
+   - You often need numerical methods for more complex geometries
 
 - The behavior of the advection-diffusion equation is strongly controlled by the boundary conditions
 - Even the simple equations above can be quite useful. Advection can be a significant influence on the thermal field and these simple calculations allow you to estimate when it is a factor and its magnitude of influence.
