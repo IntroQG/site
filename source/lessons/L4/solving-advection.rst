@@ -79,7 +79,7 @@ Thus, we find
     T(z) &= -\frac{g \kappa}{v_{z}} \mathrm{e}^{-(v_{z} z/\kappa)} + \frac{g \kappa}{v_{z}}\\
     T(z) &= \frac{g \kappa}{v_{z}}\left(1 - \mathrm{e}^{-(v_{z} z/\kappa)} \right) && \hspace{2cm}\text{Rearranged}
 
-.. question::
+.. admonition:: Question
 
     What should our temperature profile look like?
 
@@ -107,7 +107,7 @@ The Peclet number is a useful value for estimating the relative influence of adv
 Where :math:`\kappa` is a parameter known as the *thermal diffusivity*\ .
 :math:`kappa` is the rock thermal conductivity :math:`k` divided by the product of the density :math:`\rho` and heat capacity :math:`c_{\mathrm{p}}`\ , or :math:`\kappa = k / (\rho c_{\mathrm{p}})`\ .
 
-.. question::
+.. admonition:: Question
 
     If a typical rock thermal diffusivity is :math:`\kappa = 10^{-6}` and typical continental crust is 35 km thick, how fast does it need to erode for advection exceed the effects of diffusion?
 
