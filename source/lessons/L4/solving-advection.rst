@@ -104,8 +104,8 @@ The Peclet number is a useful value for estimating the relative influence of adv
 
     \mathrm{Pe} = \frac{v_{z}L}{\kappa}
 
-Where :math:`\kappa` is a parameter known as the *thermal diffusivity*\ .
-:math:`kappa` is the rock thermal conductivity :math:`k` divided by the product of the density :math:`\rho` and heat capacity :math:`c_{\mathrm{p}}`\ , or :math:`\kappa = k / (\rho c_{\mathrm{p}})`\ .
+Where :math:`\kappa` is a parameter known as the *thermal diffusivity*.
+:math:`\kappa` is the rock thermal conductivity :math:`k` divided by the product of the density :math:`\rho` and heat capacity :math:`c_{\mathrm{p}}`\ , or :math:`\kappa = k / (\rho c_{\mathrm{p}})`\ .
 
 .. admonition:: Question
 
