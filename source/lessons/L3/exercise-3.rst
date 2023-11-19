@@ -29,4 +29,4 @@ In order to use log scaling on a Matplotlib plot, you need to specify that a giv
 Some useful constants
 ~~~~~~~~~~~~~~~~~~~~~
 
-In creating the `dodson()` function, you can assume the value for the gas constant is :math:`R = 8.314` and that the number of days in a year is 365.25.
+In creating the ``dodson()`` function, you can assume the value for the gas constant is :math:`R = 8.314` and that the number of days in a year is 365.25.
