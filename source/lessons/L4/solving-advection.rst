@@ -23,7 +23,7 @@ Mathematically, we'll start with our two equations: (1) The diffusion (heat cond
 .. math::
 
     \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} && \text{\hspace{1cm}Diffusion}\\
-    \frac{\partial T}{\partial t} &= v_{z}\frac{\partial T}{\partial z} && \text{\hspace{1cm} Advection}\\
+    \frac{\partial T}{\partial t} &= v_{z}\frac{\partial T}{\partial z} && \hspace{1cm}\text{Advection}\\
     \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} + v_{z}\frac{\partial T}{\partial z} && \text{\hspace{1cm}Diffusion \& Advection}
 
 In steady state, we can ignore the transient term :math:`\partial T/\partial t`\ , so
