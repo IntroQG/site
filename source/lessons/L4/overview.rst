@@ -6,11 +6,6 @@ Similar to last week, we will start with a short lecture about the advection equ
 There are also some notes posted for how to solve the advection-diffusion equation, which again may be of interest for the exercise this week.
 As usual we will finish with the exercise for this week.
 
-1. :doc:`Geological advection lecture slides <geological-advection>`
-2. :doc:`Solving the advection-diffusion equation <solving-advection>`
-3. :doc:`Erosion, sedimentation, and heat transfer lecture slides <advection-heat-transfer>`
-4. :doc:`Exercise 4 <exercise-4>`
-
 Learning objectives
 -------------------
 
@@ -22,6 +17,9 @@ After completing this week's lesson you should be able to:
 Lesson videos
 -------------
 
+Videos will be posted after class.
+
+.. 
     .. admonition:: Lesson 4.1 - Geological advection, advection-diffusion equation
 
         .. raw:: html
