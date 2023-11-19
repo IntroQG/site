@@ -116,14 +116,17 @@ Where :math:`\kappa` is a parameter known as the *thermal diffusivity*.
 Advection-diffusion equation take-home messages
 -----------------------------------------------
 
-- Math gets a bit more complex, even for the 'simplest' cases; Often need numerical methods for more complex geometries
-- Behavior of the equation is strongly controlled by the boundary conditions
-- Even these simple equations can be quite useful. Advection can be a significant influence on the thermal field and these simple calculations allow you to estimate when it is a factor and its magnitude of influence.
+- The math gets a bit complex, even for the 'simplest' cases
+
+    - You often need numerical methods for more complex geometries
+
+- The behavior of the advection-diffusion equation is strongly controlled by the boundary conditions
+- Even the simple equations above can be quite useful. Advection can be a significant influence on the thermal field and these simple calculations allow you to estimate when it is a factor and its magnitude of influence.
 
 Caveats
 -------
 
 - Steady-state
 - 1-D
-- Constants assumed to be constant :)
+- Constants are assumed to be constant :)
 - No heat production
