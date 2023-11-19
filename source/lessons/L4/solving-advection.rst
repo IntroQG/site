@@ -22,17 +22,17 @@ Mathematically, we'll start with our two equations: (1) The diffusion (heat cond
 
 .. math::
 
-    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} && \hspace{1cm}\text{Diffusion}\\
-    \frac{\partial T}{\partial t} &= v_{z}\frac{\partial T}{\partial z} && \hspace{1cm}\text{Advection}\\
-    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} + v_{z}\frac{\partial T}{\partial z} && \hspace{1cm}\text{Diffusion & Advection}
+    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} && \hspace{2cm}\text{Diffusion}\\
+    \frac{\partial T}{\partial t} &= v_{z}\frac{\partial T}{\partial z} && \hspace{2cm}\text{Advection}\\
+    \frac{\partial T}{\partial t} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} + v_{z}\frac{\partial T}{\partial z} && \hspace{2cm}\text{Diffusion & Advection}
 
 In steady state, we can ignore the transient term :math:`\partial T/\partial t`\ , so
 
 .. math::
 
     \require{cancel}
-    \cancelto{0}{\frac{\partial T}{\partial t}} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} + v_{z}\frac{\partial T}{\partial z} && \text{ Steady-state advection-diffusion equation}\\
-    \frac{\partial^{2} T}{\partial z^{2}} &= -\frac{v_{z}}{\kappa} \frac{\partial T}{\partial z} && \text{ Rearranged}\\
+    \cancelto{0}{\frac{\partial T}{\partial t}} &= \kappa \frac{\partial^{2} T}{\partial z^{2}} + v_{z}\frac{\partial T}{\partial z} && \hspace{2cm}\text{ Steady-state advection-diffusion equation}\\
+    \frac{\partial^{2} T}{\partial z^{2}} &= -\frac{v_{z}}{\kappa} \frac{\partial T}{\partial z} && \hspace{2cm}\text{ Rearranged}\\
 
 Another way to write the previous equation is
 
@@ -61,7 +61,7 @@ The simplest solution to the previous equation is to assume a constant temperatu
 .. math::
 
     \frac{\partial T}{\partial z} &= \left. -\frac{\partial T}{\partial z} \right|_{(z = 0)} \mathrm{e}^{-(v_{z} z/\kappa)} = g \mathrm{e}^{-(v_{z} z/\kappa)}\\
-    \int \frac{\partial T}{\partial z} &= g \int \mathrm{e}^{-(v_{z} z/\kappa)} && \text{Integrate}\\
+    \int \frac{\partial T}{\partial z} &= g \int \mathrm{e}^{-(v_{z} z/\kappa)} && \hspace{2cm}\text{Integrate}\\
     T(z) &= -\frac{g \kappa}{v_{z}} \mathrm{e}^{-(v_{z} z/\kappa)} + c_{1}
 
 Assume :math:`T(0) = 0`\ .
@@ -77,7 +77,7 @@ Thus, we find
 .. math::
 
     T(z) &= -\frac{g \kappa}{v_{z}} \mathrm{e}^{-(v_{z} z/\kappa)} + \frac{g \kappa}{v_{z}}\\
-    T(z) &= \frac{g \kappa}{v_{z}}\left(1 - \mathrm{e}^{-(v_{z} z/\kappa)} \right) && \text{Rearranged}
+    T(z) &= \frac{g \kappa}{v_{z}}\left(1 - \mathrm{e}^{-(v_{z} z/\kappa)} \right) && \hspace{2cm}\text{Rearranged}
 
 .. attention::
 
