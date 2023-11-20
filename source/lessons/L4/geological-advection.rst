@@ -1,8 +1,11 @@
 Geological advection
 ====================
 
-Slides from the lecture on geological advection can be found below.
+Slides will be posted after class.
 
-.. admonition:: Lecture slides
+.. 
+    Slides from the lecture on geological advection can be found below.
 
-    `Geological advection lecture slides <../../_static/slides/L4/Geological-advection.pdf>`__
+    .. admonition:: Lecture slides
+
+        `Geological advection lecture slides <../../_static/slides/L4/Geological-advection.pdf>`__

@@ -1,8 +1,11 @@
 Advection and heat transfer
 ===========================
 
-Slides from the lecture on erosion, sedimentation, and heat transfer can be found below.
+Slides will be posted after class.
 
-.. admonition:: Lecture slides
+.. 
+    Slides from the lecture on erosion, sedimentation, and heat transfer can be found below.
 
-    `Erosion, sedimentation, and heat transfer lecture slides <../../_static/slides/L4/Erosion-sedimentation-heat-transfer.pdf>`__
+    .. admonition:: Lecture slides
+
+        `Erosion, sedimentation, and heat transfer lecture slides <../../_static/slides/L4/Erosion-sedimentation-heat-transfer.pdf>`__
