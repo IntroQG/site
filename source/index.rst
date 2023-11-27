@@ -121,17 +121,17 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     lessons/L4/advection-heat-transfer
     lessons/L4/exercise-4
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 5
+
+    lessons/L5/overview
+    lessons/L5/rocks-ice-viscous-fluids
+    lessons/L5/viscous-flows
+    lessons/L5/exercise-5-theory
+    lessons/L5/exercise-5
+
 .. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 5
-
-        lessons/L5/overview
-        lessons/L5/rocks-ice-viscous-fluids
-        lessons/L5/viscous-flows
-        lessons/L5/exercise-5-theory
-        lessons/L5/exercise-5
-
     .. toctree::
         :maxdepth: 2
         :caption: Lesson 6

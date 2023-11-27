@@ -7,11 +7,11 @@ Exercise 5
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 5 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/5zExVK0r>`__.
+    You can start working on your copy of Exercise 5 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/jRPMX8h_>`__.
 
-    **Exercise 5 is due by 8:15 on Tuesday 7 December 2021**.
+    **Exercise 5 is due by 14:15 on Monday December 4th 2023**.
 
-You can also take a look at the open course copy of `Exercise 5 in the course GitHub repository <https://github.com/IntroQG-2021/Exercise-5>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 5 in the course GitHub repository <https://github.com/IntroQG-2023/Exercise-5>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 General hints for Exercise 5
