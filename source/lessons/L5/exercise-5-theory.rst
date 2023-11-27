@@ -165,7 +165,7 @@ For a non-Newtonian fluid, Equation 14 can be modified to account for the case w
     \frac{d u}{d z} = a \left[ \gamma_{x} (h - z) \right]^{n} \tag{18}
 
 To determine the velocity profile, we need to integrate Equation 18.
-If we use the boundary condition that the basal sliding velocity is equal to ub rather than zero, we get
+If we use the boundary condition that the basal sliding velocity is equal to $u_{\mathrm{b}}$ rather than zero, we get
 
 .. math::
 
