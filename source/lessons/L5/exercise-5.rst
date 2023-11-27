@@ -7,7 +7,7 @@ Exercise 5
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 5 by `accepting the GitHub Classroom assignment <>`__.
+    You can start working on your copy of Exercise 5 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/jRPMX8h_>`__.
 
     **Exercise 5 is due by 14:15 on Monday December 4th 2023**.
 
