@@ -12,5 +12,5 @@ References
 
 .. admonition:: Journal articles (*optional reading*)
 
-    * `Gemmer et al., 2004 - Modelling salt tectonics <https://dx.doi.org/10.1111/j.1365-2117.2004.00229.x>`__
-    * `Pellikka et al., 2023 - Modelling land surface uplift and sea level rise <https://doi.org/10.5194/nhess-23-1613-2023>`__
+    * `Gemmer et al., 2004 - Salt tectonics driven by differential sediment loading: stability analysis and finite-element experiments <https://dx.doi.org/10.1111/j.1365-2117.2004.00229.x>`__
+    * `Pellikka et al., 2023 - Probabilistic projections and past trends of sea level rise in Finland <https://doi.org/10.5194/nhess-23-1613-2023>`__
