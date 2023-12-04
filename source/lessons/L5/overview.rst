@@ -17,19 +17,16 @@ After completing this week's lesson you should be able to:
 Lesson videos
 -------------
 
-Videos will be posted after class.
+.. admonition:: Lesson 5.1 - Rocks and ice as viscous materials
+    :class: admonition-youtube
 
-.. 
-    .. admonition:: Lesson 5.1 - Rocks and ice as viscous materials
+    ..  youtube:: Kx2F3TubCaM
 
-        .. raw:: html
+    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OHDCUkB6cD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+.. admonition:: Lesson 5.2 - Introduction to and Python tips for Exercise 5
+    :class: admonition-youtube
 
-    .. admonition:: Lesson 5.2 - Overview of Exercise 5
+    ..  youtube:: zXbVg0eG5MY
 
-        .. raw:: html
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bFCrjD9EY0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
