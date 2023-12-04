@@ -40,11 +40,8 @@ To help you know whether or not you’ve done this properly, I’ve given a tabl
 | 5         | 24.582                                        |
 +-----------+-----------------------------------------------+
 
-Problem 3
----------
-
-Solving for the unknown term in Equation 19
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem 3: Solving for the unknown term in Equation 19
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Similar to Problem 1, you’re again asked to solve for an unknown term in Equation 19, in this case :math:`\gamma_{x}^{n}`\ .
 As above, you have a table of values below to help you check whether or not you’ve properly solved your equation for :math:`\gamma_{x}^{n}`\ .
