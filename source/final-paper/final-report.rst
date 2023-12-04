@@ -8,7 +8,7 @@ Please use either the :doc:`template Jupyter notebook for the final paper <templ
 If you use a word processor, please use 12 pt Times New Roman (or a similar font) for your report with single spacing between lines.
 The report should not be longer than 6-8 pages including text and figures (references and the appendix can be on additional pages, if needed).
 
-**The final paper is tentatively due by 17:00 on 14.1.2022**.
+**The final paper is due by 17:00 on 12.1.2024**.
 
 The research paper should include the following:
 
