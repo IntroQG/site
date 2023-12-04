@@ -17,6 +17,11 @@ Note that you should not try to make changes to this copy of the exercise, but r
 General hints for Exercise 5
 ----------------------------
 
+Exercise 5 tips notebook
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+In addition to the hints below, you might want to check out the `Jupyter notebook with some Python tips for completing Exercise 5 <../../notebooks/L5/Exercise-5-tips.html>`__.
+
 Problem 1: Solving for the unknown pressures in Equation 10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
