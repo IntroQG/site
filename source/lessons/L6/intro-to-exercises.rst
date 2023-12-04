@@ -3,6 +3,9 @@ Intro to Exercises 6 and 7
 
 Slides from the lecture introducing Exercises 6 and 7 can be found below.
 
-.. admonition:: Lecture slides
+Slides will be added after class.
 
-    `Introduction to Exercises 6 and 7 slides <../../_static/slides/L6/Intro-to-exercises-6-and-7.pdf>`__
+.. 
+    .. admonition:: Lecture slides
+
+        `Introduction to Exercises 6 and 7 slides <../../_static/slides/L6/Intro-to-exercises-6-and-7.pdf>`__

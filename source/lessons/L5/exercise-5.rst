@@ -17,6 +17,11 @@ Note that you should not try to make changes to this copy of the exercise, but r
 General hints for Exercise 5
 ----------------------------
 
+Exercise 5 tips notebook
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+In addition to the hints below, you might want to check out the `Jupyter notebook with some Python tips for completing Exercise 5 <../../notebooks/L5/exercise-5-tips.html>`__.
+
 Problem 1: Solving for the unknown pressures in Equation 10
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -35,11 +40,8 @@ To help you know whether or not you’ve done this properly, I’ve given a tabl
 | 5         | 24.582                                        |
 +-----------+-----------------------------------------------+
 
-Problem 3
----------
-
-Solving for the unknown term in Equation 19
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem 3: Solving for the unknown term in Equation 19
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Similar to Problem 1, you’re again asked to solve for an unknown term in Equation 19, in this case :math:`\gamma_{x}^{n}`\ .
 As above, you have a table of values below to help you check whether or not you’ve properly solved your equation for :math:`\gamma_{x}^{n}`\ .
