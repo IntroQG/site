@@ -7,7 +7,7 @@ Final paper template
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of the final paper by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/oBS6Gt18>`__.
+    You can start working on your copy of the final paper by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/-ielRbZp>`__.
 
     **The final paper is due by 17:00 on Friday 12.1.2024**.
 
