@@ -19,7 +19,7 @@ Use of AI-LLM tools for this assignment
 
 The use of artificial intelligence large language model (AI-LLM) tools (e.g., ChatGPT) is allowed in this exercise. If you choose to use such tools, you must also:
 
-#. Clearly acknowledge which tool(s) and versions of such tools were utilized to complete the exercise in a section of your notebook titled "**Acknowledgements**".
+#. Clearly acknowledge which tool(s) and versions of such tools were utilized to complete the exercise in a section of your notebook titled **Acknowledgements**.
 #. Describe how the tool(s) was/were used to complete the exercise in a section titled **Use of AI tools** with enough detail that your results could be reproduced. For example, this would include:
 
    - Explaining how the tools have been used in general terms, such as descibing whether they have been used to generate draft text explaining what you have done for the exercise or to produce code you have used.
