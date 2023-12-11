@@ -10,7 +10,7 @@ The report should not be longer than 6-8 pages including text and figures (refer
 
 **AI-LLM OK** - Use of AI large language models, such as ChatGPT, is OK for this assignment. Details can be found below under the heading "**Use of AI-LLM tools in this exercise**".
 
-- You can find a short introduction on how to use ChatGPT for programming in Python on the `Geo-Python course website` <https://geo-python-site.readthedocs.io/en/latest/notebooks/L4/use-of-ai.html>`__.
+- You can find a short introduction on how to use ChatGPT for programming in Python on the `Geo-Python course website <https://geo-python-site.readthedocs.io/en/latest/notebooks/L4/use-of-ai.html>`__.
 
 **The final paper is due by 17:00 on 12.1.2024**.
 
