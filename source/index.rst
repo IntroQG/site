@@ -140,13 +140,12 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     lessons/L6/intro-to-exercises
     lessons/L6/exercise-6
 
-.. 
-    .. toctree::
-        :maxdepth: 2
-        :caption: Lesson 7
+.. toctree::
+    :maxdepth: 2
+    :caption: Lesson 7
 
-        lessons/L7/overview
-        lessons/L7/exercise-7
+    lessons/L7/overview
+    lessons/L7/exercise-7
 
 .. toctree::
     :maxdepth: 2
