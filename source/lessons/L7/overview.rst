@@ -35,9 +35,12 @@ Additional materials
 Lesson video
 ------------
 
-.. admonition:: Lesson 7.1 - Overview of Exercise 7, course wrap-up
+The lesson video will be posted after class.
 
-    .. raw:: html
+.. 
+    .. admonition:: Lesson 7.1 - Overview of Exercise 7, course wrap-up
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-GbmP3jGnEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-GbmP3jGnEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
