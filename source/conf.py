@@ -19,11 +19,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'IntroQG'
-copyright = '2016-2023, D. Whipp, Department of Geosciences and Geography, University of Helsinki.'
+copyright = '2016-2025, D. Whipp and A.-K. Maier, Department of Geosciences and Geography, University of Helsinki.'
 author = ''
 
 # The short X.Y version
-version = '2023'
+version = '2025'
 # The full version, including alpha/beta/rc tags
 release = 'site'
 
@@ -40,17 +40,14 @@ language="en"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'myst_nb',
-    'sphinx_copybutton',
-    'sphinx.ext.mathjax',
-    #'sphinx.ext.githubpages',
-    'sphinx.ext.todo',
-    'sphinx_thebe',
-    #'sphinx_togglebutton',
+    "IPython.sphinxext.ipython_console_highlighting",
+    "IPython.sphinxext.ipython_directive",
+    "jupyter_sphinx",
+    "myst_nb",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.todo",
     "sphinxcontrib.youtube",
-    'IPython.sphinxext.ipython_console_highlighting',
-    'IPython.sphinxext.ipython_directive',
-    'jupyter_sphinx'
+    "sphinx_thebe",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -141,7 +138,7 @@ html_context = {
     # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
     'github_user': 'IntroQG',
     'github_repo': 'site',
-    'github_version': 'master/',
+    'github_version': 'main/',
     'conf_py_path': '/source/'
 }
 
@@ -211,4 +208,3 @@ jupyter_execute_notebooks = "auto"
 
 # Add math config options for new version of MyST
 myst_enable_extensions = ["dollarmath"]
-
