@@ -45,9 +45,7 @@ extensions = [
     "jupyter_sphinx",
     "myst_nb",
     "sphinx.ext.mathjax",
-    "sphinx.ext.githubpages",
     "sphinx.ext.todo",
-    "sphinxcontrib.googleanalytics",
     "sphinxcontrib.youtube",
     "sphinx_thebe",
 ]
