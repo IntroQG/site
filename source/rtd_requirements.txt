@@ -10,5 +10,6 @@ pandas
 jinja2==2.11.3
 markupsafe==2.0.1
 nbconvert==5.6.1
+ipython_genutils
 #  - pip install git+https://github.com/HTenkanen/sphinxcontrib-versioning.git
 
