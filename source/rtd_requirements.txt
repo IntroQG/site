@@ -7,8 +7,7 @@ ipykernel
 matplotlib
 numpy
 pandas
-#jinja2==2.11.3
-jinja2
+jinja2==2.11.3
 markupsafe==2.0.1
 #  - pip install git+https://github.com/HTenkanen/sphinxcontrib-versioning.git
 
