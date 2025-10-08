@@ -1,0 +1,10 @@
+sphinx==1.7.9
+sphinx_rtd_theme
+nbsphinx
+IPython
+jupyter_client
+ipykernel
+matplotlib
+numpy
+pandas
+#  - pip install git+https://github.com/HTenkanen/sphinxcontrib-versioning.git
