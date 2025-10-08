@@ -1,0 +1,14 @@
+sphinx==1.7.9
+sphinx_rtd_theme
+nbsphinx
+IPython
+jupyter_client
+ipykernel
+matplotlib
+numpy
+pandas
+jinja2==2.11.3
+markupsafe==2.0.1
+nbconvert==5.6.1
+ipython_genutils
+#  - pip install git+https://github.com/HTenkanen/sphinxcontrib-versioning.git
