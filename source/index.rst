@@ -4,7 +4,7 @@
 .. image:: img/banner/introqg-landing-page-2023.png
    :class: dark-light
 
-Welcome to IntroQG 2023!
+Welcome to IntroQG 2025!
 ========================
 
 Welcome to the website for the Introduction to Quantitative Geology course at the University of Helsinki.
