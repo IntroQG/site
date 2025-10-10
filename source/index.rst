@@ -77,83 +77,83 @@ For the details about what was covered in the Geo-Python course in Period I, ple
     general-info/grading
     general-info/ai-tools
     general-info/licensing
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 1
-
-    lessons/L1/overview
-    lessons/L1/course-environment
-    notebooks/L1/numpy.ipynb
-    notebooks/L1/basic-terms.ipynb
-    notebooks/L1/uncertainty.ipynb
-    notebooks/L1/reporting-measurements.ipynb
-    notebooks/L1/normal-distribution.ipynb
-    lessons/L1/exercise-1
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 2
-
-    lessons/L2/overview
-    notebooks/L2/least-squares.ipynb
-    notebooks/L2/linear-correlation.ipynb
-    notebooks/L2/goodness-of-fit.ipynb
-    lessons/L2/exercise-2
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 3
-
-    lessons/L3/overview
-    lessons/L3/natural-diffusion
-    lessons/L3/thermochron-basics
-    notebooks/L3/python-concepts.ipynb
-    lessons/L3/exercise-3
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 4
-
-    lessons/L4/overview
-    lessons/L4/geological-advection
-    lessons/L4/solving-advection
-    lessons/L4/advection-heat-transfer
-    lessons/L4/exercise-4
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 5
-
-    lessons/L5/overview
-    lessons/L5/rocks-ice-viscous-fluids
-    lessons/L5/viscous-flows
-    lessons/L5/exercise-5-theory
-    lessons/L5/exercise-5
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 6
-
-    lessons/L6/overview
-    lessons/L6/low-t-thermochron
-    lessons/L6/intro-to-exercises
-    lessons/L6/exercise-6
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Lesson 7
-
-    lessons/L7/overview
-    lessons/L7/exercise-7
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Final report
-
-    final-paper/final-report
-    final-paper/articles
-    final-paper/template
+.. 
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 1
+    
+        lessons/L1/overview
+        lessons/L1/course-environment
+        notebooks/L1/numpy.ipynb
+        notebooks/L1/basic-terms.ipynb
+        notebooks/L1/uncertainty.ipynb
+        notebooks/L1/reporting-measurements.ipynb
+        notebooks/L1/normal-distribution.ipynb
+        lessons/L1/exercise-1
+    
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 2
+    
+        lessons/L2/overview
+        notebooks/L2/least-squares.ipynb
+        notebooks/L2/linear-correlation.ipynb
+        notebooks/L2/goodness-of-fit.ipynb
+        lessons/L2/exercise-2
+    
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 3
+    
+        lessons/L3/overview
+        lessons/L3/natural-diffusion
+        lessons/L3/thermochron-basics
+        notebooks/L3/python-concepts.ipynb
+        lessons/L3/exercise-3
+    
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 4
+    
+        lessons/L4/overview
+        lessons/L4/geological-advection
+        lessons/L4/solving-advection
+        lessons/L4/advection-heat-transfer
+        lessons/L4/exercise-4
+    
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 5
+    
+        lessons/L5/overview
+        lessons/L5/rocks-ice-viscous-fluids
+        lessons/L5/viscous-flows
+        lessons/L5/exercise-5-theory
+        lessons/L5/exercise-5
+    
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 6
+    
+        lessons/L6/overview
+        lessons/L6/low-t-thermochron
+        lessons/L6/intro-to-exercises
+        lessons/L6/exercise-6
+    
+    .. toctree::
+        :maxdepth: 2
+        :caption: Lesson 7
+    
+        lessons/L7/overview
+        lessons/L7/exercise-7
+    
+    .. toctree::
+        :maxdepth: 2
+        :caption: Final report
+    
+        final-paper/final-report
+        final-paper/articles
+        final-paper/template
 
 .. toctree::
     :maxdepth: 2
