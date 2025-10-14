@@ -26,7 +26,7 @@ Course format
 -------------
 
 The majority of this course will be spent in front of a computer working on exercises related to geological processes and data.
-Class meetings in 2023 will be on site and you will be expected to work on your own computer or find a suitable substitute.
+Class meetings in 2025 will be on site and you will be expected to work on your own computer or find a suitable substitute.
 Exercise support sessions will also be held on site.
 
 Typical exercises will involve a brief introduction followed by topical computer-based tasks.
@@ -39,20 +39,20 @@ Schedule
 +--------+------------+-----------------------------------+
 | Class  | Date       | Theme                             |
 +========+============+===================================+
-| **1**  | 30.10.2023 | Basic geostatistics               |
+| **1**  | 29.10.2025 | Basic geostatistics               |
 +--------+------------+-----------------------------------+
-| **2**  |  6.11.2023 | Comparing predictions to          |
+| **2**  |  5.11.2025 | Comparing predictions to          |
 |        |            | observations                      |
 +--------+------------+-----------------------------------+
-| **3**  | 13.11.2023 | The diffusion equation            |
+| **3**  | 12.11.2025 | The diffusion equation            |
 +--------+------------+-----------------------------------+
-| **4**  | 20.11.2023 | The advection/wave equation       |
+| **4**  | 19.11.2025 | The advection/wave equation       |
 +--------+------------+-----------------------------------+
-| **5**  | 27.11.2023 | Viscous flow equations            |
+| **5**  | 26.11.2025 | Viscous flow equations            |
 +--------+------------+-----------------------------------+
-| **6**  |  4.12.2023 | Building a numerical model        |
+| **6**  |  3.12.2025 | Building a numerical model        |
 +--------+------------+-----------------------------------+
-| **7**  | 11.12.2023 | Quantitative thermochronology     |
+| **7**  | 10.12.2025 | Quantitative thermochronology     |
 +--------+------------+-----------------------------------+
 
 For the details about what was covered in the Geo-Python course in Period I, please check the `Geo-Python website <https://geo-python.github.io>`_.
