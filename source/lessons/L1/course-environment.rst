@@ -6,6 +6,7 @@ Thus we present here only details that are relevant for this course in the point
 For all other items, we suggest you check the description of the `Geo-Python course environment <https://geo-python-site.readthedocs.io/en/latest/lessons/L1/course-environment-components.html>`__.
 
 1. `Cloud computing environments`_ CSC Noppe (formerly CSC Notebooks) or Binder
+
 .. 2. `Discord`_ for communicating among UH students
 
 Cloud computing environments
