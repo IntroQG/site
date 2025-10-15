@@ -28,7 +28,7 @@ Additional materials
 Lesson video
 ------------
 
-Lesson video(s) will be linked below after class.
+Lesson video will be linked below after class.
 
 .. 
     .. admonition:: Lesson 7.1 - Final paper update and Exercise 7 overview
