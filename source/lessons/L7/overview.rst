@@ -28,9 +28,12 @@ Additional materials
 Lesson video
 ------------
 
-.. admonition:: Lesson 7.1 - Final paper update and Exercise 7 overview
-    :class: admonition-youtube
+Lesson video(s) will be linked below after class.
 
-    ..  youtube:: -zPDFRBD73o
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+.. 
+    .. admonition:: Lesson 7.1 - Final paper update and Exercise 7 overview
+        :class: admonition-youtube
+    
+        ..  youtube:: -zPDFRBD73o
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
