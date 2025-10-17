@@ -16,6 +16,8 @@ After completing this week's lesson you should be able to:
 Lesson materials
 ----------------
 
+Lesson material will be made available after class.
+
 .. 
     Lesson notebook file(s)
     ~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,19 +28,20 @@ Lesson materials
 
         `Lesson 3 demonstration notebook <../../notebooks/L3/lesson-3-demo-notebook.html>`__
 
-Lesson video(s)
-~~~~~~~~~~~~~~~
+.. 
+    Lesson video(s)
+    ~~~~~~~~~~~~~~~
 
-.. admonition:: Lesson 3.1 - Natural diffusion, basics of thermochronology
-    :class: admonition-youtube
-
-    ..  youtube:: soc3hIv1QVs
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
-
-.. admonition:: Lesson 3.2 - Basics of thermochronology (ctd.), while loops
-    :class: admonition-youtube
-
-    ..  youtube:: FumXxcdOuoM
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+    .. admonition:: Lesson 3.1 - Natural diffusion, basics of thermochronology
+        :class: admonition-youtube
+    
+        ..  youtube:: soc3hIv1QVs
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+    
+    .. admonition:: Lesson 3.2 - Basics of thermochronology (ctd.), while loops
+        :class: admonition-youtube
+    
+        ..  youtube:: FumXxcdOuoM
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.

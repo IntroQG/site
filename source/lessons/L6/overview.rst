@@ -20,16 +20,19 @@ Additional materials
 Lesson videos
 -------------
 
-.. admonition:: Lesson 6.1 - Low-temperature thermochronology, overview of Ex. 6 and 7
-    :class: admonition-youtube
+Lesson videos will be linked below after class.
 
-    ..  youtube:: Vzm_Vr-ko9o
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
-
-.. admonition:: Lesson 6.2 - Introduction to Exercise 6 and the final paper
-    :class: admonition-youtube
-
-    ..  youtube:: 7J0Fw7gUNM4
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+.. 
+    .. admonition:: Lesson 6.1 - Low-temperature thermochronology, overview of Ex. 6 and 7
+        :class: admonition-youtube
+    
+        ..  youtube:: Vzm_Vr-ko9o
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+    
+    .. admonition:: Lesson 6.2 - Introduction to Exercise 6 and the final paper
+        :class: admonition-youtube
+    
+        ..  youtube:: 7J0Fw7gUNM4
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.

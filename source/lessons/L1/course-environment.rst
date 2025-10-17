@@ -5,16 +5,17 @@ The environment for this course is quite similar to that of the `Geo-Python cour
 Thus we present here only details that are relevant for this course in the points below.
 For all other items, we suggest you check the description of the `Geo-Python course environment <https://geo-python-site.readthedocs.io/en/latest/lessons/L1/course-environment-components.html>`__.
 
-1. `Cloud computing environments`_ CSC Notebooks or Binder
-2. `Discord`_ for communicating among UH students
+1. `Cloud computing environments`_ CSC Noppe (formerly CSC Notebooks) or Binder
+
+.. 2. `Discord`_ for communicating among UH students
 
 Cloud computing environments
 ----------------------------
 
-We will use cloud-based computing environments (CSC Notebooks or Binder) to access interactive online version of the lessons
+We will use cloud-based computing environments (CSC Noppe or Binder) to access interactive online version of the lessons
 and to work on the weekly exercises. You can use the cloud computing environments with any computer as long as it has a reasonably fast internet connection and a web browser.
 
-Please note that the Binder cloud computing environment is completely **temporary**, and only files stored in the ``my-work`` folder in the CSC Notebooks will be preserved on that platform. Thus you should always remember to push your changes to GitHub!
+Please note that the Binder cloud computing environment is completely **temporary**, and only files stored in the ``my-work`` folder in CSC Noppe will be preserved on that platform. Thus you should always remember to push your changes to GitHub!
 
 .. figure:: img/launch-buttons.png
    :alt: Launch buttons
@@ -22,24 +23,24 @@ Please note that the Binder cloud computing environment is completely **temporar
 
    Different options for making the lesson interactive
 
-Each interactive lesson and exercise will have a launch button for both CSC Notebooks and Binder.
-The CSC notebooks environment is preferred, but only accessible to students from Finnish universities and research institutes.
+Each interactive lesson and exercise will have a launch button for both CSC Noppe and Binder.
+The CSC Noppe environment is preferred, but only accessible to students from Finnish universities and research institutes.
 
-CSC Notebooks
-~~~~~~~~~~~~~
+CSC Noppe
+~~~~~~~~~
 
-Notebooks by CSC (https://notebooks.csc.fi) is a computing environment hosted by the Finnish IT Center for Science (CSC). The CSC Notebooks platform is used for running Jupyter Notebooks in a customized environment.
-CSC Notebooks is available only for students who are affiliated with Finnish universities and research institutes (via the Haka user authentication).
+CSC Noppe (https://noppe.2.rahtiapp.fi) is a computing environment hosted by the Finnish IT Center for Science (CSC). The CSC Noppe platform is used for running Jupyter Notebooks in a customized environment.
+CSC Noppe is available only for students who are affiliated with Finnish universities and research institutes (via the Haka user authentication).
 
-.. note:: **When using the CSC Notebooks for the first time, you need to join the group created for this course:**
+.. note:: **When using the CSC Noppe platform for the first time, you need to join the group created for this course:**
 
-    1. Log in at https://notebooks.csc.fi/
+    1. Log in at https://noppe.2.rahtiapp.fi/
     2. Select Haka for the authentication provider
     3. Enter your Finnish university login credentials
     4. Click on the **Join workspace** button on the top left
-    5. Join the Introduction to Quantitative Geology workspace using the join code ``int-moejb8zz``
+    5. Join the Introduction to Quantitative Geology 2025 workspace using the join code ``cfoxuok65ssw``
 
-    After joining the group, you should be able to view the course environments called `Introduction to Quantitative Geology 2023` near the top of the Application list.
+    After joining the group, you should be able to view the course environments called `Introduction to Quantitative Geology 2025` near the top of the Application list.
 
 .. figure:: img/CSC_join_group.png
    :alt: Join Group in CSC Notebooks
@@ -49,7 +50,7 @@ CSC Notebooks is available only for students who are affiliated with Finnish uni
 
    Launching the instance takes a few moments.
 
-.. note:: **After launching the Introduction to Quantitative Geology 2023 workspace the first time:**
+.. note:: **After launching the Introduction to Quantitative Geology 2025 workspace the first time:**
 
     1. Double-click on the ``my-work`` folder in the file navigator on the left side of the Jupyter Lab window
     2. Click on the Git icon on the left side
@@ -60,12 +61,12 @@ CSC Notebooks is available only for students who are affiliated with Finnish uni
 .. figure:: img/clone-notebooks.png
    :alt: Cloning the lesson notebook folder
 
-.. note:: **Repeat these steps every time when starting to work on a programming task using the CSC Notebooks:**
+.. note:: **Repeat these steps every time when starting to work on a programming task using CSC Noppe:**
 
-    1. Log in at https://notebooks.csc.fi/
+    1. Log in at https://noppe.2.rahtiapp.fi/
     2. Select Haka for the authentication provider
     3. Enter your Finnish university login credentials
-    4. Click on the **Start session** button for the Introduction to Quantitative Geology 2023 workspace
+    4. Click on the **Start session** button for the Introduction to Quantitative Geology 2025 workspace
     5. Navigate to the ``my-work/notebooks`` directory, click on the Git icon on the left and click the **Pull latest changes**
     
 .. figure:: img/pull-changes.png
@@ -95,9 +96,10 @@ Using your own computer
 We recommend that everyone use the available `cloud computing environments`_ during this course.
 In case you want to work on your own computer, you will need to `install Python (via Miniconda) <../../general-info/installing-miniconda.html>`_.
 
-Discord
--------
-
-During the course we will use actively an application called `Discord <http://discord.com>`__ for discussion and questions about the lessons and exercises.
-All enrolled students have received an invite link to the `introqg2023` workspace at the start of the course.
-`Read more about Discord on the `Geo-Python website <https://geo-python-site.readthedocs.io/en/latest/lessons/L1/discord-usage.html>`__.
+.. 
+    Discord
+    -------
+    
+    During the course we will use actively an application called `Discord <http://discord.com>`__ for discussion and questions about the lessons and exercises.
+    All enrolled students have received an invite link to the `introqg2023` workspace at the start of the course.
+    `Read more about Discord on the `Geo-Python website <https://geo-python-site.readthedocs.io/en/latest/lessons/L1/discord-usage.html>`__.

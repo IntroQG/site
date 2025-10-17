@@ -17,23 +17,26 @@ After completing this week's lesson you should be able to:
 Lesson videos
 -------------
 
-.. admonition:: Lesson 4.1 - Geological advection, advection-diffusion equation
-    :class: admonition-youtube
+Lesson videos will be linked below after class.
 
-    ..  youtube:: uAto1fC58_c
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
-
-.. admonition:: Lesson 4.2 - Erosion, sedimentation, and heat transfer
-    :class: admonition-youtube
-
-    ..  youtube:: NNNT5bFhbCE
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
-
-.. admonition:: Lesson 4.3 - Introduction to Exercise 4
-    :class: admonition-youtube
-
-    ..  youtube:: IZFalreo3KY
-
-    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+.. 
+    .. admonition:: Lesson 4.1 - Geological advection, advection-diffusion equation
+        :class: admonition-youtube
+    
+        ..  youtube:: uAto1fC58_c
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+    
+    .. admonition:: Lesson 4.2 - Erosion, sedimentation, and heat transfer
+        :class: admonition-youtube
+    
+        ..  youtube:: NNNT5bFhbCE
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+    
+    .. admonition:: Lesson 4.3 - Introduction to Exercise 4
+        :class: admonition-youtube
+    
+        ..  youtube:: IZFalreo3KY
+    
+        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.

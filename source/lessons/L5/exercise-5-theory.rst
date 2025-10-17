@@ -136,7 +136,7 @@ At any distance :math:`z` above the bed
     \end{align}
 
 where :math:`\gamma_{x} = \rho g \sin{\alpha}` is the downslope component of the gravitational force.
-Combining `Equation 2 from Part 1 of the theory <exercise-12-theory.html#problem-1>`__ with Equation 14 we find the constitutive equation for a Newtonian fluid is
+Combining `Equation 2 from Part 1 of the theory <exercise-5-theory.html#problem-1>`__ with Equation 14 we find the constitutive equation for a Newtonian fluid is
 
 .. math::
 
@@ -158,7 +158,7 @@ Equation 16 can be rewritten as
 
     u(z) = \frac{1}{2} \left( \frac{\gamma_{x}}{\eta} \right) \left[ h^{2} - (h - z)^{2} \right] \tag{17}
 
-For a non-Newtonian fluid, Equation 14 can be modified to account for the case where the strain rate varies as a power of the shear stress (`Equation 7 from Part 1 of the theory <exercise-12-theory.html#problem-1>`__)
+For a non-Newtonian fluid, Equation 14 can be modified to account for the case where the strain rate varies as a power of the shear stress (`Equation 7 from Part 1 of the theory <exercise-5-theory.html#problem-1>`__)
 
 .. math::
 

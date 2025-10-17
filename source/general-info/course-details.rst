@@ -6,22 +6,24 @@ Course meetings
 
 **Class sessions**
 
-- 14:15-16:00 on Mondays in D112, Physicum
+- 12:15-14:00 on Wednesdays in C323, Exactum
 
 **Exercise support sessions**
 
-- 10:15-14:00 on Fridays in E207, Physicum
+- 12:15-16:00 on Fridays in E205, Physicum
 
 Instructors
 -----------
 
 *Email: firstname.lastname@helsinki.fi*
 
-**David Whipp**, course instructor
+.. **David Whipp**, course instructor
 
-- Office: D426, Exactum
+.. - Office: D426, Exactum
 
-**Leevi Tuikka**, course assistant
+In 2025, course creator and instructor David Whipp is on leave. Ann-Kathrin Maier will be responsible for teaching.
+
+**Ann-Kathrin Maier**, course teacher in 2025
 
 - Office: C426, Exactum
 
@@ -41,8 +43,8 @@ Recommended textbooks (in order of relevance):
 
 - Zelle, J. (2016) `Python Programming: An Introduction to Computer Science <https://mcsp.wartburg.edu/zelle/python/ppics3/>`_, Third edition. Franklin, Beedle & Associates.
 - Braun, J., van der Beek, P. and Batt, G. (2006) `Quantitative Thermochronology: Numerical Methods for the Interpretation of Thermochronological Data <http://www.cambridge.org/us/academic/subjects/earth-and-environmental-science/geochemistry-and-environmental-chemistry/quantitative-thermochronology-numerical-methods-interpretation-thermochronological-data>`_, First edition. Cambridge University Press.
-- Taylor, J. R. (2022) `An Introduction to Error Analysis: The Study of Uncertainties in Physical Measurements <https://uscibooks.aip.org/books/an-introduction-to-error-analysis-the-study-of-uncertainties-in-physical-measurements-third-edition/>`_, Third edition. University Science Books.
-- Stüwe, K. (2007) `Geodynamics of the Lithosphere <http://wegener.uni-graz.at/publication/books/geodyn2nd/>`_, Second edition. Springer.
+- Taylor, J. R. (2022) `An Introduction to Error Analysis: The Study of Uncertainties in Physical Measurements <https://mitpress.mit.edu/9781940380087/an-introduction-to-error-analysis/>`_, Third edition. The MIT Press.
+- Stüwe, K. (2007) `Geodynamics of the Lithosphere <https://wegener.earth/publication/books/geodyn2nd/>`_, Second edition. Springer.
 
 
 Optional textbooks:
