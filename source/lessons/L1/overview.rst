@@ -14,23 +14,30 @@ After completing this week's lesson you should be able to:
 - Understand some basic statistical terms and how they are defined
 - Write your own functions for basic (geo)statistical analysis
 
+Lesson notebook file(s)
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. admonition:: Lesson 1 notebook file(s)
+
+    `NumPy demonstration notebook <../../notebooks/L1/numpy-from-class.html>`__
+
 Lesson video(s)
 ---------------
 
-Video(s) will be posted after the lesson.
+.. Video(s) will be posted after the lesson.
 
-.. 
-    .. admonition:: Lesson 1.1 - Course overview, a brief introduction to NumPy
-    
-        .. raw:: html
-    
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wg4dntFBzkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
-    
-    
-    .. admonition:: Lesson 1.2 - Basic geostatistics
-    
-        .. raw:: html
-    
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7uppwORX9Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+
+.. admonition:: Lesson 1.1 - Course overview, a brief introduction to NumPy
+
+    .. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wg4dntFBzkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
+
+
+.. admonition:: Lesson 1.2 - Basic geostatistics
+
+    .. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7uppwORX9Xw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Dave Whipp, University of Helsinki <a href="https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw">@ Quantitative Geology channel on Youtube</a>.</p>
