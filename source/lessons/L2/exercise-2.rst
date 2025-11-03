@@ -7,7 +7,7 @@ Exercise 2
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/djK275Os_>`__.
+    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/djK275Os>`__.
 
     **Exercise 2 is due by the start of lecture in week 3 (12:15 on 12 November 2025)**.
 
