@@ -7,11 +7,11 @@ Exercise 2
 
 .. admonition:: Start your assignment
 
-    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/XW5JpwP_>`__.
+    You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/djK275Os_>`__.
 
-    **Exercise 2 is due by the start of lecture in week 3**.
+    **Exercise 2 is due by the start of lecture in week 3 (12:15 on 12 November 2025)**.
 
-You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2023/Exercise-2>`__ (does not require logging in).
+You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2025/Exercise-2>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
 
 General hints for Exercise 2
