@@ -13,3 +13,4 @@ pandas
 scipy
 xarray
 sphinxcontrib-youtube
+sphinx-thebe
