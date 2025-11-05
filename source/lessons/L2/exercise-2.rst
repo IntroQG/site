@@ -9,7 +9,7 @@ Exercise 2
 
     You can start working on your copy of Exercise 2 by `accepting the GitHub Classroom assignment <https://classroom.github.com/a/djK275Os>`__.
 
-    **Exercise 2 is due by the start of lecture in week 3 (12:15 on 12 November 2025)**.
+    **Exercise 2 is due by the start of the lecture in week 3 (12:15 on 12 November 2025)**.
 
 You can also take a look at the open course copy of `Exercise 2 in the course GitHub repository <https://github.com/IntroQG-2025/Exercise-2>`__ (does not require logging in).
 Note that you should not try to make changes to this copy of the exercise, but rather only to the copy available via GitHub Classroom.
