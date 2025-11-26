@@ -19,17 +19,16 @@ Lesson videos
 
 Lesson videos will be linked below after class.
 
-.. 
-    .. admonition:: Lesson 5.1 - Rocks and ice as viscous materials
-        :class: admonition-youtube
-    
-        ..  youtube:: Kx2F3TubCaM
-    
-        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
-    
-    .. admonition:: Lesson 5.2 - Introduction to and Python tips for Exercise 5
-        :class: admonition-youtube
-    
-        ..  youtube:: zXbVg0eG5MY
-    
-        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+.. admonition:: Lesson 5.1 - Rocks and ice as viscous materials
+    :class: admonition-youtube
+
+    ..  youtube:: Kx2F3TubCaM
+
+    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+
+.. admonition:: Lesson 5.2 - Introduction to and Python tips for Exercise 5
+    :class: admonition-youtube
+
+    ..  youtube:: zXbVg0eG5MY
+
+    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
