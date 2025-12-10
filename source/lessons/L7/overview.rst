@@ -25,15 +25,22 @@ Additional materials
         - Explain why geological fluids deform in a nonlinear fashion
         - Model the flow of ice in valley glaciers using viscous flow equations
 
+
+
+.. admonition:: Lecture slides
+
+    `Introduction to the Final Report slides <../../_static/slides/L6/Lec7_IntroFinalReport.pdf>`__
+
+
 Lesson video
 ------------
 
-Lesson video will be linked below after class.
+.. Lesson video will be linked below after class.
 
-.. 
-    .. admonition:: Lesson 7.1 - Final paper update and Exercise 7 overview
-        :class: admonition-youtube
-    
-        ..  youtube:: -zPDFRBD73o
-    
-        Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
+
+.. admonition:: Lesson 7.1 - Final paper update and Exercise 7 overview
+    :class: admonition-youtube
+
+    ..  youtube:: -zPDFRBD73o
+
+    Dave Whipp, University of Helsinki @ `Quantitative Geology channel on Youtube <https://www.youtube.com/channel/UClNYqKkR-lRWyn7jes0Khcw>`_.
